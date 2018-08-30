@@ -11,6 +11,7 @@
     background-repeat:no-repeat;
 }
 
+
 .imgBoutonEther:before{
      background-image : url(http://127.0.0.1:8080/img/ether-logo.png);
 }
@@ -22,4 +23,31 @@
 }
 .imgBoutonEur:before{
      background-image : url(http://127.0.0.1:8080/img/eur-logo.png);
+}
+
+#usd-button{
+  background-color: #00BEA3;
+}
+#ether-button{
+  background-color: #00BEA3;
+}
+#bitcoin-button{
+  background-color: #00BEA3;
+}
+#eur-button{
+  background-color: #00BEA3;
+}
+.btn:focus {
+    outline: none !important;
+    border:2px solid #00584b;
+    box-shadow: 1px 1px 1px black;
+}
+
+.progBar{
+  position: relative;
+  top: 50%;
+  border-radius: 2px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
