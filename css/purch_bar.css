@@ -1,0 +1,25 @@
+.bouton-image:before {
+    content: "";
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: text-top;
+    background-color: transparent;
+    //background-color: #00BEA3;
+    background-position : center center;
+    background-repeat:no-repeat;
+}
+
+.imgBoutonEther:before{
+     background-image : url(http://127.0.0.1:8080/img/ether-logo.png);
+}
+.imgBoutonBitcoin:before{
+     background-image : url(http://127.0.0.1:8080/img/bitcoin-logo.png);
+}
+.imgBoutonUsd:before{
+     background-image : url(http://127.0.0.1:8080/img/usd-logo.png);
+}
+.imgBoutonEur:before{
+     background-image : url(http://127.0.0.1:8080/img/eur-logo.png);
+}
