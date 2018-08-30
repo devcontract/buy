@@ -13,4 +13,6 @@
   height: 20px;
   background-color: #00bea3;
 }
-/*test*/
+.block{
+  border-radius: 12px;
+}
