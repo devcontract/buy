@@ -1,0 +1,15 @@
+.digits_purchase_datails{
+  font-size: 25px;
+}
+.circle1{
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+}
+.circl1s{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
