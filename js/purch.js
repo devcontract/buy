@@ -3,18 +3,7 @@
 
 
 $(document).ready(function() {
-var countdown;
-  $(function(){
-  //  FlipClock.Lang.Custom = { days:'', hours:'', minutes:'', seconds:'' };
-    var opts = {
-      clockFace: 'DailyCounter',
-      countdown: true,
-      language: 'Custom'
-    };
-     countdown = 1535742540 - ((new Date().getTime())/1000); // from: 08/31/2018 10:09 pm +0300
-    countdown = Math.max(1, countdown);
-    $('.clock-builder-output').FlipClock(countdown, opts);
-  });
+
 
   $("#ether-button").click(function(){
         $("#multiCollapseExample1").collapse('hide');
@@ -36,6 +25,19 @@ var countdown;
 $("#timeText").text("Sale opens in:");
 
 
+let test = {10: 1, 20: 10, 50: 45, 100: 80 };
 
+for (let [key, value] of Object.entries(test)) {
+  
+  //  console.log(key, value);
+}
+//function bonusBar(array){
+//  if (array[]){
+
+//  }else{
+
+//  }
+//$("#progresBarValue").css("width", progressvalue + "%");
+//}
 
 });
