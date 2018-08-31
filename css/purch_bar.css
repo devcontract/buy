@@ -40,10 +40,10 @@
 #eur-button{
   background-color: #00BEA3;
 }
-.btn:focus {
+.btn:focus, .btn:active, .btn:hover {
     outline: none !important;
     border:2px solid #00584b;
-    box-shadow: 1px 1px 1px black;
+    box-shadow: 1px 1px 10px black;
 }
 
 .progBar{
