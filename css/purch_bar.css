@@ -1,3 +1,6 @@
+/*------------------------------------------------------------------------------*/
+/*-------------------------buttons-----------------------------*/
+/*------------------------------------------------------------------------------*/
 .btn{
   border-radius: 25%;
 }
@@ -45,7 +48,9 @@
     border:2px solid #00584b;
     box-shadow: 1px 1px 10px black;
 }
-
+/*------------------------------------------------------------------------------*/
+/*progress*/
+/*------------------------------------------------------------------------------*/
 .progBar{
   position: relative;
   top: 50%;
@@ -56,32 +61,20 @@
 
 }
 .glow{
+  display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    text-decoration: none;
+    border: .5em solid rgba(0,0,0,0);
+    border-radius: 100%;
+    background: #00BEA3 linear-gradient(#00BEA3, #00BEA3) 50% 50% / calc(1.5em + .5em*2) calc(1.5em + .5em*2);
+    box-shadow:
+     inset 0 -3px 10px rgba(255,255,255,1),
+     inset 0 3px 10px rgba(0,0,0,.4),
+     0 2px 4px rgba(0,0,0,.9);
+   }
 
-  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-   -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
-   -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
-   animation-name: glow;
-   animation-duration: 6s;
-   animation-iteration-count: infinite;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes glow {
-    0%   {box-shadow: 0px 0px 10px 1px #00BEA3;}
-    25%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
-    50%  {box-shadow: 0px 0px 10px 1px #00BEA3;}
-    75%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
-    100% {box-shadow: 0px 0px 10px 1px #00BEA3;}
-}
-
-/* Standard syntax */
-@keyframes glow {
-  0%   {box-shadow: 0px 0px 10px 1px #00BEA3;}
-  25%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
-  50%  {box-shadow: 0px 0px 10px 1px #00BEA3;}
-  75%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
-  100% {box-shadow: 0px 0px 10px 1px #00BEA3;}
-}
 
 .circles{
   display: -webkit-flex; /* Safari */
@@ -110,15 +103,13 @@
   position: relative;
 
 }
+/*------------------------------------------------------------------------------*/
+/*------------------------labels---------------------------------*/
+/*------------------------------------------------------------------------------*/
+.labels{
 
-.circle1{
-  width:30px;
-  height:30px;
-  background-color: #00BEA3;
-  border-radius: 50%;
-  position: relative;
-  left:155px;
-  top:-43px;
-  border:1px solid black;
-
+  display: -webkit-flex; /* Safari */
+    -webkit-justify-content: space-around; /* Safari 6.1+ */
+    display: flex;
+    justify-content: space-around;
 }
