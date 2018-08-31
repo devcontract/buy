@@ -25,10 +25,14 @@ $(document).ready(function() {
 $("#timeText").text("Sale opens in:");
 
 
-let obj = {10: 1, 20: 10, 50: 45, 100: 80 };
+let obj = {10: 1, 20: 10, 50: 45, 100: 80 , 170: 90 };
 
 count = Object.keys(obj).length;
-var progressBarLength = $("img").attr("alt")
+
+var res = $("#progressBarVal").css("width");
+progressBarLengt=parseInt(res)
+var resCount =progressBarLengt / count;
+console.log(resCount);
 for (let [key, value] of Object.entries(obj)) {
 
   //  console.log(key, value);

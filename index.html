@@ -1,98 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
+  <meta charset="utf-8">
+  <title></title>
   <title>ico</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="./css/purch_bar.css">
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="./css/purch_bar.css">
   <script src="./js/purch.js"></script>
 </head>
 
 <body>
-
   <div class="container">
-    <br>
-
-    <div class="row">
-
-      <div class="col-sm-12" style="background-color:lavender; width: 650px; height: 240px;">
-      <h2  <span class="red-text text-center" id="timeText"></span></h2>
-
-      <div class="clock-builder-output"></div>
-
-
-      </div>
-    </div>
-<br>
-
-
-
-    <div class="row">
-
-      <div class="col-sm-12" style="background-color:lavender; width: 650px; height: 240px;">
-
-        <h2 class="red-text text-center">Investment</h2>
-        <br>
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-          <button class="btn btn-primary bouton-image imgBoutonEther" id="ether-button" ></button>
-          <button class="btn btn-primary bouton-image imgBoutonBitcoin" id="bitcoin-button" ></button>
-          <button class="btn btn-primary bouton-image imgBoutonUsd" id="usd-button" ></button>
-          <button class="btn btn-primary bouton-image imgBoutonEur" id="eur-button" ></button>
+    <div class="content" style="width: 650px; height: 240px; margin:0 auto;">
+      <div class="row">
+        <div class="" style="background-color:lavender; width: 650px; height: 240px;">
+          <h2 class="red-text text-center">Investment</h2>
+          <br>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display:flex;align-items:center;justify-content:center;">
+            <button class="btn btn-primary bouton-image imgBoutonEther" id="ether-button"></button>
+            <button class="btn btn-primary bouton-image imgBoutonBitcoin" id="bitcoin-button"></button>
+            <button class="btn btn-primary bouton-image imgBoutonUsd" id="usd-button"></button>
+            <button class="btn btn-primary bouton-image imgBoutonEur" id="eur-button"></button>
+          </div>
         </div>
-
       </div>
-    </div>
-    <br>
-    <div class="row">
+      <!--end of row 1 buttons-->
 
-      <div class="col-sm-12" style="background-color:lavender; width: 650px; height: 270px;">
+      <div class="row">
+        <div class="" style="background-color:lavender; width: 650px; height: 470px;">
+          <h2 class="red-text text-center">Purchase details</h2>
 
-        <h2 class="red-text text-center">Purchase details</h2>
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
 
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-
-         <div class="input-group ">
-           <input type="text" class="form-control" style="text-align: left; width: 150px; height: 35px;" value="1"  aria-describedby="basic-addon2">
-           <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
-         </div>
-
-              <p> = </p>
-              <span class=""  id="standartPrice">10</span>
-              <p> + </p>
-              <span class="red-text text-center"  id="calcbonus">20</span>
-              <p> = </p>
-              <span class="red-text text-center"  id="calcResult">30</span>
-
-        </div>
-         <span class="red-text text-center" id="calcbonus">500 TES minimum investment</span>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col">
-        <div class="collapse multi-collapse" id="multiCollapseExample1">
-          <div class="col-sm-12" style="background-color:lavender; width: 650px; height: 270px;">
-
-            <h2 class="red-text text-center">Payment Visacard Mastercard</h2>
-            <br>
-            Sed feugiat egestas nisl sed faucibus. Fusce nisi metus, accumsan eget ullamcorper eget, iaculis id augue. Vivamus porta elit id nulla varius, in sodales massa bibendum. Nullam condimentum pellentesque est, vel lacinia ipsum efficitur sed. Morbi porttitor
-            porta commodo.
-            <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="input-group" style="margin-left:20px;">
+              <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2">
+              <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
             </div>
 
+            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:350px;">
+              <div style="margin-left:15px"> = </div>
+              <span class="" id="standartPrice">10</span>
+              <p> + </p>
+              <span class="red-text text-center" id="calcbonus">2043</span>
+              <p> = </p>
+              <span class="red-text text-center" id="calcResult">3043</span>
+            </div>
+            <div class="" style="margin-left:20px">
+              <span class="red-text text-center" id="calcbonus">500 TES minimum investment</span>
+            </div>
+          </div>
+<div style="margin-top:30px;display:flex;align-items:center;justify-content:center;">
+<div class="">
+
+</div>
+  <progress class="" id="progressBarVal" value="75" max="100" style="width:400px;">0%</progress>
+
+
+
+  <div class="circle1" style="position:absolute;left:504px;"></div>
+  <div class="circl1s" style="position:absolute;left:509px;"></div>
+
+  <div class="circle1" style="position:absolute;left:654px;"></div>
+  <div class="circl1s" style="position:absolute;left:659px;"></div>
+
+  <div class="circle1" style="position:absolute;left:804px;"></div>
+  <div class="circl1s" style="position:absolute;left:809px;"></div>
+
+  <div class="circle1" style="position:absolute;left:950px;"></div>
+  <div class="circl1s" style="position:absolute;left:955px;"></div>
+
+</div>
+
+
+
 
         </div>
       </div>
+      <!--end of row 2 pur deatils-->
 
-    </div>
+      <div class="row">
+        <div class="collapse-in" id="multiCollapseExample1">
+          <div class="" style="background-color:lavender; width: 650px; height: 250px;">
+            <h2 class="red-text text-center">Payment Visacard Mastercard</h2>
+            <p>Sed feugiat egestas nisl sed faucibus. Fusce nisi metus, accumsan eget ullamcorper eget, iaculis id augue. Vivamus porta elit id nulla varius, in sodales massa bibendum. Nullam condimentum pellentesque est, vel lacinia ipsum efficitur sed.
+              Morbi porttitor porta commodo.</p>
+          </div>
+        </div>
+     </div>
   </div>
-  </div>
-  </div>
+</div>
+
 </body>
 
 </html>
