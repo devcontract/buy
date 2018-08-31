@@ -53,4 +53,103 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+}
+.glow{
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+   -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+   -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+   animation-name: glow;
+   animation-duration: 6s;
+   animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes glow {
+    0%   {box-shadow: 0px 0px 10px 1px #00BEA3;}
+    25%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
+    50%  {box-shadow: 0px 0px 10px 1px #00BEA3;}
+    75%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
+    100% {box-shadow: 0px 0px 10px 1px #00BEA3;}
+}
+
+/* Standard syntax */
+@keyframes glow {
+  0%   {box-shadow: 0px 0px 10px 1px #00BEA3;}
+  25%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
+  50%  {box-shadow: 0px 0px 10px 1px #00BEA3;}
+  75%  {box-shadow: 0px 0px 17px 1px #00BEA3;}
+  100% {box-shadow: 0px 0px 10px 1px #00BEA3;}
+}
+
+
+
+
+
+
+
+.circle1{
+  width:30px;
+  height:30px;
+  background-color: #00BEA3;
+  border-radius: 50%;
+  position: relative;
+  left:155px;
+  top:-43px;
+  border:1px solid black;
+
+}
+.circleSmall1{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  left:160px;
+  top:-68px;
+}
+
+.circle2{
+  background-color: #00BEA3;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  position: relative;
+  left:310px;
+  top:-93px;
+  border:1px solid black;
+}
+.circleSmall2{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  left:315px;
+  top:-118px;
+}
+
+
+.circle3{
+  background-color: #00BEA3;
+  width:30px;
+  height:30px;
+  border-radius: 50%;
+  position: relative;
+  left:463px;
+  top:-143px;
+  border:1px solid black;
+}
+.circleSmall3{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+  left:468px;
+  top:-168px;
 }
