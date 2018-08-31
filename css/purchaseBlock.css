@@ -34,17 +34,37 @@
 #usd-button{
   background-color: #00BEA3;
 }
+
+#usd-button:focus{
+  background-color: #16f1d2;
+}
 #ether-button{
   background-color: #00BEA3;
 }
+
+#ether-button:focus{
+  background-color: #16f1d2;
+}
+
 #bitcoin-button{
   background-color: #00BEA3;
 }
+
+#bitcoin-button:focus{
+  background-color: #16f1d2;
+}
+
 #eur-button{
   background-color: #00BEA3;
 }
+
+#eur-button:focus{
+  background-color: #16f1d2;
+}
+
 .btn:focus, .btn:active, .btn:hover {
     outline: none !important;
-    border:2px solid #00584b;
+    border:1px solid #00584b;
     box-shadow: 1px 1px 10px black;
+
 }
