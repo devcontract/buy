@@ -12,7 +12,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="./css/purchaseBlock.css">
-  <link rel="stylesheet" href="/css/progressBar.css">
+  <link rel="stylesheet" href="./css/responsiveProgressBar.css">
+
+  <!--<link rel="stylesheet" href="/css/progressBar.css"> css for the old bar -->
   <script src="./js/purch.js"></script>
 </head>
 
@@ -30,9 +32,30 @@
       <div class="block" style="height:auto;padding-bottom:5px;">
         <h2 class="red-text text-center">Purchase details</h2>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
+          <div class="container-fluid" style="margin-right:40px">
 
 
-          <div class="container-fluid" style=" margin-top:30px;">
+          <ol class="progress-bar-">
+              <li class="progress-bar__steps not-current">
+                  <span class="progress-bar__steps--numbers"></span>
+                  <span class="progress-bar__steps--text">50%</span>
+              </li>
+              <li class="progress-bar__steps not-current">
+                  <span class="progress-bar__steps--numbers"></span>
+                  <span class="progress-bar__steps--text">30%</span>
+              </li>
+              <li class="progress-bar__steps current">
+                  <span class="progress-bar__steps--numbers"></span>
+                  <span class="progress-bar__steps--text">20%</span>
+              </li>
+              <li class="progress-bar__steps not-current">
+                  <span class="progress-bar__steps--numbers"></span>
+                  <span class="progress-bar__steps--text">0%</span>
+              </li>
+          </ol>
+</div>
+
+        <!--  <div class="container-fluid" style=" margin-top:30px;">
             <div class="labels">
               <div class="" style="margin-left:10px;"><dt>50%</dt></div>
               <div class="" style="margin-left:0px;"> <dt>30%</dt></div>
@@ -54,8 +77,10 @@
               <div class="circle glow" style=""></div>
               <div class="circle glow" style=""></div>
             </div>
-          </div>
-                  <div class="" style="margin:5px 0 30px 15px ">
+          </div>-->
+
+
+          <div class="" style="margin:5px 0 30px 15px ">
                     <span>TOKENS PER 1 <span id="currency1">ETH </span> = <span id="">10000 </span> <span id=""> TES </span> </span>
                     <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
                   </div>
@@ -129,7 +154,7 @@
     </div>
     <!--end of row 1 buttons-->
 
-  
+
 
   </div>
 
