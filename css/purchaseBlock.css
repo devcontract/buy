@@ -32,13 +32,20 @@
 
 #ether-button:focus{
   background-color: #c6c6c6;
-    box-shadow: -6px -2px 10px black;
+    box-shadow: -0px -5px 20px black;
 }
 
 #ether-button:hover{
-  outline: none !important;
+  background-color: #c6c6c6;
+    box-shadow: -0px -5px 20px black;
+}
 
-  box-shadow: -6px -2px 10px black;
+#ether-button:active{
+
+
+    outline: none !important;
+
+    box-shadow: -0px -0px 1px black;
 }
 
 #bitcoin-button{
