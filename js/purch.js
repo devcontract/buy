@@ -12,18 +12,22 @@ $(document).ready(function() {
   $("#ether-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
     $("#currency").text("ETH");
+    $("#currency1").text("ETH");
   });
   $("#bitcoin-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
     $("#currency").text("BTC");
+    $("#currency1").text("BTC");
   });
   $("#usd-button").click(function() {
     $("#multiCollapseExample1").collapse('show');
     $("#currency").text("USD");
+    $("#currency1").text("USD");
   });
   $("#eur-button").click(function() {
     $("#multiCollapseExample1").collapse('show');
     $("#currency").text("EUR");
+    $("#currency1").text("EUR");
   });
 
   function swowSaleStatus() {
@@ -57,7 +61,7 @@ $(document).ready(function() {
     }
   $("#inputAmount").val(ethVal);
   var tokenAmount = ethVal * BASE_RATE;
-  $("#priceVal").text(tokenAmount);
+  $("#tokenAmount").text(tokenAmount);
 }
 
 

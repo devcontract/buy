@@ -31,54 +31,56 @@
         <h2 class="red-text text-center">Purchase details</h2>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
 
+
+          <div class="container-fluid" style=" margin-top:30px;">
+            <div class="labels">
+              <div class="" style="margin-left:10px;"><dt>50%</dt></div>
+              <div class="" style="margin-left:0px;"> <dt>30%</dt></div>
+              <div class="" style="margin-left:0px;"> <dt>20%</dt></div>
+              <div class="" style="padding-right:15px;"><dt>0%</dt></div>
+            </div>
+
+            <div style="margin-top:30px;display:flex;align-items:center;justify-content:center;">
+
+               <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;">
+                <div id="progresBarValue" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
+              </div>
+
+            </div>
+            <div class="circles">
+              <div class="circle glow" style=""></div>
+              <div class="circle glow" style=""></div>
+              <div class="circle glow" style=""></div>
+              <div class="circle glow" style=""></div>
+              <div class="circle glow" style=""></div>
+            </div>
+          </div>
+                  <div class="" style="margin:5px 0 30px 15px ">
+                    <span>TOKENS PER 1 <span id="currency1">ETH </span> = <span id="">10000 </span> <span id=""> TES </span> </span>
+                    <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
+                  </div>
           <div class="input-group" style="margin-left:20px;">
-            <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2">
+            <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
             <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
           </div>
 
           <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:350px;">
-            <div style="margin-left:15px"> = </div>
+            <div style="margin-left:25px"> = </div>
             <span class="" id="standartPrice">10</span>
             <p> + </p>
             <span class="red-text text-center" id="calcbonus">2043</span>
             <p> = </p>
-            <span class="red-text text-center" id="calcResult">3043</span>
-          </div><br>
+            <span class="red-text text-center" id="tokenAmount"></span>
+          </div>
 
         </div>
 
-        <div class="" style="margin:5px 0 30px 15px ">
-          <span>TOKENS PER 1 <span id=""> </span> = <span id="">10000 </span> <span id=""> TeS </span> </span>
-          <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
-        </div>
 
         <div class="" style="margin-left:15px">
           <span class="red-text text-center" id="calcbonus">500 TES minimum investment</span>
         </div>
 
-        <div class="container-fluid" style=" margin-top:30px;">
-          <div class="labels">
-            <div class="" style="margin-left:10px;"><dt>50%</dt></div>
-            <div class="" style="margin-left:0px;"> <dt>30%</dt></div>
-            <div class="" style="margin-left:0px;"> <dt>20%</dt></div>
-            <div class="" style="padding-right:15px;"><dt>0%</dt></div>
-          </div>
 
-          <div style="margin-top:30px;display:flex;align-items:center;justify-content:center;">
-
-             <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;">
-              <div id="progresBarValue" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
-            </div>
-
-          </div>
-          <div class="circles">
-            <div class="circle glow" style=""></div>
-            <div class="circle glow" style=""></div>
-            <div class="circle glow" style=""></div>
-            <div class="circle glow" style=""></div>
-            <div class="circle glow" style=""></div>
-          </div>
-        </div>
 
 <div class="container-fluid">
   <h3>Payment Address</h3>
