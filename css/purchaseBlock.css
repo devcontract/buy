@@ -22,55 +22,52 @@
 .imgBoutonBitcoin:before{
      background-image : url(http://127.0.0.1:8080/img/bitcoin-logo.png);
 }
-.imgBoutonUsd:before{
-     background-image : url(http://127.0.0.1:8080/img/usd-logo.png);
-}
-.imgBoutonEur:before{
-     background-image : url(http://127.0.0.1:8080/img/eur-logo.png);
-}
 
-#usd-button{
-  background-color: #00BEA3;
-  border-radius: 50%;
-}
 
-#usd-button:focus{
-  background-color: #16f1d2;
-}
+
 #ether-button{
   background-color: #00BEA3;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #ether-button:focus{
   background-color: #16f1d2;
+    box-shadow: -6px -2px 10px black;
+}
+
+#ether-button:hover{
+  outline: none !important;
+  border:1px solid #00584b;
+  box-shadow: -6px -2px 10px black;
 }
 
 #bitcoin-button{
   background-color: #00BEA3;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #bitcoin-button:focus{
   background-color: #16f1d2;
+  box-shadow: 6px -2px 10px black;
+}
+#bitcoin-button:hover{
+  outline: none !important;
+  border:1px solid #00584b;
+  box-shadow: 6px -2px 10px black;
 }
 
-#eur-button{
-  background-color: #00BEA3;
-    border-radius: 50%;
-}
 
-#eur-button:focus{
-  background-color: #16f1d2;
-}
-
-.curbtn:focus, .curbtn:active, .curbtn:hover {
+.curbtn:focus, .curbtn:active  {
     outline: none !important;
     border:1px solid #00584b;
-    box-shadow: 1px 1px 10px black;
+
 
 }
+.curbtn:hover{
+  outline: none !important;
+  border:1px solid #00584b;
 
+}
 
 .buyBtn{
   background-color: transparent;
