@@ -10,7 +10,6 @@
     margin-right: 5px;
     vertical-align: text-top;
     background-color: transparent;
-    //background-color: #00BEA3;
     background-position : center center;
     background-repeat:no-repeat;
 }
@@ -21,38 +20,39 @@
 }
 .imgBoutonBitcoin:before{
      background-image : url(http://127.0.0.1:8080/img/bitcoin-logo.png);
+
 }
 
 
 
 #ether-button{
-  background-color: #00BEA3;
+  background-color: #c6c6c6;
     border-radius: 10%;
 }
 
 #ether-button:focus{
-  background-color: #16f1d2;
+  background-color: #c6c6c6;
     box-shadow: -6px -2px 10px black;
 }
 
 #ether-button:hover{
   outline: none !important;
-  border:1px solid #00584b;
+
   box-shadow: -6px -2px 10px black;
 }
 
 #bitcoin-button{
-  background-color: #00BEA3;
+  background-color: #c6c6c6;
     border-radius: 10%;
 }
 
 #bitcoin-button:focus{
-  background-color: #16f1d2;
+  background-color: #c6c6c6;
   box-shadow: 6px -2px 10px black;
 }
 #bitcoin-button:hover{
   outline: none !important;
-  border:1px solid #00584b;
+
   box-shadow: 6px -2px 10px black;
 }
 
@@ -65,7 +65,7 @@
 }
 .curbtn:hover{
   outline: none !important;
-  border:1px solid #00584b;
+  border:1px solid none;
 
 }
 
