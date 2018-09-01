@@ -20,3 +20,7 @@ width: 650px; height: 240px; margin:0 auto;
   width: 650px;
   height: 240px;
 }
+
+.container{
+  margin-bottom:20px;
+    }
