@@ -55,40 +55,6 @@ var stageBar = true;
     $("#paymentCurrency").text("Ethereum");
   });
 
-setInterval(function(){
-
- if (stageBar == true){
-    $("#stageBar").show();
-    stageBar = false;
-  } else {
-      $("#stageBar").hide();
-      stageBar = true;
-}
-},3000);
-
-setInterval(function(){
-
-  if (bonusBarVisible == true){
-    $("#bonusBar").show();
-    bonusBarVisible = false;
-  } else {
-      $("#bonusBar").hide();
-      bonusBarVisible = true;
-  }
-},5000);
-
-var saleBonus1Visible = true;
-setInterval(function(){
-
-  if (saleBonus1Visible == true){
-    $(".saleBonus1Hide").show();
-    saleBonus1Visible = false;
-  } else {
-      $(".saleBonus1Hide").hide();
-      saleBonus1Visible = true;
-  }
-},1000);
-
 
 
 });

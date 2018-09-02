@@ -61,7 +61,7 @@ $(document).ready(function() {
     }
   $("#inputAmount").val(ethVal);
   var tokenAmount = ethVal * BASE_RATE;
-  $("#tokenAmount").text(tokenAmount);
+$("#tokenAmount").text(tokenAmount);
 }
 
 
