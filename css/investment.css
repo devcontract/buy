@@ -38,7 +38,7 @@
 
 #ether-button:active{
 
-
+  background-color: #989898;
     outline: none !important;
 
     box-shadow: -0px -0px 1px black;
