@@ -12,10 +12,10 @@
 
 
 .imgBoutonEther:before{
-     background-image : url(http://127.0.0.1:8080/img/ether-logo.png);
+     background-image : url(/img/ether-logo.png);
 }
 .imgBoutonBitcoin:before{
-     background-image : url(http://127.0.0.1:8080/img/bitcoin-logo.png);
+     background-image : url(/img/bitcoin-logo.png);
 
 }
 
