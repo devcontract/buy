@@ -8,12 +8,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="./css/purchaseBlock.css">
   <link rel="stylesheet" href="./css/responsiveProgressBar.css">
   <link rel="stylesheet" href="./css/investment.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="./js/index.js"></script>
   <!--<link rel="stylesheet" href="/css/progressBar.css"> css for the old bar -->
   <script src="./js/purch.js"></script>
 </head>
@@ -47,143 +49,133 @@
 
     <div class="row">
       <div class="block" style="height:auto;padding-bottom:5px;">
-        <h2 class="red-text text-center">Purchase details</h2>
+        <h2 class="text-center">Purchase details</h2>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
-
-          <div class="">
-
-
-           <div class="" style="margin:5px 0 0px 35px ">
-             <span>TOKENS PER 1 <span id="currency1">ETH </span> = <span id="">10000 </span> <span id="tokenName1"> TES </span> </span>
-             <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
-           </div>
-           <div class="container-fluid">
-           <div class="container-fluid" style=" margin-top:5px;">
-             <ol style="" class="progress-bar-">
-              <li class="progress-bar__steps not-current;" style="">
-                <span class="" style="margin-left:40px"style="">50%</span>
-              </li>
-              <li class="progress-bar__steps not-current">
-
-                <span class="" style="margin-left:25px">30%</span>
-              </li>
-              <li class="progress-bar__steps current">
-
-                <span class="" style="margin-left:25px">20%</span>
-              </li>
-              <li class="progress-bar__steps not-current" style="width:37%">
-
-                <span class="" style="margin-left:25px">0%</span>
-              </li>
-            </ol>
-
+          <div class="" style="margin:5px 0 0px 35px ">
+            <span>TOKENS PER 1 <span class="currencyName"></span> = <span id="tokenPerEth"> </span> <span class="tokenName"></span> </span>
+            <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
           </div>
-        </div>
-<div class="container-fluid">
+          <div class="container-fluid">
+            <div class="container-fluid" style=" margin-top:5px;">
+              <ol style="" class="progress-bar-">
+                <li class="progress-bar__steps not-current;" style="">
+                  <span class="" style="margin-left:40px" id="stage-1pct"></span>
+                </li>
+                <li class="progress-bar__steps not-current">
+                  <span class="" style="margin-left:25px" id="stage-2pct"></span>
+                </li>
+                <li class="progress-bar__steps current">
+                  <span class="" style="margin-left:25px" id="stage-3pct"></span>
+                </li>
+                <li class="progress-bar__steps not-current" style="width:37%">
+                  <span class="" style="margin-left:25px" id="stage-4pct"></span>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="container-fluid" style=" margin-top:50px;">
+              <div class="labels">
+                <div class="" style="margin-left:10px;"><dt> <span>Bonus</span> </dt></div>
+                <div class="" style="margin-left:0px;" ><dt> <span id="bonus-1pct"></span> </dt></div>
+                <div class="" style="margin-left:0px;" > <dt> <span id="bonus-2pct"></span> </dt></div>
+                <div class="" style="margin-left:0px;" > <dt> <span id="bonus-3pct"></span> </dt></div>
+                <div class="" style="padding-right:15px;" ><dt> <span id="bonus-4pct"></span> </dt></div>
+              </div>
 
+              <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
 
-          <div class="container-fluid" style=" margin-top:50px;">
-            <div class="labels">
-              <div class="" style="margin-left:10px;"><dt> <span>Bonus</span> </dt></div>
-              <div class="" style="margin-left:0px;"><dt> <span>50%</span> </dt></div>
-              <div class="" style="margin-left:0px;"> <dt> <span>30%</span> </dt></div>
-              <div class="" style="margin-left:0px;"> <dt> <span>20%</span> </dt></div>
-              <div class="" style="padding-right:15px;"><dt> <span>0%</span> </dt></div>
+                <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;margin-bottom:0px">
+                  <div id="progresBarValue" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
+                </div>
+
+              </div>
+              <div class="labels">
+                <div class="" style="margin-left:10px;"><dt>Ether</dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span id="ether-1E" ></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span id="ether-2E" ></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span id="ether-3E" ></span> </dt></div>
+                <div class="" style="padding-right:15px;"><dt> <span id="ether-4E" ></span> </dt></div>
+              </div>
             </div>
 
-            <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
 
-              <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;margin-bottom:0px">
-                <div id="progresBarValue" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
+            <br>
+            <div class="input-group" style="margin-left:15px;">
+              <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+              <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="text-center currencyName" ></span> </span>
+            </div>
+
+            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;">
+              <div style="margin-left:5px"> = </div>
+              <span class="" id="standartPrice">10</span>
+              <p> + </p>
+              <span class="text-center" id="calcbonus"></span>
+              <p> = </p>
+              <span class="text-center" id="tokenAmount"></span>
+            </div>
+
+
+
+
+            <div class="" style="margin:15px 0 0 15px">
+              <span class="red-text text-center" id="calcbonus"><span id="minimumInvestment" ></span> <span class="tokenName" ></span> minimum investment</span>
+            </div>
+
+
+            <div class="" id="etherButtonsHide">
+              <div class="container-fluid">
+                <h3>Payment Address</h3>
+                <input id="paymentAddressInput" type="text" value="" placeholder="Address" class="form-control inputAddress">
+                <!--ADDRESS  ------------------------ ENTRY ID-->
+                <h6>You can send Ethereum from exchange</h6>
+
+              </div>
+
+
+              <div style="margin:10px 0 0 10px">
+
+
+                <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+                  <div class="" style="width:250px;">Gas limit</div>
+                  <div class="" style="width:250px;">Gas Price</div>
+                </div>
+                <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+                  <div id="gasLimitValue" class="" style="width:250px;"></div>
+                  <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
+                </div>
+              </div>
+
+              <div class="container" style="width:600px; display:flex;margin-top:50px">
+
+                <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-right:100px">MYETHERWALLET</button>
+                <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-left:100px">METAMASK</button>
+
               </div>
 
             </div>
-            <div class="labels">
-              <div class="" style="margin-left:10px;"><dt>Ether</dt></div>
-              <div class="" style="margin-left:0px;"> <dt>E1</dt></div>
-              <div class="" style="margin-left:0px;"> <dt>E5</dt></div>
-              <div class="" style="margin-left:0px;"> <dt>E5</dt></div>
-              <div class="" style="padding-right:15px;"><dt>E10</dt></div>
-            </div>
           </div>
 
-
-<br>
-          <div class="input-group" style="margin-left:15px;">
-            <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-            <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
-          </div>
-
-          <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;">
-            <div style="margin-left:5px"> = </div>
-            <span class="" id="standartPrice">10</span>
-            <p> + </p>
-            <span class="red-text text-center" id="calcbonus">2222</span>
-            <p> = </p>
-            <span class="red-text text-center" id="tokenAmount"></span>
-          </div>
-
-
-
-
-        <div class="" style="margin:15px 0 0 15px">
-          <span class="red-text text-center" id="calcbonus">500 TES minimum investment</span>
-        </div>
-
-
-<div class="" id="etherButtonsHide">
-        <div class="container-fluid">
-          <h3>Payment Address</h3>
-          <input id="" type="text" value="" placeholder="Address" class="form-control inputAddress">
-          <!--ADDRESS  ------------------------ ENTRY ID-->
-          <h6>You can send Ethereum from exchange</h6>
 
         </div>
-
-
-        <div style="margin:10px 0 0 10px">
-
-
-          <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-            <div class="" style="width:250px;">Gas limit</div>
-            <div class="" style="width:250px;">Gas Price</div>
-          </div>
-          <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-            <div id="gasLimitValue" class="" style="width:250px;">21,000</div>
-            <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
-          </div>
-        </div>
-
-      <div class="container" style="width:600px; display:flex;margin-top:50px">
-
-        <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-right:100px">MYETHERWALLET</button>
-        <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-left:100px">METAMASK</button>
-
       </div>
 
-  </div>
-</div>
+      <!--end of row 2 pur deatils-->
 
-      </div>
+
+
+
     </div>
-  </div>
-
-  <!--end of row 2 pur deatils-->
 
 
-
-
-  </div>
-
-
-<script type="text/javascript">
-  $("#bitcoin-button").click(function() {
-  $("#etherButtonsHide").hide();
-  });
-  $("#ether-button").click(function() {
-  $("#etherButtonsHide").show();
-  });
-</script>
+    <script type="text/javascript">
+      $("#bitcoin-button").click(function() {
+        $("#etherButtonsHide").hide();
+      });
+      $("#ether-button").click(function() {
+        $("#etherButtonsHide").show();
+      });
+    </script>
 </body>
 
 </html>
