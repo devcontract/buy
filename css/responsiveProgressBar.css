@@ -17,6 +17,7 @@ ol{padding-left: 1.8em}
   list-style-type: none;
   padding: 20px 5px;
   text-align: center;
+  height: 10px;
 }
 @media screen and (min-width: 800px) {
   .progress-bar__steps {
