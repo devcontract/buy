@@ -29,11 +29,12 @@
           <h2>Sale is <span id="saleStatus"></span></h2>
         </div>
         <div class="container-fluid timer">
-        
+
+
 
         </div>
-     </div>
-  </div>
+      </div>
+    </div>
 
     <div class="row">
 
@@ -60,7 +61,7 @@
             <span>TOKENS PER 1 <span class="currencyName"></span> = <span id="tokenPerEth"> </span> <span class="tokenName"></span> </span>
             <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
           </div>
-          <div class="container-fluid">
+          <div id="stageBar" class="container-fluid">
             <div class="container-fluid" style=" margin-top:5px;">
               <ol style="" class="progress-bar-">
                 <li class="progress-bar__steps not-current;" style="">
@@ -111,23 +112,30 @@
               <span class="input-group-addon" style="text-align: left; width: 44px; height: 34px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
             </div>
 
-            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;padding-top:5px">
+            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:250px;padding-top:5px">
               <div style="margin-left:5px"> = </div>
               <span class="" id="standartPrice"></span>
-              <p> + </p>
-              <span class="" id="calcbonus"></span>
-              <p> = </p>
-              <span class="" id="tokenAmount"></span><span class="tokenName"></span>
+              <span class="saleBonus1Hide"> + </span>
+                <div class="saleBonus1Hide" style="text-align:center">
+                  <p class="" id="calcbonus"></p>
+                  <p style="margin-top:-15px">Bonus</p>
+                </div>
+              <span class="saleBonus2Hide"> + </span>
+
+              <div class="saleBonus2Hide" style="text-align:center">
+
+                <span id="saleBonus2"></span>
+                <p style="margin-top:-5px">Sale</p>
+              </div>
+
+              <span> = </span>
+              <span class="" id="tokenAmount"></span><span style="" class="tokenName"></span>
+
             </div>
 
-
-
-
-            <div class="" style="margin:15px 0 0 15px">
+            <div class="" style="margin:-15px 0 0 15px">
               <span class="red-text text-center" id="calcbonus"><span id="minimumInvestment" ></span> <span class="tokenName"></span> minimum investment</span>
             </div>
-
-
 
             <div class="container-fluid">
               <h3>Payment Address</h3>

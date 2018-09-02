@@ -17,9 +17,7 @@ $("#saleStatus").text("going to finish in");
   $("#stage-4pct").text("0%");
 
 var bonusBarVisible = true;
-if (bonusBarVisible = true){
-  $("#bonusBar").show();
-}
+var stageBar = true;
 
 
   $("#bonus-1pct").text("50%");
@@ -33,8 +31,11 @@ if (bonusBarVisible = true){
   $("#ether-4E").text("E10");
 
   $("#standartPrice").text("10");
-  $("#calcbonus").text("22222");
-  $("#tokenAmount").text("100");
+  $("#calcbonus").text("2222");
+  $("#tokenAmount").text("200");
+  $("#saleBonus1").text("1232");
+  $("#saleBonus2").text("8888");
+
 
   $("#minimumInvestment").text("500");
   $("#paymentAddressInput");
@@ -53,5 +54,41 @@ if (bonusBarVisible = true){
     $("#etherButtonsHide").show();
     $("#paymentCurrency").text("Ethereum");
   });
+
+setInterval(function(){
+
+ if (stageBar == true){
+    $("#stageBar").show();
+    stageBar = false;
+  } else {
+      $("#stageBar").hide();
+      stageBar = true;
+}
+},3000);
+
+setInterval(function(){
+
+  if (bonusBarVisible == true){
+    $("#bonusBar").show();
+    bonusBarVisible = false;
+  } else {
+      $("#bonusBar").hide();
+      bonusBarVisible = true;
+  }
+},5000);
+
+var saleBonus1Visible = true;
+setInterval(function(){
+
+  if (saleBonus1Visible == true){
+    $(".saleBonus1Hide").show();
+    saleBonus1Visible = false;
+  } else {
+      $(".saleBonus1Hide").hide();
+      saleBonus1Visible = true;
+  }
+},1000);
+
+
 
 });
