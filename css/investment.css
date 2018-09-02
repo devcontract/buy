@@ -51,18 +51,25 @@
 
 #bitcoin-button:focus{
   background-color: #c6c6c6;
-  box-shadow: 6px -2px 10px black;
+  box-shadow: 11px -10px 15px black;
 }
 #bitcoin-button:hover{
   outline: none !important;
 
-  box-shadow: 6px -2px 10px black;
+  box-shadow: 11px -10px 15px black;
 }
 
+#bitcoin-button:active{
+
+  background-color: #989898;
+    outline: none !important;
+
+    box-shadow: -0px -0px 1px black;
+}
 
 .curbtn:focus, .curbtn:active  {
     outline: none !important;
-    border:1px solid #00584b;
+    border:1px solid #ffffff;
 
 
 }

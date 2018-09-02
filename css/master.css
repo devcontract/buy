@@ -5,6 +5,8 @@
 .labels{
   display: flex;
   justify-content: space-between;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 .block{
 width: 650px; height: 240px; margin:0 auto;

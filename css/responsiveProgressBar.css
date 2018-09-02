@@ -1,4 +1,5 @@
-ol{padding-left: 1.8em}
+ol{padding-left: 0.35em}
+
 .progress-bar- {
   list-style: none;
   overflow: hidden;
@@ -7,6 +8,7 @@ ol{padding-left: 1.8em}
   display: flex;
   counter-reset: li;
 }
+
 .progress-bar__steps {
   background: #ddd;
   color: #666;
@@ -69,24 +71,4 @@ ol{padding-left: 1.8em}
 }
 .progress-bar- .current:after {
   border-left: 30px solid #00BEA3;
-}
-
-@media screen and (min-width: 800px) {
-  .progress-bar__steps--numbers:before {
-    content: counter(li) " ";
-    counter-increment: li;
-    margin-right: 15px;
-    background: transparent;
-    border: 1px solid #666;
-    border-radius: 50%;
-    display: inline-block;
-    height: 20px;
-    line-height: 20px;
-    text-align: center;
-    width: 20px;
-  }
-}
-.current .progress-bar__steps--numbers:before {
-  background: white;
-  color: #647d5e;
 }

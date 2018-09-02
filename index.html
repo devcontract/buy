@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="./css/purchaseBlock.css">
   <link rel="stylesheet" href="./css/responsiveProgressBar.css">
-<link rel="stylesheet" href="./css/investment.css">
+  <link rel="stylesheet" href="./css/investment.css">
   <!--<link rel="stylesheet" href="/css/progressBar.css"> css for the old bar -->
   <script src="./js/purch.js"></script>
 </head>
@@ -50,29 +50,34 @@
         <h2 class="red-text text-center">Purchase details</h2>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
 
+          <div class="">
 
-          <ol style="margin-left:-20px"class="progress-bar-">
-              <li class="progress-bar__steps not-current" >
+            <ol style="" class="progress-bar-">
+              <li class="progress-bar__steps not-current">
 
-                  <span class="progress-bar__steps--text"style="margin-top:20px">50%</span>
+                <span class="" style="margin-left:40px" style="margin-top:20px">50%</span>
               </li>
               <li class="progress-bar__steps not-current">
 
-                  <span class="progress-bar__steps--text">30%</span>
+                <span class="" style="margin-left:25px">30%</span>
               </li>
-              <li class="progress-bar__steps current" >
+              <li class="progress-bar__steps current">
 
-                  <span class="progress-bar__steps--text">20%</span>
+                <span class="" style="margin-left:25px">20%</span>
               </li>
               <li class="progress-bar__steps not-current" style="width:37%">
 
-                  <span class="progress-bar__steps--text">0%</span>
+                <span class="" style="margin-left:25px">0%</span>
               </li>
-          </ol>
+            </ol>
+
+          </div>
+<div class="container-fluid">
 
 
-          <div class="container-fluid" style=" margin-top:30px;">
+          <div class="container-fluid" style=" margin-top:50px;">
             <div class="labels">
+              <div class="" style="margin-left:10px;"><dt>Bonus</dt></div>
               <div class="" style="margin-left:10px;"><dt>50%</dt></div>
               <div class="" style="margin-left:0px;"> <dt>30%</dt></div>
               <div class="" style="margin-left:0px;"> <dt>20%</dt></div>
@@ -81,25 +86,26 @@
 
             <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
 
-               <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;">
+              <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;margin-bottom:0px">
                 <div id="progresBarValue" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
               </div>
 
             </div>
             <div class="labels">
-              <div class="" style="margin-left:10px;"><dt>50%</dt></div>
-              <div class="" style="margin-left:0px;"> <dt>30%</dt></div>
-              <div class="" style="margin-left:0px;"> <dt>20%</dt></div>
-              <div class="" style="padding-right:15px;"><dt>0%</dt></div>
+              <div class="" style="margin-left:10px;"><dt>Ether</dt></div>
+              <div class="" style="margin-left:0px;"> <dt>E1</dt></div>
+              <div class="" style="margin-left:0px;"> <dt>E5</dt></div>
+              <div class="" style="margin-left:0px;"> <dt>E5</dt></div>
+              <div class="" style="padding-right:15px;"><dt>E10</dt></div>
             </div>
           </div>
 
 
-          <div class="" style="margin:5px 0 30px 15px ">
-                    <span>TOKENS PER 1 <span id="currency1">ETH </span> = <span id="">10000 </span> <span id="tokenName1"> TES </span> </span>
-                    <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
-                  </div>
-          <div class="input-group" style="margin-left:20px;">
+          <div class="" style="margin:5px 0 30px 20px ">
+            <span>TOKENS PER 1 <span id="currency1">ETH </span> = <span id="">10000 </span> <span id="tokenName1"> TES </span> </span>
+            <!--1st id = cryptocurrency 2nd id how many token 3rd id Token name-->
+          </div>
+          <div class="input-group" style="margin-left:15px;">
             <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
             <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
           </div>
@@ -113,44 +119,52 @@
             <span class="red-text text-center" id="tokenAmount"></span>
           </div>
 
-        </div>
 
 
-        <div class="" style="margin-left:15px">
+
+        <div class="" style="margin:5px 0 0 15px">
           <span class="red-text text-center" id="calcbonus">500 TES minimum investment</span>
         </div>
 
 
+<div class="" id="etherButtonsHide">
+        <div class="container-fluid">
+          <h3>Payment Address</h3>
+          <input id="" type="text" value="" placeholder="Address" class="form-control inputAddress">
+          <!--ADDRESS  ------------------------ ENTRY ID-->
+          <h6>You can send Ethereum from exchange</h6>
 
-<div class="container-fluid">
-  <h3>Payment Address</h3>
-   <input id="" type="text" value="" placeholder="Address" class="form-control inputAddress"> <!--ADDRESS  ------------------------ ENTRY ID-->
-    <h6>You can send Ethereum from exchange</h6>
+        </div>
 
+
+        <div style="margin:10px 0 0 10px">
+
+
+          <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+            <div class="" style="width:250px;">Gas limit</div>
+            <div class="" style="width:250px;">Gas Price</div>
+          </div>
+          <div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+            <div id="gasLimitValue" class="" style="width:250px;">21,000</div>
+            <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
+          </div>
+        </div>
+
+      <div class="container" style="width:600px; display:flex;margin-top:50px">
+
+        <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-right:100px">MYETHERWALLET</button>
+        <button type="button" class="btn btn-default btn-lg buyBtn" style="margin-left:100px">METAMASK</button>
+
+      </div>
+
+  </div>
 </div>
-<div style="margin-top:10px;">
 
-
-<div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-  <div class="" style="width:250px;">Gas limit</div>
-  <div class="" style="width:250px;">Gas Price</div>
-</div>
-<div class="container-fuid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-  <div id="gasLimitValue" class="" style="width:250px;">21,000</div>
-  <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
-</div>
-</div>
-
-<div class="container" style="width:600px; display:flex;margin-top:50px">
-
-<button type="button" class="btn btn-default btn-lg buyBtn" style="margin-right:100px">MYETHERWALLET</button>
-<button type="button" class="btn btn-default btn-lg buyBtn"  style="margin-left:100px">METAMASK</button>
-
-</div>
       </div>
     </div>
+  </div>
 
-    <!--end of row 2 pur deatils-->
+  <!--end of row 2 pur deatils-->
 
 
 
@@ -158,7 +172,14 @@
   </div>
 
 
-
+<script type="text/javascript">
+  $("#bitcoin-button").click(function() {
+  $("#etherButtonsHide").hide();
+  });
+  $("#ether-button").click(function() {
+  $("#etherButtonsHide").show();
+  });
+</script>
 </body>
 
 </html>
