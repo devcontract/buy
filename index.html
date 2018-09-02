@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="./css/purchaseBlock.css">
   <link rel="stylesheet" href="./css/responsiveProgressBar.css">
-
+<link rel="stylesheet" href="./css/investment.css">
   <!--<link rel="stylesheet" href="/css/progressBar.css"> css for the old bar -->
   <script src="./js/purch.js"></script>
 </head>
@@ -29,13 +29,29 @@
     </div>
 
     <div class="row">
+
+
+      <div class="block" style="">
+        <h2 class="red-text text-center">Investment</h2>
+        <br>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display:flex;align-items:center;justify-content:space-between;">
+          <button class="btn bouton-image imgBoutonEther curbtn " data-toggle="buttons" id="ether-button"></button>
+          <button class="btn bouton-image imgBoutonBitcoin curbtn " data-toggle="buttons" id="bitcoin-button"></button>
+
+        </div>
+      </div>
+
+    </div>
+    <!--end of row 1 buttons-->
+
+
+    <div class="row">
       <div class="block" style="height:auto;padding-bottom:5px;">
         <h2 class="red-text text-center">Purchase details</h2>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button group">
-          <div class="container-fluid" style="margin-right:40px">
 
 
-          <ol class="progress-bar-">
+          <ol style="margin-left:-20px"class="progress-bar-">
               <li class="progress-bar__steps not-current">
                   <span class="progress-bar__steps--numbers"></span>
                   <span class="progress-bar__steps--text">50%</span>
@@ -44,16 +60,16 @@
                   <span class="progress-bar__steps--numbers"></span>
                   <span class="progress-bar__steps--text">30%</span>
               </li>
-              <li class="progress-bar__steps current">
+              <li class="progress-bar__steps current" >
                   <span class="progress-bar__steps--numbers"></span>
                   <span class="progress-bar__steps--text">20%</span>
               </li>
-              <li class="progress-bar__steps not-current">
+              <li class="progress-bar__steps not-current" style="width:37%">
                   <span class="progress-bar__steps--numbers"></span>
                   <span class="progress-bar__steps--text">0%</span>
               </li>
           </ol>
-</div>
+
 
         <!--  <div class="container-fluid" style=" margin-top:30px;">
             <div class="labels">
@@ -89,11 +105,11 @@
             <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="red-text text-center" id="currency">ETH</span> </span>
           </div>
 
-          <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:350px;">
-            <div style="margin-left:25px"> = </div>
+          <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;">
+            <div style="margin-left:5px"> = </div>
             <span class="" id="standartPrice">10</span>
             <p> + </p>
-            <span class="red-text text-center" id="calcbonus">2043</span>
+            <span class="red-text text-center" id="calcbonus">2222</span>
             <p> = </p>
             <span class="red-text text-center" id="tokenAmount"></span>
           </div>
@@ -136,23 +152,7 @@
     </div>
 
     <!--end of row 2 pur deatils-->
-    <!-- progress bar block -->
 
-    <div class="row">
-
-
-      <div class="block" style="">
-        <h2 class="red-text text-center">Investment</h2>
-        <br>
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display:flex;align-items:center;justify-content:space-between;">
-          <button class="btn bouton-image imgBoutonEther curbtn " data-toggle="buttons" id="ether-button"></button>
-          <button class="btn bouton-image imgBoutonBitcoin curbtn " data-toggle="buttons" id="bitcoin-button"></button>
-
-        </div>
-      </div>
-
-    </div>
-    <!--end of row 1 buttons-->
 
 
 
