@@ -1,9 +1,13 @@
 $(document).ready(function(){
 
 
-/*Investment block*/
+
+
   document.getElementById('ether-button');
   document.getElementById('bitcoin-button');
+$("#saleStatus").text("going to finish in");
+
+
   $(".currencyName").text("ETH");
   $(".tokenName").text("TES");
   $("#tokenPerEth").text("1000");
@@ -11,6 +15,12 @@ $(document).ready(function(){
   $("#stage-2pct").text("30%");
   $("#stage-3pct").text("20%");
   $("#stage-4pct").text("0%");
+
+var bonusBarVisible = true;
+if (bonusBarVisible = true){
+  $("#bonusBar").show();
+}
+
 
   $("#bonus-1pct").text("50%");
   $("#bonus-2pct").text("30%");
@@ -31,7 +41,17 @@ $(document).ready(function(){
 
   $("#gasLimitValue").text("21000");
   $("#gasPriceValue").text("9");
+  $("#paymentCurrency").text("Ethereum");
 
 
+
+  $("#bitcoin-button").click(function() {
+    $("#etherButtonsHide").hide();
+    $("#paymentCurrency").text("Bitcoin");
+  });
+  $("#ether-button").click(function() {
+    $("#etherButtonsHide").show();
+    $("#paymentCurrency").text("Ethereum");
+  });
 
 });

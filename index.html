@@ -25,10 +25,15 @@
     <!-- timer block -->
     <div class="row">
       <div class="block" style="">
-        <h1>TIMER</h1>
-      </div>
+        <div class="text-center">
+          <h2>Sale is <span id="saleStatus"></span></h2>
+        </div>
+        <div class="container-fluid timer">
+        
 
-    </div>
+        </div>
+     </div>
+  </div>
 
     <div class="row">
 
@@ -74,13 +79,13 @@
             </div>
           </div>
           <div class="container-fluid">
-            <div class="container-fluid" style=" margin-top:50px;">
+            <div id="bonusBar" class="container-fluid" style=" margin-top:50px;">
               <div class="labels">
                 <div class="" style="margin-left:10px;"><dt> <span>Bonus</span> </dt></div>
-                <div class="" style="margin-left:0px;" ><dt> <span id="bonus-1pct"></span> </dt></div>
-                <div class="" style="margin-left:0px;" > <dt> <span id="bonus-2pct"></span> </dt></div>
-                <div class="" style="margin-left:0px;" > <dt> <span id="bonus-3pct"></span> </dt></div>
-                <div class="" style="padding-right:15px;" ><dt> <span id="bonus-4pct"></span> </dt></div>
+                <div class="" style="margin-left:0px;"><dt> <span id="bonus-1pct"></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span id="bonus-2pct"></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span id="bonus-3pct"></span> </dt></div>
+                <div class="" style="padding-right:15px;"><dt> <span id="bonus-4pct"></span> </dt></div>
               </div>
 
               <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
@@ -103,36 +108,35 @@
             <br>
             <div class="input-group" style="margin-left:15px;">
               <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-              <span class="input-group-addon" style="text-align: left; width: 44px; height: 35px;" id="basic-addon2"><span class="text-center currencyName" ></span> </span>
+              <span class="input-group-addon" style="text-align: left; width: 44px; height: 34px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
             </div>
 
-            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;">
+            <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:200px;padding-top:5px">
               <div style="margin-left:5px"> = </div>
-              <span class="" id="standartPrice">10</span>
+              <span class="" id="standartPrice"></span>
               <p> + </p>
-              <span class="text-center" id="calcbonus"></span>
+              <span class="" id="calcbonus"></span>
               <p> = </p>
-              <span class="text-center" id="tokenAmount"></span>
+              <span class="" id="tokenAmount"></span><span class="tokenName"></span>
             </div>
 
 
 
 
             <div class="" style="margin:15px 0 0 15px">
-              <span class="red-text text-center" id="calcbonus"><span id="minimumInvestment" ></span> <span class="tokenName" ></span> minimum investment</span>
+              <span class="red-text text-center" id="calcbonus"><span id="minimumInvestment" ></span> <span class="tokenName"></span> minimum investment</span>
             </div>
 
 
+
+            <div class="container-fluid">
+              <h3>Payment Address</h3>
+              <input id="paymentAddressInput" type="text" value="" placeholder="" class="form-control inputAddress">
+              <!--ADDRESS  ------------------------ ENTRY ID-->
+              <h6>You can send <span id="paymentCurrency" ></span> from exchange</h6>
+            </div>
+
             <div class="" id="etherButtonsHide">
-              <div class="container-fluid">
-                <h3>Payment Address</h3>
-                <input id="paymentAddressInput" type="text" value="" placeholder="Address" class="form-control inputAddress">
-                <!--ADDRESS  ------------------------ ENTRY ID-->
-                <h6>You can send Ethereum from exchange</h6>
-
-              </div>
-
-
               <div style="margin:10px 0 0 10px">
 
 
@@ -169,12 +173,6 @@
 
 
     <script type="text/javascript">
-      $("#bitcoin-button").click(function() {
-        $("#etherButtonsHide").hide();
-      });
-      $("#ether-button").click(function() {
-        $("#etherButtonsHide").show();
-      });
     </script>
 </body>
 
