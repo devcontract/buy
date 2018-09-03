@@ -17,6 +17,7 @@
 
   <script type="text/javascript" src="./js/index.js" async></script>
   <script type="text/javascript" src="./js/navigationBar.js"async ></script>
+  <script type="text/javascript" src="./js/timer.js" defer></script>
 </head>
 
 <body>
@@ -78,7 +79,7 @@
   <div id="main">
 
     <span style="font-size:30px;cursor:pointer;position:fixed;" onclick="openNav()" id="openNavBtn">&#9776;</span>
-    <div class="container-fluid">
+    <div class="container">
 
 
       <!-- timer block -->
@@ -92,15 +93,25 @@
 
             <div class="ciferblate">
 
-             <div id="days" class="timer">02</div>
+
+              <div class="timerSquare shadowEffect" id="days" ></div>
+
+
                <div class="tim">:</div>
-             <div id="hours" class="timer">12</div>
+             <div id="hours" class="timerSquare shadowEffect"></div>
                 <div class="">:</div>
-             <div id="minutes" class="timer">43</div>
+             <div id="minutes" class="timerSquare shadowEffect"></div>
                <div class="">:</div>
-             <div id="seconds" class="timer">23</div>
+             <div id="seconds" class="timerSquare shadowEffect"></div>
 
 
+            </div>
+
+            <div class="timerLabels">
+              <div class="timerLabelWindow">Days</div>
+              <div class="timerLabelWindow">Hours</div>
+              <div class="timerLabelWindow">Minutes</div>
+              <div class="timerLabelWindow">Seconds</div>
             </div>
           </div>
         </div>

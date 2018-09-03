@@ -5,7 +5,7 @@ $(document).ready(function(){
 
   document.getElementById('ether-button');
   document.getElementById('bitcoin-button');
-$("#saleStatus").text("going to finish in");
+  $("#saleStatus").text("going to finish in");
 
 
   $(".currencyName").text("ETH");
