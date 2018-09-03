@@ -16,12 +16,69 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="./js/index.js"></script>
-  <!--<link rel="stylesheet" href="/css/progressBar.css"> css for the old bar -->
-  <script src="./js/purch.js"></script>
+  <script type="text/javascript" src="./js/index.js" async></script>
+  <script type="text/javascript" src="./js/navigationBar.js"async ></script>
+
 </head>
 
 <body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./timer/index.html"><span class="glyphicon glyphicon-home iconSize"> </span>  Dashboard</a>
+    <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
+    <ul class="collapse list-unstyled" id="IcoSubmenu">
+      <li>
+        <a href="#" class="subMenuText">Purchase Token</a>
+      </li>
+      <li>
+        <a href="#" class="subMenuText" >ICO History</a>
+      </li>
+      <li>
+        <a href="#" class="subMenuText" >ICO Info</a>
+      </li>
+    </ul>
+
+
+    <a href="#WalletSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-qrcode iconSize"> </span> Wallet</a>
+    <ul class="collapse list-unstyled" id="WalletSubmenu">
+      <li>
+        <a href="#"  class="subMenuText" >Deposit Withdrawals</a>
+      </li>
+      <li>
+        <a href="#WithdrawalsSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble">Withdrawals</a>
+        <ul class="collapse list-unstyled" id="WithdrawalsSubmenu">
+          <li><a href="#" class="subMenuText" >Ethere Withdrawals</a></li>
+          <li><a href="#" class="subMenuText" >Token Withdrawals</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" class="subMenuText" >Wallet History</a>
+      </li>
+    </ul>
+
+
+    <a href="#ReferralSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-share-alt iconSize"></span> Referral</a>
+    <ul class="collapse list-unstyled" id="ReferralSubMenu">
+      <li><a href="#" class="subMenuText" > Affilate History</a></li>
+      <li><a href="#" class="subMenuText" > Share</a></li>
+      <li><a href="#" class="subMenuText" > Affilate Member</a></li>
+    </ul>
+
+
+
+    <a href="#SettingsSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-cog iconSize"> </span> Settings</a>
+    <ul class="collapse list-unstyled" id="SettingsSubMenu">
+      <li> <a href="#" class="subMenuText" > Reset Password </a> </li>
+      <li> <a href="#" class="subMenuText" > Security </a> </li>
+      <li> <a href="#" class="subMenuText" > Login History </a> </li>
+    </ul>
+
+    <a href="#"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
+  </div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="openNavBtn">&#9776;</span>
 
   <div class="container">
   <div class="row">
@@ -159,6 +216,8 @@
       </div>
 
     </div>
+</div>
+
 </div>
 </body>
 
