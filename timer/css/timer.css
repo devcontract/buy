@@ -1,0 +1,16 @@
+.timer{
+width: 150px;
+height: 140px;
+border-radius: 10%;
+background-color: lightgrey;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 80px;
+font-family: monospace;
+}
+.ciferblate{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
