@@ -20,21 +20,21 @@ var bonusBarVisible = true;
 var stageBar = true;
 
 
-  $("#bonus-1pct").text("50%");
-  $("#bonus-2pct").text("30%");
-  $("#bonus-3pct").text("20%");
-  $("#bonus-4pct").text("0%");
+  $("#bonus-1pct").text("10%");
+  $("#bonus-2pct").text("35%");
+  $("#bonus-3pct").text("75%");
+  $("#bonus-4pct").text("100%");
 
-  $("#ether-1E").text("E1");
-  $("#ether-2E").text("E5");
-  $("#ether-3E").text("E5");
-  $("#ether-4E").text("E10");
+  $("#ether-1E").text("E5");
+  $("#ether-2E").text("E10");
+  $("#ether-3E").text("E20");
+  $("#ether-4E").text("E40");
 
-  $("#standartPrice").text("10");
-  $("#calcbonus").text("2222");
-  $("#tokenAmount").text("200");
+  $("#standartPrice").text("100000000");
+  $("#calcbonus").text("22220000");
+  $("#tokenAmount").text("200000000000");
   $("#saleBonus1").text("1232");
-  $("#saleBonus2").text("8888");
+  $("#saleBonus2").text("8888000");
 
 
   $("#minimumInvestment").text("500");
