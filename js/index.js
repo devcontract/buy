@@ -1,9 +1,9 @@
 
 
-import {timerId} from './progresbar_module.js'
-import {showFiatPrice} from './fiatPrice_module.js'
-import {showTransaction} from './transaction_module.js'
-import {find_occurences} from './calcInputRestriction_module.js'
+//import {timerId} from './progresbar_module.js'
+
+
+
 
 $(document).ready(function(){
 
