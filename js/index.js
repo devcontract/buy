@@ -33,15 +33,10 @@ document.getElementById('raised').innerHTML = "1";
 document.getElementById('softCap').innerHTML = "9876";
 document.getElementById('hardCap').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "43433434";
-document.getElementById('value_token').innerHTML = "0";
+document.getElementById('sale-type-1').innerHTML = "Pre-Sale";
+document.getElementById('sale-type-2').innerHTML = "Private-Sale";
+document.getElementById('sale-type-3').innerHTML = "Public-Sale";
 
-document.getElementById('gLimitBay').innerHTML = "2200";
-document.getElementById('gprice').innerHTML = "4000";
-document.getElementById('glimval_token_withdr').innerHTML = "2200";
-document.getElementById('gprice_token_withdr').innerHTML = "4000";
-document.getElementById('glimval_eth_Refund').innerHTML = "2200";
-document.getElementById('gprice_eth_Refund').innerHTML = "4000";
-document.getElementById('pop_up_window_input').value = document.getElementById('paymentaddr').value;
 
 
 });
