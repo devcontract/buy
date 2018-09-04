@@ -15,7 +15,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="text/javascript" src="./js/index.js" async></script>
+  <script type="module" src="./js/index.js" async></script>
   <script type="text/javascript" src="./js/navigationBar.js" async></script>
   <script type="text/javascript" src="./js/timer.js" defer></script>
 </head>
@@ -108,10 +108,15 @@
           <h2 class="text-center">ICO Status</h2>
           <div class="statusBarBlock" style="margin-top:50px">
 
+            <div style="" class="">
 
+              <span>USD</span> <input id="usd" type="radio" name="currency" value="usd" checked>
+              <input id="eur" type="radio" name="currency" value="eur"> <span>EUR</span>
+
+        </div>
             <div class="dashboardLabels">
-              <div >Raised : <span id="raised"> 1 <span class="cryptoCurrencyName"></span> </span> </div>
-              <div >Token Sold: <span id="tokenSold"> 1 </span> <span class="tokenName"></span> </div>
+              <div >Raised : <span id="raised">  </span> <span class="cryptoCurrencyName"></span> ( <span id="eth_convert_raised"></span> ) </div>
+              <div >Token Sold: <span id="tokensold">  </span> <span class="tokenName"></span> </div>
             </div>
 
             <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
@@ -123,8 +128,8 @@
             </div>
 
             <div class="dashboardLabels">
-              <div>Soft: <span id="soft" > 9876 </span> <span class="cryptoCurrencyName" ></span> </div>
-              <div>Hard: <span id="hard" > 4444 </span> <span class="cryptoCurrencyName" ></span> </div>
+              <div>Soft Cap: <span id="softCap" > </span> <span class="cryptoCurrencyName" > </span>  ( <span id="eth_convert_soft"></span> ) </div>
+              <div>Hard Cap: <span id="hardCap" > </span> <span class="cryptoCurrencyName" > </span>  ( <span id="eth_convert_hard"></span> ) </div>
             </div>
           </div>
         </div>
