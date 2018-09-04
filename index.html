@@ -75,7 +75,7 @@
     <div class="container">
       <!-- timer block -->
       <div class="row">
-        <div class="block" style="height:auto;">
+        <div class="block" style="">
           <div class="text-center">
             <h2>Sale is <span id="saleStatus"></span></h2>
 
@@ -109,20 +109,21 @@
           <h2 class="text-center">ICO Status</h2>
 
           <div class="statusBarBlock" >
+
             <div style="" class="">
               <span>USD</span>
               <input id="usd" type="radio" name="currency" value="usd" checked>
               <input id="eur" type="radio" name="currency" value="eur">
               <span>EUR</span>
            </div>
-            <div class="dashboardLabels" style="margin-top:40px">
+            <div class="dashboardLabels" style="margin-top:40px;">
               <div >Raised : <span id="raised">  </span> <span class="cryptoCurrencyName"></span> <span id="eth_convert_raised"></span></div>
               <div >Token Sold: <span id="tokensold">  </span> <span class="tokenName"></span> </div>
             </div>
 
             <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
 
-              <div class="progress " style="width:618px;border:1px none black; background-color:lightgrey;height:10px;margin-bottom:0px">
+              <div class="progress " style="width:600px;border:1px none black; background-color:lightgrey;height:10px;margin-bottom:0px">
                 <div id="dashboardProgressBar" class="progress-bar progBar" style="width:65%;background-color:#00bea3;"></div>
               </div>
 
@@ -134,9 +135,9 @@
             </div>
           </div> <!--End of statusBarBlock-->
 
-<div class="container-fluid" style="margin:50px 0;">
+<div class="container-fluid" style="margin:50px 26px 50px 20px;">
   <div id="stageBar" class="row">
-    <div class="container-fluid" style=" margin-top:5px;">
+
       <ol style="" class="progress-bar-">
         <li class="progress-bar__steps not-current;" style="">
           <span class="" style="margin-left:40px" id="sale-type-1"></span>
@@ -149,7 +150,7 @@
           <span class="" style="margin-left:20px" id="sale-type-3"></span>
         </li>
       </ol>
-    </div>
+
   </div>
 </div> <!--end of responsiveStepBar-->
 
