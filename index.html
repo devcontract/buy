@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="/css/navBar.css">
   <link rel="stylesheet" href="./css/timer.css">
   <link rel="stylesheet" href="/css/statusBarBlock.css">
- <link rel="stylesheet" href="/css/responsiveProgressBar.css">
+  <link rel="stylesheet" href="/css/responsiveProgressBar.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -35,7 +35,6 @@
         <a href="#" class="subMenuText" >ICO History</a>
       </li>
     </ul>
-
 
     <a href="#WalletSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-qrcode iconSize"> </span> Wallet</a>
     <ul class="collapse list-unstyled" id="WalletSubmenu">
@@ -108,17 +107,40 @@
         <div class="block" style="height:auto;">
           <h2 class="text-center">ICO Status</h2>
 
-          <div class="statusBarBlock" >
+          <div class="container-fluid" style="margin:50px 26px 50px 20px;">
+            <div id="stageBar" class="row">
+
+              <ol style="" class="progress-bar-">
+                <li class="progress-bar__steps not-current;" style="">
+                  <span class="" style="margin-left:40px" id="sale-type-1"></span>
+                </li>
+                <li class="progress-bar__steps not-current">
+                  <span class="" style="margin-left:20px" id="sale-type-2"></span>
+                </li>
+
+                <li class="progress-bar__steps current" style="width:37%">
+                  <span class="" style="margin-left:20px" id="sale-type-3"></span>
+                </li>
+              </ol>
+
+            </div>
+          </div>
+          <!--end of responsiveStepBar-->
+
+          <div class="statusBarBlock">
 
             <div style="" class="">
               <span>USD</span>
               <input id="usd" type="radio" name="currency" value="usd" checked>
               <input id="eur" type="radio" name="currency" value="eur">
               <span>EUR</span>
-           </div>
+            </div>
+
+
+
             <div class="dashboardLabels" style="margin-top:40px;">
-              <div >Raised : <span id="raised">  </span> <span class="cryptoCurrencyName"></span> <span id="eth_convert_raised"></span></div>
-              <div >Token Sold: <span id="tokensold">  </span> <span class="tokenName"></span> </div>
+              <div>Raised : <span id="raised">  </span> <span class="cryptoCurrencyName"></span> <span id="eth_convert_raised"></span></div>
+              <div>Token Sold: <span id="tokensold">  </span> <span class="tokenName"></span> </div>
             </div>
 
             <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
@@ -133,30 +155,36 @@
               <div>Soft Cap: <span id="softCap" > </span> <span class="cryptoCurrencyName" > </span> <span id="eth_convert_soft"></span></div>
               <div>Hard Cap: <span id="hardCap" > </span> <span class="cryptoCurrencyName" > </span> <span id="eth_convert_hard"></span></div>
             </div>
-          </div> <!--End of statusBarBlock-->
 
-<div class="container-fluid" style="margin:50px 26px 50px 20px;">
-  <div id="stageBar" class="row">
+          </div>
+          <!--End of statusBarBlock-->
 
-      <ol style="" class="progress-bar-">
-        <li class="progress-bar__steps not-current;" style="">
-          <span class="" style="margin-left:40px" id="sale-type-1"></span>
-        </li>
-        <li class="progress-bar__steps not-current">
-          <span class="" style="margin-left:20px" id="sale-type-2"></span>
-        </li>
+          <div class="container" style="margin:40px 10px;">
+            <span>TOKENS PER <span class="cryptoCurrencyName"> </span> : </span>
 
-        <li class="progress-bar__steps current" style="width:37%">
-          <span class="" style="margin-left:20px" id="sale-type-3"></span>
-        </li>
-      </ol>
+            <div class="" style="width:600px;border-bottom:4px double #00BEA3;margin:10px 0"></div>
+            <div class="" style="width: 620px;display:flex;justify-content:space-between">
+              <div class="">
+                <span id="">1</span><span class="cryptoCurrencyName"> </span> = <span id="standartPrice"></span><span class="tokenName"></span>
+              </div>
+              <div class="" style="margin-right:18px">
+                <img style="" src="./img/present.png" alt="present"><br>
+             </div>
+            </div>
+            <div class="" style="width:620px;display:flex;justify-content:space-between">
+              <div class=""></div>
+              <div class="" style="margin-right:25px;">
+                <span id="bonusPresent" style="font-size:20px"></span> <span class="tokenName" style="font-size:20px"></span>
+              </div>
+            </div>
+            <a href="./purchase/index.html" type="button" class="btn btn-lg icoBuyBtn" style="margin:0 0 10px 0">Purchase Token</a>
 
-  </div>
-</div> <!--end of responsiveStepBar-->
+          </div>
+
+        </div> <!--end of block-->
+      </div> <!--end of row-->
 
 
-        </div>
-      </div>
 
     </div>
     <!--end of container-->

@@ -33,10 +33,11 @@ document.getElementById('raised').innerHTML = "1";
 document.getElementById('softCap').innerHTML = "9876";
 document.getElementById('hardCap').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "43433434";
-document.getElementById('sale-type-1').innerHTML = "Pre-Sale";
-document.getElementById('sale-type-2').innerHTML = "Private-Sale";
-document.getElementById('sale-type-3').innerHTML = "Public-Sale";
-
+document.getElementById('sale-type-1').innerHTML = "Private Sale";
+document.getElementById('sale-type-2').innerHTML = "Pre-Sale";
+document.getElementById('sale-type-3').innerHTML = "Public Sale";
+$("#standartPrice").text("100000000");
+$("#bonusPresent").text("0");
 
 
 });
