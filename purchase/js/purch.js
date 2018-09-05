@@ -11,12 +11,12 @@ $(document).ready(function() {
 
   $("#ether-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
-    $("#currency").text("ETH");
+    $(".currencyName").text("ETH");
     $("#currency1").text("ETH");
   });
   $("#bitcoin-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
-    $("#currency").text("BTC");
+    $(".currencyName").text("BTC");
     $("#currency1").text("BTC");
   });
   $("#usd-button").click(function() {
