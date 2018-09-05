@@ -8,17 +8,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../css/master.css">
+  <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/navBar.css">
-  <link rel="stylesheet" href="./css/timer.css">
-  <link rel="stylesheet" href="/css/statusBarBlock.css">
-  <link rel="stylesheet" href="/css/responsiveProgressBar.css">
+  <link rel="stylesheet" href="/refund/css/table.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="module" src="./js/index.js" async></script>
+
   <script type="text/javascript" src="../js/navigationBar.js" async></script>
-  <script type="text/javascript" src="./js/timer.js" defer></script>
+
 </head>
 
 <body>
@@ -41,9 +40,9 @@
 
       <li>
 
-      <li><a href="../withdrawal/index.html" class="subMenuText" >Ether Withdrawals</a></li>
+      <li><a href="../withdrawal/index.html" class="subMenuText" >Token Withdrawal</a></li>
       <li><a href="index.html" class="subMenuText" >Ether Refund</a></li>
-      <li><a href="#" class="subMenuText" >Token Withdrawals</a></li>
+
 
       </li>
 
@@ -75,7 +74,7 @@
       <!-- timer block -->
       <div class="row">
         <div class="block" style="height:auto">
-          <h2 class="text-center">Refund</h2>
+          <h2 class="text-center">Ether Refund</h2>
 
           <div class="" style="margin-top: 40px;width:620px;display:flex;justify-content:space-between;">
             <div class="input-group" style="margin-left:15px;">
@@ -83,16 +82,49 @@
               <span class="input-group-addon" style="text-align: left; width: 44px; height: 34px;" id="basic-addon2"><span class="text-center currencyName"></span></span>
             </div>
             <div class="">
-              <button href="" class="btn btn-lg myBtn" type="button" name="" style="height:34px;line-height:0px;">Refund</button>
+              <button href="" class="btn btn-lg myBtn" type="button" name="" style="height:34px;line-height:0px;">Ether Refund</button>
             </div>
 
 
           </div> <!--refund top part end-->
 <div class="" style="display:flex;justify-content:center">
-  <div class="" style="width:600px;border-bottom:4px double #00BEA3;margin:40px 0"></div>
+  <div class="" style="width:600px;border-bottom:4px double #00BEA3;margin:40px 0 5px 0"></div>
 </div>
-<h2 class="text-center">Refund History</h2>
+<h2 class="text-center">Ether Refund History</h2>
 
+<div class="historyTable">
+
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Time Stamp</th>
+        <th scope="col" style="text-align:center">TxHash</th>
+        <th scope="col">Gas Price</th>
+        <th scope="col">Gas Used</th>
+        <th scope="col">ETH Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td class="tableSmallFont">12-12-2018</td>
+        <td class="tableSmallFont">0xXXXXXXXX21856b7c900f9d7f6a54cd3367020aa478f2074c04exxxxxxxxxxxxx</td>
+        <td>500</td>
+        <td>23</td>
+        <td>2003</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>12-12-2018</td>
+        <td class="tableSmallFont">0xXXXXXXXX21856b7c900f9d7f6a54cd3367020aa478f2074c04exxxxxxxxxxxxx</td>
+        <td>500</td>
+        <td>23</td>
+        <td>2003</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
         </div> <!--end of block-->
       </div>
     </div>
