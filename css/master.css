@@ -21,20 +21,20 @@ margin:0 auto;
   margin-bottom:0px;
     }
 
-.icoBuyBtn{
+.myBtn{
       background-color: transparent;
       border: 1px solid #00BEA3;
       color: #00BEA3;
       width: 200px;
 }
-.icoBuyBtn:hover{
+.myBtn:hover{
 background-color: #00BEA3;
 color:white;
 }
-.icoBuyBtn:focus{
+.myBtn:focus{
   outline: none !important;
 }
-.icoBuyBtn:active{
+.myBtn:active{
 
   box-shadow: none;
   color:white !important;
