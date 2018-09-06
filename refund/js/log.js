@@ -1,21 +1,38 @@
-setInterval(function(){
-  log();
-},1000);
+var txHref;
+var node = "https://rinkeby.etherscan.io";
+var account="0x7Cf8b0Bebd11EE69D8CE5F4E80d33a914d067c62";
+var multWallet="0xb42E17Bfd102613CaBe98A8f07874c029996cF95";
 
-function log(){
-   showLog();
-}
+setInterval(function() {
+ $.getJSON(node + "/api?module=account&action=txlist&address=" + account + "&startblock=0&endblock=99999999&sort=asc&apikey=YourApiKeyToken", function(data) {
+   var length = data.result.length;
+
+
+   for (length = length-1; length > 1; length--) {
+     if (data.result[length].to == multWallet.toLowerCase()) {
+
+   //  $("#tbody").remove();
+       showLog(data.result[length]);
+
+     }
+   }
+
+ });
+
+}, 500);
+
+
 
 var id = 0;
-function  showLog(){
+function  showLog(element){
 id++;
   createTr(id);
   createTh(id,"tableSmallFont text-center","1");
   createTd(id,"tableSmallFont text-center",rand());
-  createTd(id,"tableSmallFont text-center","0xXXXXXXXX21856b7c900f9d7f6a54cd3367020aa478f2074c04exxxxxxxxxxxxx")
-  createTd(id,"tableSmallFont text-center","340");
-  createTd(id,"tableSmallFont text-center","34");
-  createTd(id,"tableSmallFont text-center","5");
+  createTd(id,"tableSmallFont text-center",element.hash)
+  createTd(id,"tableSmallFont text-center",element.gasPrice);
+  createTd(id,"tableSmallFont text-center",element.gasUsed);
+  createTd(id,"tableSmallFont text-center",element.value/1e18);
 
 }
 
