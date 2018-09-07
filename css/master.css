@@ -29,10 +29,11 @@ margin:0 auto;
 }
 .myBtn:hover{
 background-color: #00BEA3;
-color:white;
+color:white !important;
 }
 .myBtn:focus{
   outline: none !important;
+  color:#00BEA3;
 }
 .myBtn:active{
 
