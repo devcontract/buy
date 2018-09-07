@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+$("#ether-button").trigger('click');
 
 
   document.getElementById('ether-button');
