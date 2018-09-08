@@ -6,14 +6,15 @@ export function showFiatPrice() {
     $.getJSON('https://min-api.cryptocompare.com/data/pricemulti?fsyms=ETH&tsyms=USD,EUR', // getting Json from APi
       function(jd) {
         if (jd != null) {
-          if ($("#usd").is(':checked')) {
+
+          if (document.cookie == "currency=USD") {
             symbol = 'USD';
             $(".currency").text(symbol);
           }
-          if ($("#eur").is(':checked')) {
+          if (document.cookie == "currency=EUR") {
             symbol = 'EUR';
             $(".currency").text(symbol);
-          }
+          } 
           currencyRate = jd.ETH[symbol];
 
           formatFiat("#raised", "#eth_convert_raised", 2);

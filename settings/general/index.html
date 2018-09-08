@@ -10,30 +10,33 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/master.css">
   <link rel="stylesheet" href="/css/navBar.css">
-  <link rel="stylesheet" href="./css/table.css">
+
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="module" src="./js/index.js" async></script>
+
   <script type="text/javascript" src="/js/navigationBar.js" async></script>
-  <script type="text/javascript" src="./js/timer.js" defer></script>
+  <script type="text/javascript" src="./js/settings.js" async></script>
+
+  
+
 </head>
 
 <body>
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="../index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
+    <a href="/index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
     <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
     <ul class="collapse list-unstyled" id="IcoSubmenu">
       <li>
-        <a href="../ico/purchase_token/index.html" class="subMenuText">Purchase Token</a>
+        <a href="/ico/purchase_token/index.html" class="subMenuText">Purchase Token</a>
       </li>
       <li>
-        <a href="../ico/purchase_history/index.html" class="subMenuText" >Purchase History</a>
+        <a href="/ico/purchase_history/index.html" class="subMenuText" >Purchase History</a>
       </li>
     </ul>
 
@@ -43,7 +46,7 @@
       <li>
 
       <li><a href="index.html" class="subMenuText" >Token Withdrawal</a></li>
-      <li><a href="../refund/index.html" class="subMenuText" >Ether Refund</a></li>
+      <li><a href="/refund/index.html" class="subMenuText" >Ether Refund</a></li>
 
 
       </li>
@@ -75,21 +78,24 @@
     <div class="container">
       <!-- timer block -->
       <div class="row">
-        <div class="block" style="height:auto">
-<span id="cookieOut" ></span>
-        </div> <!--end of block-->
+        <div class="block" style="">
+          <h2 class="text-center">Setting</h2>
+
+          <div style="" class="">
+            <span>USD</span>
+            <input id="usd" type="radio" name="currency" value="usd" checked>
+            <input id="eur" type="radio" name="currency" value="eur">
+            <span>EUR</span>
+          </div>
+
+
+          <button type="button" name="button" id="showme">showCookies</button>
+        </div>
+        <!--end of block-->
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-  $(document).ready(function(){
-      document.cookie = "username=Kos Kuz;"
-      document.cookie = "curancy=eur";
-      var x = document.cookie;
-      alert(x);
-  });
 
-  </script>
 </body>
 
 </html>

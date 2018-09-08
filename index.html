@@ -59,7 +59,7 @@
 
     <a href="#SettingsSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-cog iconSize"> </span> Settings</a>
     <ul class="collapse list-unstyled" id="SettingsSubMenu">
-      <li> <a href="#" class="subMenuText" > General Setting </a> </li>
+      <li> <a href="/settings/general/index.html" class="subMenuText" > General Setting </a> </li>
       <li> <a href="#" class="subMenuText" > Reset Password </a> </li>
       <li> <a href="#" class="subMenuText" > Security </a> </li>
       <li> <a href="#" class="subMenuText" > Login History </a> </li>
@@ -129,15 +129,6 @@
 
           <div class="statusBarBlock">
 
-            <div style="" class="">
-              <span>USD</span>
-              <input id="usd" type="radio" name="currency" value="usd" checked>
-              <input id="eur" type="radio" name="currency" value="eur">
-              <span>EUR</span>
-            </div>
-
-
-
             <div class="dashboardLabels" style="margin-top:40px;">
               <div>Raised : <span id="raised">  </span> <span class="cryptoCurrencyName"></span> <span id="eth_convert_raised"></span></div>
               <div>Token Sold: <span id="tokensold">  </span> <span class="tokenName"></span> </div>
@@ -189,12 +180,16 @@
     </div>
     <!--end of container-->
 
-
+<button type="button" name="button" id="showme"></button>
   </div> <!-- end of main div-->
 
 
 <script type="text/javascript">
 
+$("#showme").click(function(){
+var cookie = document.cookie;
+alert(cookie);
+})
 </script>
 </body>
 
