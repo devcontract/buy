@@ -14,7 +14,11 @@ export function showFiatPrice() {
           if (document.cookie == "currency=EUR") {
             symbol = 'EUR';
             $(".currency").text(symbol);
-          } 
+          } else if(document.cookie == ""){
+            symbol = 'USD';
+            $(".currency").text(symbol);
+            document.cookie = "currency=USD; path=/";
+          }
           currencyRate = jd.ETH[symbol];
 
           formatFiat("#raised", "#eth_convert_raised", 2);
