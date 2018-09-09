@@ -1,4 +1,4 @@
-$(document).ready(function(){
+export function timer(){
 
   // Set the date we're counting down to
   var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
@@ -32,4 +32,4 @@ $(document).ready(function(){
       }
   }, 1000);
 
-});
+};

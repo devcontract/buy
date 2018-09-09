@@ -1,3 +1,16 @@
+
+export function progressBarCalcualtion(){setInterval(function(){
+  var x = ( $("#raised").html() / $("#hardCap").html() )*100;
+  var pBarVal = x +"%";
+  $("#dashboardProgressBar").css("width",pBarVal);
+
+},500);
+}
+
+
+
+
+//---------------------------------------------------//
 var i = 0;
 export function timerId(){setInterval(function() {
 if (i >= 5) {i = -1};i++;

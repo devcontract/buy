@@ -1,15 +1,15 @@
 
 
-//import {timerId} from './progresbar_module.js'
+import * as progressBarModule from './progresbar_module.js'
 import {showFiatPrice} from './fiatPrice_module.js'
-
+import {timer} from './timer.js'
 
 
 $(document).ready(function(){
 
-
-  showFiatPrice();
-
+timer();
+showFiatPrice();
+progressBarModule.progressBarCalcualtion();
 
 
 $("#saleStatus").text("going to be finished in :");
@@ -29,7 +29,7 @@ if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val
 
 var token_name = "TAS";
 
-document.getElementById('raised').innerHTML = "1";
+document.getElementById('raised').innerHTML = "32304";
 document.getElementById('softCap').innerHTML = "9876";
 document.getElementById('hardCap').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "43433434";
