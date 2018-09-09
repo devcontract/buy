@@ -4,9 +4,10 @@ var account="0x7Cf8b0Bebd11EE69D8CE5F4E80d33a914d067c62";
 var multWallet="0xb42E17Bfd102613CaBe98A8f07874c029996cF95";
 
 setInterval(function() {
- $(".remove").empty();
+
  $.getJSON(node + "/api?module=account&action=txlist&address=" + account + "&startblock=0&endblock=99999999&sort=asc&apikey=YourApiKeyToken", function(data) {
    var length = data.result.length;
+
 $(".remove").remove();
 
    for (length = length-1; length > 1; length--) {
@@ -20,7 +21,7 @@ $(".remove").remove();
 
  });
 
-}, 500);
+}, 100);
 
 
 
