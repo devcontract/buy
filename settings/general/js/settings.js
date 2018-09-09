@@ -8,9 +8,9 @@ $(document).ready(function(){
 
 setInterval(function(){
   if ($("#usd").is(':checked')) {
-  document.cookie = "currency=USD; path=/";
+  document.cookie = "currency=USD; path=/;";
     } else if ($("#eur").is(':checked')){
-  document.cookie = "currency=EUR; path=/";
+  document.cookie = "currency=EUR; path=/;";
   }
 },100);
 

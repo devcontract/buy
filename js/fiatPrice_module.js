@@ -17,10 +17,9 @@ export function showFiatPrice() {
           } else if(document.cookie == ""){
             symbol = 'USD';
             $(".currency").text(symbol);
-            document.cookie = "currency=USD; path=/";
+            document.cookie = "currency=USD; path=/; secure";
           }
           currencyRate = jd.ETH[symbol];
-
           formatFiat("#raised", "#eth_convert_raised", 2);
           formatFiat("#softCap", "#eth_convert_soft", 2);
           formatFiat("#hardCap", "#eth_convert_hard", 2);
