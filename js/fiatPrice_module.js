@@ -7,17 +7,17 @@ export function showFiatPrice() {
       function(jd) {
         if (jd != null) {
 
-          if (document.cookie == "currency=USD") {
+          if (getCookie('currency') == "USD") {
             symbol = 'USD';
             $(".currency").text(symbol);
           }
-          if (document.cookie == "currency=EUR") {
+          if (getCookie('currency') == "EUR") {
             symbol = 'EUR';
             $(".currency").text(symbol);
-          } else if(document.cookie == ""){
+          } else if(getCookie('currency') == ""){
             symbol = 'USD';
             $(".currency").text(symbol);
-            document.cookie = "currency=USD; path=/; secure";
+            document.cookie = "currency=USD; path=/;";
           }
           currencyRate = jd.ETH[symbol];
           formatFiat("#raised", "#eth_convert_raised", 2);
@@ -36,4 +36,19 @@ function formatFiat(from, to, dec) {
     $(to).text("(" + fi + " " + symbol + ")");
   }
 
+}
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }

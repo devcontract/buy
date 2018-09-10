@@ -1,7 +1,17 @@
 import {minInput} from './mininput.js'
+import * as cookie from '/js/cookie.js'
 
 $(document).ready(function(){
 minInput();
+
+if (cookie.getCookie('softacapreached') == 'false'){
+$("#purchase-myetherwallet").addClass('disabled');
+$("#purchase-metamask").addClass('disabled');
+} else {
+  $("#purchase-myetherwallet").removeClass('disabled');
+  $("#purchase-metamask").removeClass('disabled');
+}
+
 
 $("#ether-button").trigger('click');
 document.getElementById('ether-button');
