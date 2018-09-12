@@ -5,9 +5,11 @@ var soft = Number($("#softCap").html());
 
 if (raised < soft) {
 $("#purchaseTokenButton").addClass('disabled');
+$(".deactivate").attr('onclick','return false');
 setCookie('softacapreached','false',365);
 } else {
 $("#purchaseTokenButton").removeClass('disabled');
+$(".deactivate").attr('onclick','');
 setCookie('softacapreached','true',365);
 }
 

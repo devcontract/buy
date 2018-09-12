@@ -27,7 +27,7 @@ if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val
 
 var token_name = "TAS";
 
-document.getElementById('raised').innerHTML = "43333";
+document.getElementById('raised').innerHTML = "4333";
 document.getElementById('softCap').innerHTML = "9876";
 document.getElementById('hardCap').innerHTML = "44444";
 document.getElementById('tokensold').innerHTML = "43433434";

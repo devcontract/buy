@@ -7,9 +7,12 @@ minInput();
 if (cookie.getCookie('softacapreached') == 'false'){
 $("#purchase-myetherwallet").addClass('disabled');
 $("#purchase-metamask").addClass('disabled');
+$(".deactivate").attr('onclick','return false');
+
 } else {
   $("#purchase-myetherwallet").removeClass('disabled');
   $("#purchase-metamask").removeClass('disabled');
+  $(".deactivate").attr('onclick','');
 }
 
 
