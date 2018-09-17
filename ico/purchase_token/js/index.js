@@ -1,5 +1,5 @@
 import {minInput} from './mininput.js'
-import * as cookie from '/js/cookie.js'
+import * as cookie from '/dashboard/js/cookie.js'
 
 $(document).ready(function(){
 minInput();

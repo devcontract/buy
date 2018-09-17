@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>LogInPage</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/master.css">
+
+
+</head>
+
+<body>
+  <div class="container">
+   <div class="row">
+    <div class="block" style="margin-top:10%;width:200px; height:300px;">
+      <div class="regform">
+         <h6 class="text-center" style="padding-top:25px">Sign up</h6>
+           <form class="auth-form" action="/php/register.php" method="post">
+             <div class="input-class" class="auth-form">
+                 <input type="text" name="reg_login" value="" size="" placeholder="enter login" class="auth-form"> <br>
+                 <input type="email" name="reg_email" value="" size="" placeholder="enter your email" class="auth-form"><br>
+                 <input type="password" name="reg_password" value="" size="" placeholder="enter password" class="auth-form"><br>
+                 <input type="password" name="reg_password_2" value="" size="" placeholder="re-enter passoword" class="auth-form"><br>
+
+             </div>
+
+                  <button type="submit" name="do_register" class="btn myBtn" class="auth-form">Register</button>
+
+              </form>
+            </div>
+    </div>
+   </div>
+  </div>
+
+
+</body>
+
+</html>

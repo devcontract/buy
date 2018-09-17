@@ -1,5 +1,5 @@
 import {log} from './log.js'
-import * as cookie from '/js/cookie.js'
+import * as cookie from '/dashboard/js/cookie.js'
 
 $(document).ready(function(){
 $("#basic-addon2").text("TES");

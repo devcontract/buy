@@ -10,7 +10,7 @@ setInterval(function(){
      $("#eth_convert_hard").html(response.valueHard + " " + response.symbol);
     }
   };
-  xmlhttp.open("GET", "/php/cryptoExchangeRate.php?raised=" + raised + "&softcap=" + softcap + "&hardcap=" + hardcap ,true);
+  xmlhttp.open("GET", "/dashboard/php/cryptoExchangeRate.php?raised=" + raised + "&softcap=" + softcap + "&hardcap=" + hardcap ,true);
   xmlhttp.send();
 },1000)
 

@@ -4,29 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <title>ico</title>
+  <title>Purchase Token</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="/dashboard/css/master.css">
   <link rel="stylesheet" href="./css/purchaseBlock.css">
-  <link rel="stylesheet" href="/css/responsiveProgressBar.css">
+  <link rel="stylesheet" href="/dashboard/css/responsiveProgressBar.css">
   <link rel="stylesheet" href="./css/investment.css">
-  <link rel="stylesheet" href="/css/navBar.css">
+  <link rel="stylesheet" href="/dashboard/css/navBar.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./js/purch.js"></script>
   <script type="module" src="./js/index.js" async></script>
-  <script type="text/javascript" src="/js/navigationBar.js"async ></script>
-  <script type="text/javascript" src="./js/mininput.js"async ></script>
+  <script type="text/javascript" src="/dashboard/js/navigationBar.js"async ></script>
 
 </head>
 
 <body>
 
+
+
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
+    <a href="/dashboard/index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
     <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
     <ul class="collapse list-unstyled" id="IcoSubmenu">
       <li>
@@ -67,7 +68,7 @@
       <li> <a href="#" class="subMenuText" > Login History </a> </li>
     </ul>
 
-    <a href="#"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
+    <a href="/php/logout.php"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
   </div>
 
 <div id="main">
@@ -146,6 +147,7 @@
             <div class="input-group" style="margin-left:15px;">
               <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
               <span class="input-group-addon" style="text-align: left; width: 44px; height: 34px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
+
             </div>
 
             <div class="digits_purchase_datails" style="display:flex; justify-content:space-between;width:250px;padding-top:5px">
@@ -194,10 +196,10 @@
                 </div>
               </div>
 
-              <div class="container" style="width:620px; display:flex;margin-top:50px">
+              <div class="container" style="width:620px; display:flex; justify-content: space-between;margin-top:50px">
 
-                <a type="button" class="btn btn-default btn-lg myBtn" id="purchase-myetherwallet" style="margin-right:100px">MYETHERWALLET</a>
-                <a type="button" class="btn btn-default btn-lg myBtn" id="purchase-metamask" style="margin-left:100px">METAMASK</a>
+                <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-myetherwallet" >MYETHERWALLET</button> </a>
+                <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-metamask" >METAMASK</button> </a>
 
               </div>
 
