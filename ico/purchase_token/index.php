@@ -40,7 +40,7 @@ require "../../php/db.php"
     <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
     <ul class="collapse list-unstyled" id="IcoSubmenu">
       <li>
-        <a href="./index.html" class="subMenuText">Purchase Token</a>
+        <a href="./index.php" class="subMenuText">Purchase Token</a>
       </li>
       <li>
         <a href="/ico/purchase_history/index.php" class="subMenuText" >Purchase History</a>
