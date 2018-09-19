@@ -33,27 +33,17 @@ require "../php/db.php"
 
 <body>
 
-  <nav class="navbar navbar-inverse" style="width:15%;position:fixed;right:0">
-    <div class="container-fluid">
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span>  <?php echo $_SESSION['logged_user']->login; ?> </a></li>
-        <li><a href="/php/logout.php"><span class="glyphicon glyphicon-log-in"></span> Log Out</a></li>
-      </ul>
-    </div>
-  </nav>
-
   <div id="mySidenav" class="sidenav">
-
-
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
+    <a href="#"><span class="glyphicon glyphicon-user iconSize"> </span> Hello , <?php echo $_SESSION['logged_user']; ?> !</a>
+    <a href="index.php"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
     <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
     <ul class="collapse list-unstyled" id="IcoSubmenu">
       <li>
-        <a href="/ico/purchase_token/index.html" class="subMenuText">Purchase Token</a>
+        <a href="/ico/purchase_token/index.php" class="subMenuText">Purchase Token</a>
       </li>
       <li>
-        <a href="/ico/purchase_history/index.html" class="subMenuText" >Purchase History</a>
+        <a href="/ico/purchase_history/index.php" class="subMenuText" >Purchase History</a>
       </li>
     </ul>
 
@@ -62,8 +52,8 @@ require "../php/db.php"
 
       <li>
 
-      <li><a href="/withdrawal/index.html" class="subMenuText" >Token Withdrawal</a></li>
-      <li><a href="/refund/index.html" class="subMenuText" >Ether Refund</a></li>
+      <li><a href="/withdrawal/index.php" class="subMenuText" >Token Withdrawal</a></li>
+      <li><a href="/refund/index.php" class="subMenuText" >Ether Refund</a></li>
 
 
       </li>

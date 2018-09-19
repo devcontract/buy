@@ -1,32 +1,41 @@
 <?php
 
 require 'db.php';
+
 $data = $_POST;
-if(isset($data['do_login']) )   //if button login is pressed
-{
-  $errors = array();
-  $user = R::findOne('users', 'login = ?', array($data['login'])); //red bean lib usage  please see red bean for reference https://redbeanphp.com/index.php?p=/crud
-  if( $user )
-  {
-//if login exists
 
-if( password_verify($data['password'], $user->password) )
-{
+if(isset($data['do_login']) ){ // if login button is pressed do
+$errors = array();
+$login = strtolower($data['login']);
+$password = $data['password'];
+$sql_login = "SELECT login FROM users WHERE login = '$login'";
+$sql_password = "SELECT password FROM users WHERE login = '$login'";
+$result_login = mysqli_query($db,$sql_login);
+$result_password = mysqli_query($db,$sql_password);
+$password_array = mysqli_fetch_array($result_password,MYSQLI_ASSOC);
+$count = mysqli_num_rows($result_login);
 
-// all good now we have to login user
+if($count == 1 ){    // checking if login exists
 
-$_SESSION['logged_user'] = $user;
+if ( password_verify($data['password'],$password_array['password']) ) // checking if password match
+{ //if all good we need to login the user
+
+$_SESSION['logged_user'] = $login;
 header('Location: /dashboard/index.php');
-} else {
-  $errors[] = 'Incorrect passowrd';
+
+} else{
+  $errors[] = "Invalid password";
+
 }
 
-  }else{
-    $errors[] = 'User  with this login doesnt exist';
-  }
-  if( ! empty($errors) )
-  {
-    echo '<div style="color:red;">'. array_shift($errors). ' Go back to the <a href="/"> Main </a> page!  </div><hr>';
-  }
+}else{
+  $errors[] = "Invalid Login";
+
 }
+if( ! empty($errors) ){
+//echo '<div style="color:red;">'. array_shift($errors). '</div><hr>';
+header('Location: /index.html');
+ }
+}
+
  ?>

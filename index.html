@@ -16,27 +16,39 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container-fluid bg-3 text-center" style="background-color:#20cbb1; position:fixed;top:0px;width:100%;">
+   <h2 class="text-center">This is a page where you can buy Tokens</h2>
+
+</div>
+  <div class="container" style="margin-bottom:10%;" >
    <div class="row">
-    <div class="block" style="margin-top:10%;width:200px; height:300px;">
-     <div class="authform">
-      <h6 class="text-center" style="padding-top:25px">Log in</h6>
-       <form class="auth-form" action="/php/login.php" method="post">
-        <div class="input-class" class="auth-form" style="">
-         <input type="text" name="login" value="" size="" placeholder="Enter Login" class="auth-form"> <br>
-         <input type="password" name="password" value="" size="" placeholder="Enter Password" class="auth-form"><br>
+
+     
+       <div class="block" style="margin-top:10%;width:200px; height:300px;">
+        <div class="authform">
+         <h6 class="text-center" style="padding-top:25px">Log in</h6>
+          <form class="auth-form" action="/php/login.php" method="post">
+           <div class="input-class" class="auth-form" style="">
+            <input type="text" name="login" value="" size="" placeholder="Enter Login" class="auth-form"> <br>
+            <input type="password" name="password" value="" size="" placeholder="Enter Password" class="auth-form"><br>
+          </div>
+
+            <button type="submit" name="do_login" class="btn myBtn" class="auth-form"style="margin-top:38px;">log in</button>
+           <a href="register.html"><button type="button" name="button" class="btn myBtn" id="notmember"style="margin-top:20px;">Not a member</button></a>
+        </form>
+     </div>
+
+
        </div>
+    
 
-         <button type="submit" name="do_login" class="btn myBtn" class="auth-form"style="margin-top:38px;">log in</button>
-        <a href="register.html"><button type="button" name="button" class="btn myBtn" id="notmember"style="margin-top:20px;">Not a member</button></a>
-     </form>
-  </div>
-
-
-    </div>
    </div>
-  </div>
 
+  </div>
+  <div class="container-fluid bg-3 text-center" style="background-color:#20cbb1; position:fixed;bottom:0px;width:100%">
+    <h3>Dont wait log in or register now!</h3>
+ <div class="footer-copyright text-center py-3">© 2018 Copyright:</div>
+  </div>
 
 </body>
 

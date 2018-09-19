@@ -1,3 +1,12 @@
+<?php
+require "../../php/db.php"
+?>
+<?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
+
+<?php else : ?>
+<?php header('Location: /') ?>
+<?php endif; ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -27,14 +36,14 @@
 
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/dashboard/index.html"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
+    <a href="/dashboard/index.php"><span class="glyphicon glyphicon-home iconSize"> </span> Dashboard</a>
     <a href="#IcoSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble "> <span class="glyphicon glyphicon-certificate iconSize"> </span> ICO</a>
     <ul class="collapse list-unstyled" id="IcoSubmenu">
       <li>
         <a href="./index.html" class="subMenuText">Purchase Token</a>
       </li>
       <li>
-        <a href="/ico/purchase_history/index.html" class="subMenuText" >Purchase History</a>
+        <a href="/ico/purchase_history/index.php" class="subMenuText" >Purchase History</a>
       </li>
     </ul>
 
@@ -44,8 +53,8 @@
 
       <li>
 
-          <li><a href="/withdrawal/index.html" class="subMenuText" >Token Withdrawal</a></li>
-          <li><a href="/refund/index.html" class="subMenuText" >Ether Refund</a></li>
+          <li><a href="/withdrawal/index.php" class="subMenuText" >Token Withdrawal</a></li>
+          <li><a href="/refund/index.php" class="subMenuText" >Ether Refund</a></li>
 
 
       </li>

@@ -1,3 +1,12 @@
+<?php
+require "../php/db.php"
+?>
+<?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
+
+<?php else : ?>
+<?php header('Location: /') ?>
+<?php endif; ?>
+
 <!DOCTYPE html>
 <html>
 
