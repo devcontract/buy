@@ -7,6 +7,7 @@ require "../php/db.php"
 <?php header('Location: /') ?>
 <?php endif; ?>
 
+
 <!DOCTYPE html>
 <html>
 
