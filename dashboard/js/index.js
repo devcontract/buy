@@ -9,7 +9,7 @@ import {getCurrancyRate} from './cryptoCurExchange.js'
 
 $(document).ready(function(){
   var token_name = "TAS";
-  var raised = 43333;
+  var raised = 5000;
   var softcap = 9876;
   var hardcap = 44444;
   document.getElementById('raised').innerHTML = raised;
@@ -22,7 +22,7 @@ $(document).ready(function(){
   $("#standartPrice").text("100000000");
   $("#bonusPresent").text("0");
 
-checkSoftCap();
+checkSoftCap(raised,softcap,".deactivate");
 timer();
 //showFiatPrice(); // this has been substitued with PHP
 progressBarModule.progressBarCalcualtion();

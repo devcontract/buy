@@ -1,13 +1,14 @@
-export function checkSoftCap(){
-setInterval(function(){
-var raised = Number($("#raised").html());
-var soft = Number($("#softCap").html());
+export function checkSoftCap(raised,softcap,deactive_element_class){
 
-if (raised < soft) {
-$("#purchaseTokenButton").addClass('disabled');
+setInterval(function(){
+
+if (raised < softcap) {
+$(deactive_element_class).addClass('disabled');
+$(deactive_element_class).css('pointer-events', 'none');
+
 setCookie('softacapreached','false',365);
 } else {
-$("#purchaseTokenButton").removeClass('disabled');
+$(deactive_element_class).removeClass('disabled');
 setCookie('softacapreached','true',365);
 }
 

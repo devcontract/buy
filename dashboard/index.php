@@ -3,7 +3,7 @@
 require "../php/db.php"
 ?>
 <?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
-  <script type="text/javascript"> $("#")</script>
+
 <?php else : ?>
 <?php header('Location: /') ?>
 <?php endif; ?>
@@ -181,7 +181,7 @@ require "../php/db.php"
                 <span id="bonusPresent" style="font-size:20px"></span> <span class="tokenName" style="font-size:20px"></span>
               </div>
             </div>
-            <a  href="/ico/purchase_token/index.php" class="deactivate"><button id="purchaseTokenButton" type="button" class="btn btn-lg myBtn deactivate" style="margin:0 0 10px 0">Purchase Token</button></a>
+            <a  href="/ico/purchase_token/index.php" class="deactivate"> <button id="purchaseTokenButton" type="button" class="btn btn-lg myBtn deactivate" style="margin:0 0 10px 0">Purchase Token</button></a>
 
           </div>
 

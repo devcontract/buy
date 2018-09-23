@@ -144,7 +144,7 @@ require "../../php/db.php"
 
               </div>
               <div class="labels">
-                <div class="" style="margin-left:10px;"><dt>Ether</dt></div>
+                <div class="" style="margin-left:10px;"><dt id="bonusCurrancy">Ether</dt></div>
                 <div class="" style="margin-left:0px;"> <dt> <span id="ether-1E" ></span> </dt></div>
                 <div class="" style="margin-left:0px;"> <dt> <span id="ether-2E" ></span> </dt></div>
                 <div class="" style="margin-left:0px;"> <dt> <span id="ether-3E" ></span> </dt></div>

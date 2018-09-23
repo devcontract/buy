@@ -3,6 +3,12 @@ import * as cookie from '/dashboard/js/cookie.js'
 
 $(document).ready(function(){
 minInput();
+if (cookie.getCookie('currency') == '' ){
+  cookie.setCookie("currency","USD",5);
+}
+
+$("#bonusCurrancy").html(cookie.getCookie('currency'));
+
 
 if (cookie.getCookie('softacapreached') == 'false'){
 $("#purchase-myetherwallet").addClass('disabled');
@@ -33,10 +39,10 @@ var stageBar = true;
   $("#bonus-2pct").text("35%");
   $("#bonus-3pct").text("75%");
   $("#bonus-4pct").text("100%");
-  $("#ether-1E").text("E5");
-  $("#ether-2E").text("E10");
-  $("#ether-3E").text("E20");
-  $("#ether-4E").text("E40");
+  $("#ether-1E").text(cookie.getCookie('currency') + "5");
+  $("#ether-2E").text(cookie.getCookie('currency') + "10");
+  $("#ether-3E").text(cookie.getCookie('currency') + "20");
+  $("#ether-4E").text(cookie.getCookie('currency') + "40");
   $("#standartPrice").text("100000000");
   $("#calcbonus").text("22220000");
   $("#tokenAmount").text("200000000000");
