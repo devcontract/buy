@@ -17,7 +17,7 @@ $result_password = mysqli_query($db,$sql_password);
 $password_array = mysqli_fetch_array($result_password,MYSQLI_ASSOC);
 $count = mysqli_num_rows($result_login);
 $user_ip = getUserIP();
-
+date_default_timezone_set('Europe/London');  
 $time_stamp = date('l \t\h\e jS') ." ". date("h:i:sa");
 
 if($count == 1 ){    // checking if login exists

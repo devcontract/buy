@@ -183,37 +183,44 @@ require "../../php/db.php"
 
             <div class="" style="margin:-15px 0 0 15px">
               <span class="red-text text-center" id="calcbonus"><span id="minimumInvestment" ></span> <span class="tokenName"></span> minimum investment</span>
+
             </div>
-
-            <div class="container-fluid">
-              <h3>Payment Address</h3>
-              <input id="paymentAddressInput" type="text" value="" placeholder="" class="form-control inputAddress">
-              <!--ADDRESS  ------------------------ ENTRY ID-->
-              <h6>You can send <span id="paymentCurrency" ></span> from exchange</h6>
-            </div>
-
-            <div class="" id="etherButtonsHide">
-              <div style="margin:10px 0 0 10px">
-
-
-                <div class="container-fluid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-                  <div class="" style="width:250px;">Gas limit</div>
-                  <div class="" style="width:250px;">Gas Price</div>
-                </div>
-                <div class="container-fluid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
-                  <div id="gasLimitValue" class="" style="width:250px;"></div>
-                  <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
-                </div>
+<div class="container-fluid">
+  <button type="button" class="btnw btn-lg myBtn" id="buyButton_purchase_page" style="float:right;margin-top:60px;" >Buy</button>
+</div>
+            <div class="" id="etherButtonsHide" >
+              <div class="container-fluid">
+                <h3>Payment Address</h3>
+                <input id="paymentAddressInput" type="text" value="" placeholder="" class="form-control inputAddress">
+                <!--ADDRESS  ------------------------ ENTRY ID-->
+                <h6>You can send <span id="paymentCurrency" ></span> from exchange</h6>
               </div>
 
-              <div class="container" style="width:620px; display:flex; justify-content: space-between;margin-top:50px">
+              <div class="" >
+                <div style="margin:10px 0 0 10px">
 
-                <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-myetherwallet" >MYETHERWALLET</button> </a>
-                <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-metamask" >METAMASK</button> </a>
+
+                  <div class="container-fluid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+                    <div class="" style="width:250px;">Gas limit</div>
+                    <div class="" style="width:250px;">Gas Price</div>
+                  </div>
+                  <div class="container-fluid" style="display:flex;justify-content:space-between; padding: 0 15px 0 15px">
+                    <div id="gasLimitValue" class="" style="width:250px;"></div>
+                    <div id="gasPriceValue" class="" style="width:250px;"> 9 <span>GWEI</span> </div>
+                  </div>
+                </div>
+
+                <div class="container" style="width:620px; display:flex; justify-content: space-between;margin-top:50px">
+
+                  <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-myetherwallet" >MYETHERWALLET</button> </a>
+                  <a href="#" class="deactivate" > <button type="button" class="btnw btn-lg myBtn" id="purchase-metamask" >METAMASK</button> </a>
+
+                </div>
 
               </div>
-
             </div>
+
+
           </div>
 
 

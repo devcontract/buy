@@ -13,7 +13,8 @@ $("#purchase-metamask").addClass('disabled');
 }
 
 
-$("#ether-button").trigger('click');
+//$("#ether-button").trigger('click');
+$("#etherButtonsHide").hide();
 document.getElementById('ether-button');
 document.getElementById('bitcoin-button');
 $("#saleStatus").text("going to finish in");
