@@ -1,36 +1,65 @@
+
 <?php
-require "../../php/db.php"
+require "../../php/db.php";
+require '../../php/db_log.php';
 ?>
 <?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
 
+
+<?php
+
+$login = $_SESSION['logged_user'];
+$get_log_query =  "SELECT * FROM logs WHERE login = '$login'";
+
+$log_string = mysqli_query($db_log, $get_log_query);
+$dyn_table = '<table class="table table-hover text-center">';
+$dyn_table .= '<tr><th class="text-center">' . "Login". '</th>';
+$dyn_table .= '<th class="text-center">' . "Date" . '</th>';
+$dyn_table .= '<th class="text-center">' . "IP Address" . '</th>';
+$dyn_table .= '<th class="text-center">' . "Status" . '</th> </tr>';
+while($string_output = mysqli_fetch_array($log_string,MYSQLI_ASSOC)){
+  $login_data = $string_output['login'] ;
+  $date_data = $string_output['date'] ;
+  $ip_data =  $string_output['ip'] ;
+  $connection_status_data =  "Successful connection - " . $string_output['success'] ;
+
+
+  $dyn_table .= '<tr><td>' . $login_data . '</td>';
+  $dyn_table .= '<td>' . $date_data . '</td>';
+  $dyn_table .= '<td>' . $ip_data . '</td>';
+  $dyn_table .= '<td>' . $connection_status_data . '</td>';
+}
+$dyn_table .='</tr></table>';
+$i++;
+ ?>
+
+
 <?php else : ?>
-<?php header('Location: /') ?>
+
 <?php endif; ?>
+
+
+
 
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <title>Timer</title>
+  <title>logins log</title>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="/dashboard/css/master.css">
   <link rel="stylesheet" href="/dashboard/css/navBar.css">
-
-
-
+  <link rel="stylesheet" href="/refund/css/table.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
   <script type="text/javascript" src="/dashboard/js/navigationBar.js" async></script>
-  <script type="text/javascript" src="./js/settings.js" async></script>
 
-
+  <script type="module" src="./js/index.js" async></script>
 
 </head>
 
@@ -54,8 +83,8 @@ require "../../php/db.php"
 
       <li>
 
-      <li><a href="index.php" class="subMenuText" >Token Withdrawal</a></li>
-      <li><a href="/refund/index.php" class="subMenuText" >Ether Refund</a></li>
+      <li><a href="../withdrawal/index.php" class="subMenuText" >Token Withdrawal</a></li>
+      <li><a href="index.php" class="subMenuText" >Ether Refund</a></li>
 
 
       </li>
@@ -72,14 +101,13 @@ require "../../php/db.php"
 
     <a href="#SettingsSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-cog iconSize"> </span> Settings</a>
     <ul class="collapse list-unstyled" id="SettingsSubMenu">
-      <li> <a href="#" class="subMenuText" > General Setting </a> </li>
-  <li> <a href="/settings/logs/logs.php" class="subMenuText" > Logs </a> </li>
+      <li> <a href="/settings/general/index.php" class="subMenuText" > General Setting </a> </li>
       <li> <a href="#" class="subMenuText" > Reset Password </a> </li>
       <li> <a href="#" class="subMenuText" > Security </a> </li>
       <li> <a href="#" class="subMenuText" > Login History </a> </li>
     </ul>
 
-    <a href="/php/logout.php"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
+<a href="/php/logout.php"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
   </div>
 
   <div id="main">
@@ -88,24 +116,22 @@ require "../../php/db.php"
     <div class="container">
       <!-- timer block -->
       <div class="row">
-        <div class="block" style="">
-          <h2 class="text-center">Setting</h2>
+        <div class="block" style="height:auto">
 
-          <div style="" class="">
-            <span>USD</span>
-            <input id="usd" type="radio" name="currency" value="usd" checked>
-            <input id="eur" type="radio" name="currency" value="eur">
-            <span>EUR</span>
-          </div>
+          </div> <!--refund top part end-->
+<div class="" style="display:flex;justify-content:center">
+  <div class="" style="width:600px;border-bottom:4px double #00BEA3;margin:40px 0 5px 0"></div>
+</div>
+<h2 class="text-center">User Log Page</h2>
 
+<div class="historyTable">
+<?php echo $dyn_table; ?>
 
-          <button type="button" name="button" id="showme">showCookies</button>
-        </div>
-        <!--end of block-->
+</div>
+        </div> <!--end of block-->
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

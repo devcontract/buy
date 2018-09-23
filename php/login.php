@@ -1,6 +1,8 @@
 <?php
 
 require 'db.php';
+require 'db_log.php';
+require 'get_ip.php';
 
 $data = $_POST;
 
@@ -14,11 +16,17 @@ $result_login = mysqli_query($db,$sql_login);
 $result_password = mysqli_query($db,$sql_password);
 $password_array = mysqli_fetch_array($result_password,MYSQLI_ASSOC);
 $count = mysqli_num_rows($result_login);
+$user_ip = getUserIP();
+
+$time_stamp = date('l \t\h\e jS') ." ". date("h:i:sa");
 
 if($count == 1 ){    // checking if login exists
 
 if ( password_verify($data['password'],$password_array['password']) ) // checking if password match
 { //if all good we need to login the user
+$login_status = "yes";
+$log_query = "INSERT INTO logs  VALUES (NULL, '$login', '$time_stamp', '$user_ip' , '$login_status')";
+mysqli_query($db_log,$log_query);
 
 $_SESSION['logged_user'] = $login;
 header('Location: /dashboard/index.php');
@@ -34,7 +42,11 @@ header('Location: /dashboard/index.php');
 }
 if( ! empty($errors) ){
 //echo '<div style="color:red;">'. array_shift($errors). '</div><hr>';
-header('Location: /index.html');
+$login_status = "no";
+$log_query = "INSERT INTO logs  VALUES (NULL, '$login', '$time_stamp', '$user_ip' , '$login_status')";
+mysqli_query($db_log, $log_query);
+
+header('Location: /index.html?err=1');
  }
 }
 

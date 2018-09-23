@@ -68,6 +68,7 @@ require "../php/db.php"
     <a href="#SettingsSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-cog iconSize"> </span> Settings</a>
     <ul class="collapse list-unstyled" id="SettingsSubMenu">
       <li> <a href="/settings/general/index.php" class="subMenuText" > General Setting </a> </li>
+  <li> <a href="/settings/logs/logs.php" class="subMenuText" > Logs </a> </li>
       <li> <a href="#" class="subMenuText" > Reset Password </a> </li>
       <li> <a href="#" class="subMenuText" > Security </a> </li>
       <li> <a href="#" class="subMenuText" > Login History </a> </li>
