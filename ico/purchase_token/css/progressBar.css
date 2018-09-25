@@ -62,6 +62,7 @@
     -webkit-justify-content: space-around; /* Safari 6.1+ */
     display: flex;
     justify-content: space-around;
+  
     color: rgba(#dd3b11, 0.97);
 }
 

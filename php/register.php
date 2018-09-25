@@ -29,6 +29,7 @@ if ( $data['reg_password'] == '' ) // checking if password entry is empty or not
 $login = strtolower($data['reg_login']);
 $email = strtolower($data['reg_email']);
 $password = $data['reg_password'];
+$usertype = "user";
 $r_password = $data['reg_password_2'];
 
 if ($password != $r_password){
@@ -47,11 +48,11 @@ if (mysqli_num_rows($result_email) > 0 ) {
 }
 if ( empty($errors) ){
 
-  $query = "INSERT INTO users  VALUES (NULL,   '$email', '$login', '$password')";
+  $query = "INSERT INTO users  VALUES (NULL,   '$email', '$login', '$password' , '$usertype')";
   mysqli_query($db, $query);
   mysqli_close($db);
 //echo ' <script> alert("You have registered"); </script> ' ; // displays only first element of errors array
-  header('Location: /index.html');
+  header('Location: /dashboard/index.php');
 } else {
 echo '<div style="color:red;">' . array_shift($errors) . ' </div> <hr>' ; // displays only first element of errors array
 

@@ -1,7 +1,7 @@
 
 <?php
 require "../../php/db.php";
-require '../../php/db_log.php';
+
 ?>
 <?php if(isset($_SESSION['logged_user']) ) : /* checking if user already authorised  and if yes then*/ ?>
 
@@ -11,7 +11,7 @@ require '../../php/db_log.php';
 $login = $_SESSION['logged_user'];
 $get_log_query =  "SELECT * FROM logs WHERE login = '$login'";
 
-$log_string = mysqli_query($db_log, $get_log_query);
+$log_string = mysqli_query($db, $get_log_query);
 $dyn_table = '<table class="table table-hover text-center">';
 $dyn_table .= '<tr><th class="text-center">' . "Login". '</th>';
 $dyn_table .= '<th class="text-center">' . "Date" . '</th>';

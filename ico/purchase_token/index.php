@@ -91,6 +91,8 @@ require "../../php/db.php"
         <br>
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="display:flex;align-items:center;justify-content:space-between;">
           <button class="btn bouton-image imgBoutonEther curbtn " data-toggle="buttons" id="ether-button"></button>
+          <button class="btn bouton-image imgBoutonVisaMaster curbtn " data-toggle="buttons" id="visa-master-button"></button>
+
           <button class="btn bouton-image imgBoutonBitcoin curbtn " data-toggle="buttons" id="bitcoin-button"></button>
 
         </div>
@@ -129,11 +131,11 @@ require "../../php/db.php"
           <div class="container-fluid">
             <div id="bonusBar" class="container-fluid" style=" margin-top:50px;">
               <div class="labels">
-                <div class="" style="margin-left:10px;"> <span>Bonus</span></div>
-                <div class="" style="margin-left:0px;"> <span id="bonus-1pct"></span></div>
-                <div class="" style="margin-left:0px;">  <span id="bonus-2pct"></span></div>
-                <div class="" style="margin-left:0px;">  <span id="bonus-3pct"></span> </div>
-                <div class="" style="padding-right:10px;"> <span id="bonus-4pct"></span></div>
+                <div class="" style="margin-left:10px;"> <dt>  <span>Bonus</span></div>
+                <div class="" style="margin-left:0px;">  <dt> <span style="" id="bonus-1pct"></span>   </dt>  </div>
+                <div class="" style="margin-left:0px;">  <dt>  <span style="" id="bonus-2pct"></span>   </dt>  </div>
+                <div class="" style="margin-left:0px;">  <dt>  <span style="" id="bonus-3pct"></span>   </dt>   </div>
+                <div class="" style="padding-right:10px;"> <dt>  <span style="" id="bonus-4pct"></span>   </dt>  </div>
               </div>
 
               <div style="margin-top:1px;display:flex;align-items:center;justify-content:center;">
@@ -145,10 +147,10 @@ require "../../php/db.php"
               </div>
               <div class="labels">
                 <div class="" style="margin-left:10px;"><dt id="bonusCurrancy">Ether</dt></div>
-                <div class="" style="margin-left:0px;"> <dt> <span id="ether-1E" ></span> </dt></div>
-                <div class="" style="margin-left:0px;"> <dt> <span id="ether-2E" ></span> </dt></div>
-                <div class="" style="margin-left:0px;"> <dt> <span id="ether-3E" ></span> </dt></div>
-                <div class="" style="padding-right:15px;"><dt> <span id="ether-4E" ></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span style="" id="ether-1E" ></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span style="" id="ether-2E" ></span> </dt></div>
+                <div class="" style="margin-left:0px;"> <dt> <span style="" id="ether-3E" ></span> </dt></div>
+                <div class="" style="padding-right:10px;"><dt> <span style="" id="ether-4E" ></span> </dt></div>
               </div>
             </div>
 
