@@ -5,7 +5,7 @@ require "db.php"
 <?php
 
 $data = $_POST;
-
+$usertype = "";
 if (isset($_POST['do_register']) ){
 
 $errors = array(); // array where we store all our errors
@@ -26,10 +26,16 @@ if ( $data['reg_password'] == '' ) // checking if password entry is empty or not
 
 }
 
+if ( $data['admin'] == ''){
+  $usertype = "User";
+} else {
+  $usertype = $data['admin'];
+}
+
 $login = strtolower($data['reg_login']);
 $email = strtolower($data['reg_email']);
 $password = $data['reg_password'];
-$usertype = "user";
+
 $r_password = $data['reg_password_2'];
 
 if ($password != $r_password){
@@ -52,7 +58,7 @@ if ( empty($errors) ){
   mysqli_query($db, $query);
   mysqli_close($db);
 //echo ' <script> alert("You have registered"); </script> ' ; // displays only first element of errors array
-  header('Location: /dashboard/index.php');
+  //header('Location: /index.php');
 } else {
 echo '<div style="color:red;">' . array_shift($errors) . ' </div> <hr>' ; // displays only first element of errors array
 
