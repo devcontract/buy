@@ -26,7 +26,7 @@ if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val
 },10);*/
 
 var token_name = "TAS";
-var raised = 9876;
+var raised = 1;
 var softCap = 9876;
 var hardCap = 44444;
 var tokensold = 43433434
