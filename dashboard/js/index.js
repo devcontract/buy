@@ -26,11 +26,15 @@ if (find_occurences( $("#input_value").val() , ".") >=2 || $("#input_value").val
 },10);*/
 
 var token_name = "TAS";
+var raised = 9876;
+var softCap = 9876;
+var hardCap = 44444;
+var tokensold = 43433434
 
-document.getElementById('raised').innerHTML = "4333";
-document.getElementById('softCap').innerHTML = "9876";
-document.getElementById('hardCap').innerHTML = "44444";
-document.getElementById('tokensold').innerHTML = "43433434";
+document.getElementById('raised').innerHTML = raised;
+document.getElementById('softCap').innerHTML = softCap;
+document.getElementById('hardCap').innerHTML = hardCap;
+document.getElementById('tokensold').innerHTML = tokensold;
 document.getElementById('sale-type-1').innerHTML = "Private Sale";
 document.getElementById('sale-type-2').innerHTML = "Pre-Sale";
 document.getElementById('sale-type-3').innerHTML = "Public Sale";
