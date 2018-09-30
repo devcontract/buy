@@ -1,11 +1,8 @@
 <?php
 
-
 $login = $_SESSION['logged_user'];
 $log_login = $login;
-
 $get_log_query =  "SELECT * FROM logs";
-
 $log_string = mysqli_query($db, $get_log_query);
 $dyn_table = '<table class="table table-hover">';
 $dyn_table .= '<tr><th class="text-center">' . "Login". '</th>';
@@ -26,6 +23,4 @@ while($string_output = mysqli_fetch_array($log_string,MYSQLI_ASSOC)){
   $dyn_table .= '<td>' . $user_agent . '</td>';
 }
 $dyn_table .='</tr></table>';
-
-
  ?>

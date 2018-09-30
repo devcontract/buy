@@ -57,8 +57,7 @@ require "./php/admin_log.php";
 <br>
 
 <div class="" id="logs-form">
-  <?php  echo $dyn_table; ?>
-
+<?php echo $dyn_table ?>
 </div>
 
         <div class="" id="reg-form">
