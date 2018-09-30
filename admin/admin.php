@@ -44,19 +44,16 @@ require "./php/admin_log.php";
       </div>
       <div class="div_form">
         <div class="" id="users-form">
-          <form class="" action="./php/admin_log.php" method="post">
-          <input type="text" name="user_login_hiden_input" value="" id="user_login_hiden_input" style="display:none" ><br>
 
 
-              <?php echo $user_table; ?>
-          </form>
-
+  <?php echo $user_table; ?>
         </div>
 <br>
 <br>
 <br>
 
 <div class="" id="logs-form">
+
 <?php echo $dyn_table ?>
 </div>
 
