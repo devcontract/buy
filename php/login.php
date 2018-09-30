@@ -68,7 +68,7 @@ $login_status = "no";
 $log_query = "INSERT INTO logs VALUES (NULL, '$login', '$time_stamp', '$user_ip' , '$login_status','$userAgent')";
 mysqli_query($db, $log_query);
 mysqli_close($db);
-
+header('Location: /');
  }
 }
 

@@ -16,7 +16,7 @@ while($user_string_output = mysqli_fetch_array($log_string,MYSQLI_ASSOC)){
 
 
 
-  $user_table .= '<tr><td> <button type="submit" name="do_log_check"> ' . $user_table_login_data .' </button> </td>';
+  $user_table .= '<tr><td>' . $user_table_login_data .' </button>  </td>';
   $user_table .= '<td>  ' . $user_table_email_data . '</td>';
   $user_table .= '<td>  ' . $user_table_type_data . '</td>';
 }

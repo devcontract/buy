@@ -2,6 +2,7 @@
 <?php
 require "../php/db.php";
 require "./php/user_table.php";
+require "./php/admin_log.php";
 
 
 ?>
@@ -23,11 +24,10 @@ require "./php/user_table.php";
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/admin/js/index.js"></script>
   <link rel="stylesheet" href="./css/admin.css">
 
 
@@ -45,13 +45,20 @@ require "./php/user_table.php";
       <div class="div_form">
         <div class="" id="users-form">
           <form class="" action="./php/admin_log.php" method="post">
+          <input type="text" name="user_login_hiden_input" value="" id="user_login_hiden_input" style="display:none" ><br>
+
+
               <?php echo $user_table; ?>
           </form>
 
         </div>
+<br>
+<br>
+<br>
 
 <div class="" id="logs-form">
-  <?php echo $dyn_table; ?>
+  <?php  echo $dyn_table; ?>
+
 </div>
 
         <div class="" id="reg-form">
@@ -77,7 +84,7 @@ require "./php/user_table.php";
       </div>
     <div class="login-box-bottom" style="display:flex;justify-content: space-between;">
        <div class="panel-buttons "> <button class="login-box-bottom btn" > <a href="/php/logout.php">Log out</a></button></div>
-       <div class="panel-buttons "> <button class="login-box-bottom btn" onclick="$('#logs-form').show();$('#users-form').hide();$('#reg-form').show();"> <a href="#">Create new user</a> </button></div>
+       <div class="panel-buttons "> <button class="login-box-bottom btn" onclick="$('#logs-form').hide();$('#users-form').hide();$('#reg-form').show();"> <a href="#">Create new user</a> </button></div>
        <div class="panel-buttons "> <button class="login-box-bottom btn" > <a href="/dashboard/index.php">To the Web Site</a></button></div>
        <div class="panel-buttons "> <button class="login-box-bottom btn" onclick="$('#logs-form').hide();$('#reg-form').hide();$('#users-form').show();"> <a href="#">Show Users</a> </button></div>
        <div class="panel-buttons "> <button class="login-box-bottom btn" onclick="$('#users-form').hide();$('#reg-form').hide();$('#logs-form').show()"> <a href="#">Show Logs</a> </button></div>
