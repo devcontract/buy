@@ -1,9 +1,10 @@
 import {minInput} from './mininput.js'
 import * as cookie from '/dashboard/js/cookie.js'
+import {checkInput} from './check_input.js'
 
 $(document).ready(function(){
 minInput();
-
+checkInput();
 if (cookie.getCookie('softacapreached') == 'false'){
 $("#purchase-myetherwallet").addClass('disabled');
 $("#purchase-metamask").addClass('disabled');
@@ -38,10 +39,10 @@ var stageBar = true;
   $("#bonus-2pct").text("35%");
   $("#bonus-3pct").text("75%");
   $("#bonus-4pct").text("100%");
-  $("#ether-1E").text("E5");
-  $("#ether-2E").text("E10");
-  $("#ether-3E").text("E20");
-  $("#ether-4E").text("E40");
+  $("#ether-1E").text("USD5");
+  $("#ether-2E").text("USD10");
+  $("#ether-3E").text("USD20");
+  $("#ether-4E").text("USD40");
   $("#standartPrice").text("100000000");
   $("#calcbonus").text("22220000");
   $("#tokenAmount").text("200000000000");
