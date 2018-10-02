@@ -20,9 +20,12 @@ $("#ether-button").trigger('click');
 document.getElementById('ether-button');
 document.getElementById('bitcoin-button');
 $("#saleStatus").text("going to finish in");
+
+  $(".currencyName").text("USD");
   $(".cryptoCurrencyName").text("ETH");
   $(".tokenName").text("TES");
-  $("#tokenPerEth").text("1000");
+  var tokenPrice = 5;
+  $("#tokenPrice").text(tokenPrice);
   $("#stage-1pct").text("50%");
   $("#stage-2pct").text("30%");
   $("#stage-3pct").text("20%");
