@@ -34,7 +34,7 @@ require "./php/admin_log.php";
 </head>
 
 <body onload="$('#reg-form').hide();$('#users-form').hide();$('#logs-form').hide()">
-  <div class="container">
+  <div class="container" style=" margin-bottom:20px;">
 
     <div class="login-box">
 
@@ -42,6 +42,8 @@ require "./php/admin_log.php";
         <p id="main_label" class="text-left">Hello <span> <?php echo $_SESSION['logged_user'] ?> </span> mister admin </p>
 
       </div>
+
+
       <div class="div_form">
         <div class="" id="users-form">
 
