@@ -18,6 +18,13 @@
      background-image : url(/dashboard/img/bitcoin-logo.png);
 
 }
+.imgBoutonEuro:before{
+     background-image : url(/dashboard/img/eur-logo.png);
+}
+.imgBoutonUsd:before{
+     background-image : url(/dashboard/img/usd-logo.png);
+
+}
 
 
 
@@ -66,6 +73,56 @@
 
     box-shadow: -0px -0px 1px black;
 }
+
+/*-----*/
+
+#euro-button{
+  background-color: #c6c6c6;
+    border-radius: 10%;
+}
+
+#euro-button:focus{
+  background-color: #c6c6c6;
+    box-shadow: -11px -10px 15px black;
+}
+
+#euro-button:hover{
+  background-color: #c6c6c6;
+    box-shadow: -11px -10px 15px black;
+}
+
+#euro-button:active{
+
+  background-color: #989898;
+    outline: none !important;
+
+    box-shadow: -0px -0px 1px black;
+}
+
+#usd-button{
+  background-color: #c6c6c6;
+    border-radius: 10%;
+}
+
+#usd-button:focus{
+  background-color: #c6c6c6;
+  box-shadow: 11px -10px 15px black;
+}
+#usd-button:hover{
+  outline: none !important;
+
+  box-shadow: 11px -10px 15px black;
+}
+
+#usd-button:active{
+
+  background-color: #989898;
+    outline: none !important;
+
+    box-shadow: -0px -0px 1px black;
+}
+
+
 
 .curbtn:focus, .curbtn:active  {
     outline: none !important;

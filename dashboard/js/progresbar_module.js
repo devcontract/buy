@@ -3,6 +3,9 @@ export function progressBarCalcualtion(){setInterval(function(){
   var x = ( $("#raised").html() / $("#hardCap").html() )*100;
   var pBarVal = x +"%";
   $("#dashboardProgressBar").css("width",pBarVal);
+  var  fixedpbarVal = x.toFixed(0);
+  fixedpbarVal += "%";
+  $("#pbarOutput").text(fixedpbarVal);
 
 },500);
 }

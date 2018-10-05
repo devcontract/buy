@@ -1,6 +1,7 @@
 var raised = 200;
 var hardcap = 300;
-
+var calcbonus  = 10;
+var saleBonus2 = 20;
 const BASE_RATE = 100;
 
 $(document).ready(function() {
@@ -11,11 +12,11 @@ $(document).ready(function() {
 
   $("#ether-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
-  
+
   });
   $("#bitcoin-button").click(function() {
     $("#multiCollapseExample1").collapse('hide');
-  
+
   });
   $("#usd-button").click(function() {
     $("#multiCollapseExample1").collapse('show');
@@ -58,7 +59,7 @@ $(document).ready(function() {
       }
     }
   $("#inputAmount").val(ethVal);
-  var tokenAmount = ethVal * BASE_RATE;
+  var tokenAmount = ethVal * BASE_RATE + calcbonus + saleBonus2;
 $("#tokenAmount").text(tokenAmount);
 }
 

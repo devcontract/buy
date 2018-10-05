@@ -15,8 +15,11 @@ progressBarModule.progressBarCalcualtion();
 
 
 $("#saleStatus").text("going to be finished in :");
-$(".cryptoCurrencyName").text("ETH");
+$(".currency").text("EUR");
 $(".tokenName").text("TES");
+$("#saleopen").text("01-01-2019");
+$("#saleclose").text("31-12-2019");
+
 //$("#buy_metamask").click(function(){buyToken()});
 /*showFiatPrice();
 timerId();
@@ -31,14 +34,16 @@ var softCap = 9876;
 var hardCap = 44444;
 var tokensold = 43433434
 var standardPrice = 5;
-
+var referral = 2313;
 document.getElementById('raised').innerHTML = raised;
 document.getElementById('softCap').innerHTML = softCap;
 document.getElementById('hardCap').innerHTML = hardCap;
 document.getElementById('tokensold').innerHTML = tokensold;
+document.getElementById('referral').innerHTML = referral;
 document.getElementById('sale-type-1').innerHTML = "Private Sale";
 document.getElementById('sale-type-2').innerHTML = "Pre-Sale";
 document.getElementById('sale-type-3').innerHTML = "Public Sale";
+
 $("#standartPrice").text(standardPrice);
 $("#bonusPresent").text("0");
 
