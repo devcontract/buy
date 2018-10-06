@@ -30,9 +30,11 @@ export function log(){
   var id = 0;
   function  showLog(element){
   id++;
-    createTr(id, "remove");
+  .  createTr(id, "remove");
     createTh(id,"tableSmallFont text-center remove","1");
     createTd(id,"tableSmallFont text-center remove",rand());
+    createTd(id,"tableSmallFont text-center remove",rand());
+      createTd(id,"tableSmallFont text-center remove",rand());
     createTd(id,"tableSmallFont text-center remove",element.hash)
     createTd(id,"tableSmallFont text-center remove",element.gasPrice);
     createTd(id,"tableSmallFont text-center remove",element.gasUsed);
