@@ -1,8 +1,7 @@
-function cop(element){
 
-  var $temp = $("<input>");
- $("body").append($temp);
- $temp.val($(element).text()).select();
- document.execCommand("copy");
- $temp.remove();
+
+function copyClip(){
+  var copyText = document.getElementById('addrInput');
+  copyText.select();
+  document.execCommand("copy");
 }
