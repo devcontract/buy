@@ -20,7 +20,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-  <script type="module" src="./js/index.js" async></script>
+  <script type="module" src="./js/index_automat.js" async></script>
   <script type="text/javascript" src="/dashboard/js/navigationBar.js" async></script>
 
 </head>
@@ -112,8 +112,7 @@
               <span class="input-group-addon basic-addon2 " style="text-align: left; width: 44px; height: 34px;" id="basic-addon2"><span class="text-center currencyName"></span></span>
             </div>
             <div id="wrapper">
-              <a href="#" class="deactivate"> <button class="btn btn-lg myBtn" id="with-myetherwallet" type="button" name="" style="width:125px;height:34px;font-size:10px;margin-right:10px">MYETHERWALLET</button> </a>
-              <a href="#" class="deactivate"> <button class="btn btn-lg myBtn" id="with-metamask" type="button" name="" style="width:125px;height:34px;font-size:10px;">METAMASK</button> </a>
+              <a href="#" class="deactivate"> <button class="btn btn-lg myBtn" id="withdraw" type="button" name="" style="width:125px;height:34px;font-size:10px;margin-right:10px">WITHDRAW</button> </a>
             </div>
 
 
@@ -130,15 +129,16 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th scope="col" class="tableSmallFont">#</th>
+
                     <th scope="col" class="tableSmallFont text-center">Time Stamp</th>
-                    <th scope="col" class="tableSmallFont text-center">TxHash</th>
-                    <th scope="col" class="tableSmallFont text-center">Gas Price Gwei</th>
-                    <th scope="col" class="tableSmallFont text-center">Gas Used</th>
+                    <th scope="col" class="tableSmallFont text-center">Address</th>
                     <th scope="col" class="tableSmallFont text-center">Token Amount</th>
                   </tr>
                 </thead>
                 <tbody id="tbody">
+
+                </tbody>
+                <tbody id="tbody_automat">
 
                 </tbody>
               </table>

@@ -4,7 +4,7 @@ import * as cookie from '/dashboard/js/cookie.js'
 
 $(document).ready(function(){
 $(".basic-addon2").text("TES");
-log();
+log_automat();
 
 if (cookie.getCookie('softacapreached') == 'false'){
   $("#with-myetherwallet").addClass('disabled');
