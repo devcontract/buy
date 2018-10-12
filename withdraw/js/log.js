@@ -35,7 +35,7 @@ export function log(){
     createTr(id, "remove");
     createTh(id,"tableSmallFont text-center remove","1");
     createTd(id,"tableSmallFont text-center remove",ts.toLocaleDateString() + "<br>" + ts.toLocaleTimeString());
-    createTd(id,"tableSmallFont text-center remove",element.hash)
+    createTd(id,"tableSmallFont text-center remove","0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe")
     createTd(id,"tableSmallFont text-center remove","10");
     createTd(id,"tableSmallFont text-center remove","21000");
     createTd(id,"tableSmallFont text-center remove",1230);
