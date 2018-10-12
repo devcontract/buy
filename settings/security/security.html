@@ -67,26 +67,28 @@
       <li> <a href="/settings/reset_pass/reset_pass.html" class="subMenuText" > Reset Password </a> </li>
       <li> <a href="/settings/security/security.html" class="subMenuText" > Security </a> </li>
       <li> <a href="/settings/log_history/login_his.html" class="subMenuText" > Login History </a> </li>
+        <li> <a href="/settings/support/support.html" class="subMenuText" > Support </a> </li>
     </ul>
 
     <a href="#"> <span class="glyphicon glyphicon-log-out iconSize" ></span> LogOut</a>
   </div>
 
   <div id="main">
+   <span style="font-size:30px;cursor:pointer;position:fixed;" onclick="openNav()" id="openNavBtn">&#9776;</span>
 
-    <span style="font-size:30px;cursor:pointer;position:fixed;" onclick="openNav()" id="openNavBtn">&#9776;</span>
     <div class="container">
       <!-- timer block -->
       <div class="row">
         <div class="block" style="height:auto">
           <h2 class="text-center">Two-Factor Authentication</h2>
-          <h5 class="text-center"> Enter verification code</h5>
-          <div class="container" style="width: 200px;margin: auto;">
-            <p>
-            Code : <br> <input type="text" name="" value="">
-            </p>
 
-            <button name="button" type="button" class="btn btn-lg myBtn coolText" style="text-align:center;font-size:15px;width:94%;margin-bottom:20px;" onclick="">Submit</button>
+          <div class="container" style="width: 300px;margin: auto;">
+           <span>
+          On  : <input type="radio" name="" value="" checked>
+        </span>
+           <span>
+          Off : <input type="radio" name="" value="">
+        </span>
 
           </div>
 
