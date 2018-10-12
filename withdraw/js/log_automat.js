@@ -35,8 +35,8 @@ export function log_automat(){
     createTr(id, "remove");
 
     createTd(id,"tableSmallFont text-center remove",ts.toLocaleDateString() + "<br>" + ts.toLocaleTimeString());
-    createTd(id,"tableSmallFont text-center remove","0xbb13...370a42");
-    createTd(id,"tableSmallFont text-center remove","0xde0B...697BAe");
+    createTd(id,"tableSmallFont text-center remove","0xbb134234fsd4...43gg3g3370a42");
+    createTd(id,"tableSmallFont text-center remove","0xde023edrfB34...634fdg4397BAe");
     createTd(id,"tableSmallFont text-center remove","10");
 
 
