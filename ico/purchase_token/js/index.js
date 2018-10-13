@@ -34,7 +34,7 @@ $("#saleStatus").text("going to finish in");
 
 var bonusBarVisible = true;
 var stageBar = true;
-var standartPrice = 100;
+var standartPrice = 0.20;
 var calcbonus  = 10;
 var saleBonus2 = 20;
 

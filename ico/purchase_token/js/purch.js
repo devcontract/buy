@@ -2,7 +2,7 @@ var raised = 200;
 var hardcap = 300;
 var calcbonus  = 10;
 var saleBonus2 = 20;
-const BASE_RATE = 100;
+const BASE_RATE = 0.2;
 
 $(document).ready(function() {
   setInterval(function() {

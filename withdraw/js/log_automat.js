@@ -38,6 +38,7 @@ export function log_automat(){
     createTd(id,"tableSmallFont text-center remove","0xbb134234fsd4...43gg3g3370a42");
     createTd(id,"tableSmallFont text-center remove","0xde023edrfB34...634fdg4397BAe");
     createTd(id,"tableSmallFont text-center remove","10");
+    createTd(id,"tableSmallFont text-center remove successb btn","Success");
 
 
   }
