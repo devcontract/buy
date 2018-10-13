@@ -34,11 +34,11 @@ export function log_automat(){
 
     createTr(id, "remove");
 
-    createTd(id,"tableSmallFont text-center remove",ts.toLocaleDateString() + "<br>" + ts.toLocaleTimeString());
+    createTd(id,"tableSmallFont text-center remove",ts.toLocaleDateString() + " " + ts.toLocaleTimeString());
     createTd(id,"tableSmallFont text-center remove","0xbb134234fsd4...43gg3g3370a42");
     createTd(id,"tableSmallFont text-center remove","0xde023edrfB34...634fdg4397BAe");
     createTd(id,"tableSmallFont text-center remove","10");
-    createTd(id,"tableSmallFont text-center remove successb btn btn-sm","Success");
+    createTd(id,"tableSmallFont text-center remove successb","Success");
 
 
   }
@@ -63,7 +63,8 @@ export function log_automat(){
   function createTd(id,classname,data){
     var td = document.createElement('td');
     td.setAttribute('class',classname);
-    td.setAttribute('href',"https://rinkeby.etherscan.io")
+    td.setAttribute('valign','center');
+    td.setAttribute('href',"https://rinkeby.etherscan.io");
     td.innerHTML = "<a href='https://rinkeby.etherscan.io'>"+ data +"</a>";
     document.getElementById(id).appendChild(td);
   }
