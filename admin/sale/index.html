@@ -68,65 +68,109 @@
       <!-- timer block -->
       <div class="row">
         <div class="block" style="height:auto;width:600px">
-          <h2 class="text-center coolText"> Private Sale Pre-Sale Sale</h2>
+          <h2 class="text-center coolText"> Sale </h2>
           <div class="" style="margin-top:20px;">
-
             <div class="" style="margin:30px 0 0 28px;height:auto;width:90%;background-color: white;border:1px solid #00BEA3;">
               <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
                 <h5 class="coolText text-center">Sale Configuration</h5>
               </div>
               <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
-                <div class="" style="width:100%;">
+                <div class="" style="width:100%;display:flex;justify-content:space-between;">
 
-                  <table class="table table-hover">
+<div class="dateLabel"  >
+  <p>
+    <span> <input type="text" name="" value="Start Time :" disabled style="border:none;padding:9px 0"> </span>
+  </p>
 
-                    <tbody id="tbody">
-                      <thead>
-                        <tr>
-                          <th scope="col" class="tableSmallFont text-center coolText">Sale Type </th>
-                          <th scope="col" class="tableSmallFont text-center coolText">Start Date</th>
-                          <th scope="col" class="tableSmallFont text-center coolText"> End Date</th>
-                          <th scope="col" class="tableSmallFont text-center coolText"> Status</th>
-                          <th scope="col" class="tableSmallFont text-center coolText"></th>
-                        </tr>
-                      </thead>
-                      <tr>
-                        <td scope="col" class="tableSmallFont text-left coolText"  style="line-height: 50px;">Private Sale</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2018-10-10</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2020-12-3</td>
-                        <td scope="col" class="tableSmallFont text-center coolText " style="line-height: 50px;" >Active</td>
-                        <td scope="col" class="tableSmallFont text-right coolText" style="line-height: 50px;" > <button id="" type="button" class="btn btn-lg myBtn deactivate" style="margin:0 0 10px 25px;width: auto; font-size:13px; ">Edit</button> </td>
-                      </tr>
-                      <tr>
-                        <td scope="col" class="tableSmallFont text-left coolText" style="line-height: 50px;" >Pre-Sale</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2018-10-10</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2018-10-10</td>
-                        <td scope="col" class="tableSmallFont text-center  coolText" style="line-height: 50px;" >Inactive</td>
-                        <td scope="col" class="tableSmallFont text-right coolText" style="line-height: 50px;" > <button id="" type="button" class="btn btn-lg myBtn deactivate" style="margin:0 0 10px 25px;width: auto; font-size:13px; ">Edit</button> </td>
-                      </tr>
-                      <tr>
-                        <td scope="col" class="tableSmallFont text-left coolText" style="line-height: 50px;" >Public Sale</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2018-10-10</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >2020-12-3</td>
-                        <td scope="col" class="tableSmallFont text-center coolText" style="line-height: 50px;" >Active</td>
-                        <td scope="col" class="tableSmallFont text-right coolText" style="line-height: 50px;" > <button id="" type="button" class="btn btn-lg myBtn deactivate" style="margin:0 0 10px 25px;width: auto; font-size:13px; ">Edit</button> </td>
-                      </tr>
+  <p>
+    <span> <input type="text" name="" value="End Time :" disabled style="border:none;padding:9px 0"> </span>
+  </p>
+  <p>
+    <span> <input type="text" name="" value="Tokens availble :" disabled style="border:none;padding:9px 0;"> </span> </p>
+<p>
+    <span> <input type="text" name="" value="Tokens Per EUR :" disabled style="border:none;padding:9px 0;"> </span> </p>
+<p>
+    <span> <input type="text" name="" value="Minimum :" disabled style="border:none;padding:9px 0;"> </span> </p>
+<p>
+    <span> <input type="text" name="" value="Hard Cap :" disabled style="border:none;padding:9px 0;"> </span> </p>
+</div>
 
-                      </tr>
+<div class="inputs"  >
+  <p>
 
-                    </tbody>
-                  </table>
+    <div class="input-group" style="">
+    <input type="date" id="start" name="start" min="2018-01-01" max="2030-12-31" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+  </div>
+
+
+  </p>
+  <p>
+    <div class="input-group" style="">
+    <input type="date" id="end" name="end" min="2018-01-01" max="2030-12-31" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+  </div>
+  </p>
+  <p>
+    <span>
+      <div class="input-group" style="">
+        <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="tokenAvailble">
+        <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center tokenName" ></span></span>
+
+      </div></span> </p>
+<p>
+    <span>
+      <div class="input-group" style="">
+      <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+      <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
+    </div>
+
+  </span>
+
+</p>
+<p>
+  <span>
+    <div class="input-group" style="">
+    <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+    <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
+  </div>
+
+</span>  </p>
+<p>
+  <span>
+    <div class="input-group" style="">
+    <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
+    <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
+  </div>
+
+</span>  </p>
+</div>
+
+<div class="buttons"  >
+  <p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px;margin-top:8px ">edit</button></span>
+  </p>
+  <p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span>
+  </p>
+  <p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
+<p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
+<p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
+<p>
+    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
+</div>
 
                 </div>
 
               </div>
 
-          </div>
+            </div>
 
             <br>
+          </div>
         </div>
       </div>
-    </div>
 
 </body>
 
