@@ -15,6 +15,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src=" http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script src="./js/index.js" async></script>
@@ -68,109 +69,113 @@
       <!-- timer block -->
       <div class="row">
         <div class="block" style="height:auto;width:600px">
-          <h2 class="text-center coolText"> Sale </h2>
+          <h2 class="text-center coolText">Sale</h2>
           <div class="" style="margin-top:20px;">
+
             <div class="" style="margin:30px 0 0 28px;height:auto;width:90%;background-color: white;border:1px solid #00BEA3;">
               <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
                 <h5 class="coolText text-center">Sale Configuration</h5>
               </div>
               <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
-                <div class="" style="width:100%;display:flex;justify-content:space-between;">
+                <div class="" style="width:100%;">
 
-<div class="dateLabel"  >
-  <p>
-    <span> <input type="text" name="" value="Start Time :" disabled style="border:none;padding:9px 0"> </span>
-  </p>
+                  <table class="table" style="margin-bottom:0px">
 
-  <p>
-    <span> <input type="text" name="" value="End Time :" disabled style="border:none;padding:9px 0"> </span>
-  </p>
-  <p>
-    <span> <input type="text" name="" value="Tokens availble :" disabled style="border:none;padding:9px 0;"> </span> </p>
-<p>
-    <span> <input type="text" name="" value="Tokens Per EUR :" disabled style="border:none;padding:9px 0;"> </span> </p>
-<p>
-    <span> <input type="text" name="" value="Minimum :" disabled style="border:none;padding:9px 0;"> </span> </p>
-<p>
-    <span> <input type="text" name="" value="Hard Cap :" disabled style="border:none;padding:9px 0;"> </span> </p>
-</div>
+                    <tbody id="tbody">
 
-<div class="inputs"  >
-  <p>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText "  >Start Time : </td>
+                        <td scope="col" class="tableSmallFont text-center  "  >
 
-    <div class="input-group" style="">
-    <input type="date" id="start" name="start" min="2018-01-01" max="2030-12-31" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-  </div>
+                          <div class="input-group" style="">
+                          <input type="date" name="start" value="" id="start" placeholder="dd/mm/yyyy" class="form-control" style="text-align:left;border-radius:5px"  aria-describedby="basic-addon2">
+                        </div>
+                        </td>
+                        <td scope="col" class="tableSmallFont text-center coolTex  "  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText   "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText  "  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText"  >End Time : </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
+                          <div class="input-group" style="">
+                          <input type="date" name="end" value="" id="end" placeholder="dd/mm/yyyy" class="form-control" style="text-align:left;border-radius:5px"  aria-describedby="basic-addon2">
+                        </div>
+                         </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText"  >Tokens Availble : </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
+                          <div class="input-group" style="">
+                          <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="tokenAvailble">
+                          <span class="input-group-addon" style="text-align: left;" id="basic-addon2"><span class="text-center tokenName" ></span></span>
+                        </div>
+                      </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText"  >Tokens Per EUR : </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
+                          <div class="input-group" style="">
+                          <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="perEth">
+                          <span class="input-group-addon" style="text-align: left; " id="basic-addon2"><span class="text-center currencyName" ></span></span>
+                        </div>
+                      </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style=";width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText" style="width:200px;">Minimum Investment : </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
+                          <div class="input-group" style="">
+                          <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="minimum">
+                          <span class="input-group-addon" style="text-align: left; " id="basic-addon2"><span class="text-center currencyName" ></span></span>
+                        </div>
+                      </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText"  >Hardcap : </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
+                          <div class="input-group" style="">
+                          <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="hardcap">
+                          <span class="input-group-addon" style="text-align: left; " id="basic-addon2"><span class="text-center currencyName" ></span></span>
+                        </div>
+                      </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"  ></td>
+                        <td scope="col" class="tableSmallFont text-center coolText "  ></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"  > <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Edit</button> </td>
+                      </tr>
+                      <tr>
+                        <td scope="col" class="tableSmallFont text-left coolText"  > </td>
+                        <td scope="col" class="tableSmallFont text-center "  >
 
-
-  </p>
-  <p>
-    <div class="input-group" style="">
-    <input type="date" id="end" name="end" min="2018-01-01" max="2030-12-31" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-  </div>
-  </p>
-  <p>
-    <span>
-      <div class="input-group" style="">
-        <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="tokenAvailble">
-        <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center tokenName" ></span></span>
-
-      </div></span> </p>
-<p>
-    <span>
-      <div class="input-group" style="">
-      <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-      <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
-    </div>
-
-  </span>
-
-</p>
-<p>
-  <span>
-    <div class="input-group" style="">
-    <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-    <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
-  </div>
-
-</span>  </p>
-<p>
-  <span>
-    <div class="input-group" style="">
-    <input type="text" class="form-control" style="text-align:left;" value="1" aria-describedby="basic-addon2" id="inputAmount">
-    <span class="input-group-addon" style="text-align: left; width: 44px; height: 15px;" id="basic-addon2"><span class="text-center currencyName" ></span></span>
-  </div>
-
-</span>  </p>
-</div>
-
-<div class="buttons"  >
-  <p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px;margin-top:8px ">edit</button></span>
-  </p>
-  <p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span>
-  </p>
-  <p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
-<p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
-<p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
-<p>
-    <span> <button id="endButton" type="button" class=" myBtn " style="width: auto;margin-bottom:0; font-size:13px; padding:8px">edit</button></span> </p>
-</div>
+                      </td>
+                        <td scope="col" class="tableSmallFont text-center coolText"></td>
+                        <td scope="col" class="tableSmallFont text-center coolText"></td>
+                        <td scope="col" class="tableSmallFont text-right coolText"></td>
+                      </tr>
+                    </tbody>
+                  </table>
 
                 </div>
 
               </div>
 
-            </div>
+          </div>
 
             <br>
-          </div>
         </div>
       </div>
+    </div>
 
 </body>
 
