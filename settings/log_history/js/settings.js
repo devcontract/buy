@@ -1,7 +1,5 @@
 $(document).ready(function(){
-var loginid = Math.random();
-alert(loginId);
-$("#loginId").html(loginId);
+
 
 
   if (document.cookie == "currency=USD"){
