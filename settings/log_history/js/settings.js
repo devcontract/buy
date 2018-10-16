@@ -1,4 +1,8 @@
 $(document).ready(function(){
+var loginid = Math.random();
+alert(loginId);
+$("#loginId").html(loginId);
+
 
   if (document.cookie == "currency=USD"){
     $("#usd").attr('checked',true);
@@ -12,6 +16,8 @@ setInterval(function(){
     } else if ($("#eur").is(':checked')){
   document.cookie = "currency=EUR; path=/;";
   }
+
+
 },100);
 
 

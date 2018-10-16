@@ -46,10 +46,7 @@
       </li>
 
     </ul>
-    <a href="#ReferralSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-share-alt iconSize"></span> Referral</a>
-    <ul class="collapse list-unstyled" id="ReferralSubMenu">
-      <li><a href="/referral/index.html" class="subMenuText"> Affilate History</a></li>
-    </ul>
+  
     <a href="#SettingsSubMenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle collapseble"> <span class="glyphicon glyphicon-cog iconSize"> </span> Settings</a>
     <ul class="collapse list-unstyled" id="SettingsSubMenu">
       <li> <a href="/settings/general/index.html" class="subMenuText"> General Setting </a> </li>
@@ -71,17 +68,88 @@
               <li class="active"><a data-toggle="tab" href="#general"> General </a></li>
               <li><a data-toggle="tab" href="#smart"> Smart Contract </a></li>
               <li><a data-toggle="tab" href="#sale"> Sale </a></li>
-              <li><a data-toggle="tab" href="#sale"> Withdraw </a></li>
+              <li><a data-toggle="tab" href="#withdraw"> Withdraw </a></li>
               <li><a data-toggle="tab" href="#refund"> Refund </a></li>
 
             </ul>
+
             <div class="tab-content">
-              <div id="sale" class="tab-pane fade in  container">
-                
+              <div id="general" class="tab-pane fade in active container">
                 <div class="" style="margin-top:10px;">
                   <p>
+                    <div class="" style="margin-top:20px;">
+                      <div class="" style="margin:30px 0 0 28px;height:auto;width:45%;background-color: white;border:1px solid #00BEA3;">
+                        <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+                          <h5 class="coolText text-center">General Configuration</h5>
+                        </div>
+                        <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
+                          <div class="" style="width:100%;">
+                            <table class="table" style="margin-bottom:0px">
+                              <tbody id="tbody">
+                                <tr>
+                                  <td scope="col" class="tableSmallFont text-left coolText ">Collect funds in <span class="">EUR</span> </td>
+                                  <td scope="col" class="tableSmallFont text-center  ">
+                                  <span>  <input type="checkbox" name="" value="EUR">  </span>
+                                  </td>
+                                  <td scope="col" class="tableSmallFont text-center coolTex  "></td>
+                                  <td scope="col" class="tableSmallFont text-center coolText   "></td>
+                                  <td scope="col" class="tableSmallFont text-right coolText  "> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="col" class="tableSmallFont text-left coolText ">Collect funds in <span class="">USD</span> </td>
+                                  <td scope="col" class="tableSmallFont text-center  ">
+                                  <span> <input type="checkbox" name="" value="EUR">  </span>
+                                  </td>
+                                  <td scope="col" class="tableSmallFont text-center coolTex  "></td>
+                                  <td scope="col" class="tableSmallFont text-center coolText   "></td>
+                                  <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                                </tr>
+                              </tbody>
+                            </table>
 
-                  <div class="" style="margin-top:20px;">
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <br>
+                    </div>
+                </p>
+                </div>
+              </div>
+
+              <div id="smart" class="tab-pane fade in  container">
+                <div class="" style="margin-top:10px;">
+                  <p>
+                    <div class="" style="margin-top:20px;">
+                      <div class="" style="margin:30px 0 0 28px;height:auto;width:45%;background-color: white;border:1px solid #00BEA3;">
+                        <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+                          <h5 class="coolText text-center"> Smart Contract Configuration </h5>
+                        </div>
+                        <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
+                          <div class="" style="width:100%;">
+                            <table class="table" style="margin-bottom:0px">
+                              <tbody id="tbody">
+                                <tr>
+                                  <td scope="col" class="tableSmallFont text-left coolText "> Smart Contract :<span class=""> <input type="text" name="" value="0x4EE98f1A45860b2705960a00CcEc9C38070669Fe"  style="font-size:10px;width:260px"> </span> </td>
+                                  <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                </p>
+                </div>
+              </div>
+
+              <div id="sale" class="tab-pane fade in  container">
+                <div class="" style="margin-top:10px;">
+                  <p>
+                    <div class="" style="margin-top:20px;">
                       <div class="" style="margin:30px 0 0 28px;height:auto;width:45%;background-color: white;border:1px solid #00BEA3;">
                         <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
                           <h5 class="coolText text-center">Sale Configuration</h5>
@@ -89,7 +157,16 @@
                         <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
                           <div class="" style="width:100%;">
                             <table class="table" style="margin-bottom:0px">
+
                               <tbody id="tbody">
+                                <div class="" style="display:flex;justify-content:space-between;margin-bottom:15px">
+                                  <span>EUR : <input type="checkbox" name="" value="" id="eur" > </span>
+                                  <span>USD : <input type="checkbox" name="" value="" id="usd" > </span>
+                                  <span>ETH : <input type="checkbox" name="" value="" id="eth" > </span>
+                                  <span>BIT : <input type="checkbox" name="" value="" id="bit" > </span>
+                                </div>
+
+
                                 <tr>
                                   <td scope="col" class="tableSmallFont text-left coolText ">Start Time : </td>
                                   <td scope="col" class="tableSmallFont text-center  ">
@@ -195,10 +272,73 @@
                     </div>
 
                   </p>
-                  <div class="" style="width:600px">
-                  </div>
+
                 </div>
               </div>
+              <div id="withdraw" class="tab-pane fade in  container">
+                <div class="" style="margin-top:10px;">
+                  <p>
+                    <div class="" style="margin-top:20px;">
+                      <div class="" style="margin:30px 0 0 28px;height:auto;width:45%;background-color: white;border:1px solid #00BEA3;">
+                        <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+                          <h5 class="coolText text-center"> Withdraw Configuration </h5>
+                        </div>
+                        <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
+                          <div class="" style="width:100%;">
+                            <table class="table" style="margin-bottom:0px">
+                              <tbody id="tbody">
+                                <tr>
+                                  <td scope="col" class="tableSmallFont text-left coolText "> Minimum Withdraw Amount :<span class=""> <input type="text" name="" value=""  style=""> </span> </td>
+                                  <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                                </tr>
+                                <tr>
+                                  <td scope="col" class="tableSmallFont text-left coolText "> Withdraw enabled :<span class=""> <input type="checkbox" name="" value=""  style=""> </span> </td>
+                                  <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                </p>
+                </div>
+              </div>
+              <div id="refund" class="tab-pane fade in  container">
+                <div class="" style="margin-top:10px;">
+                  <p>
+                    <div class="" style="margin-top:20px;">
+                      <div class="" style="margin:30px 0 0 28px;height:auto;width:45%;background-color: white;border:1px solid #00BEA3;">
+                        <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+                          <h5 class="coolText text-center"> Refund Configuration </h5>
+                        </div>
+                        <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
+                          <div class="" style="width:100%;">
+                            <table class="table" style="margin-bottom:0px">
+                              <tbody id="tbody">
+                                <div class="" style="display:flex;justify-content:space-between;margin-bottom:15px">
+                                  <span>EUR : <input type="checkbox" name="" value="" id="eurRef" > </span>
+                                  <span>USD : <input type="checkbox" name="" value="" id="usdRef" > </span>
+                                  <span>ETH : <input type="checkbox" name="" value="" id="ethRef" > </span>
+                                  <span>BIT : <input type="checkbox" name="" value="" id="bitRef" > </span>
+                                </div>
+                                <tr>
+                                    <td scope="col" class="tableSmallFont text-right coolText"> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Download</button> </td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                      <br>
+                    </div>
+                </p>
+                </div>
+              </div>
+
+
             </div>
 
           </div>
