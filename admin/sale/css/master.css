@@ -10,7 +10,7 @@
   margin-left: -10px;
 }
 .block{
-width: 650px;
+width: auto;
 height: 240px;
 margin:0 auto;
   border-radius: 12px;
@@ -59,7 +59,7 @@ color:white !important;
 }
 
 td {
-  font-size: 13px;
+  font-size: 10px;
 vertical-align: middle !important;
 }
 li a{
