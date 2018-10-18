@@ -1,5 +1,6 @@
 .admin-panel{
   width:100%;
+  min-width: 770px;
   height:50px;
   background-color: grey;
   border:1px solid black;
@@ -7,7 +8,8 @@
 
 .login-box{
 
-  width: 650px;
+
+  min-width: 270px !important;
   height:auto;
 margin: 0 auto;
 margin-top: 10%;

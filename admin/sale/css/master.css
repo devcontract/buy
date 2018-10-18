@@ -65,3 +65,6 @@ vertical-align: middle !important;
 li a{
   color:black !important;
 }
+td p{
+  margin-top:10px;
+}

@@ -64,7 +64,7 @@
         <div class="block" style="height:auto;width:790px">
           <div class="" style="width:auto;">
 
-            <ul class="nav nav-tabs" style="display:flex;justify-content:space-between;">
+            <ul class="nav nav-tabs coolText" style="display:flex;justify-content:space-between;">
               <li class="active"><a data-toggle="tab" href="#general"> General </a></li>
               <li><a data-toggle="tab" href="#smart"> Smart Contract </a></li>
               <li><a data-toggle="tab" href="#sale"> Sale </a></li>
@@ -72,6 +72,7 @@
               <li><a data-toggle="tab" href="#refund"> Refund </a></li>
               <li><a data-toggle="tab" href="#purchaseHistory"> Purchase History </a></li>
               <li><a data-toggle="tab" href="#funds"> Funds </a></li>
+              <li><a data-toggle="tab" href="#paygateway"> Payment Gatewa </a></li>
 
             </ul>
 
@@ -127,17 +128,28 @@
                           <div class="" style="width:100%;">
                             <table class="table" style="margin-bottom:0px">
                               <tbody id="tbody">
-                                <tr>
-                                  <td scope="col" class="tableSmallFont text-left coolText "> Smart Contract address:<span class=""> <input type="text" name="" class="form-control" value="0x4EE98f1A45860b2705960a00CcEc9C38070669Fe" style="font-size:10px;width:260px;display:inline"> </span>
-                                  </td>
-                                  <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
-                                </tr>
-                                <tr>
-                                  <td scope="col" class="tableSmallFont text-left coolText "> </td>
 
-                                  <td scope="col" class="tableSmallFont text-right coolText  "> </td>
+                                <div class="">
+                                  <label name="name" rows="1" cols="70" disabled style="border:none">This address can interact with contract</label>
+                                </div>
+                               <tr>
 
-                                </tr>
+                                 <td scope="col" class="tableSmallFont text-left coolText "><span style="font-weight: bold">Address:</span> <span class=""> <input type="text" name="" class="form-control" value="0x4EE98f1A45860b2705960a00CcEc9C38070669Fe" style="font-size:10px;width:260px;display:inline"> </span>
+
+                                 </td>
+                                 <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                               </tr>
+                               <tr>
+                                 <td scope="col" class="tableSmallFont text-left coolText "><span style="font-weight: bold">Smart Contract address:</span>  <span class=""> <input type="text" name="" class="form-control" value="0x4EE98f1A45860b2705960a00CcEc9C38070669Fe" style="font-size:10px;width:260px;display:inline"> </span>
+                                 </td>
+                                 <td scope="col" class="tableSmallFont text-right coolText  "> <button id="" type="button" class="btn btn-sm myBtn deactivate" style="width: auto; font-size:13px; ">Save</button> </td>
+                               </tr>
+                               <tr>
+                                 <td scope="col" class="tableSmallFont text-left coolText "> </td>
+
+                                 <td scope="col" class="tableSmallFont text-right coolText  "> </td>
+
+                               </tr>
                               </tbody>
                             </table>
                           </div>
@@ -457,12 +469,16 @@
                                   <td scope="col" class="tableSmallFont text-right coolText"> </td>
                                 </tr>
                                 <tr>
-                                  <td scope="col" class="tableSmallFont text-left coolText">Bank Details: </td>
+                                  <td scope="col" class="tableSmallFont text-left coolText">Bank Requisites: </td>
                                   <td scope="col" class="tableSmallFont text-left ">
-                                    Sort Code  <span><input type="text" class="form-control" style="text-align:left;font-size:11px;width:65px;display:inline" value="122332"  id="srtCode"></span> -
-Account Number <span> <input type="text" class="form-control" style="text-align:left;font-size:11px;width:75px;display:inline" value="12212323"  id="acntNum"></span>
 
-                                  </td>
+                                  <p> Account name </p> <input type="text" class="form-control" style="display:inline" name="" value="Royal Institute of British Architects">
+                                  <p> Bank address </p> <input type="text" class="form-control" style="display:inline" name="" value="Barclays Bank PLC 1 Churchill Place London E14 5HP">
+                                  <p> Sort Code </p> <input type="text" class="form-control" style="display:inline" name="" value="20 – 00 - 00">
+                                  <p> Account Number </p> <input type="text" class="form-control" style="display:inline" name="" value="93846695">
+                                  <p> IBAN </p> <input type="text" class="form-control" style="display:inline" name="" value="GB65 BARC 2000 0093 8466 95">
+                                  <p> SWIFT Code </p> <input type="text" class="form-control" style="display:inline" name="" value="BARC GB22">
+                                   </td>
                                   <td scope="col" class="tableSmallFont text-center coolText"></td>
                                   <td scope="col" class="tableSmallFont text-center coolText "></td>
                                   <td scope="col" class="tableSmallFont text-right coolText">  </td>
@@ -477,8 +493,34 @@ Account Number <span> <input type="text" class="form-control" style="text-align:
                                   <td scope="col" class="tableSmallFont text-center coolText"></td>
                                   <td scope="col" class="tableSmallFont text-right coolText"></td>
                                 </tr>
+
                               </tbody>
                             </table>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <br>
+                    </div>
+
+                  </p>
+
+                </div>
+              </div>
+              <div id="paygateway" class="tab-pane fade in  container">
+                <div class="" style="margin-top:10px;">
+                  <p>
+                    <div class="" style="margin-top:20px;">
+                      <div class="" style="margin:30px 0 0 28px;height:auto;width:706px;background-color: white;border:1px solid #00BEA3;">
+                        <div class="" style="width:100%;height: 17%;text-align:center;border-bottom:1px solid #00BEA3">
+                          <h5 class="coolText text-center">  </h5>
+                        </div>
+                        <div class="container" style="padding: 15px;width:100%;height:70%;" style="">
+                          <div class="" style="width:100%;">
+
 
                           </div>
 
