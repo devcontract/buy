@@ -6,7 +6,6 @@ export function progressBarCalcualtion(){setInterval(function(){
   var  fixedpbarVal = x.toFixed(0);
   fixedpbarVal += "%";
   $("#pbarOutput").text(fixedpbarVal);
-
 },500);
 }
 
