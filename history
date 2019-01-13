@@ -1,0 +1,377 @@
+    1  sudo apt-get update
+    2  ifconfig
+    3  sudo apt-get install postgresql postgresql-contrib
+    4  sudo -i -u postgres
+    5  sudo apt-get install postgresql postgresql-contrib
+    6  sudo apt-get update
+    7  sudo apt-get install ethereum
+    8  sudo apt-get install software-properties-common
+    9  sudo apt-get install software-properties-commonsudo apt-get install software-properties-common
+   10  sudo add-apt-repository -y ppa:ethereum/ethereum
+   11  sudo apt-get update
+   12  sudo apt-get install ethereum
+   13  ./geth --testnet --rpc
+   14  geth --testnet --rpc
+   15  clear
+   16  geth --testnet --rpc
+   17  geth
+   18  psql -u postgres
+   19  psql postgres
+   20  sudo -i -u postgres
+   21  cd ~/Desktop/bifrost_project/
+   22  ls
+   23  ./bifrost-server check-keys
+   24  sudo ./bifrost-server check-keys
+   25  bifrost-server check-keys
+   26  ls
+   27  bifrost-server
+   28  .bifrost-server
+   29  ./bifrost-server
+   30  sudo ./bifrost-server
+   31  sudo su
+   32  clear
+   33  ./bifrost-server check-keys
+   34  clear
+   35  ./bifrost-server check-keys
+   36  reboot
+   37  sudo reboot
+   38  psql
+   39  cd ~/Desktop/bifrost_project/
+   40  clear
+   41  ./bifrost-server server
+   42  clear
+   43  ./bifrost-server server
+   44  clear
+   45  ./bifrost-server server
+   46  cd ~/Desktop/
+   47  ls
+   48  cd bifrost_project/
+   49  clar
+   50  clear
+   51  geth --testnet --rpc
+   52  cd ~/Desktop/bifrost_project/
+   53  ls
+   54  ./bifrost-server check-keys
+   55  ./bifrost-server server
+   56  clear
+   57  ./bifrost-server server
+   58  sudo -i -u postgres
+   59  clear
+   60  psql
+   61  psql -d db_one
+   62  sudo apt-get update
+   63  sudo apt-getupgrade
+   64  sudo apt-get upgrade
+   65  cd /home/kostix/Downloads/
+   66  tar -C /usr/local -xzf go1.11.4.linux-amd64.tar.gz
+   67  sudo tar -C /usr/local -xzf go1.11.4.linux-amd64.tar.gz
+   68  clear
+   69  cd /home/kostix/Downloads/
+   70  tar -C /usr/local -xzf go1.11.4.linux-amd64.tar.gz
+   71  clear
+   72  sudo tar -C /usr/local -xzf go1.11.4.linux-amd64.tar.gz
+   73  export PATH=$PATH:/usr/local/go/bin
+   74  go
+   75  go -v
+   76  clear
+   77  curl https://glide.sh/get | sh
+   78  cd
+   79  sudo nano .bash_profile
+   80  nano ~/.bashrc
+   81  curl https://glide.sh/get | sh
+   82  go
+   83  sufo snap install --classic go
+   84  sudo snap install --classic go
+   85  sudo apt-get install golang-go
+   86  go
+   87  clear
+   88  curl https://glide.sh/get | sh
+   89  nano ~/.bashrc 
+   90  curl https://glide.sh/get | sh
+   91  nano ~/.bashrc 
+   92  curl https://glide.sh/get | sh
+   93  cd /home/kostix/Desktop/bifrost_project/
+   94  cd go
+   95  cd go-bifrost-v0.0.2/
+   96  clear
+   97  glide init
+   98  clear
+   99  glide install
+  100  clear
+  101  apt-get install git-core
+  102  sudo apt-get install git-core
+  103  clear
+  104  sudo glide install
+  105  clear
+  106  git --version
+  107  glide isntall
+  108  glid
+  109  clear
+  110  glide --version
+  111  glide install
+  112  sudo apt-get install mercurial
+  113  go install
+  114  clear
+  115  go install
+  116  glide update
+  117  clear
+  118  go install
+  119  cd ..
+  120  ls
+  121  cd src
+  122  clear
+  123  go install
+  124  echo $GOPATH
+  125  cd ..
+  126  go install
+  127  nano ~/.bashrc 
+  128  '/home/kostix/Desktop/bifrost_project/go/bin/glide' 
+  129  ./home/kostix/Desktop/bifrost_project/go/bin/glide
+  130  cd /home/kostix/Desktop/bifrost_project/go/bin/
+  131  ./glide
+  132  glide
+  133  clear
+  134  cd $HOME/Desktop
+  135  cd /home/kostix/Desktop/bifrost_project/go/bin
+  136  cd ..
+  137  cd src
+  138  go install
+  139  nano ~/.bashrc 
+  140  source ~/.bashrc 
+  141  nano ~/.bashrc 
+  142  source ~/.bashrc 
+  143  go version
+  144  clear
+  145  ls
+  146  go install
+  147  go build
+  148  clear
+  149  cd ..
+  150  ls
+  151  cd go-bifrost-v0.0.2/
+  152  go install
+  153  clear
+  154  cd $HOME/Desktop/go
+  155  cd $HOME/Desktop/
+  156  ls
+  157  cd bifrost_project/
+  158  nano ~/.bashrc 
+  159  source ~/.bashrc 
+  160  clear
+  161  cd go
+  162  cd src/
+  163  go install
+  164  go
+  165  go build
+  166  go run
+  167  ls
+  168  glide install
+  169  clear
+  170  glide install
+  171  cd ..
+  172  glide install
+  173  clear
+  174  glide
+  175  glide --version
+  176  cd bin
+  177  curl https://glide.sh/get | sh
+  178  nano ~/.bashrc 
+  179  source ~/.bashrc 
+  180  curl https://glide.sh/get | sh
+  181  ls
+  182  cd ..
+  183  cd src
+  184  ls
+  185  glide install
+  186  go install
+  187  clear
+  188  go build
+  189  glide build
+  190  glide install
+  191  sudo glide install
+  192  clear
+  193  go
+  194  gopath
+  195  echo GOPATH
+  196  echo $GOPATH
+  197  echo $GOPBIN
+  198  echo $GOBIN
+  199  cd ..
+  200  cd go-bifrost-v0.0.2/
+  201  go install
+  202  go buld
+  203  echo $GOPATH
+  204  nano ~/.bashrc 
+  205  source ~/.bashrc 
+  206  echo $GOPATH
+  207  cd $GOPATH
+  208  cd src/
+  209  cd bifrost/
+  210  clear
+  211  go install 
+  212  go get
+  213  go get -d /home/kostix/Desktop/bifrost/go/src/bifrost/
+  214  go get -d /home/kostix/Desktop/bifrost/go/src/bifrost/clear
+  215  clear
+  216  go run
+  217  ls
+  218  nano ~/.bashrc 
+  219  clear
+  220  go install
+  221  go build
+  222  clear
+  223  glide
+  224  cd ..
+  225  ls
+  226  cd ..
+  227  cd bin
+  228  ls
+  229  glide
+  230  ./glide
+  231  ./glide /home/kostix/Desktop/bifrost/go/src/bifrost/
+  232  ./glide install /home/kostix/Desktop/bifrost/go/src/bifrost/
+  233  ./glide install /home/kostix/Desktop/bifrost/go/src/bifrost
+  234  ./glide install 
+  235  postgres
+  236  sudo -i -u postgres
+  237  clear
+  238  ls
+  239  curl https://glide.sh/get | sh
+  240  echo $GOBIN
+  241  echo $GOPATH
+  242  nano ~/.bashrc 
+  243  source ~/.bashrc 
+  244  echo $GOBIN
+  245  curl https://glide.sh/get | sh
+  246  $GOBIN
+  247  cd $GOBIN
+  248  glide
+  249  clear
+  250  glide
+  251  ./glide
+  252  cd ..
+  253  cd src/
+  254  ./glide
+  255  cd bif
+  256  cd bifrost/
+  257  sudo ./glide
+  258  sudo ./glide install
+  259  echo $gopath
+  260  echo $GOPATH
+  261  cd /home/kostix/Desktop/bifrost/go/src/github.com/stellar
+  262  clear
+  263  git clone https://github.com/stellar/go.git
+  264  geth attach
+  265  geth account list
+  266  clear
+  267  geth account list
+  268  geth attach
+  269  geth removebd
+  270  geth removedb
+  271  geth init genesis.json
+  272  geth attach
+  273  glide
+  274  curl https://glide.sh/get | sh
+  275  nano ~/.bashrc 
+  276  source ~/.bashrc 
+  277  clear
+  278  curl https://glide.sh/get | sh
+  279  cd $GOPATH
+  280  ls
+  281  cd src
+  282  cd bifrost/
+  283  clear
+  284  glide install
+  285  glide up
+  286  glide mirror set https://golang.org/x/crypto https://github.com/golang/crypto --vcs git
+  287  glide install
+  288  glide up
+  289  glide install
+  290  clear
+  291  ls
+  292  rm glide
+  293  clear
+  294  go install
+  295  go install -v
+  296  go install -i
+  297  go man
+  298  go test
+  299  clear
+  300  go test
+  301  go install
+  302  go test
+  303  glide 
+  304  glide test
+  305  glide install
+  306  clear
+  307  purge glide
+  308  nano ~/.bashrc 
+  309  glide install
+  310  dep
+  311  clear
+  312  go test
+  313  ls
+  314  cd bifrost/
+  315  ls
+  316  go test
+  317  cd..
+  318  cd ..
+  319  clear
+  320  cd $GOPATH
+  321  ls
+  322  cd src
+  323  ls
+  324  cd go-master/
+  325  glide install
+  326  go get -d -u github.com/golang/dep
+  327  curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+  328  clear
+  329  dep ensure -v
+  330  dep init
+  331  dep install
+  332  go install
+  333  go test
+  334  cd services/
+  335  ls
+  336  cd bifrost/
+  337  ls
+  338  go install
+  339  clear
+  340  go main.go
+  341  go install  main.go
+  342  glide install
+  343  clear
+  344  cd
+  345  cldar
+  346  clear
+  347  geth
+  348  cd /home/kostix/.ethereum/
+  349  ls
+  350  cd 
+  351  cd $GOPATH
+  352  geth init
+  353  geth init export GOPATH=$HOME/Desktop/bifrost/go
+  354  export GOBIN=$GOPATH/bin
+  355  export PATH=$PATH:$GOBIN
+  356  clear
+  357  geth account new 
+  358  cd /home/kostix/.ethereum/
+  359  ls
+  360  open
+  361  nano genesis.jsoon
+  362  geth init genesis.json
+  363  geth init /home/kostix/.ethereum/genesis.json
+  364  mv genesis.jsoon genesis.json
+  365  geth init /home/kostix/.ethereum/genesis.json
+  366  nano f
+  367  geth --identity "MyNodeNAme" --rpc --rpcport "8545" --rpccorsdomain "*"  --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug,ipcapi" --networkid "33"
+  368  geth init /home/kostix/.ethereum/genesis.json
+  369  geth --identity "MyNodeNAme" --rpc --rpcport "8545" --rpccorsdomain "*"  --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug,ipcapi" --networkid "33"
+  370  geth remove db
+  371  geth removedb
+  372  nano genesis.json 
+  373  geth init /home/kostix/.ethereum/genesis.json
+  374  geth --identity "MyNodeNAme" --rpc --rpcport "8545" --rpccorsdomain "*"  --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug,ipcapi" --networkid "33"
+  375  history
+  376  echo history >> /home/kostix/Desktop/history.txt
+  377  history > /home/kostix/Desktop/history.txt
