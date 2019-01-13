@@ -1,0 +1,4 @@
+#!/bin/bash
+
+
+geth attach /Volumes/External/Ethereum_project/Blockchain_Networks/Private/geth.ipc < /Volumes/External/Ethereum_project/Blockchain_Networks/Private/scripts/Mining/start.sh

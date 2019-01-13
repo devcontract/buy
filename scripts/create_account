@@ -1,0 +1,4 @@
+#!/bin/bash 
+
+
+geth account new --datadir /Volumes/External/Ethereum_project/Blockchain_Networks/Private/

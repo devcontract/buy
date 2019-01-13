@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+geth --identity "MyNodeNAme" --ipcapi --rpc --rpcport "8545" --rpccorsdomain "*" --datadir /Volumes/External/Ethereum_project/Blockchain_Networks/Private --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug" --networkid "33"
+
+

@@ -1,0 +1,17 @@
+ Please use the following script execution order 
+ To make sure that automatiosation will run successfully 
+ 
+ 
+ If Private/ network directory is empty skip this step.
+ 1) Run remove_db
+   
+ Then 
+ 
+ 2) Run create_account 
+ 
+ 3) Once account is generated copy account`s address to genesis file and save it.
+ 
+ 4) Run Init_genesis_json
+ 5) Run start_local_geth
+ 6) Run private_Run_Wallet_on_this_ipc - to connect to geth.ipc or run private_Run_Wallet_on_this_ipc_http to connect to http://127.0.0.1:8545
+ 
