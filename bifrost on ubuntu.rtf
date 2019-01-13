@@ -83,3 +83,24 @@ dsn="postgres://stellar:pass1234@localhost/bifrost?sslmode=disable"
 
 ./bifrost-server serve //to start. bifrost server
 
+// 
+
+mkdir -p $HOME/Desktop/bifrost/go
+mkdir -p $HOME/Desktop/bifrost/go/src
+
+mkdir -p $HOME/Desktop/bifrost/go/pkg
+mkdir -p $HOME/Desktop/bifrost/go/bin
+
+
+nano ~/.bashrc 
+
+
+// save the following at the end of your file
+
+
+export GOPATH=$HOME/Desktop/bifrost/go
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOBIN
+
+
+
