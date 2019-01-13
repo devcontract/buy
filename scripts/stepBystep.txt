@@ -1,0 +1,22 @@
+geth account new
+
+// save new accounta address
+
+geth removedb
+
+mv genesis.json $HOME/.ethereum/genesis.json
+
+nano $HOME/.ethereum/genesis.json
+
+// insert your account number 
+
+geth init /$HOME/.ethereum/genesis.json
+
+geth --identity "MyNodeNAme"  --rpc --rpcport "8545" --rpccorsdomain "*"  --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug,ipcapi" --networkid "33"
+
+
+// now open one more terminal window and there do the following
+
+geth attach
+
+web3.fromWei(eth.getBalance(eth.coinbase),"ether")      // to check the ballance
