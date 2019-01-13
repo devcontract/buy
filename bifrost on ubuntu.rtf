@@ -103,4 +103,12 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOBIN
 
 
+// now install ethereum geth
 
+sudo apt-get update
+sudo apt-get install ethereum
+
+
+// to run test node 
+
+geth --tesnet --rpc
