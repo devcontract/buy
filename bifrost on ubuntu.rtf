@@ -1,113 +1,85 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 HelveticaNeue-Bold;}
-{\colortbl;\red255\green255\blue255;\red220\green161\blue13;}
-{\*\expandedcolortbl;;\cssrgb\c89412\c68627\c3922;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\deftab560
-\pard\pardeftab560\slleading20\partightenfactor0
+настройка vm 
+установка ubuntu 14.04  updates installed during installation ticekd
+в ubuntu
+ 
+настройка бд postgresql
 
-\f0\fs24 \cf0 \uc0\u1085 \u1072 \u1089 \u1090 \u1088 \u1086 \u1081 \u1082 \u1072  vm \
-\uc0\u1091 \u1089 \u1090 \u1072 \u1085 \u1086 \u1074 \u1082 \u1072  ubuntu 14.04  updates installed during installation ticekd\
-\uc0\u1074  ubuntu\
-\pard\pardeftab560\sa40\partightenfactor0
+sudo apt-get update
+sudo apt-get install postgresql postgresql-contrib
 
-\f1\b\fs28 \cf0  \
-\pard\pardeftab560\slleading20\partightenfactor0
+he installation procedure created a user account called postgres that is associated with the default Postgres role. In order to use Postgres, we'll need to log into that account. You can do that by typing:
+sudo -i -u postgres
+You will be asked for your normal user password and then will be given a shell prompt for the postgres user.
+You can get a Postgres prompt immediately by typing:
+psql
+Exit out of the PostgreSQL prompt by typing:
+\q
 
-\fs24 \cf0 \uc0\u1085 \u1072 \u1089 \u1090 \u1088 \u1086 \u1081 \u1082 \u1072  \u1073 \u1076  postgresql\
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0 sudo apt-get update\
-sudo apt-get install postgresql postgresql-contrib\
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
+создаем базу данных 
 
-\f0\b0 \cf0 he installation procedure created a user account called postgres that is associated with the default Postgres role. In order to use Postgres, we'll need to log into that account. You can do that by typing:\
-sudo -i -u postgres\
-You will be asked for your normal user password and then will be given a shell prompt for the postgres user.\
-You can get a Postgres prompt immediately by typing:\
-psql\
-Exit out of the PostgreSQL prompt by typing:\
-\\q\
-\
-\uc0\u1089 \u1086 \u1079 \u1076 \u1072 \u1077 \u1084  \u1073 \u1072 \u1079 \u1091  \u1076 \u1072 \u1085 \u1085 \u1099 \u1093  \
-\
-createdb  db_one   // or any other name\
-\
-psql -d db_one      //accessing db \
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0  \
-\\conninfo               //checking database connection \
-\
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0 // installing ethereum \
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0 sudo apt-get install software-properties-common\
-sudo add-apt-repository -y ppa:ethereum/ethereum\
-sudo apt-get update\
-sudo apt-get install ethereum\
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0 //now compile or download bifrost\
-\
-//create bifrost.cfg withe the following content but reconfigure with your system parametrs\
-\
-\
-port = 8002\
-using_proxy = false\
-access_control_allow_origin_header = "*"\
-\
-#uncomment bitcoin parameters if you will be accepting BTC\
-#[bitcoin]\
-#master_public_key = "xpub6DxSCdWu6jKqr4isjo7bsPeDD6s3J4YVQV1JSHZg12Eagdqnf7XX4fxqyW2sLhUoFWutL7tAELU2LiGZrEXtjVbvYptvTX5Eoa4Mamdjm9u"\
-#rpc_server = "{\field{\*\fldinst{HYPERLINK "localhost:18332"}}{\fldrslt \cf2 \ul \ulc2 localhost:18332}}"\
-#rpc_user = "user"\
-#rpc_pass = "password"\
-#testnet = true\
-#minimum_value_btc = "0.0001"\
-#token_price = "1"\
-\
-[ethereum]\
-master_public_key = "xpub68VNckQn96Y23e5GsGh9X7zVmbPT4ho5Vdf6RdgMGG3LyNhH2cLFDCib9zgn8QWgj261xu7MYbmBsX8Fp5VkfDUrecUnpEGWkyCo7qK2gxn"\
-rpc_server = "localhost:8545"\
-network_id = "3"\
-minimum_value_eth = "0.00001"\
-token_price = "1"\
-\
-[stellar]\
-issuer_public_key = "GDNPOP72ZO6AZXZ7LQJ4GKYT7UIH4JEG4X3ZRZBFUCRB467RNV3SFK5D"\
-distribution_public_key = "GCSSFPPVERDH4ZPWH5BSONEJERHCVS4DPZRWJG3FP3STOA5ZFTD3GMZ5"\
-signer_secret_key = "SB3WH2NLOFW2K2B5MWN34CWF35ZLQXH33ABZYL7KZFKTVEFP72Q574LM"\
-token_asset_code = "ZEN"\
-needs_authorize = false\
-horizon = "https://horizon-testnet.stellar.org"\
-network_passphrase = "Test SDF Network ; September 2015"\
-starting_balance = "4"\
-\
-[database]\
-type="postgres"\
-dsn="postgres://stellar:pass1234@localhost/bifrost?sslmode=disable"\
-\
-\
-\pard\pardeftab560\slleading20\pardirnatural\partightenfactor0
-\cf0 \
-\
-\pard\pardeftab560\slleading20\partightenfactor0
-\cf0 // in the same directory save compiled or downloaded bifrost exec (make sure that chmod 777 bifrost so it is exec)\
-\
-./bifrost-server check-keys // to test \
-\
-// mlaesure that ethereum node is running \
-\
-./bifrost-server serve //to start. bifrost server\
-\
-}
+createdb  db_one   // or any other name
+
+psql -d db_one      //accessing db 
+
+ 
+\conninfo               //checking database connection 
+
+
+// installing ethereum 
+
+sudo apt-get install software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get install ethereum
+
+//now compile or download bifrost
+
+//create bifrost.cfg withe the following content but reconfigure with your system parametrs
+
+
+port = 8002
+using_proxy = false
+access_control_allow_origin_header = "*"
+
+#uncomment bitcoin parameters if you will be accepting BTC
+#[bitcoin]
+#master_public_key = "xpub6DxSCdWu6jKqr4isjo7bsPeDD6s3J4YVQV1JSHZg12Eagdqnf7XX4fxqyW2sLhUoFWutL7tAELU2LiGZrEXtjVbvYptvTX5Eoa4Mamdjm9u"
+#rpc_server = "localhost:18332"
+#rpc_user = "user"
+#rpc_pass = "password"
+#testnet = true
+#minimum_value_btc = "0.0001"
+#token_price = "1"
+
+[ethereum]
+master_public_key = "xpub68VNckQn96Y23e5GsGh9X7zVmbPT4ho5Vdf6RdgMGG3LyNhH2cLFDCib9zgn8QWgj261xu7MYbmBsX8Fp5VkfDUrecUnpEGWkyCo7qK2gxn"
+rpc_server = "localhost:8545"
+network_id = "3"
+minimum_value_eth = "0.00001"
+token_price = "1"
+
+[stellar]
+issuer_public_key = "GDNPOP72ZO6AZXZ7LQJ4GKYT7UIH4JEG4X3ZRZBFUCRB467RNV3SFK5D"
+distribution_public_key = "GCSSFPPVERDH4ZPWH5BSONEJERHCVS4DPZRWJG3FP3STOA5ZFTD3GMZ5"
+signer_secret_key = "SB3WH2NLOFW2K2B5MWN34CWF35ZLQXH33ABZYL7KZFKTVEFP72Q574LM"
+token_asset_code = "ZEN"
+needs_authorize = false
+horizon = "https://horizon-testnet.stellar.org"
+network_passphrase = "Test SDF Network ; September 2015"
+starting_balance = "4"
+
+[database]
+type="postgres"
+dsn="postgres://stellar:pass1234@localhost/bifrost?sslmode=disable"
+
+
+
+
+// in the same directory save compiled or downloaded bifrost exec (make sure that chmod 777 bifrost so it is exec)
+
+./bifrost-server check-keys // to test 
+
+// mlaesure that ethereum node is running 
+
+./bifrost-server serve //to start. bifrost server
+
