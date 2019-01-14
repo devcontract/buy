@@ -1,0 +1,27 @@
+//commnads to setup access to psql
+
+
+sudo apt-get update
+sudo apt-get openssh-server
+
+sudo nano /etc/postgresql/9.3/main/postgresql.conf
+
+// uncomment
+
+listen_addresses = '*'
+
+ctrl+x  // save file
+
+sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+
+// add the following (but use your ip) to
+
+#IPV4 local connections:
+
+host    all        all   192.168.1.102/24   md5
+ctrl+x / save file
+
+//restart psql
+
+sudo service postgresql stop
+sudo service postgresql start
