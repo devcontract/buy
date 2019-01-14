@@ -1,0 +1,118 @@
+
+// Создат новую базу данных ////////////
+
+      (username)          (db name)
+sudo -u postgres createdb stellar
+
+////////////////////////////////////////
+
+//Удаление базы данных//////////////////
+
+sudo -u postgres psql
+
+DROP DATABASE [IF EXISTS] name;  // проверит если бд существует  и удлит . не выдаст ошибки если бд есть
+
+DROP DATABASE name;  // просто удлит бд
+
+////////////////////////////////////////
+
+//Создание таблицы
+
+sudo -u postgres psql
+
+CREATE TABLE account(
+ user_id serial PRIMARY KEY,
+ username VARCHAR (50) UNIQUE NOT NULL,
+ password VARCHAR (50) NOT NULL,
+ email VARCHAR (355) UNIQUE NOT NULL,
+ created_on TIMESTAMP NOT NULL,
+ last_login TIMESTAMP
+);
+///////////////////////////////////////
+
+//Удаление таблицы
+
+sudo -u postgres psql
+
+           (tablename)
+DROP TABLE tablica;
+
+///////////////////////////////////////
+
+//Меняем имя таблицы
+
+ALTER TABLE tablica
+  RENAME TO tablica;
+///////////////////////////////////////
+
+//Меняем имя бызы данных
+
+ALTER DATABASE db_one RENAME TO stellar;
+
+///////////////////////////////////////
+
+//Содание юзера
+
+sudo -u postgres createuser username
+
+DROP USER username;
+
+///////////////////////////////////////
+
+//Создание пароля для юзера
+
+sudo -u postgres psql
+psql=# alter user <username> with encrypted password '<password>';
+///////////////////////////////////////
+
+
+//Изменения привиегий
+
+psql=# grant all privileges on database <dbname> to <username> ;
+
+///////////////////////////////////////
+
+
+
+//Юзеры и из привилегии//////////////
+
+sudo -u postgres psql ;
+
+\du
+
+//////////////////////////////////////
+
+
+
+//смотрим содержание таблицы
+SELECT
+ *
+FROM
+ tablename;
+
+//////////////////////////////////////
+
+//смотрим содержание таблицы
+
+sudo -u postgress psql
+
+\dt
+
+//////////////////////////////////////
+
+// Cсмотрим списк всех таблиц в бд
+
+sudo -u postgress psql
+
+\l
+
+//////////////////////////////////////
+
+
+//Проверка подсоединения к бд
+
+
+psql -h localhost -p 5432 -U postgress testdb
+Password for user postgress: ****
+
+//////////////////////////////////////
