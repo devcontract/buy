@@ -1,57 +1,5 @@
 
-// Создат новую базу данных ////////////
-
-      (username)          (db name)
-sudo -u postgres createdb stellar
-
-////////////////////////////////////////
-
-//Удаление базы данных//////////////////
-
-sudo -u postgres psql
-
-DROP DATABASE [IF EXISTS] name;  // проверит если бд существует  и удлит . не выдаст ошибки если бд есть
-
-DROP DATABASE name;  // просто удлит бд
-
-////////////////////////////////////////
-
-//Создание таблицы
-
-psql -h 127.0.0.1 -p 5432 -U stellar bifrost;
-
-CREATE TABLE account(
- user_id serial PRIMARY KEY,
- username VARCHAR (50) UNIQUE NOT NULL,
- password VARCHAR (50) NOT NULL,
- email VARCHAR (355) UNIQUE NOT NULL,
- created_on TIMESTAMP NOT NULL,
- last_login TIMESTAMP
-);
-///////////////////////////////////////
-
-//Удаление таблицы
-
-sudo -u postgres psql
-
-           (tablename)
-DROP TABLE tablica;
-
-///////////////////////////////////////
-
-//Меняем имя таблицы
-
-ALTER TABLE tablica
-  RENAME TO tablica;
-///////////////////////////////////////
-
-//Меняем имя бызы данных
-
-ALTER DATABASE db_one RENAME TO stellar;
-
-///////////////////////////////////////
-
-//Содание юзера
+//Создание юзера и бд м привилегий
 
 sudo -i -u postgres psql;
 
@@ -59,53 +7,23 @@ CREATE DATABASE bifrost;
 CREATE USER stellar WITH ENCRYPTED  PASSWORD 'kostix';
 GRANT ALL PRIVILEGES ON DATABASE bifrost TO stellar;
 
-
-
-///////////////////////////////////////
-
 //Создание пароля для юзера
 
-sudo -u postgres psql
-psql=# alter user <username> with encrypted password '<password>';
-///////////////////////////////////////
-
-
-//Изменения привиегий
-
-psql=# grant all privileges on database <dbname> to <username> ;
+psql -h 127.0.0.1 -p 5432 -U stellar bifrost;
+psql=# \password;
 
 ///////////////////////////////////////
 
-
-
-//Юзеры и из привилегии//////////////
-
-sudo -u postgres psql ;
-
-\du
-
-//////////////////////////////////////
-
-
-
-//смотрим содержание таблицы
-SELECT * FROM tablename;
-
-//////////////////////////////////////
-
 //смотрим содержание таблицы
 
-sudo -u postgres psql
-
-\dt
+psql=# SELECT * FROM tableName;
 
 //////////////////////////////////////
+
 
 // Cсмотрим списк всех таблиц в бд
 
-sudo -u postgres psql
-
-\l
+psql=# \l
 
 //////////////////////////////////////
 
@@ -116,3 +34,45 @@ sudo -u postgres psql
 psql -h 127.0.0.1 -p 5432 -U stellar bifrost;
 
 //////////////////////////////////////
+
+//Удаление базы данных//////////////////
+
+psql=# DROP DATABASE [IF EXISTS] name;  // проверит если бд существует  и удлит . не выдаст ошибки если бд есть
+
+psql=# DROP DATABASE dbName;  // просто удлит бд
+
+////////////////////////////////////////
+
+//Создание таблицы
+
+psql -h 127.0.0.1 -p 5432 -U stellar bifrost;
+
+psql=# CREATE TABLE account(
+ user_id serial PRIMARY KEY,
+ username VARCHAR (50) UNIQUE NOT NULL,
+ password VARCHAR (50) NOT NULL,
+ email VARCHAR (355) UNIQUE NOT NULL,
+ created_on TIMESTAMP NOT NULL,
+ last_login TIMESTAMP
+);
+
+///////////////////////////////////////
+
+//Удаление таблицы
+          
+psql=# DROP TABLE tableName;
+
+///////////////////////////////////////
+
+//Меняем имя таблицы
+
+psql=# ALTER TABLE tableName RENAME TO newTableName;
+///////////////////////////////////////
+
+//Меняем имя бызы данных
+
+psql=# ALTER DATABASE dbName RENAME TO newDbName;
+
+///////////////////////////////////////
+
+
