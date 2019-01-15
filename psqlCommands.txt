@@ -53,9 +53,13 @@ ALTER DATABASE db_one RENAME TO stellar;
 
 //Содание юзера
 
-sudo -u postgres createuser username
+sudo -i -u postgres psql;
 
-DROP USER username;
+CREATE DATABASE bifrost;
+CREATE USER stellar WITH ENCRYPTED  PASSWORD 'kostix';
+GRANT ALL PRIVILEGES ON DATABASE bifrost TO stellar;
+
+
 
 ///////////////////////////////////////
 
@@ -85,10 +89,7 @@ sudo -u postgres psql ;
 
 
 //смотрим содержание таблицы
-SELECT
- *
-FROM
- tablename;
+SELECT * FROM tablename;
 
 //////////////////////////////////////
 
@@ -112,7 +113,6 @@ sudo -u postgres psql
 //Проверка подсоединения к бд
 
 
-psql -h localhost -p 5432 -U postgres testdb
-Password for user postgres: ****
+psql -h 127.0.0.1 -p 5432 -U stellar bifrost;
 
 //////////////////////////////////////
