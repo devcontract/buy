@@ -113,6 +113,6 @@ sudo -u postgres psql
 
 
 psql -h localhost -p 5432 -U postgres testdb
-Password for user postgress: ****
+Password for user postgres: ****
 
 //////////////////////////////////////
