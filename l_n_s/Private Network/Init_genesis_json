@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+geth init ~/Desktop/ethereum/genesis.json  --datadir ~/Desktop/ethereum/private
+
+
+
