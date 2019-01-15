@@ -94,7 +94,7 @@ FROM
 
 //смотрим содержание таблицы
 
-sudo -u postgress psql
+sudo -u postgres psql
 
 \dt
 
@@ -102,7 +102,7 @@ sudo -u postgress psql
 
 // Cсмотрим списк всех таблиц в бд
 
-sudo -u postgress psql
+sudo -u postgres psql
 
 \l
 
@@ -112,7 +112,7 @@ sudo -u postgress psql
 //Проверка подсоединения к бд
 
 
-psql -h localhost -p 5432 -U postgress testdb
-Password for user postgress: ****
+psql -h localhost -p 5432 -U postgres testdb
+Password for user postgres: ****
 
 //////////////////////////////////////
