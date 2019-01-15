@@ -6,9 +6,13 @@ sudo apt-get openssh-server
 
 sudo nano /etc/postgresql/9.3/main/postgresql.conf
 
-// uncomment
+// uncomment the following line
 
 listen_addresses = '*'
+
+// to add only soecific address change the above like that:
+
+listen_addresses = 192.168.1.102
 
 ctrl+x  // save file
 
