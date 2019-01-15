@@ -112,7 +112,7 @@ sudo -u postgres psql
 //Проверка подсоединения к бд
 
 
-psql -h localhost -p 5432 -U postgress testdb
+psql -h localhost -p 5432 -U postgres testdb
 Password for user postgress: ****
 
 //////////////////////////////////////
