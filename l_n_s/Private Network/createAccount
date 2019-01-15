@@ -1,6 +1,0 @@
-
-#!/bin/bash 
-
-
-geth account new --datadir ~/Desktop/ethereum/private
-

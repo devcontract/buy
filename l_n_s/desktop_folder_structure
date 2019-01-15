@@ -1,6 +1,0 @@
-#!/bin/bash
-
-
-mkdir ~/Desktop/ethereum 
-mkdir ~/Desktop/ethereum/Private 
-mkdir ~/Desktop/ethereum/Rinkeby

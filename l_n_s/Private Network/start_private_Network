@@ -1,4 +1,0 @@
-#!/bin/bash
-
-
-geth --identity "MyNodeNAme"  --rpc --rpcport "8545" --rpccorsdomain "*" --datadir ~/Desktop/ethereum/private --port "30303" --nodiscover --rpcapi "db,eth,web3,personal,net,miner,admin,debug,ipcapi" --networkid "33"

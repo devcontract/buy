@@ -1,0 +1,5 @@
+#!/bin/bash
+
+script_full_path=$(dirname)
+
+cd $script_full_path | dep ensure -v
