@@ -1,0 +1,14 @@
+//atom can be downloaded from atom.io website
+
+//packages can be installed from preference menu
+
+quick-JavaScript
+atom-beautify
+color-picker
+php-server
+autosave
+
+// ubuntu php setup in terminal
+
+sudo apt-get update
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
