@@ -16,3 +16,7 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 node -v
 
 npm -v
+
+// to run your programme on node js in terminal
+
+node /path/to/your/test_app.js
