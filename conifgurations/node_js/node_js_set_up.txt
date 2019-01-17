@@ -1,5 +1,5 @@
 //node js is getting install via terminal
-
+// please see end of file for the newest version
 sudo apt-get install nodejs
 
 // now install package manager
@@ -27,6 +27,11 @@ node /path/to/your/test_app.js
 sudo apt remove node  //with symlink
 
 
-
-
 sudo apt remove nodejs //without symlink
+
+
+// install latest node js
+
+sudo apt-get update
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install nodejs -y
