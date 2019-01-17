@@ -20,3 +20,13 @@ npm -v
 // to run your programme on node js in terminal
 
 node /path/to/your/test_app.js
+
+
+// to uninstall nodejs
+
+sudo apt remove node  //with symlink
+
+
+
+
+sudo apt remove nodejs //without symlink
