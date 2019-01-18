@@ -8,6 +8,9 @@ ssh-keygen -t rsa
 
 cat ~/.ssh/id_rsa.pub | ssh login@192.168.1.0 "mkdir -p ~/.ssh && chmod 700 ~/.ssh && cat >>  ~/.ssh/authorized_keys"^C
 
+//now restart ssh server on server  
+
+
 
 // now you should be able to connect by running command from the client
 
