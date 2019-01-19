@@ -1,0 +1,1207 @@
+<html class="spðŸš§  js no-ie8compat svg csspositionsticky inlinesvg svgclippaths" lang="en"><!--<![endif]--><head><script src="https://d1z2jf7jlzjs58.cloudfront.net/code/ptrack-v1.1.1-engagedtime-slots.js"></script><script src="https://srv-2019-01-19-18.config.parsely.com/config/sitepoint.com"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link href="//dab1nmslvvntp.cloudfront.net" ref="dns-prefetch">
+    <link href="//d2sis3lil8ndrq.cloudfront.net" ref="dns-prefetch">
+    <link href="//sitepoint.com" ref="dns-prefetch">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:image" content="https://www.sitepoint.com/wp-content/themes/sitepoint/assets/images/icon.javascript.png">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="apple-touch-icon-precomposed" href="/wp-content/themes/sitepoint/assets/images/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/wp-content/themes/sitepoint/assets/images/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/wp-content/themes/sitepoint/assets/images/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/wp-content/themes/sitepoint/assets/images/apple-touch-icon-144x144-precomposed.png">
+
+    <!-- Sitepoint's new font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900,900italic,700,700italic,400,400italic,300,300italic" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for SitePoint.com" href="https://www.sitepoint.com/feed/">
+
+        <link href="https://plus.google.com/+sitepoint" rel="publisher">
+        <meta property="twitter:account_id" content="15743570">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta name="google-site-verification" content="hcQq0cWX73AYby8aMMzNHx8bZrTDI75GWeljGdPmNf8">
+<meta name="google-site-verification" content="I0jyQlTvZaveab8RtDOjUxSPZXbdSgFrcKdAwaCCfvA">
+
+
+<!-- Google Tag Manager -->
+<script async="" src="//load.sumo.com/" data-sumo-site-id="64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300"></script><script src="https://rules.quantcount.com/rules-p-mEzuYq24VEJ-3.js" async=""></script><script type="text/javascript" async="" src="//static.hotjar.com/c/hotjar-1088957.js?sv=5"></script><script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://secure.quantserve.com/quant.js" async="" type="text/javascript"></script><script async="" type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js"></script><script async="" type="text/javascript" src="https://global.proper.io/sitepoint.min.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KL8PMMW"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL8PMMW');</script>
+
+    <script class="SP_stripMobile" type="text/javascript">
+      var propertag = propertag || {};
+      propertag.cmd = propertag.cmd || [];
+      (function() {
+      var pm = document.createElement('script');
+      pm.async = true; pm.type = 'text/javascript';
+      var is_ssl = 'https:' == document.location.protocol;
+      pm.src = (is_ssl ? 'https:' : 'http:') + '//global.proper.io/sitepoint.min.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(pm, node);
+      })();
+    </script>
+    <script class="SP_stripMobile" type="text/javascript">
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+      var gads = document.createElement('script');
+      gads.async = true;
+      gads.type = 'text/javascript';
+      var useSSL = 'https:' == document.location.protocol;
+      gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+      var node = document.getElementsByTagName('script')[0];
+      node.parentNode.insertBefore(gads, node);
+      })();
+    </script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+    var OneSignal = window.OneSignal || [];
+    OneSignal.push(["init", {
+      appId: "65189cfb-a985-4bd7-a41b-c2666081e811",
+      safari_web_id: 'web.onesignal.auto.49d2239d-a04e-422a-89e0-14dbda97fb4d',
+      autoRegister: true,
+      persistNotification: true,
+      welcomeNotification: {
+        disable: true
+      },
+    }]);
+  </script>
+
+<!-- This site is optimized with the Yoast SEO plugin v8.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<title>An Introduction to Gulp.js - SitePoint</title>
+<meta name="description" content="This article, sponsored by New Relic, provides an introduction to the automated task runner, Gulp.js, and shows how it can be used to improve page size.">
+<link rel="canonical" href="https://www.sitepoint.com/introduction-gulp-js/">
+<link rel="publisher" href="https://plus.google.com/+sitepoint/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="An Introduction to Gulp.js - SitePoint">
+<meta property="og:description" content="This article, sponsored by New Relic, provides an introduction to the automated task runner, Gulp.js, and shows how it can be used to improve page size.">
+<meta property="og:url" content="https://www.sitepoint.com/introduction-gulp-js/">
+<meta property="og:site_name" content="SitePoint">
+<meta property="article:publisher" content="https://www.facebook.com/sitepoint">
+<meta property="article:author" content="http://www.facebook.com/craigbuckler">
+<meta property="article:tag" content="build process">
+<meta property="article:tag" content="gitCS">
+<meta property="article:tag" content="Grunt">
+<meta property="article:tag" content="Gulp">
+<meta property="article:tag" content="jamesh">
+<meta property="article:tag" content="modernjs">
+<meta property="article:tag" content="modernjs-hub">
+<meta property="article:tag" content="modernjs-tools">
+<meta property="article:tag" content="node">
+<meta property="article:tag" content="node-hub">
+<meta property="article:tag" content="Node-JS-Tools">
+<meta property="article:tag" content="node.js">
+<meta property="article:tag" content="task runner">
+<meta property="article:section" content="JavaScript">
+<meta property="article:published_time" content="2018-04-25T16:00:13+00:00">
+<meta property="article:modified_time" content="2018-06-13T00:52:30+00:00">
+<meta property="og:updated_time" content="2018-06-13T00:52:30+00:00">
+<meta property="og:image" content="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/01/1484835114gulp-cover.png">
+<meta property="og:image:secure_url" content="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/01/1484835114gulp-cover.png">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Gulp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="This article, sponsored by New Relic, provides an introduction to the automated task runner, Gulp.js, and shows how it can be used to improve page size.">
+<meta name="twitter:title" content="An Introduction to Gulp.js - SitePoint">
+<meta name="twitter:site" content="@sitepointdotcom">
+<meta name="twitter:image" content="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/01/1484835114gulp-cover.png">
+<meta name="twitter:creator" content="@craigbuckler">
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="SitePoint Â» An Introduction to Gulp.js Comments Feed" href="https://www.sitepoint.com/introduction-gulp-js/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.sitepoint.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.8"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.sitepoint.com/wp-includes/js/wp-emoji-release.min.js?ver=4.9.8" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="wp-parsely-style-css" href="https://dab1nmslvvntp.cloudfront.net/wp-content/plugins/wp-parsely/wp-parsely.css?ver=1545174357" type="text/css" media="all">
+<link rel="stylesheet" id="wp-postratings-css" href="https://dab1nmslvvntp.cloudfront.net/wp-content/plugins/wp-postratings/css/postratings-css.css?ver=1.85" type="text/css" media="all">
+<link rel="stylesheet" id="sitepoint-styles-css" href="//www.sitepoint.com/wp-content/themes/sitepoint/assets/stylesheets/styles-63620ced6374adfdc078b1a126c2f666.css?ver=4.9.8" type="text/css" media="all">
+<link rel="stylesheet" id="sitepoint-styles-janus-css" href="/dist/css/compiled.c11cb2ae66afe39d65cc.css" type="text/css" media="all"><link rel="stylesheet" id="sitepoint-styles-janus-article-css" href="/dist/css/compiledArticle.c11cb2ae66afe39d65cc.css" type="text/css" media="all">
+<script type="text/javascript" src="//www.sitepoint.com/wp-content/themes/sitepoint/assets/javascripts/scripts-head-302ae967a92241deb24be6e2a54eeefd.js?ver=4.9.8"></script><style type="text/css">.proper-ad-unit{margin:auto;position:relative;display:block;min-width:100px;text-align:center;box-sizing:border-box!important}.proper-ad-unit *{box-sizing:border-box!important;text-align:center!important}.proper-ad-unit>div:first-of-type{position:relative;margin:auto}.proper-ad-unit>div:first-of-type.active-highlight:after{content:'';margin:auto;position:absolute;top:0;right:0;bottom:0;left:0;pointer-events:none;background:0;border:5px solid rgba(218,48,48,0.85)}.proper-ad-unit>div:first-of-type>.noad{background-color:#c2c2c2}.proper-ad-unit .report-ad{position:relative !important;display:block !important;font-family:'Source Sans Pro',sans-serif;left:0;right:0;color:#999!important;font-size:12px;line-height:23px;white-space:nowrap;text-decoration:none!important;-webkit-font-smoothing:antialiased}.proper-ad-unit .report-ad:hover{color:black;text-decoration:underline!important}.proper-ad-unit.ad-sticky{position:fixed;display:block;z-index:100}.proper-ad-unit.ad-sticky.open{-webkit-transition:all 1.5s ease-in;-moz-transition:all 1.5s ease-in;-o-transition:all 1.5s ease-in;transition:all 1.5s ease-in}.proper-ad-unit.ad-sticky.close{-webkit-transition:all 1s ease-in;-moz-transition:all 1s ease-in;-o-transition:all 1s ease-in;transition:all 1s ease-in}.proper-ad-unit.ad-sticky.sticky-btm{padding-top:0;width:100%;height:auto;position:fixed;z-index:9999;text-align:center;padding-bottom:0;background:rgba(40,40,40,0.9);top:auto;right:0;bottom:-100%;left:0}.proper-ad-unit.ad-sticky.sticky-btm.open,.proper-ad-unit.ad-sticky.sticky-btm.isOpen{bottom:0}.proper-ad-unit.ad-sticky.sticky-btm.close,.proper-ad-unit.ad-sticky.sticky-btm.isClosed{bottom:-100%}.proper-ad-unit.ad-sticky.sticky-btm.sticky-compact{display:none!important}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper{margin:auto;padding:0;position:relative!important;display:block;width:100%;height:auto;font-family:Arial,'Helvetica Neue',Helvetica,sans-serif;background:0}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .close-ad{top:-15px;width:30px;height:29px;font-size:16px;line-height:21px}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .close-ad:after{width:22px;height:22px;color:rgba(255,255,255,0.75);background:#555;border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;margin:4px auto;vertical-align:middle}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .close-ad:after:hover{color:#fff}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .brand{top:-16px;left:0;right:0;background:rgba(40,40,40,0.9);height:16px;width:62px;border-radius:0 3px 0 0}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .brand:after{top:2px;left:0;width:61px;height:15px;background-size:56px 14px}.proper-ad-unit.ad-sticky.sticky-btm .inner-wrapper .report-ad{width:50px;height:12px;top:-11px;background:0;color:transparent!important}.proper-ad-unit.ad-sticky.sticky-btm .ad-wrapper{position:relative;margin:auto;z-index:9;background:white;margin-top:3px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x50{height:53px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x50 .close-ad{left:calc(50% + 155px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x50 .ad-wrapper{width:300px;height:50px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x100{height:53px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x100 .close-ad{left:calc(50% + 155px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x100 .ad-wrapper{width:300px;height:50px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x250{height:253px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x250 .close-ad{left:calc(50% + 155px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-300x250 .ad-wrapper{width:300px;height:250px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x50{height:53px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x50 .close-ad{left:calc(50% + 165px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x50 .ad-wrapper{width:320px;height:50px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x100{height:103px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x100 .close-ad{left:calc(50% + 165px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-320x100 .ad-wrapper{width:320px;height:100px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-728x90{height:93px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-728x90 .close-ad{left:calc(50% + 369px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-728x90 .ad-wrapper{width:728px;height:90px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-970x90{height:93px}.proper-ad-unit.ad-sticky.sticky-btm.sticky-970x90 .close-ad{left:calc(50% + 490px)}.proper-ad-unit.ad-sticky.sticky-btm.sticky-970x90 .ad-wrapper{width:970px;height:90px}.proper-ad-unit.ad-sticky.sticky-left,.proper-ad-unit.ad-sticky.sticky-right{top:0;bottom:0;padding-top:20px!important;padding-bottom:20px!important}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper{position:absolute;top:0;bottom:0;left:0;right:0;background:rgba(40,40,40,0.9)}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper .close-ad,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper .close-ad{color:#999;font-size:20px;line-height:19px}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper .report-ad,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper .report-ad{bottom:0;font-weight:700;letter-spacing:.5px;text-transform:uppercase;line-height:21px;font-size:11px}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper .report-ad:hover,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper .report-ad:hover{text-decoration:none!important;color:white!important}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper .brand,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper .brand{top:4px;height:12px;width:60px}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper .brand:after,.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper .brand:after{top:0;width:60px;height:12px;background-size:60px 12px}.proper-ad-unit.ad-sticky.sticky-left{left:-100%}.proper-ad-unit.ad-sticky.sticky-left .inner-wrapper{border-radius:0 5px 5px 0}.proper-ad-unit.ad-sticky.sticky-left .close-ad{right:5px}.proper-ad-unit.ad-sticky.sticky-left .brand{left:5px}.proper-ad-unit.ad-sticky.sticky-left .brand:after{left:0}.proper-ad-unit.ad-sticky.sticky-right{right:-100%}.proper-ad-unit.ad-sticky.sticky-right .inner-wrapper{border-radius:5px 0 0 5px}.proper-ad-unit.ad-sticky.sticky-right .close-ad{left:5px}.proper-ad-unit.ad-sticky.sticky-right .brand{right:5px}.proper-ad-unit.ad-sticky.sticky-right .brand:after{left:0}.proper-ad-unit.ad-sticky.open.sticky-right,.proper-ad-unit.ad-sticky.isOpen.sticky-right{right:0}.proper-ad-unit.ad-sticky.open.sticky-left,.proper-ad-unit.ad-sticky.isOpen.sticky-left{left:0}.proper-ad-unit.ad-sticky.close.sticky-right,.proper-ad-unit.ad-sticky.isClosed.sticky-right{right:-100%}.proper-ad-unit.ad-sticky.close.sticky-left,.proper-ad-unit.ad-sticky.isClosed.sticky-left{left:-100%}.proper-ad-unit.ad-sticky.sticky-120x600.sticky-left,.proper-ad-unit.ad-sticky.sticky-120x600.sticky-right{width:120px;height:640px}.proper-ad-unit.ad-sticky.sticky-160x600.sticky-left,.proper-ad-unit.ad-sticky.sticky-160x600.sticky-right{width:160px;height:640px}.proper-ad-unit.ad-sticky.sticky-300x600.sticky-left,.proper-ad-unit.ad-sticky.sticky-300x600.sticky-right{width:300px;height:640px}.proper-ad-unit.ad-sticky.sticky-300x250.sticky-left,.proper-ad-unit.ad-sticky.sticky-300x250.sticky-right{width:300px;height:290px}.proper-ad-unit.ad-sticky .inner-wrapper .brand{position:absolute!important}.proper-ad-unit.ad-sticky .inner-wrapper .brand:after{content:'';position:absolute;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAeCAYAAAAWwoEYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo4ZDJkODBlZS1kYTVhLTRiNGUtYWMwZS1iZmI0ODE2ZGRjYTgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjIzNUY5QkE4MkREMTFFODgyMkM4QUM2OTM0NUM1RUYiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjcxMzE2MzQ4MkREMTFFODgyMkM4QUM2OTM0NUM1RUYiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NjczMThlNC02ZmY0LTRiNDctYTAwNC00ZGFkNzc0NzE2MjQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OGQyZDgwZWUtZGE1YS00YjRlLWFjMGUtYmZiNDgxNmRkY2E4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+UshKoAAABFdJREFUeNrsmk9IFFEcx3dUjO0vZJ0kUAupQ+QtqJMg4iXoYF46CAtetcNe6mInTx7aTnlIok5B0FYsZkehwwaR2iFCI8tEMDtUmn/S2b6PfrP8fL6ZeTPz1h1hfvBhZ997v3m/md/7vffmN2OVSqVUAGkEt+lY/C6kEomtWAGcewf0S2V3wY3kNu5f52bIiYfov6Ng0e8qOX00uZ37x7lt4AloJkc6ztym31rmbMFn0A0mk9saD6lxKc+Dt6CFOVU4cBrUEdM8ijFITuP3HVihaE8kZpHbC0bAAeY4IT/AdfAquWX7R+ro9yJNwY1S/RYYBrd8zqOzK7NclRVLg2VZvicMq2dCTNocKio1+hLT8jh4rXDsGKjXcKyn44LcLxhchq3lYoB9AfdAk0E9WdJgABTBGlGksrRpmwMQvq/Sf7EZi6BVjLAQeImrnm3bfrqO/AZdUfUUnAMzHvoz1MaIzaAUgNB9ceeugWxIpzq0Vti5Qn6Bpih6EqJsSUN/ietHsbmCzt3RVw2F9jOaeoal6aOV0JEC+Ki5/vrJcfb4JfYFl8E3qjsCbhrUewBOsv/X6F6k6dgR0eZhBWy2fAjfl0dEFdhoKHi0GwKbFP0l9hslco8p2l1i9V+j6DE6JP12hX671KYjqs1yZPrNiGH70nGW47BNqnPadYLv0notZBvkQZth59az+o0oeoz7rG7Qw8ZB1u5RVJsr5NxdfaU0nCVvuESbKanMlpyq2mTFMXJnWZ3XJrKFtftkOnLdiHp/nOfcKXBesV1/TsdX2PzfAE4ESD1aIdbhWulxTTyHP2ZlLw3pnWLHcx72zLvomLC5FOLxUq8vaUQ4ETgrRWAblW1LEb0CMhF32Hu6W5aiYoPV13vYeJC1W92j3XKk+yN05NzyH9AHzkhROEllfdRGjLYcOKzxNugpsA0lhkTeuscnynY5hxISPTie84hIr0QHT/AsGLY5yC452HXqbnokGjXbremuuWK0uoiYLebBCGjW1ZOiYBbUKdazSBuqKDYH3VCFuU6lc72mCJfOd7R3yVj5Gh/kgjU2Jzmprl/h3EiPQqZsrtR1ujkgz9ZXW8MAecccKnINO7cBLLO6ZSpLSeefkO5BNzgAjtIxl4kK2+xF4OuUnZtlC3h5E+UY7hHR5U0YK8uSc+0qOTdFo5jX5xTODZ1+NGSzVvoxzHXqvDjISNNs+RmYXVBGyi8vKp6Xq+Fcsf58YPV/wVnF+UO9OIiRc5XXKTocB1sKZxQ8pl+36bqgGCxb1Ec1nCvoktqMuZw/DQbAG7AOfoIilaUraLMJ5yqv0/kSQ35Zb7F3hfxlvdunrUMgS0lsnrRYoORGMW4vvqO+1K/2y/pUiGelXhq1qpRjp2IkuqUs1+lcqYTq4fb1Y15KOTryHlzwSVm+AFeTL5iST1sTqcKnraqUI9ep0UhZJhJj5zoySjnknPzBVoD8ciIxm5bdEuiq3XIiMZR/AgwAEp2vo1fQ15UAAAAASUVORK5CYII=');background-position:center center;background-repeat:no-repeat}.proper-ad-unit.ad-sticky .inner-wrapper .close-ad{display:block;position:absolute!important;text-decoration:none;z-index:9999}.proper-ad-unit.ad-sticky .inner-wrapper .close-ad:after{content:'\00d7';font-family:sans-serif;display:block}.proper-ad-unit.ad-sticky .ad-wrapper{position:relative;z-index:9}@media screen and (max-width:1025px){.sticky-970x90 .close-ad{right:0!important;left:auto!important}}@media screen and (max-width:785px){.sticky-728x90 .close-ad{right:0!important;left:auto!important}}@media screen and (max-width:375px){.sticky-320x100 .close-ad,.sticky-320x50 .close-ad{right:0!important;left:auto!important}}@media screen and (max-width:355px){.sticky-300x50 .close-ad,.sticky-300x100 .close-ad,.sticky-300x250 .close-ad{right:0!important;left:auto!important}}</style><link rel="preload" href="https://adservice.google.co.uk/adsid/integrator.js?domain=www.sitepoint.com" as="script"><script type="text/javascript" src="https://adservice.google.co.uk/adsid/integrator.js?domain=www.sitepoint.com"></script><link rel="preload" href="https://adservice.google.com/adsid/integrator.js?domain=www.sitepoint.com" as="script"><script type="text/javascript" src="https://adservice.google.com/adsid/integrator.js?domain=www.sitepoint.com"></script><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_291.js" async=""></script><script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/795930592/?random=1547921878407&amp;cv=9&amp;fst=1547921878407&amp;num=1&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=900&amp;u_w=1440&amp;u_ah=842&amp;u_aw=1440&amp;u_cd=24&amp;u_his=6&amp;u_tz=0&amp;u_java=true&amp;u_nplug=2&amp;u_nmime=7&amp;gtm=2wg170&amp;sendb=1&amp;frm=0&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;tiba=An%20Introduction%20to%20Gulp.js%20-%20SitePoint&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script async="" src="https://script.hotjar.com/modules-343c82299f3961e41b347838851f5e33.js"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+<link rel="https://api.w.org/" href="https://www.sitepoint.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.sitepoint.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.sitepoint.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.9.8">
+<link rel="shortlink" href="https://www.sitepoint.com/?p=76073">
+<link rel="alternate" type="application/json+oembed" href="https://www.sitepoint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.sitepoint.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;format=xml">
+
+<!-- BEGIN wp-parsely Plugin Version 1.13.0 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="1.13.0">
+	<script type="application/ld+json">
+	{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/www.sitepoint.com\/introduction-gulp-js\/"},"headline":"An Introduction to Gulp.js","url":"http:\/\/www.sitepoint.com\/introduction-gulp-js\/","thumbnailUrl":"https:\/\/dab1nmslvvntp.cloudfront.net\/wp-content\/uploads\/2017\/01\/1484835114gulp-cover-150x150.png","image":{"@type":"ImageObject","url":"https:\/\/dab1nmslvvntp.cloudfront.net\/wp-content\/uploads\/2017\/01\/1484835114gulp-cover-150x150.png"},"dateCreated":"2018-04-25T16:00:13Z","datePublished":"2018-04-25T16:00:13Z","dateModified":"2018-04-25T16:00:13Z","articleSection":"JavaScript","author":[{"@type":"Person","name":"Craig Buckler"}],"creator":["Craig Buckler"],"keywords":["build process","gitcs","grunt","gulp","jamesh","modernjs","modernjs-hub","modernjs-tools","node","node-hub","node-js-tools","node.js","task runner"],"publisher":{"@type":"Organization","name":"SitePoint","logo":{"@type":"ImageObject","url":""}}}
+	</script>
+
+	<!-- END wp-parsely Plugin Version 1.13.0 -->
+    <script type="text/javascript">
+      googletag.cmd.push(function() {
+        purchs2s.cmd.push(function() {
+          		googletag.pubads().setTargeting("channel", "javascript");
+		googletag.pubads().setTargeting("post_id", "76073");
+		googletag.pubads().setTargeting("AOL",["true", "false"]);
+		googletag.pubads().setTargeting("OpenX",["true", "false"]);
+		googletag.pubads().setTargeting("Tribal",["true", "false"]);
+		googletag.pubads().enableSingleRequest();
+                    googletag.pubads().collapseEmptyDivs();
+          googletag.pubads().disableInitialLoad();
+          googletag.enableServices();
+          purchs2s.setup();
+        });
+      });
+      SP_GPT_Slots = [];
+    </script>
+    <!--[if lt IE 9]>
+      <script src="/wp-content/themes/sitepoint/assets/javascripts/vendor/respond.custom.min.js"></script>
+    <![endif]-->
+    <style>
+  .t-color { color: #F6B33C }
+  a.t-color:hover,
+  button.t-color:hover { color: #FFD78F }
+
+  .t-bg { background-color: #F6B33C }
+  a.t-bg:hover,
+  button.t-bg:hover { background-color: #FFD78F}
+
+  .t-border { border-color: #F6B33C }
+  a.t-border:hover,
+  button.t-border:hover { border-color: #FFD78F }
+
+  .t-bg-dark { background-color: #FFD78F }
+
+  .t-list li:before { background-color: #F6B33C; }
+
+  .t-p-pop-bg { background-color: #1a9b9e }
+  a.t-p-pop-bg:hover,
+  button.t-p-pop-bg:hover { background-color: #018285}
+</style>
+  <script async="" src="https://mantodea.mantisadnetwork.com/website/prebid/?measurable=true&amp;property=5b32cf14d866814de2efe8c2&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;referrer=https%3A%2F%2Fwww.google.com%2F&amp;tz=0&amp;buster=1547921878616&amp;secure=true&amp;version=8&amp;mobile=false&amp;bids[0][bidId]=sitepoint_content_1&amp;bids[0][sizes][0][width]=728&amp;bids[0][sizes][0][height]=90&amp;uuid=9c91963f-6f6c-47d7-b89e-e380fbdf7483&amp;jsonp=window.proper_f91a00b2_400c46b5_1"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1532889&amp;kadwidth=728&amp;kadheight=90&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878618&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=0.12&amp;sec=1&amp;callback=window.proper_dd9d7d51_b1ff9bc2_2&amp;rid=proper_dd9d7d51_b1ff9bc2_2"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932657/0/225/ADTECH;noperf=1;cmd=bid;bidfloor=0.12;callback=window.proper_99c4319e_aaddf4de_3"></script><script async="" src="https://as-sec.casalemedia.com/headertag?v=9&amp;s=161112&amp;r=%7B%22id%22%3A54943968%2C%22site%22%3A%7B%22page%22%3A%22https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F%22%2C%22ref%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22imp%22%3A%5B%7B%22id%22%3A%22292669_285%22%2C%20%22banner%22%3A%7B%22w%22%3A728%2C%22h%22%3A90%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A0.1%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22292669_285%22%2C%22siteID%22%3A292669%7D%7D%5D%7D&amp;t=300&amp;fn=window.proper_677ce980_aba4adff_4"></script><script async="" src="https://propermedia-d.openx.net/w/1.0/arj?auid=540227189&amp;aus=728x90&amp;res=893x779&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;o=1547921878625&amp;aumf=540227189:100&amp;callback=window.proper_77ab9c2d_467a090a_5"></script><script async="" src="https://mantodea.mantisadnetwork.com/website/prebid/?measurable=true&amp;property=5b32cf14d866814de2efe8c2&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;referrer=https%3A%2F%2Fwww.google.com%2F&amp;tz=0&amp;buster=1547921878637&amp;secure=true&amp;version=8&amp;mobile=false&amp;bids[0][bidId]=sitepoint_content_2&amp;bids[0][sizes][0][width]=728&amp;bids[0][sizes][0][height]=90&amp;bids[0][sizes][1][width]=300&amp;bids[0][sizes][1][height]=250&amp;uuid=9c91963f-6f6c-47d7-b89e-e380fbdf7483&amp;jsonp=window.proper_d1dc0c8f_ffcd86d9_6"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555741&amp;kadwidth=728&amp;kadheight=90&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878638&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=0.12&amp;sec=1&amp;callback=window.proper_bbe214e0_39b4d59e_7&amp;rid=proper_bbe214e0_39b4d59e_7"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555740&amp;kadwidth=300&amp;kadheight=250&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878639&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=0.12&amp;sec=1&amp;callback=window.proper_014375fd_1ffc9999_8&amp;rid=proper_014375fd_1ffc9999_8"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932654/0/225/ADTECH;noperf=1;cmd=bid;bidfloor=0.12;callback=window.proper_1a4d9c1f_7445c13c_9"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932650/0/170/ADTECH;noperf=1;cmd=bid;bidfloor=0.12;callback=window.proper_a3f5b1db_6522d1a5_10"></script><script async="" src="https://as-sec.casalemedia.com/headertag?v=9&amp;s=161112&amp;r=%7B%22id%22%3A54948577%2C%22site%22%3A%7B%22page%22%3A%22https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F%22%2C%22ref%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22imp%22%3A%5B%7B%22id%22%3A%22296070_401%22%2C%20%22banner%22%3A%7B%22w%22%3A728%2C%22h%22%3A90%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A0.1%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22296070_401%22%2C%22siteID%22%3A296070%7D%7D%2C%7B%22id%22%3A%22296069_400%22%2C%20%22banner%22%3A%7B%22w%22%3A300%2C%22h%22%3A250%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A0.1%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22296069_400%22%2C%22siteID%22%3A296069%7D%7D%5D%7D&amp;t=300&amp;fn=window.proper_eba57c03_4c899d4e_11"></script><script async="" src="https://propermedia-d.openx.net/w/1.0/arj?auid=540255303&amp;aus=728x90,300x250&amp;res=893x779&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;o=1547921878642&amp;aumf=540255303:100&amp;callback=window.proper_587087e0_5a7d8360_12"></script><script async="" src="https://mantodea.mantisadnetwork.com/website/prebid/?measurable=true&amp;property=5b32cf14d866814de2efe8c2&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;referrer=https%3A%2F%2Fwww.google.com%2F&amp;tz=0&amp;buster=1547921878656&amp;secure=true&amp;version=8&amp;mobile=false&amp;bids[0][bidId]=sitepoint_side_2&amp;bids[0][sizes][0][width]=160&amp;bids[0][sizes][0][height]=600&amp;bids[0][sizes][1][width]=300&amp;bids[0][sizes][1][height]=250&amp;bids[0][sizes][2][width]=300&amp;bids[0][sizes][2][height]=600&amp;uuid=9c91963f-6f6c-47d7-b89e-e380fbdf7483&amp;jsonp=window.proper_a87b0678_0779c025_13"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1619423&amp;kadwidth=160&amp;kadheight=600&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878657&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=2.47&amp;sec=1&amp;callback=window.proper_c353f1f7_85333183_14&amp;rid=proper_c353f1f7_85333183_14"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555729&amp;kadwidth=300&amp;kadheight=250&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878658&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=2.47&amp;sec=1&amp;callback=window.proper_23c15868_2f46a59e_15&amp;rid=proper_23c15868_2f46a59e_15"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555730&amp;kadwidth=300&amp;kadheight=600&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878658&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=2.47&amp;sec=1&amp;callback=window.proper_6e1dae71_ad703c42_16&amp;rid=proper_6e1dae71_ad703c42_16"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4949563/0/154/ADTECH;noperf=1;cmd=bid;bidfloor=2.35;callback=window.proper_13864413_1b3ccc1c_17"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932653/0/170/ADTECH;noperf=1;cmd=bid;bidfloor=2.35;callback=window.proper_0638bfa1_42bb89ed_18"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932658/0/529/ADTECH;noperf=1;cmd=bid;bidfloor=2.35;callback=window.proper_0048b34e_24a6574f_19"></script><script async="" src="https://as-sec.casalemedia.com/headertag?v=9&amp;s=161112&amp;r=%7B%22id%22%3A54953698%2C%22site%22%3A%7B%22page%22%3A%22https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F%22%2C%22ref%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22imp%22%3A%5B%7B%22id%22%3A%22293716_302%22%2C%20%22banner%22%3A%7B%22w%22%3A300%2C%22h%22%3A250%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A0.1%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22293716_302%22%2C%22siteID%22%3A293716%7D%7D%2C%7B%22id%22%3A%22293717_303%22%2C%20%22banner%22%3A%7B%22w%22%3A300%2C%22h%22%3A600%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A2%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22293717_303%22%2C%22siteID%22%3A293717%7D%7D%5D%7D&amp;t=300&amp;fn=window.proper_92a39bf1_976e84eb_20"></script><script async="" src="https://propermedia-d.openx.net/w/1.0/arj?auid=540245958&amp;aus=160x600,300x250,300x600&amp;res=893x779&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;o=1547921878662&amp;aumf=540245958:2000&amp;callback=window.proper_6686f6f2_20cac3b7_21"></script><script async="" src="https://mantodea.mantisadnetwork.com/website/prebid/?measurable=true&amp;property=5b32cf14d866814de2efe8c2&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;referrer=https%3A%2F%2Fwww.google.com%2F&amp;tz=0&amp;buster=1547921878927&amp;secure=true&amp;version=8&amp;mobile=false&amp;bids[0][bidId]=sitepoint_side_3&amp;bids[0][sizes][0][width]=300&amp;bids[0][sizes][0][height]=600&amp;bids[0][sizes][1][width]=300&amp;bids[0][sizes][1][height]=250&amp;bids[0][sizes][2][width]=160&amp;bids[0][sizes][2][height]=600&amp;uuid=9c91963f-6f6c-47d7-b89e-e380fbdf7483&amp;jsonp=window.proper_02d5e1a7_6733c330_22"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555733&amp;kadwidth=300&amp;kadheight=600&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878928&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=1.85&amp;sec=1&amp;callback=window.proper_da619447_b2145873_23&amp;rid=proper_da619447_b2145873_23"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555732&amp;kadwidth=300&amp;kadheight=250&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878928&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=1.85&amp;sec=1&amp;callback=window.proper_5e175dda_51a742d0_24&amp;rid=proper_5e175dda_51a742d0_24"></script><script async="" src="https://bid.pubmatic.com/AdServer/AdServerServlet?pubId=109126&amp;siteId=317053&amp;adId=1555731&amp;kadwidth=160&amp;kadheight=600&amp;pageURL=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;kadpageurl=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;inIframe=0&amp;operId=102&amp;rs=3&amp;adtype=11&amp;kltstamp=2019-01-19%2018%3A17%3A58&amp;timezone=0&amp;screenResolution=1440x842&amp;ranreq=1547921878929&amp;adVisibility=1&amp;adPosition=-1x-1&amp;kadfloor=1.85&amp;sec=1&amp;callback=window.proper_704669bb_0cd69e5b_25&amp;rid=proper_704669bb_0cd69e5b_25"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932648/0/529/ADTECH;noperf=1;cmd=bid;bidfloor=1.76;callback=window.proper_b111cccd_a1c621f6_26"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932651/0/170/ADTECH;noperf=1;cmd=bid;bidfloor=1.76;callback=window.proper_203afe04_dd6f1896_27"></script><script async="" src="https://adserver.adtechus.com/pubapi/3.0/9857.1/4932652/0/154/ADTECH;noperf=1;cmd=bid;bidfloor=1.76;callback=window.proper_dd14df28_734be656_28"></script><script async="" src="https://as-sec.casalemedia.com/headertag?v=9&amp;s=161112&amp;r=%7B%22id%22%3A55023075%2C%22site%22%3A%7B%22page%22%3A%22https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F%22%2C%22ref%22%3A%22https%3A%2F%2Fwww.google.com%2F%22%7D%2C%22imp%22%3A%5B%7B%22id%22%3A%22293720_306%22%2C%20%22banner%22%3A%7B%22w%22%3A300%2C%22h%22%3A600%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A2%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22293720_306%22%2C%22siteID%22%3A293720%7D%7D%2C%7B%22id%22%3A%22293719_305%22%2C%20%22banner%22%3A%7B%22w%22%3A300%2C%22h%22%3A250%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A0.1%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22293719_305%22%2C%22siteID%22%3A293719%7D%7D%2C%7B%22id%22%3A%22293718_304%22%2C%20%22banner%22%3A%7B%22w%22%3A160%2C%22h%22%3A600%2C%22topframe%22%3A1%7D%2C%22bidfloor%22%3A1.5%2C%22bidfloorcur%22%3A%22USD%22%2C%22ext%22%3A%20%7B%22sid%22%3A%22293718_304%22%2C%22siteID%22%3A293718%7D%7D%5D%7D&amp;t=300&amp;fn=window.proper_698761d9_ae7a244a_29"></script><script async="" src="https://propermedia-d.openx.net/w/1.0/arj?auid=540245959&amp;aus=300x600,300x250,160x600&amp;res=893x779&amp;url=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;o=1547921878933&amp;aumf=540245959:1500&amp;callback=window.proper_ac79f1a5_a5746288_30"></script><style type="text/css"></style><script type="text/javascript" charset="utf-8" async="" src="/dist/js/Prism.eed12bcd30944f3e6122.js"></script><script async="" src="//s.spoutable.com/s?u=7c887d1e-c4ea-4682-bad8-216a89ce74e5&amp;s=%7B%22sessionId%22%3A%5B1547921879225%2C0.7217758374678928%2C0.3754717591625355%2C0.2138375488269294%2C0.5367838591332433%2C0.9468724431800211%2C0.0343664706563257%2C0.33271428176770823%2C0.22416688645867122%2C0.9918617089705736%2C0.28923109710905603%2C0.2291077177351677%2C0.7669546097158049%5D%7D&amp;t=1547921879225&amp;r=https%3A%2F%2Fwww.google.com%2F&amp;p=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F"></script><style type="text/css" id="av_css_id">#av-container *::-webkit-media-controls-panel{display:none!important;-webkit-appearance:none}#av-container *::--webkit-media-controls-play-button{display:none !important;-webkit-appearance:none}#av-container *::-webkit-media-controls-start-playback-button{display:none!important;-webkit-appearance:none}@-webkit-keyframes "fade-in"{0%{opacity:0;filter:alpha(opacity=0);}100%{opacity:1;filter:alpha(opacity=100);}}@-moz-keyframes "fade-in"{0%{opacity:0;filter:alpha(opacity=0);}100%{opacity:1;filter:alpha(opacity=100);}}@-o-keyframes fade-in{0% { opacity:0;filter:alpha(opacity=0)}100%{opacity:1;filter:alpha(opacity=100)}}@keyframes "fade-in"{0%{opacity:0;filter:alpha(opacity=0);}100%{opacity:1;filter:alpha(opacity=100);}}@-webkit-keyframes "av-loading-dash"{0%{stroke-dasharray:1, 210;stroke-dashoffset:0;}50%{stroke-dasharray:130, 220;stroke-dashoffset:-50;}100%{stroke-dasharray:170, 220;stroke-dashoffset:-210;}}@-moz-keyframes "av-loading-dash"{0%{stroke-dasharray:1, 210;stroke-dashoffset:0;}50%{stroke-dasharray:130, 220;stroke-dashoffset:-50;}100%{stroke-dasharray:170, 220;stroke-dashoffset:-210;}}@-o-keyframes av-loading-dash{0% { stroke-dasharray:1, 210;stroke-dashoffset:0}50%{stroke-dasharray:130, 220;stroke-dashoffset:-50}100%{stroke-dasharray:170, 220;stroke-dashoffset:-210}}@keyframes "av-loading-dash"{0%{stroke-dasharray:1, 210;stroke-dashoffset:0;}50%{stroke-dasharray:130, 220;stroke-dashoffset:-50;}100%{stroke-dasharray:170, 220;stroke-dashoffset:-210;}}@-webkit-keyframes "av-loading-rotate"{0%{stroke:white;-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{stroke:currentColor;-webkit-transform:rotate(360deg);transform:rotate(360deg);}}@-moz-keyframes "av-loading-rotate"{0%{stroke:white;-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{stroke:currentColor;-webkit-transform:rotate(360deg);transform:rotate(360deg);}}@-o-keyframes av-loading-rotate{0% { stroke:white;-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{stroke:currentColor;-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes "av-loading-rotate"{0%{stroke:white;-webkit-transform:rotate(0deg);transform:rotate(0deg);}100%{stroke:currentColor;-webkit-transform:rotate(360deg);transform:rotate(360deg);}}#av-container{position:relative;width:640px;height:360px;background:black;margin:0;overflow:hidden;text-align:initial;}#av-container #av-inner{position:absolute;top:0;left:0;width:100%;height:100%}#av-container #av-inner #slot{position:absolute;width:100%;height:100%;background:black;-webkit-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.1);-moz-box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.1);box-shadow:inset 0 0 0 1px rgba(0, 0, 0, 0.1)}#av-container #av-inner #slot #preloader{width:0;height:0;position:absolute;top:0;left:0;bottom:0;right:0;margin:auto;outline:none}#av-container #av-inner #slot #preloader svg{position:absolute;top:50%;left:50%}#av-container #av-inner #slot #preloader svg.icon{fill:white;width:50px;height:50px;margin-left:-25px;margin-top:-25px}#av-container #av-inner #slot #preloader svg.circle{fill:transparent;stroke:rgba(255, 255, 255, 0.2);stroke-width:3;width:70px;height:70px;margin-left:-35px;margin-top:-35px}#av-container #av-inner #slot #preloader svg.circle.active{color:red;stroke:white;stroke-linecap:round;animation:av-loading-dash 2s ease infinite, av-loading-rotate 2.5s linear infinite}#av-container #av-inner #slot #videoslot{text-align:left;position:absolute;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);left:0;right:0;bottom:0;width:100%;object-fit:initial;opacity:0;filter:alpha(opacity=0)}#av-container #av-inner #slot #videoslot.loaded{opacity:1;filter:alpha(opacity=100);-webkit-animation:fade-in 0.5s ease;-moz-animation:fade-in 0.5s ease;-o-animation:fade-in 0.5s ease;animation:fade-in 0.5s ease}#av-container #av-inner #gui:before{content:"";pointer-events:none;position:absolute;left:0;bottom:0;width:100%;height:15%;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;background:-webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);background:-moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);background:linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);filter:progid: DXImageTransform.Microsoft.gradient(startColorstr="#00000000", endColorstr="#80000000", GradientType=0)}#av-container #av-inner #gui #timeline{position:absolute;height:10px;overflow:hidden;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out;cursor:pointer}#av-container #av-inner #gui #timeline:before,#av-container #av-inner #gui #timeline #timeline-buffer,#av-container #av-inner #gui #timeline #timeline-moveto,#av-container #av-inner #gui #timeline #timeline-progress{position:absolute;left:0;height:2px}#av-container #av-inner #gui #timeline:before{content:"";width:100%;background:rgb(100, 100, 100);background:rgba(255, 255, 255, 0.3);-webkit-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1);box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1)}#av-container #av-inner #gui #timeline #timeline-buffer{width:0;background:rgb(180, 180, 180);background:rgba(255, 255, 255, 0.5);-webkit-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1);-moz-box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1);box-shadow:0 0 3px 0 rgba(0, 0, 0, 0.1)}#av-container #av-inner #gui #timeline #timeline-moveto{width:0;background:rgb(255, 255, 255);background:rgba(255, 255, 255, 0.8);opacity:0}#av-container #av-inner #gui #timeline #timeline-progress{width:0;background:red}#av-container #av-inner #gui #timeline.av-overlay{bottom:41px;left:10px;right:10px}#av-container #av-inner #gui #timeline.av-overlay:before,#av-container #av-inner #gui #timeline.av-overlay #timeline-buffer,#av-container #av-inner #gui #timeline.av-overlay #timeline-moveto,#av-container #av-inner #gui #timeline.av-overlay #timeline-progress{top:50%;margin-top:-1px}#av-container #av-inner #gui #timeline.av-bottom{bottom:0;left:0;right:0}#av-container #av-inner #gui #timeline.av-bottom:before,#av-container #av-inner #gui #timeline.av-bottom #timeline-buffer,#av-container #av-inner #gui #timeline.av-bottom #timeline-moveto,#av-container #av-inner #gui #timeline.av-bottom #timeline-progress{top:auto;bottom:0}#av-container #av-inner #gui #timeline.av-top{top:0;left:0;right:0}#av-container #av-inner #gui #timeline.av-top:before,#av-container #av-inner #gui #timeline.av-top #timeline-buffer,#av-container #av-inner #gui #timeline.av-top #timeline-moveto,#av-container #av-inner #gui #timeline.av-top #timeline-progress{top:0;bottom:auto}#av-container #av-inner #gui #timeline.av-top~#skip-btn{top:2px}#av-container #av-inner #gui #timeline.av-top~#aniview-credit{top:4px}#av-container #av-inner #gui #timeline.av-none{opacity:0 !important;display:none !important}#av-container #av-inner #gui #buttons{-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out}#av-container #av-inner #gui #buttons #sound:after{content:"";position:absolute;top:-10px;bottom:-10px;left:-10px;right:-10px;}#av-container #av-inner #gui #buttons #play-pause:after{content:"";position:absolute;top:-10px;bottom:-10px;left:-10px;right:-10px;}#av-container #av-inner #gui #buttons #play-pause,#av-container #av-inner #gui #buttons #phone,#av-container #av-inner #gui #buttons #sound,#av-container #av-inner #gui #buttons #share,#av-container #av-inner #gui #buttons #fullscreen{width:24px;height:24px;background-repeat:no-repeat;background-size:cover}#av-container #av-inner #gui #buttons #left,#av-container #av-inner #gui #buttons #right{position:absolute;height:24px;bottom:11px}#av-container #av-inner #gui #buttons #left{left:13px}#av-container #av-inner #gui #buttons #left>div{position:relative;float:left;margin-right:14px}#av-container #av-inner #gui #buttons #left #play-pause.play{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22play-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%3Cpath%20fill%3D%22white%22%20d%3D%22m19.343%2011.251c-0.035-0.439-0.334-0.874-0.902-1.207l-10.905-6.403c-1.211-0.712-2.203-0.138-2.203%201.275v7.463c5.85-2.36%2013.783-1.163%2014.01-1.128z%22%2F%3E%09%3Cpath%20fill%3D%22white%22%20d%3D%22m5.333%2017v0.762c0%201.412%200.992%201.985%202.203%201.273l10.904-6.402c0.643-0.377%200.941-0.882%200.902-1.379-8.65%200.696-12.404%203.614-14.009%205.746z%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #left #play-pause.pause{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22pause-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpath%20fill%3D%22white%22%20d%3D%22m4.338%2019.339h5v-16h-5v16zm9.001-16.001v16h5v-16h-5z%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #left #play-pause.replay{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22replay-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpath%20fill%3D%22white%22%20d%3D%22m16.672%2011.339c0%202.945-2.389%205.333-5.334%205.333s-5.334-2.388-5.334-5.333c0-2.943%202.385-5.329%205.326-5.333v2.336l7.016-3.503-7.016-3.503v2.004c-4.414%200.004-7.992%203.583-7.992%207.999%200%204.418%203.582%208%208%208s8-3.582%208-8h-2.666z%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #left #phone{width:auto;font-size:0}#av-container #av-inner #gui #buttons #left #phone .icon{width:24px;height:24px;display:inline-block;vertical-align:top;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22phone-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%3Cpath%20fill%3D%22white%22%20clip-rule%3D%22evenodd%22%20d%3D%22m20.154%2017.236c0.299-0.298%200.254-0.921-0.236-1.188-0.492-0.267-4.518-2.602-4.982-2.138-0.463%200.465-1.447%201.498-2.135%201.188s-2.289-1.816-2.846-2.375c-0.559-0.557-2.064-2.159-2.377-2.847-0.31-0.687%200.725-1.67%201.188-2.134%200.464-0.465-1.87-4.491-2.137-4.982-0.266-0.489-0.889-0.534-1.188-0.237s-2.18%202.176-2.85%202.847c-0.671%200.671-0.279%205.415%204.514%2010.202%204.787%204.792%209.531%205.185%2010.203%204.514%200.671-0.671%202.549-2.551%202.846-2.85z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-size:cover}#av-container #av-inner #gui #buttons #left #phone #phone-num{display:inline-block;margin-left:4px;height:24px;line-height:24px;font-size:12px;font-weight:400;font-family:Helvetica, Arial, fallback, sans-serif;color:white}#av-container #av-inner #gui #buttons #right{right:13px}#av-container #av-inner #gui #buttons #right>div{position:relative;float:right;margin-left:14px}#av-container #av-inner #gui #buttons #right #sound{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22sound-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.68%2022.68%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.68%2022.68%22%3E%09%09%3Cpolygon%20fill%3D%22white%22%20points%3D%227.247%207.34%201.761%207.34%201.761%2015.34%207.247%2015.34%2012.743%2019.346%2012.743%203.334%22%20clip-rule%3D%22evenodd%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #right #sound div{position:absolute;width:100%;height:100%;top:0;left:0;background-repeat:no-repeat;background-size:cover}#av-container #av-inner #gui #buttons #right #sound div.on{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22sound-on-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpath%20fill%3D%22white%22%20d%3D%22m17.808%204.757l-1.705%201.881c1.357%201.146%202.221%202.824%202.221%204.7s-0.863%203.556-2.221%204.701l1.705%201.881c1.902-1.605%203.109-3.955%203.109-6.582%200-2.626-1.207-4.975-3.109-6.581z%22%20%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #right #sound div.off{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22sound-off-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpolygon%20points%3D%2220.009%2011.337%2022.671%208.674%2021.343%207.345%2018.679%2010.007%2016.015%207.345%2014.685%208.674%2017.349%2011.337%2014.681%2014.003%2016.015%2015.331%2018.679%2012.666%2021.343%2015.331%2022.677%2014.003%22%20fill%3D%22red%22%20clip-rule%3D%22evenodd%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #right #share{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22share-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%3Cpath%20fill%3D%22white%22%20clip-rule%3D%22evenodd%22%20d%3D%22m17.338%2014.339c-0.695%200-1.328%200.246-1.838%200.645l-7.17-3.567c0-0.026%200.008-0.051%200.008-0.078%200-0.026-0.008-0.052-0.008-0.078l7.17-3.566c0.51%200.397%201.143%200.645%201.838%200.645%201.656%200%203-1.343%203-3s-1.344-3-3-3-3%201.343-3%203c0%200.188%200.023%200.372%200.057%200.552l-6.864%203.412c-0.549-0.591-1.324-0.966-2.193-0.966-1.656%200-3%201.343-3%203s1.344%203%203%203c0.869%200%201.645-0.375%202.193-0.965l6.863%203.412c-0.033%200.18-0.057%200.363-0.057%200.553%200%201.656%201.344%203%203%203s3-1.344%203-3-1.343-2.999-2.999-2.999z%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #right #fullscreen.off{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22fullscreen-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpath%20fill%3D%22white%22%20d%3D%22m4.339%2015.339h-2v5h5v-2h-3v-3zm-2-8.001h2v-3h3v-2h-5v5zm13-5v2h3v3h2v-5h-5zm3%2016.001h-3v2h5v-5h-2v3z%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #buttons #right #fullscreen.on{background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22fullscreen-off-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpath%20fill%3D%22white%22%20d%3D%22m6.338%206.338h-3v2h5v-5h-2v3zm-3%2010.001h3v3h2v-5h-5v2zm11%203h2v-3h3v-2h-5v5zm2-13.001v-3h-2v5h5v-2h-3z%22%2F%3E%3C%2Fsvg%3E")}#av-container #av-inner #gui #big-play{display:none;position:absolute;width:68px;height:68px;top:50%;left:50%;margin-top:-34px;margin-left:-34px;background-color:rgb(50, 50, 50);background-color:rgba(0, 0, 0, 0.4);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22play-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%3Cpath%20fill%3D%22white%22%20d%3D%22m19.343%2011.251c-0.035-0.439-0.334-0.874-0.902-1.207l-10.905-6.403c-1.211-0.712-2.203-0.138-2.203%201.275v7.463c5.85-2.36%2013.783-1.163%2014.01-1.128z%22%2F%3E%09%3Cpath%20fill%3D%22white%22%20d%3D%22m5.333%2017v0.762c0%201.412%200.992%201.985%202.203%201.273l10.904-6.402c0.643-0.377%200.941-0.882%200.902-1.379-8.65%200.696-12.404%203.614-14.009%205.746z%22%2F%3E%3C%2Fsvg%3E");background-size:62% 64%;background-position:16px center;background-repeat:no-repeat;border:3px solid white;border-radius:50%;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out}#av-container #av-inner #gui #close-btn{z-index:9999999;position:absolute;top:0;left:0;width:28px;height:28px;background-color:rgb(50, 50, 50);background-color:rgba(0, 0, 0, 0.4);background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22close-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%09%3Cpolygon%20fill%3D%22white%22%20points%3D%2219.346%205.421%2017.256%203.332%2011.338%209.25%205.42%203.332%203.332%205.421%209.25%2011.338%203.332%2017.257%205.42%2019.345%2011.338%2013.427%2017.256%2019.345%2019.346%2017.257%2013.428%2011.338%22%20clip-rule%3D%22evenodd%22%20fill-rule%3D%22evenodd%22%2F%3E%3C%2Fsvg%3E");background-repeat:no-repeat;background-size:60%;background-position:center;border-color:white;border-style:solid;border-width:0 1px 1px 0;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out}#av-container #av-inner #gui #timer{position:absolute;top:0;left:0;width:28px;height:28px;background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.7);color:white;font-family:Helvetica, Arial, fallback, sans-serif;font-size:12px;text-align:center;line-height:28px;border-color:white;border-style:solid;border-width:0 1px 1px 0;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out}#av-container #av-inner #gui #skip-btn{position:absolute;bottom:60px;right:0;padding:0 12px;height:32px;background-color:rgb(50, 50, 50);background-color:rgba(0, 0, 0, 0.4);color:white;font-family:Helvetica, Arial, fallback, sans-serif;font-size:14px;text-align:center;text-transform:uppercase;line-height:32px;border-color:white;border-style:solid;border-width:1px 0 1px 1px;-webkit-transition:all 0.15s ease-in-out;-moz-transition:all 0.15s ease-in-out;-o-transition:all 0.15s ease-in-out;transition:all 0.15s ease-in-out}#av-container #av-inner #gui #aniview-credit{position:absolute;top:2px;right:2px;height:24px;line-height:24px;font-size:11px;font-family:Helvetica, Arial, fallback, sans-serif;font-weight:500;color:white}#av-container #av-inner #gui #aniview-credit span{display:inline-block;vertical-align:top;width:24px;height:24px;background-repeat:no-repeat;background-size:cover;background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20id%3D%22play-Layer_1%22%20xml%3Aspace%3D%22preserve%22%20height%3D%2223%22%20viewBox%3D%220%200%2022.677%2022.677%22%20width%3D%2223%22%20version%3D%221.1%22%20y%3D%220px%22%20x%3D%220px%22%20enable-background%3D%22new%200%200%2022.677%2022.677%22%3E%09%3Cpath%20fill%3D%22red%22%20d%3D%22m19.343%2011.251c-0.035-0.439-0.334-0.874-0.902-1.207l-10.905-6.403c-1.211-0.712-2.203-0.138-2.203%201.275v7.463c5.85-2.36%2013.783-1.163%2014.01-1.128z%22%2F%3E%09%3Cpath%20fill%3D%22red%22%20d%3D%22m5.333%2017v0.762c0%201.412%200.992%201.985%202.203%201.273l10.904-6.402c0.643-0.377%200.941-0.882%200.902-1.379-8.65%200.696-12.404%203.614-14.009%205.746z%22%2F%3E%3C%2Fsvg%3E")}#av-container.desktop #av-inner #gui #big-play{border-color:#ccc}#av-container.desktop:hover #av-inner #gui #big-play{background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.7);border-color:white}#av-container.desktop #gui:before{bottom:-15%}#av-container.desktop:hover #gui:before{bottom:0}#av-container.desktop #gui:before,#av-container.desktop #gui #timeline,#av-container.desktop #gui #buttons{opacity:0;filter:alpha(opacity=0)}#av-container.desktop:hover #gui:before,#av-container.desktop:hover #gui #buttons,#av-container.desktop:hover #gui #timeline,#av-container.desktop #av-inner #gui #timeline:hover #timeline-moveto{opacity:1;filter:alpha(opacity=100)}#av-container.desktop #av-inner #gui #close-btn:hover,#av-container.desktop #av-inner #gui #skip-btn:hover{cursor:pointer;background-color:rgb(0, 0, 0);background-color:rgba(0, 0, 0, 0.7)}#av-container.responsive{width:100%;height:520px}#av-container.hide-controls #timeline,#av-container.hide-controls #buttons,#av-container.hide-controls #av-inner #gui:before{display:none}#av-container.buttons-below #av-inner #slot #videoslot{top:0;-webkit-transform:none;transform:none}#av-testcss{margin-top:3px}.embed-player-tag #testyourself-postroll-embedgui #av-container{position:relative;top:50%;-webkit-transform:initial !important;transform:initial !important}.testyourself-postroll .embed-player-tag #testyourself-postroll-embedgui #av-container{top:0px}.embed-player-tag #testyourself-postroll-embedgui #av-container{margin-left:auto;margin-right:auto;//margin-top:50px}#testyourself-preroll-embedgui #av-container #av-inner #gui #skip-btn{top:0px}#spotimaniviewplayergui #av-container{//position:inherit} #av-container #videoslot video {max-width: none;} #aniBox { margin:15px 0; }</style><script async="true" type="text/javascript" src="https://s.adroll.com/j/roundtrip.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="156085c5-0017-4150-b225-a731ad248f38/service" src="//sumo.b-cdn.net/virtual/2492dca5ac07e198adfd0bb3106ceab39c27123b/client/js/156085c5-0017-4150-b225-a731ad248f38/service.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="services/services" src="//sumo.b-cdn.net/virtual/71e67dcf713e10407520388a430d6149234ad817/client/js/services/services.js"></script><style>@-webkit-keyframes insQ_100 {  from {  outline: 1px solid transparent  } to {  outline: 0px solid transparent }  }
+#menufication-top { animation-duration: 0.001s; animation-name: insQ_100; -webkit-animation-duration: 0.001s; -webkit-animation-name: insQ_100;  } </style><link type="text/css" rel="stylesheet" href="//sumo.b-cdn.net/virtual/1336e28defeee5748d825d738d68be5291da67a6/client/js/../css/listbuilder/listbuilder-popup.css"></head>
+  <body style="">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL8PMMW"
+  height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+  <!-- End Google Tag Manager (noscript) -->
+        <header class="main-header u-isSingle" role="banner">
+      <nav id="navigation-bar" class="l-p-fix l-d-f l-w-100 t-bg-grey-500 navigation-bar">
+        <div class="l-d-f l-w-100 l-w-3col--3col l-w-4col--4col l-jc-sb l-mh-auto l-ph2">
+          <section class="l-d-f l-ai-str l-jc-sta">
+            <a tabindex="0" class="l-d-f l-ai-cen l-pa3 f-c-white t-t NavBar_item" onclick="sitepoint.SidebarNav_toggle(event)" onkeyup="sitepoint.SidebarNav_toggle(event)">
+              <i class="f-minor l-mb0 fas f-medium fa-bars"></i>
+            </a>
+
+<div id="SidebarNav" class="SidebarNav" onkeyup="sitepoint.SidebarNav_toggle(event)">
+  <header class="m-border-b SidebarNav_header">
+    <a href="#" onclick="sitepoint.SidebarNav_toggle(event)" class="l-pt0 f-light">
+      <span class="SidebarNav_icon">Ã—</span>
+    </a>
+    <div class="l-d-n l-d-b--3col SidebarNav_search">
+      <form method="get" action="https://www.sitepoint.com/">
+        <input aria-label="search" autocomplete="off" id="sidebar-search-box" name="s" placeholder="Search" type="text">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </header>
+
+  <section class="m-border-b">
+    <ul>
+      <li class="SidebarNav_link f-minor l-mb0 u-premium/l/join ">
+            <i class="SidebarNav_icon fas fa-user u-premium/l/join"></i>
+
+            <a class="f-light" href="/premium/l/join?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Sign Up</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-premium/sign-in ">
+            <i class="SidebarNav_icon fas fa-sign-in u-premium/sign-in"></i>
+
+            <a class="f-light" href="/premium/sign-in/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Login</a>
+          </li>                </ul>
+  </section>
+
+  <section class="m-border-b">
+    <ul>
+        <li class="SidebarNav_link f-minor l-mb0 u-# no-link">
+            <i class="SidebarNav_icon fab fa-html5 u-#"></i>
+
+            <a class="f-light" href="#" onclick="return false;">HTML and CSS</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/bootstrap l-pl5">
+            <i class="SidebarNav_icon fas fa-bold u-learn/bootstrap"></i>
+
+            <a class="f-light" href="/learn/bootstrap/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn Bootstrap</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-# no-link">
+            <i class="SidebarNav_icon fab fa-js u-#"></i>
+
+            <a class="f-light" href="#" onclick="return false;">Javascript</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/javascript l-pl5">
+            <i class="SidebarNav_icon fab fa-js u-learn/javascript"></i>
+
+            <a class="f-light" href="/learn/javascript/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn Javascript</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/react l-pl5">
+            <i class="SidebarNav_icon fab fa-react u-learn/react"></i>
+
+            <a class="f-light" href="/learn/react/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn React</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/angular l-pl5">
+            <i class="SidebarNav_icon fab fa-angular u-learn/angular"></i>
+
+            <a class="f-light" href="/learn/angular/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn Angular</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/nodejs l-pl5">
+            <i class="SidebarNav_icon fab fa-node-js u-learn/nodejs"></i>
+
+            <a class="f-light" href="/learn/nodejs/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn Node.js</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-# no-link">
+            <i class="SidebarNav_icon fab fa-bitcoin u-#"></i>
+
+            <a class="f-light" href="#" onclick="return false;">Blockchain</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/blockchain l-pl5">
+            <i class="SidebarNav_icon fab fa-ethereum u-learn/blockchain"></i>
+
+            <a class="f-light" href="/learn/blockchain/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn Blockchain</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-# no-link">
+            <i class="SidebarNav_icon fas fa-microscope u-#"></i>
+
+            <a class="f-light" href="#" onclick="return false;">UX</a>
+          </li>        <li class="SidebarNav_link f-minor l-mb0 u-learn/ux-analytics l-pl5">
+            <i class="SidebarNav_icon fal fa-hand-pointer u-learn/ux-analytics"></i>
+
+            <a class="f-light" href="/learn/ux-analytics/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Learn UX Analytics</a>
+          </li>    </ul>
+  </section>
+
+  <section class="m-border-b SidebarNav_products">
+    <ul>
+      <li class="SidebarNav_link f-minor l-mb0 u-premium/deals/?ref_source=sitepoint&amp;ref_medium=drawer ">
+            <i class="SidebarNav_icon far fa-gem u-premium/deals/?ref_source=sitepoint&amp;ref_medium=drawer"></i>
+
+            <a class="f-light" href="/premium/deals/?ref_source=sitepoint&amp;ref_medium=drawer?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Deals</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-premium/books ">
+            <i class="SidebarNav_icon fas fa-book u-premium/books"></i>
+
+            <a class="f-light" href="/premium/books/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Books</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-premium/courses ">
+            <i class="SidebarNav_icon fas fa-play-circle u-premium/courses"></i>
+
+            <a class="f-light" href="/premium/courses/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Courses</a>
+          </li>    </ul>
+  </section>
+
+  <section class="m-border-b SidebarNav_topics">
+    <ul>
+      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-html-css">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-html-css"></i>
+            <a class="f-light" href="https://www.sitepoint.com/html-css/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="html-css">HTML &amp; CSS</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-javascript u-active">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-javascript"></i>
+            <a class="f-light" href="https://www.sitepoint.com/javascript/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="javascript">JavaScript</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-php">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-php"></i>
+            <a class="f-light" href="https://www.sitepoint.com/php/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="php">PHP</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-design-ux">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-design-ux"></i>
+            <a class="f-light" href="https://www.sitepoint.com/design-ux/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="design-ux">Design &amp; UX</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-web">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-web"></i>
+            <a class="f-light" href="https://www.sitepoint.com/web/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="web">Web</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-wordpress">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-wordpress"></i>
+            <a class="f-light" href="https://www.sitepoint.com/wordpress/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="wordpress">WordPress</a>
+          </li>      <li class="SidebarNav_link SidebarNav_channelLink f-minor l-mb0 u-developer-center">
+            <i class="SidebarNav_icon fas fa-circle fa-xs u-developer-center"></i>
+            <a class="f-light" href="https://www.sitepoint.com/developer-center/?ref_source=sitepoint&amp;ref_medium=drawer" data-channel="developer-center">Microsoft Tech</a>
+          </li>    </ul>
+  </section>
+
+  <section class="m-border-b">
+    <ul>
+      <li class="SidebarNav_link f-minor l-mb0 u-community ">
+            <i class="SidebarNav_icon fas fa-comments u-community"></i>
+
+            <a class="f-light" href="/community/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Community</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-versioning ">
+
+            <i class="SidebarNav_icon"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<svg viewBox="0 0 463 533">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Misc-Icons" transform="translate(-224.000000, -209.000000)" fill="#A2A2A2">
+            <g id="Adam" transform="translate(224.000000, 209.000000)">
+                <path d="M205.23914,223.989305 C205.23914,239.058221 193.018305,251.270053 177.938282,251.270053 C162.858259,251.270053 150.637425,239.064975 150.637425,223.989305 C150.637425,208.927144 162.858259,196.708557 177.938282,196.708557 C193.018305,196.708557 205.23914,208.927144 205.23914,223.989305" id="Shape"></path>
+                <path d="M319.240023,223.989305 C319.240023,239.058221 307.019188,251.270053 291.939165,251.270053 C276.859142,251.270053 264.638308,239.064975 264.638308,223.989305 C264.638308,208.927144 276.859142,196.708557 291.939165,196.708557 C307.019188,196.708557 319.240023,208.927144 319.240023,223.989305" id="Shape-Copy"></path>
+                <path d="M45.9192714,105.68948 C47.1603233,105.013767 48.4156135,104.338834 49.6814591,103.66477 C49.285517,101.268011 49.079511,98.8067359 49.079511,96.2970985 C49.079511,71.6393315 68.9663337,51.6502619 93.4979726,51.6502619 C104.828598,51.6502619 115.168338,55.9145566 123.11028,62.1553999 C123.11028,37.497633 142.997103,17.5085634 167.528742,17.5085634 C177.872808,17.5085634 187.39103,21.0626011 194.940698,27.0220906 C201.994758,11.1002236 217.874616,0 236.33381,0 C255.201408,0 271.374274,11.5968357 278.182101,28.0859033 C285.813075,16.4403992 298.937725,8.75428168 313.84838,8.75428168 C335.217866,8.75428168 352.918943,24.5413571 356.037389,45.1451696 C359.093922,44.2508863 362.326213,43.7714084 365.669919,43.7714084 C384.669913,43.7714084 400.072453,59.2531388 400.072453,78.3508211 C400.072453,84.451539 398.500668,90.1832596 395.741931,95.1591734 C420.545,106.093308 441.166028,118.313655 447.484806,130.438797 C462.05792,158.40324 448.921531,194.216875 441.795446,209.76377 C445.786047,226.227441 447.901492,243.429264 447.901492,261.127716 C447.901492,277.569319 446.075834,293.582324 442.617163,308.973095 C454.31826,313.102542 462.707645,324.30529 462.707645,337.477559 C462.707645,352.446546 451.87352,364.872078 437.657056,367.264056 C442.403415,372.604775 445.288641,379.652197 445.288641,387.376964 C445.288641,404.057219 431.83579,417.579236 415.240858,417.579236 C414.739425,417.579236 414.24086,417.56689 413.745449,417.542485 C416.086983,421.841984 417.418234,426.776628 417.418234,432.023801 C417.418234,448.704055 403.965383,462.226073 387.370451,462.226073 C385.766225,462.226073 384.191363,462.099709 382.655177,461.856345 C383.175775,464.083267 383.451175,466.405199 383.451175,468.791784 C383.451175,485.472038 369.998324,498.994056 353.403392,498.994056 C348.884389,498.994056 344.598385,497.991345 340.753583,496.195199 C340.156973,512.346957 326.941829,525.256901 310.726831,525.256901 C300.435078,525.256901 291.351821,520.056112 285.93648,512.126599 C281.811241,523.856499 270.681444,532.260326 257.598867,532.260326 C247.286985,532.260326 238.188331,527.039174 232.776786,519.083469 C227.365238,527.039175 218.266585,532.260326 207.954704,532.260326 C194.872127,532.260326 183.74233,523.856499 179.617091,512.126599 C174.20175,520.056112 165.118493,525.256901 154.82674,525.256901 C138.611742,525.256901 125.396598,512.346957 124.799988,496.195199 C120.955186,497.991345 116.669182,498.994056 112.150179,498.994056 C95.5552468,498.994056 82.1023962,485.472038 82.1023962,468.791784 C82.1023962,466.405199 82.3777956,464.083267 82.8983938,461.856345 C81.3622084,462.099709 79.7873457,462.226073 78.1831202,462.226073 C61.588188,462.226073 48.1353374,448.704055 48.1353374,432.023801 C48.1353374,426.776628 49.4665878,421.841984 51.8081225,417.542485 C51.312711,417.56689 50.8141464,417.579236 50.312713,417.579236 C33.7177807,417.579236 20.2649301,404.057219 20.2649301,387.376964 C20.2649301,379.652197 23.1501561,372.604775 27.8965152,367.264056 C13.6800506,364.872078 2.84592558,352.446546 2.84592558,337.477559 C2.84592558,324.30529 11.2353108,313.102542 22.9364075,308.973095 C19.4777374,293.582324 17.6520794,277.569319 17.6520794,261.127716 C17.6520794,244.483155 19.5230884,228.277837 23.0652378,212.71266 C23.0461555,212.67345 23.0269954,212.633634 23.0077587,212.593218 C8.40744355,199.915919 -22.2912349,139.477462 27.9975916,114.351569 C34.9803921,110.862741 40.9027514,108.009708 45.9192714,105.68948 L45.9192714,105.68948 Z M321.182928,338.855264 C312.257241,380.392075 275.494697,411.515802 231.5,411.515802 C187.505303,411.515802 150.742759,380.392075 141.817072,338.855264 L321.182928,338.855264 L321.182928,338.855264 L321.182928,338.855264 Z M323.401809,93.513343 C382.119911,125.539939 421.986958,188.049902 421.986958,259.919187 C421.986958,269.181179 421.324839,278.287729 420.045582,287.193626 L420.045582,287.193626 C414.531038,280.687855 406.320283,276.561781 397.150761,276.561781 C382.005642,276.561781 369.476084,287.817909 367.390774,302.461227 C361.921787,296.754612 354.241111,293.204376 345.735474,293.204376 C336.696537,293.204376 328.589254,297.213765 323.07789,303.559722 L323.07789,303.559722 C317.566526,297.213765 309.459243,293.204376 300.420306,293.204376 C291.140116,293.204376 282.841976,297.430646 277.326999,304.072813 C271.812023,297.430646 263.513882,293.204376 254.233693,293.204376 C245.884947,293.204376 238.331009,296.624848 232.883277,302.147652 L232.883277,302.147652 C227.435545,296.624848 219.881607,293.204376 211.532861,293.204376 C202.252672,293.204376 193.954531,297.430646 188.439555,304.072813 C182.924578,297.430646 174.626438,293.204376 165.346248,293.204376 C156.307311,293.204376 148.200028,297.213765 142.688664,303.559722 L142.688664,303.559722 C137.1773,297.213765 129.070017,293.204376 120.03108,293.204376 C111.525443,293.204376 103.844767,296.754612 98.3757799,302.461227 C96.2904699,287.817909 83.7609125,276.561781 68.6157934,276.561781 C60.2507056,276.561781 52.6835401,279.995657 47.2334107,285.537513 C46.105173,277.159748 45.5224867,268.607864 45.5224867,259.919187 C45.5224867,222.269089 56.4635528,187.187552 75.3242153,157.711582 C101.872077,155.792935 136.061257,148.07484 172.032022,134.915239 C218.909805,117.765397 257.559595,95.4909208 277.539381,75.8645287 C278.024685,75.9807367 278.50926,76.0988336 278.993099,76.2188112 C286.713596,87.3063559 299.514894,94.5568665 314.000977,94.5568665 C317.230893,94.5568665 320.377051,94.1964131 323.401809,93.513343 L323.401809,93.513343 L323.401809,93.513343 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+</i>
+            <a class="f-light" href="/versioning/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Versioning</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-newsletter ">
+            <i class="SidebarNav_icon fas fa-envelope u-newsletter"></i>
+
+            <a class="f-light" href="/newsletter/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Newsletters</a>
+          </li>    </ul>
+  </section>
+
+  <section class="m-border-b SidebarNav_admin">
+    <ul>
+      <li class="SidebarNav_link f-minor l-mb0 u-advertise ">
+
+
+            <a class="f-light" href="/advertise/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Advertise</a>
+          </li>      <li class="SidebarNav_link f-minor l-mb0 u-contact-us ">
+
+
+            <a class="f-light" href="/contact-us/?ref_source=sitepoint&amp;ref_medium=drawer" onclick="">Contact Us</a>
+          </li>      <zendesk><li class="SidebarNav_link f-minor l-mb0"><a class="f-light" href="#">Support</a></li></zendesk></ul>
+  </section>
+
+
+  <section class="SidebarNav_social">
+    <ul>
+      <li class="SidebarNav_socialLink">
+        <a class="f-light" href="/newsletter/">
+          <i class="fas fa-envelope SidebarNav_socialIcon u-newsletter"></i>
+          <span class="SidebarNav_socialCount">1.2M<br>Subscribers</span>
+        </a>
+      </li>
+      <li class="SidebarNav_socialLink">
+        <a class="f-light" href="https://twitter.com/sitepointdotcom" rel="noopener" target="_blank">
+          <i class="fab fa-twitter SidebarNav_socialIcon u-twitter"></i>
+          <span class="SidebarNav_socialCount">136k<br>Followers</span>
+        </a>
+      </li>
+      <li class="SidebarNav_socialLink">
+        <a class="f-light" href="https://facebook.com/sitepoint" rel="noopener" target="_blank">
+          <i class="fab fa-facebook SidebarNav_socialIcon u-facebook"></i>
+          <span class="SidebarNav_socialCount">100k<br>Followers</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+</div>
+
+<div class="SidebarNav_lightbox" onclick="sitepoint.SidebarNav_toggle(event)"></div>
+            <a class="l-d-f" href="https://www.sitepoint.com/">
+              <div class="l-d-n l-d-f--3col l-as-cen">
+                <svg class="sp-logo" viewBox="0 0 123 27">
+  <g fill-rule="evenodd">
+    <path d="M31.36,16.75 C31.56,17.07 31.82,17.31 32.14,17.50 C32.46,17.68 32.82,17.82 33.23,17.89 C33.63,17.97 34.05,18.01 34.48,18.01 C34.81,18.01 35.16,17.99 35.52,17.94 C35.89,17.89 36.22,17.81 36.53,17.68 C36.83,17.55 37.08,17.36 37.28,17.11 C37.48,16.87 37.58,16.55 37.58,16.17 C37.58,15.64 37.37,15.24 36.96,14.97 C36.55,14.69 36.03,14.47 35.41,14.31 C34.79,14.14 34.12,13.99 33.39,13.85 C32.66,13.71 31.99,13.52 31.37,13.27 C30.75,13.03 30.23,12.68 29.82,12.23 C29.41,11.78 29.20,11.16 29.20,10.36 C29.20,9.73 29.34,9.20 29.63,8.75 C29.92,8.30 30.30,7.94 30.75,7.66 C31.20,7.38 31.72,7.17 32.29,7.03 C32.86,6.90 33.42,6.83 33.99,6.83 C34.71,6.83 35.38,6.89 35.99,7.01 C36.61,7.13 37.15,7.34 37.62,7.63 C38.09,7.93 38.46,8.33 38.75,8.83 C39.03,9.34 39.19,9.96 39.24,10.72 L37.13,10.72 C37.10,10.32 36.99,9.98 36.81,9.72 C36.63,9.46 36.40,9.25 36.12,9.08 C35.84,8.92 35.53,8.81 35.19,8.74 C34.85,8.66 34.51,8.63 34.16,8.63 C33.84,8.63 33.53,8.65 33.20,8.70 C32.88,8.75 32.59,8.83 32.32,8.95 C32.06,9.07 31.84,9.23 31.68,9.43 C31.51,9.63 31.43,9.89 31.43,10.21 C31.43,10.56 31.56,10.86 31.82,11.09 C32.07,11.32 32.40,11.51 32.80,11.66 C33.19,11.82 33.64,11.95 34.13,12.05 C34.63,12.15 35.13,12.26 35.62,12.37 C36.15,12.49 36.67,12.62 37.17,12.78 C37.67,12.94 38.12,13.15 38.51,13.42 C38.90,13.68 39.21,14.01 39.45,14.41 C39.69,14.81 39.81,15.31 39.81,15.90 C39.81,16.66 39.65,17.28 39.33,17.77 C39.01,18.27 38.58,18.67 38.06,18.98 C37.54,19.28 36.96,19.49 36.30,19.61 C35.65,19.73 35.00,19.79 34.36,19.79 C33.65,19.79 32.97,19.72 32.32,19.58 C31.68,19.43 31.11,19.20 30.61,18.87 C30.12,18.54 29.72,18.11 29.42,17.57 C29.13,17.03 28.96,16.38 28.93,15.61 L31.03,15.61 C31.05,16.06 31.16,16.44 31.36,16.75" id="Fill-1"></path>
+    <path d="M42.27,7.12 L44.37,7.12 L44.37,19.53 L42.27,19.53 L42.27,7.12 Z" id="Fill-2"></path>
+    <path d="M53.13,7.12 L53.13,8.92 L50.57,8.92 L50.57,16.62 C50.57,16.86 50.59,17.05 50.63,17.20 C50.67,17.34 50.75,17.46 50.87,17.54 C50.99,17.62 51.15,17.67 51.35,17.69 C51.56,17.71 51.83,17.73 52.16,17.73 L53.13,17.73 L53.13,19.53 L51.51,19.53 C50.97,19.53 50.50,19.49 50.11,19.42 C49.72,19.35 49.41,19.22 49.17,19.02 C48.93,18.83 48.75,18.56 48.64,18.21 C48.52,17.86 48.46,17.39 48.46,16.81 L48.46,8.92 L46.28,8.92 L46.28,7.12 L48.46,7.12 L48.46,3.39 L50.57,3.39 L50.57,7.12 L53.13,7.12" id="Fill-3"></path>
+    <path d="M64.53,18.73 C63.57,19.44 62.36,19.79 60.91,19.79 C59.89,19.79 59.00,19.63 58.25,19.31 C57.49,18.99 56.86,18.54 56.35,17.97 C55.84,17.39 55.45,16.70 55.20,15.90 C54.94,15.10 54.80,14.23 54.76,13.29 C54.76,12.34 54.91,11.48 55.21,10.69 C55.51,9.91 55.92,9.23 56.46,8.65 C57.00,8.08 57.63,7.63 58.37,7.31 C59.11,6.99 59.91,6.83 60.79,6.83 C61.93,6.83 62.87,7.05 63.63,7.51 C64.38,7.97 64.98,8.55 65.44,9.25 C65.89,9.96 66.20,10.73 66.38,11.56 C66.55,12.39 66.62,13.18 66.59,13.93 L56.99,13.93 C56.98,14.48 57.04,14.99 57.19,15.48 C57.34,15.97 57.58,16.40 57.91,16.78 C58.24,17.16 58.66,17.46 59.18,17.68 C59.69,17.90 60.29,18.01 60.98,18.01 C61.88,18.01 62.61,17.82 63.18,17.41 C63.75,17.02 64.13,16.41 64.31,15.59 L66.39,15.59 C66.11,16.98 65.49,18.03 64.53,18.73 L64.53,18.73 Z M64.02,10.76 C63.83,10.33 63.58,9.96 63.25,9.65 C62.93,9.34 62.55,9.09 62.11,8.90 C61.68,8.72 61.19,8.63 60.66,8.63 C60.12,8.63 59.62,8.72 59.19,8.90 C58.75,9.09 58.37,9.34 58.06,9.66 C57.75,9.98 57.50,10.35 57.32,10.78 C57.13,11.20 57.03,11.65 56.99,12.13 L64.36,12.13 C64.32,11.65 64.21,11.20 64.02,10.76 L64.02,10.76 Z" id="Fill-4"></path>
+    <path d="M70.95,7.12 L70.95,8.80 L71.00,8.80 C71.35,8.11 71.89,7.61 72.64,7.30 C73.38,6.98 74.20,6.83 75.09,6.83 C76.09,6.83 76.95,7.00 77.68,7.36 C78.42,7.71 79.03,8.18 79.52,8.78 C80.01,9.38 80.37,10.08 80.62,10.86 C80.87,11.65 80.99,12.48 80.99,13.36 C80.99,14.24 80.87,15.07 80.63,15.85 C80.39,16.64 80.03,17.32 79.54,17.91 C79.06,18.49 78.44,18.95 77.71,19.29 C76.97,19.62 76.12,19.79 75.14,19.79 C74.83,19.79 74.48,19.76 74.09,19.70 C73.70,19.63 73.32,19.53 72.94,19.38 C72.56,19.24 72.20,19.04 71.86,18.79 C71.52,18.55 71.23,18.24 71.00,17.87 L70.95,17.87 L70.95,24.26 L68.84,24.26 L68.84,7.12 L70.95,7.12 L70.95,7.12 Z M78.53,11.52 C78.37,10.97 78.13,10.48 77.81,10.04 C77.49,9.61 77.07,9.27 76.57,9.01 C76.06,8.76 75.47,8.63 74.79,8.63 C74.08,8.63 73.48,8.76 72.98,9.04 C72.49,9.31 72.08,9.67 71.77,10.10 C71.46,10.55 71.23,11.05 71.09,11.60 C70.95,12.17 70.88,12.73 70.88,13.31 C70.88,13.92 70.95,14.51 71.10,15.07 C71.25,15.64 71.48,16.14 71.81,16.57 C72.13,17.01 72.55,17.35 73.06,17.62 C73.57,17.88 74.19,18.01 74.92,18.01 C75.65,18.01 76.25,17.88 76.74,17.61 C77.23,17.34 77.62,16.98 77.92,16.53 C78.22,16.08 78.43,15.57 78.56,14.99 C78.70,14.41 78.76,13.82 78.76,13.21 C78.76,12.64 78.68,12.07 78.53,11.52 L78.53,11.52 Z" id="Fill-5"></path>
+    <path d="M83.17,10.78 C83.44,9.98 83.84,9.30 84.36,8.71 C84.89,8.13 85.55,7.67 86.33,7.33 C87.10,7.00 87.99,6.83 89.00,6.83 C90.03,6.83 90.92,7.00 91.69,7.33 C92.46,7.67 93.11,8.13 93.64,8.71 C94.17,9.30 94.56,9.98 94.83,10.78 C95.09,11.57 95.23,12.42 95.23,13.33 C95.23,14.25 95.09,15.09 94.83,15.88 C94.56,16.66 94.17,17.35 93.64,17.93 C93.11,18.52 92.46,18.97 91.69,19.30 C90.92,19.63 90.03,19.79 89.00,19.79 C87.99,19.79 87.10,19.63 86.33,19.30 C85.55,18.97 84.89,18.52 84.36,17.93 C83.84,17.35 83.44,16.66 83.17,15.88 C82.91,15.09 82.78,14.25 82.78,13.33 C82.78,12.42 82.91,11.57 83.17,10.78 L83.17,10.78 Z M85.32,15.34 C85.53,15.92 85.81,16.41 86.18,16.80 C86.54,17.19 86.96,17.49 87.45,17.70 C87.94,17.91 88.46,18.01 89.00,18.01 C89.55,18.01 90.06,17.91 90.55,17.70 C91.04,17.49 91.46,17.19 91.83,16.80 C92.19,16.41 92.48,15.92 92.68,15.34 C92.89,14.75 92.99,14.09 92.99,13.33 C92.99,12.58 92.89,11.91 92.68,11.33 C92.48,10.75 92.19,10.25 91.83,9.85 C91.46,9.45 91.04,9.15 90.55,8.94 C90.06,8.73 89.55,8.63 89.00,8.63 C88.46,8.63 87.94,8.73 87.45,8.94 C86.96,9.15 86.54,9.45 86.18,9.85 C85.81,10.25 85.53,10.75 85.32,11.33 C85.11,11.91 85.01,12.58 85.01,13.33 C85.01,14.09 85.11,14.75 85.32,15.34 L85.32,15.34 Z" id="Fill-6"></path>
+    <path d="M97.83,7.12 L99.94,7.12 L99.94,19.53 L97.83,19.53 L97.83,7.12 Z" id="Fill-7"></path>
+    <path d="M105.19,7.12 L105.19,9.08 L105.24,9.08 C106.12,7.58 107.51,6.83 109.41,6.83 C110.25,6.83 110.95,6.94 111.51,7.16 C112.08,7.39 112.53,7.70 112.88,8.10 C113.23,8.50 113.47,8.98 113.61,9.53 C113.75,10.08 113.82,10.69 113.82,11.36 L113.82,19.53 L111.71,19.53 L111.71,11.12 C111.71,10.36 111.48,9.75 111.02,9.30 C110.56,8.85 109.92,8.63 109.11,8.63 C108.46,8.63 107.91,8.72 107.43,8.92 C106.96,9.11 106.57,9.38 106.26,9.73 C105.94,10.08 105.71,10.50 105.55,10.97 C105.39,11.44 105.32,11.96 105.32,12.52 L105.32,19.53 L103.21,19.53 L103.21,7.12 L105.19,7.12" id="Fill-8"></path>
+    <path d="M122.47,7.12 L122.47,8.92 L119.92,8.92 L119.92,16.62 C119.92,16.86 119.94,17.05 119.98,17.20 C120.02,17.34 120.10,17.46 120.22,17.54 C120.33,17.62 120.49,17.67 120.70,17.69 C120.91,17.71 121.18,17.73 121.50,17.73 L122.47,17.73 L122.47,19.53 L120.86,19.53 C120.32,19.53 119.85,19.49 119.46,19.42 C119.07,19.35 118.76,19.22 118.52,19.02 C118.28,18.83 118.10,18.56 117.99,18.21 C117.87,17.86 117.81,17.39 117.81,16.81 L117.81,8.92 L115.63,8.92 L115.63,7.12 L117.81,7.12 L117.81,3.39 L119.92,3.39 L119.92,7.12 L122.47,7.12" id="Fill-9"></path>
+    <path d="M0.67,11.87 L2.62,13.76 L8.76,19.50 L11.41,16.94 C11.65,16.61 11.64,16.16 11.36,15.84 L8.94,13.72 L8.95,13.72 L6.34,11.19 C6.04,10.84 6.04,10.32 6.37,9.99 L13.38,3.21 L10.20,0.12 L0.68,9.31 C-0.05,10.02 -0.05,11.17 0.67,11.87" id="Fill-10"></path>
+    <path d="M21.60,15.15 L19.66,13.27 L13.51,7.53 L10.86,10.08 C10.62,10.42 10.64,10.87 10.91,11.19 L13.33,13.31 L13.33,13.31 L15.93,15.84 C16.24,16.19 16.23,16.70 15.91,17.04 L8.89,23.82 L12.08,26.91 L19.65,19.60 L21.60,17.71 C22.33,17.01 22.33,15.86 21.60,15.15" id="Fill-11"></path>
+    <path d="M44.55,4.58 C44.55,5.24 44.00,5.77 43.32,5.77 C42.64,5.77 42.09,5.24 42.09,4.58 C42.09,3.93 42.64,3.39 43.32,3.39 C44.00,3.39 44.55,3.93 44.55,4.58" id="Fill-12"></path>
+    <path d="M100.11,4.58 C100.11,5.24 99.56,5.77 98.88,5.77 C98.20,5.77 97.65,5.24 97.65,4.58 C97.65,3.93 98.20,3.39 98.88,3.39 C99.56,3.39 100.11,3.93 100.11,4.58" id="Fill-13"></path>
+  </g>
+</svg>
+              </div>
+              <div class="l-d-f l-d-n--3col l-as-cen">
+                <svg width="22px" height="27px" viewBox="0 0 22 27">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-52.00, -407.00)" fill="#FFFFFF">
+            <g transform="translate(52.00, 407.00)">
+                <path d="M0.54,11.75 L2.49,13.64 L8.63,19.38 L11.28,16.82 C11.52,16.49 11.51,16.04 11.23,15.72 L8.81,13.60 L8.82,13.60 L6.21,11.07 C5.91,10.72 5.91,10.20 6.24,9.87 L13.25,3.09 L10.06,0 L0.54,9.19 C-0.18,9.90 -0.18,11.05 0.54,11.75"></path>
+                <path d="M20.71,14.62 L18.76,12.74 L12.62,7 L9.97,9.55 C9.73,9.89 9.74,10.34 10.02,10.65 L12.44,12.78 L12.43,12.78 L15.04,15.31 C15.34,15.66 15.33,16.17 15.01,16.51 L8,23.29 L11.18,26.38 L18.75,19.06 L20.70,17.18 C21.43,16.48 21.44,15.33 20.71,14.62"></path>
+            </g>
+        </g>
+    </g>
+</svg>
+              </div>
+            </a>
+          </section>
+
+          <section class="l-d-f l-w-100 l-ai-str l-jc-fe">
+            <a class="navigation-bar-dropdown l-d-n l-d-f--3col l-ai-cen l-pa2 f-minor l-gs-mb0 f-light f-c-white" href="/learning-hubs">
+              <i class="l-mr2 f-minor l-mb0 fas f-medium fa-map-marker-alt"></i>
+              Learning Hubs
+            </a>
+            <a class="navigation-bar-dropdown l-d-n l-d-f--3col l-ai-cen l-ml3 l-pa2 f-minor l-mb0 f-light f-c-white" href="/premium/topics/all?q=&amp;limit=400&amp;offset=0&amp;page1&amp;content_types[]=Book&amp;ref_source=sitepoint&amp;ref_medium=topnav">
+                <i class="l-mr2 f-minor l-mb0 fas f-medium fa-book"></i>
+                Books
+            </a>
+            <a class="navigation-bar-dropdown l-d-n l-d-f--3col l-ai-cen l-ml3 l-pa2 f-minor l-mb0 f-light f-c-white" href="/premium/topics/all?q=&amp;limit=400&amp;offset=0&amp;page1&amp;content_types[]=Course&amp;ref_source=sitepoint&amp;ref_medium=topnav">
+                <i class="l-mr2 f-minor l-mb0 fas f-medium fa-video"></i>
+                Videos
+            </a>
+            <a class="navigation-bar-dropdown l-d-n l-d-f--3col l-ai-cen l-ml3 l-pa2 f-minor l-gs-mb0 f-light f-c-white" href="/email-courses">
+              <i class="l-mr2 f-minor l-mb0 fas f-medium fa-envelope"></i>
+              Email Courses
+            </a>
+                          <div class="l-d-f"><a href="/premium/sign-in" class="Button u-small u-outline u-white l-as-cen l-ml3 l-d-n l-d-b--2col" style="border-width: 1px;">Login</a><a href="/premium/l/join?ref_source=sitepoint&amp;ref_medium=topnav&amp;ref_campaign=introduction-gulp-js&amp;ref_content=javascript" class="Button u-small l-as-cen l-ml3 l-d-n l-d-b--2col">Sign Up</a></div>
+                      </section>
+        </div>
+      </nav>
+
+      <div class="NavBar_offsetSpacer"></div>
+      <script>
+                var current_category = ['javascript'];
+          if (localStorage.getItem('SP_categories') !== null) {
+            if (localStorage.getItem('SP_categories').includes(current_category) === false ) {
+              var sp_categories = JSON.parse(localStorage.getItem('SP_categories') || "[]");
+              var temp = current_category.concat(sp_categories);
+              var filtered_categories = Array.from(new Set(temp));
+              localStorage.setItem('SP_categories', JSON.stringify(filtered_categories));
+            }
+          }else {
+            localStorage.setItem('SP_categories', JSON.stringify('javascript'));
+          }
+            // campaign
+            localStorage.setItem('SP_slug', 'introduction-gulp-js');
+
+              </script>
+      <div class="widget maestro maestro-content-type-html " id="maestro-744"><sp-fixed-countdown-bar button_url="https://www.sitepoint.com/premium/l/join?ref_source=sitepoint&amp;ref_medium=noticebar-pink&amp;ref_campaign=premium-member" buttonclass="u-red u-white" end="2018-01-04 22:00:00 +1000" end_message="JOIN 35,339 OTHERS LEARNING WITH SITEPOINT PREMIUM" landingpageclass="v3 l-ph3" ga_event_label="744" button_text="Access 290+ Books &amp; Courses for $9" banner_text="Sale ends in" sales_text="PREMIUM MEMBER OFFER" bg_color="#e62c85" font_color="#FFF" server-rendered="1"><div class="FixedCountdownBar_trigger t-t u-fixed false"><div id="fixed-countdown-bar" class="FixedCountdownBar l-w-100 l-d-f l-jc-cen l-ai-cen l-pv3 l-ph3 f-c-white f-uppercase f-bold v3 l-ph3 l-p-fix" style="background-color: rgb(230, 44, 133); color: rgb(255, 255, 255);"><div class="fixed-countdown-bar__content-wrapper l-d-f l-ph0--4col l-fw-w l-ai-cen l-w-100 l-w-4col--4col l-mh-auto--4col l-ph4--3col l-jc-cen l-fd-col l-fd-row--3col l-jc-sb--3col"><div class="timer__text-wrapper l-d-n l-d-b--2col f-center f-left--2col l-mb3 l-mb0--2col f-uppercase f-medium f-bold"><span class="f-medium f-larger--3col">PREMIUM MEMBER OFFER</span></div><div class="l-mb2 l-mb0--3col l-d-f"><div class="timer__text-wrapper l-w-100 f-center f-left--2col l-mb3 l-mb0--2col l-d-n"><span class="f-large">Sale ends in</span></div><div class="timer__countdown"><div class="f-center f-lh f-small">Sale ends in</div><div class="l-d-f l-mt0--2col l-mr2 f-medium l-mt0"><div class="l-d-f l-ml2 f-large"><span class="f-bold">08</span><span class="f-light">hrs</span></div><div class="l-d-f l-ml2 f-large"><span class="f-bold">46</span><span class="f-light">mins</span></div><div class="l-d-f l-ml2 f-large"><span class="f-bold">55</span><span class="f-light">secs</span></div></div></div></div><div class=""><a data-ga-on="click" data-ga-event-category="maestro" data-ga-event-label="FixedCountdownBar_744" data-ga-event-action="click" id="fixed-countdown-bar-button" href="https://www.sitepoint.com/premium/l/join?ref_source=sitepoint&amp;ref_medium=noticebar-pink&amp;ref_campaign=premium-member" class="Button l-ph4 l-pv2 f-small f-medium--3col u-red u-white" style="color: rgb(230, 44, 133); border-color: rgb(255, 255, 255); background-color: rgb(255, 255, 255);">Access 290+ Books &amp; Courses for $9</a></div></div><a class="f-c-white l-d-f l-ai-cen l-as-fs l-as-cen--3col l-pa2 t-t"><i class="fas fa-times"></i></a></div></div></sp-fixed-countdown-bar></div>    </header>
+<div class="l-p-rel t-bg-white" role="main">
+      <div class="l-p-rel l-w-100 l-mh-auto Article_overflow">
+          <div class="l-w-100 t-bg">
+      <div class="l-w-4col--4col l-mh3 l-mh-auto--3col">
+        <div class="f-medium f-c-grey-200 l-pt3">
+                    <ol itemscope="" itemtype="https://schema.org/BreadcrumbList" class="Article_breadcrumb l-ml0 f-minor l-mb0">
+            <li class="breadcrumb__item f-capitalize l-d-ib t-ls-n" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+              <a itemprop="item" itemscope="" itemtype="https://schema.org/Thing" class="f-c-white f-bold" href="https://www.sitepoint.com/learn/nodejs/">
+                <span itemprop="name">
+                  Learn Node.js                </span>
+              </a>
+            </li>
+            <li class="breadcrumb__item f-c-grey-200 l-d-ib t-ls-n" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                            <a itemprop="item" itemscope="" itemtype="https://schema.org/Thing" class="f-c-white f-bold" href="https://www.sitepoint.com/learn/nodejs-tools/">
+                              <span itemprop="name">
+                  Node.js IDEs, Frameworks, Tools &amp; Other Resources                </span>
+                            </a>
+                          </li>
+            <li class="breadcrumb__item l-d-ib t-ls-n" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                              <span itemprop="name">
+                  An Introduction to Gulp.js                </span>
+                          </li>
+          </ol>
+        </div>
+        <div class="l-d-f l-fd-col l-fd-row--3col l-jc-sb">
+          <div>
+            <h1 class="l-mt0 f-bold f-icon-bold l-mb0 f-c-white">
+              <span class="f-c-white l-mr3">An Introduction to Gulp.js</span>
+            </h1>
+                        <div class="l-mb4 f-medium f-c-grey200 f-c-white">
+              <ul class="Article_subheader l-ml0">
+                <li class="subheader__authors l-d-ib t-ls-n">April 25, 2018,</li>
+                <li class="subheader__authors l-d-ib t-ls-n">
+                  By
+                                    <span class="author">
+                    <a href="https://www.sitepoint.com/author/craig-buckler/" class="f-c-white f-bold">
+                      Craig Buckler                    </a>
+                  </span>
+                                  </li>
+              </ul>
+            </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+                <div class="l-d-f l-jc-sb l-mt3 l-w-4col--4col l-mh-auto" data-hellobar="content">
+        <div class="l-w-100 l-w-2col-i--2col l-fg1 l-mh3--2col l-mh0--4col">
+                        <div class="l-mb4 l-pa3 l-pt0">
+
+      <div class="l-d-f l-jc-cen f-center l-mh-auto l-o-h l-mt3">
+              </div>
+
+        <div class="ArticleCopy language-">
+      <div class="l-mt3 l-mh5--2col">
+
+<p><em>For a high-quality, in-depth introduction to Node.js, you canâ€™t go past <a href="https://learnnode.com/friend/SITEPOINT">Learn Node</a>, a course by renowned Canadian full-stack developer Wes Bos. Use the code SITEPOINT to get 25% off!</em><div style="width: 100%; margin: 0px auto; max-width: 576px;"><div id="aniBox" style="overflow: hidden; transition: height 1s ease; opacity: 0; width: 576px; height: 1px;"><div id="aniplayer_aniviewJS"><div id="aniplayer_aniviewJSgui"><div id="av-container" class=" desktop hide-controls" style="width: 576px; height: 324px;"><div id="av-inner"><div id="slot"><div id="imgpreloader"></div><div id="preloader" style="display: block;"><svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" xml:space="preserve"><g><path d="M23.3,14.9c0-0.4-0.3-0.9-0.8-1.2l-10-6.4c-1.1-0.7-2-0.1-2,1.3v7.5C15.8,13.7,23.1,14.9,23.3,14.9z M23.3,15 c-7.9,0.6-11.4,3.5-12.8,5.7v0.8c0,1.4,0.9,2,2,1.3l10-6.4C23.1,16,23.4,15.5,23.3,15z"></path></g></svg><svg class="circle" width="70" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="32"></circle></svg><svg class="circle active" width="70" height="70" version="1.1" xmlns="http://www.w3.org/2000/svg"><circle cx="35" cy="35" r="32"></circle></svg></div><div id="videoslot" class="loaded" style="width: 576px; height: 324px;"></div></div><div id="gui"><div id="timeline" class=" av-bottom"><div id="timeline-buffer" style="width: 100%;"></div><div id="timeline-moveto"></div><div id="timeline-progress"></div></div><div id="buttons"><div id="left"><div id="play-pause" class="pause" style="display: inline;"></div><div id="phone" style="display: none;"><div class="icon"></div><div id="phone-num"></div></div></div><div id="right"><div id="fullscreen" class="off" style="display: none;"></div><div id="share" style="display: none;"></div><div id="sound" style="display: none;"><div class="on"></div></div></div></div><div id="big-play" style="display: none;"></div><div id="timer" style="display: none;"></div><div id="close-btn" style="display: none;"></div><div id="skip-btn" style="display: none;">skip</div><div id="aniview-credit" style="display: inline;">Ads by Hooly<span style="height: 5px; width: 5px;"></span></div></div></div></div></div></div></div></div></p>
+<p><em>This article was sponsored by <a href="http://newrelic.com/?r=phpm">New Relic</a>. It was updated to reflect the current state of Gulp and Gulp plugins. Thank you for supporting the sponsors who make SitePoint possible!</em></p>
+<p><strong>Developers spend precious little time coding. Even if we ignore irritating meetings, much of the job involves basic tasks which can sap your working day:</strong></p>
+
+<ul><li>generating HTML from templates and content files</li>
+<li>compressing new and modified images</li>
+<li>compiling Sass to CSS code</li>
+<li>removing <code class=" language-undefined">console</code> and <code class=" language-undefined">debugger</code> statements from scripts</li>
+<li>transpiling ES6 to cross-browserâ€“compatible ES5 code</li>
+<li>code linting and validation</li>
+<li>concatenating and minifying CSS and JavaScript files</li>
+<li>deploying files to development, staging and production servers.</li>
+</ul><div class="widget maestro maestro-content-type-html hide-for-tablet-SP hide-for-mobile-SP" id="maestro-636"><div class="SP_stripMobile" style="width:100%;margin: 0 auto; max-width: 640px;"><span id="adBox" class="f-small f-light f-center" style="display: none;">--ADVERTISEMENT--</span></div>
+
+
+<script id="aniviewJS" src="https://play.aniview.com/5858ed930b8ee8851941a7bb/59627b0528a0616e231692a2/SitepointPMP.js"></script><script>
+var el = document.getElementById('aniBox');
+var adBox = document.getElementById('adBox');
+// create an observer instance
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if(mutation.attributeName == 'style'){
+      var s = el.getAttribute('style');
+      if(s.search('height: 360px') !=  -1) {
+        adBox.style = 'display: block';
+      }
+      else {
+        adBox.style = 'display: none';
+      }
+}
+  });
+});
+
+// configuration of the observer:
+var config = { attributes: true, attributeFilter: ['style']};
+
+// pass in the target node, as well as the observer options
+observer.observe(el, config);
+</script></div><p>Tasks must be repeated every time you make a change. You may start with good intentions, but the most infallible developer will forget to compress an image or two. Over time, pre-production tasks become increasingly arduous and time-consuming; youâ€™ll dread the inevitable content and template changes. Itâ€™s mind-numbing, repetitive work. Wouldnâ€™t it be better to spend your time on more profitable jobs?</p>
+<p>If so, you need a <em>task runner</em> or <em>build process</em>.</p>
+<h2 id="thatsoundsscarilycomplicated">That Sounds Scarily Complicated!</h2>
+<p>Creating a build process will take time. Itâ€™s more complex than performing each task manually, but over the long term, youâ€™ll save hours of effort, reduce human error and save your sanity. Adopt a pragmatic approach:</p>
+<ul><li>Automate the most frustrating tasks first.</li>
+<li>Try not to over-complicate your build process. An hour or two is more than enough for the initial setup.</li>
+<li>Choose task runner software and stick with it for a while. Donâ€™t switch to another option on a whim.</li>
+</ul><p>Some of the tools and concepts may be new to you, but take a deep breath and concentrate on one thing at a time.</p>
+<h2 id="taskrunnerstheoptions">Task Runners: the Options</h2>
+<p>Build tools such as <a href="https://www.gnu.org/software/make/">GNU Make</a> have been available for decades, but web-specific task runners are a relatively new phenomenon. The first to achieve critical mass was <a href="http://gruntjs.com/">Grunt</a> â€” a Node.js task runner which used plugins controlled (originally) by a JSON configuration file. Grunt was hugely successful, but there were a number of issues:</p>
+<ol><li>Grunt required plugins for basic functionality such as file watching.</li>
+<li>Grunt plugins often performed multiple tasks, which made customisation more awkward.</li>
+<li>JSON configuration could become unwieldy for all but the most basic tasks.</li>
+<li>Tasks could run slowly because Grunt saved files between every processing step.</li>
+</ol><p>Many issues were addressed in later editions, but <a href="http://gulpjs.com/">Gulp</a> had already arrived and offered a number of improvements:</p>
+<ol><li>Features such as file watching were built in.</li>
+<li>Gulp plugins were <em>(mostly)</em> designed to do a single job.</li>
+<li>Gulp used JavaScript configuration code that was less verbose, easier to read, simpler to modify, and provided better flexibility.</li>
+<li>Gulp was faster because it uses <a href="https://www.sitepoint.com/basics-node-js-streams/">Node.js streams</a> to pass data through a series of piped plugins. Files were only written at the end of the task.</li>
+</ol><p>Of course, Gulp itself isnâ€™t perfect, and new task runners such as <a href="http://broccolijs.com/">Broccoli.js</a>, <a href="http://brunch.io/">Brunch</a> and <a href="https://webpack.github.io/">webpack</a> have also been competing for developer attention. More recently, <a href="https://www.sitepoint.com/guide-to-npm-as-a-build-tool/">npm itself has been touted as a simpler option</a>. All have their pros and cons, but <a href="https://ashleynolan.co.uk/blog/frontend-tooling-survey-2016-results#js-task-runners">Gulp remains the favorite and is currently used by more than 40% of web developers</a>.</p>
+<p>Gulp requires Node.js, but while some JavaScript knowledge is beneficial, developers from all web programming faiths will find it useful.</p>
+<h2 id="whataboutgulp4">What About Gulp 4?</h2>
+<p>This tutorial describes how to use Gulp 3 â€” the most recent release version at the time of writing. Gulp 4 has been in development for some time but remains a beta product. Itâ€™s possible to <a href="https://www.joezimjs.com/javascript/complete-guide-upgrading-gulp-4/">use or switch to Gulp 4</a>, but I recommend sticking with version 3 until the final release.</p>
+<h2 id="step1installnodejs">Step 1: Install Node.js</h2>
+<p>Node.js can be downloaded for Windows, macOS and Linux from <a href="https://nodejs.org/download/">nodejs.org/download/</a>. There are various options for installing from binaries, package managers and docker images, and full instructions are available.</p><div class="widget maestro maestro-content-type-html " id="maestro-752"><div class="proper-ad-unit"> <div id="proper-ad-sitepoint_content_1" class="l-d-f  l-jc-cen"><iframe id="proper-ad-sitepoint_content_1-iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="javascript:&quot;<html><head><script src='https://www.googletagservices.com/tag/js/gpt.js' async></script></head><body><div id='proper-ad-sitepoint_content_1'></div></body></html>&quot;" style="overflow: hidden; border: 0px; width: 1px; height: 1px; vertical-align: bottom;"></iframe></div> </div></div><p></p>
+<p><em>Note for Windows users: Node.js and Gulp run on Windows, but some plugins may not install or run if they depend on native Linux binaries such as image compression libraries. One option for Windows 10 users is the new <a href="https://msdn.microsoft.com/en-us/commandline/wsl/install_guide">bash command-line</a>, which solves many issues.</em></p>
+<p>Once installed, open a command prompt and enter:</p>
+<pre class=" language-bash"><code class="bash  language-bash">node -v
+</code></pre>
+<p>This reveals the version number. Youâ€™re about to make heavy use of <code class=" language-undefined">npm</code> â€” the Node.js package manager which is used to install modules. Examine its version number:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> -v
+</code></pre>
+<p><em>Note for Linux users: Node.js modules can be installed globally so theyâ€™re available throughout your system. However, most users will not have permission to write to the global directories unless <code class=" language-undefined">npm</code> commands are prefixed with <code class=" language-undefined">sudo</code>. There are a number of <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">options to fix npm permissions</a> and tools such as <a href="https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/">nvm can help</a>, but I often change the default directory. For example, on Ubuntu/Debian-based platforms:</em></p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">cd</span> ~
+<span class="token function">mkdir</span> .node_modules_global
+<span class="token function">npm</span> config <span class="token keyword">set</span> prefix<span class="token operator">=</span><span class="token variable">$HOME</span>/.node_modules_global
+<span class="token function">npm</span> <span class="token function">install</span> <span class="token function">npm</span> -g
+</code></pre>
+<p><em>Then add the following line to the end of <code class=" language-undefined">~/.bashrc</code>:</em></p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">export</span> PATH<span class="token operator">=</span><span class="token string">"<span class="token variable">$HOME</span>/.node_modules_global/bin:<span class="token variable">$PATH</span>"</span>
+</code></pre>
+<p><em>Finally, update with this:</em></p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">source</span> ~/.bashrc
+</code></pre>
+<h2 id="step2installgulpglobally">Step 2: Install Gulp Globally</h2>
+<p>Install Gulp command-line interface globally so the <code class=" language-undefined">gulp</code> command can be run from any project folder:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp-cli -g
+</code></pre>
+<p>Verify Gulp has installed with this:</p>
+<pre class=" language-bash"><code class="bash  language-bash">gulp -v
+</code></pre>
+<h2 id="step3configureyourproject">Step 3: Configure Your Project</h2>
+<p><em>Note for Node.js projects: you can skip this step if you already have a <code class=" language-undefined">package.json</code> configuration file.</em></p>
+<p>Presume you have a new or pre-existing project in the folder <code class=" language-undefined">project1</code>. Navigate to this folder and initialize it with npm:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">cd</span> project1
+<span class="token function">npm</span> init
+</code></pre>
+<p>Youâ€™ll be asked a series of questions. Enter a value or hit <strong>Return</strong> to accept defaults. A <code class=" language-undefined">package.json</code> file will be created on completion which stores your <code class=" language-undefined">npm</code> configuration settings.</p>
+<p><em>Note for Git users: Node.js installs modules to a <code class=" language-undefined">node_modules</code> folder. You should add this to your <code class=" language-undefined">.gitignore</code> file to ensure theyâ€™re not committed to your repository. When deploying the project to another PC, you can run <code class=" language-undefined">npm install</code> to restore them.</em></p>
+<p>For the remainder of this article, weâ€™ll presume your project folder contains the following sub-folders:</p>
+<p><strong><code class=" language-undefined">src</code> folder: preprocessed source files</strong></p>
+<p>This contains further sub-folders:</p>
+<ul><li><code class=" language-undefined">html</code> â€“ HTML source files and templates</li>
+<li><code class=" language-undefined">images</code> â€” the original uncompressed images</li>
+<li><code class=" language-undefined">js</code> â€” multiple preprocessed script files</li>
+<li><code class=" language-undefined">scss</code> â€” multiple preprocessed Sass <code class=" language-undefined">.scss</code> files</li>
+</ul><p><strong><code class=" language-undefined">build</code> folder: compiled/processed files</strong></p>
+<p>Gulp will create files and create sub-folders as necessary:</p>
+<ul><li><code class=" language-undefined">html</code> â€” compiled static HTML files</li>
+<li><code class=" language-undefined">images</code> â€” compressed images</li>
+<li><code class=" language-undefined">js</code> â€” a single concatenated and minified JavaScript file</li>
+<li><code class=" language-undefined">css</code> â€” a single compiled and minified CSS file</li>
+</ul><p>Your project will almost certainly be different but this structure is used for the examples below.</p>
+<p><em>Tip: If youâ€™re on a Unix-based system and you just want to follow along with the tutorial, you can recreate the folder structure with the following command:</em></p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">mkdir</span> -p src/<span class="token punctuation">{</span>html,images,js,scss<span class="token punctuation">}</span> build/<span class="token punctuation">{</span>html,images,js,css<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="step4installgulplocally">Step 4: Install Gulp Locally</h2>
+<p>You can now install Gulp in your project folder using the command:</p><div class="widget maestro maestro-content-type-html " id="maestro-753"><div class="proper-ad-unit"> <div id="proper-ad-sitepoint_content_2" class="l-d-f  l-jc-cen"><iframe id="proper-ad-sitepoint_content_2-iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="javascript:&quot;<html><head><script src='https://www.googletagservices.com/tag/js/gpt.js' async></script></head><body><div id='proper-ad-sitepoint_content_2'></div></body></html>&quot;" style="overflow: hidden; border: 0px; width: 1px; height: 1px; vertical-align: bottom;"></iframe></div> </div></div><p></p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp --save-dev
+</code></pre>
+<p>This installs Gulp as a development dependency and the <code class=" language-undefined">"devDependencies"</code> section of <code class=" language-undefined">package.json</code> is updated accordingly. Weâ€™ll presume Gulp and all plugins are development dependencies for the remainder of this tutorial.</p>
+<h3 id="alternativedeploymentoptions">Alternative Deployment Options</h3>
+<p>Development dependencies are not installed when the <code class=" language-undefined">NODE_ENV</code> environment variable is set to <code class=" language-undefined">production</code> on your operating system. You would normally do this on your live server with the Mac/Linux command:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">export</span> NODE_ENV<span class="token operator">=</span>production
+</code></pre>
+<p>Or on Windows:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token keyword">set</span> NODE_ENV<span class="token operator">=</span>production
+</code></pre>
+<div class="sumome-popup-embed-overlay embed-light"></div><div class="s u m o me listbuilder-popup listbuilder-popup-embedded" style="height: 520.4945454545455px;"><div class="listbuilder-popup-content"><div class="listbuilder-popup-scale" style="position: relative; transform: translate(-50%, -50%); transform-origin: center top; top: 213px; left: 50%; zoom: 1.221818181818182; height: 426px; width: 550px;"><div><div class="sumome-react-wysiwyg-popup-container sumome-react-wysiwyg-inline-popup sumome-react-wysiwyg-is-resizing" style="width: 550px; height: 426px;"><link href="https://fonts.googleapis.com/css?family=Roboto:900,900italic,800,800italic,700,700italic,600,600italic,500,500italic,400,400italic,300,300italic,200,200italic,100,100italic" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:900,900italic,800,800italic,700,700italic,600,600italic,500,500italic,400,400italic,300,300italic,200,200italic,100,100italic" rel="stylesheet" type="text/css"><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-background sumome-react-wysiwyg-background" style="left: 0px; top: 0px; width: 550px; height: 426px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 16px; height: 100%;"><div style="position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; border: 0px solid rgba(0, 59, 64, 0.8);"><div style="background-color: rgb(255, 255, 255); fill: rgb(0, 0, 0); padding: 0px; margin: 0px; display: block; width: 100%; height: 100%;"></div><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px;"></div></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-image sumome-react-wysiwyg-image" style="left: 0px; top: 0px; width: 550px; height: 201px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 18px; height: 100%;"><div style="position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; border: 0px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><div style="background-color: rgb(102, 102, 153); fill: rgb(102, 102, 153); padding: 0px; margin: 0px; display: block; width: 100%; height: 100%;"></div><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset;"></div></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-text sumome-react-wysiwyg-text" style="left: 31px; top: 209px; width: 489px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 25px; height: 100%;"><div role="button" tabindex="0"><p style="color: rgb(44, 44, 44); background-color: rgba(0, 0, 0, 0); font-family: Roboto, sans-serif; font-weight: 700; font-style: normal; font-size: 32px; text-align: left; border: 0px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; line-height: 1.5; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px inset; text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; padding: 0px; margin: 0px; letter-spacing: normal;">Join Our Back-End Newsletter</p></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-text sumome-react-wysiwyg-text" style="left: 31px; top: 259px; width: 489px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 25px; height: 100%;"><div role="button" tabindex="0"><p style="color: rgb(144, 144, 144); background-color: rgba(0, 0, 0, 0); font-family: &quot;Source Sans Pro&quot;, sans-serif; font-weight: 400; font-style: normal; font-size: 16px; text-align: left; border: 0px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; line-height: 1.5; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px inset; text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; padding: 0px; margin: 0px; letter-spacing: normal;">Sent out every Wednesday and bursting with curated Node, Ruby, PHP links and more fun stuff.</p></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-textField sumome-react-wysiwyg-textField" style="left: 31px; top: 323px; width: 489px; height: 36px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 25px; height: 100%;"><div><div></div><input type="text" value="" name="email" spellcheck="false" placeholder="you@email.com" autocomplete="off" style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255); font-family: Roboto, sans-serif; font-weight: 400; font-style: normal; font-size: 13px; text-align: center; border: 1px solid rgb(218, 218, 218); box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px inset; text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; padding: 0px 14px; margin: 0px; display: block; width: 100%; max-height: 52px; height: 36px; transition: none;"></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-button sumome-react-wysiwyg-button" style="left: 31px; top: 366px; width: 488px; height: 35px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 20px; height: 100%;"><div style="padding: 0px; margin: 0px; display: block; width: 100%; height: 100%; position: relative; overflow: hidden; z-index: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; border: 0px solid rgb(0, 0, 0);"><button style="color: rgb(255, 255, 255); background-color: rgb(102, 102, 153); font-family: Roboto, sans-serif; font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5; text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; padding: 0px; margin: 0px; display: block; width: 100%; height: 100%; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset; cursor: pointer;">SIGN ME UP</button></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-outside-horizontal-resize-handles sumome-react-wysiwyg-outside-vertical-resize-handles sumome-react-wysiwyg-close-button sumome-react-wysiwyg-inline-popup-image sumome-react-wysiwyg-image" style="left: 519px; top: 17px; width: 16px; height: 17px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 18px; height: 100%;"><div style="position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; border: 0px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; cursor: pointer;"><div class="sumome-react-svg-image-container" style="background-color: rgba(0, 0, 0, 0); fill: rgb(255, 255, 255); padding: 0px; margin: 0px; display: block; width: 100%; height: 100%;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 22.6 22.6" style="height: 100%; width: 100%; position: absolute; top: 0; left: 0;" xml:space="preserve" preserveAspectRatio="none">
+<rect x="8.3" y="-1.7" transform="matrix(0.7071 0.7071 -0.7071 0.7071 11.3137 -4.6863)" width="6" height="26"></rect>
+<rect x="8.3" y="-1.7" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 27.3137 11.3137)" width="6" height="26"></rect>
+</svg></div><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset;"></div></div></div></div><div class="sumome-react-wysiwyg-component sumome-react-wysiwyg-inline-popup-image sumome-react-wysiwyg-image" style="left: 202px; top: 17px; width: 146px; height: 146px; position: absolute;"><div class="sumome-react-wysiwyg-move-handle" style="size: 18px; height: 100%;"><div style="position: relative; width: 100%; height: 100%; overflow: hidden; z-index: 0; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; border: 0px solid rgb(0, 0, 0); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"><img src="//media.sumo.com/7d8a7ea910c71bf229c8dd113c74743c8bc9eaf5294f7672a3044ff822cfd329" style="background-color: rgba(0, 0, 0, 0); fill: rgb(0, 0, 0); padding: 0px; margin: -73px 0px 0px -115px; display: block; position: absolute; height: 146px; top: 50%; left: 50%; min-width: 229px;"><div style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px inset;"></div></div></div></div></div></div></div></div></div><p>This tutorial presumes your assets will be compiled to the <code class=" language-undefined">build</code> folder and committed to your Git repository or uploaded directly to the server. However, it may be preferable to build assets on the live server if you want to change the way they are created. For example, HTML, CSS and JavaScript files are minified on production but not development environments. In that case, use the <code class=" language-undefined">--save</code> option for Gulp and all plugins, i.e.</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp --save
+</code></pre>
+<p>This sets Gulp as an application dependency in the <code class=" language-undefined">"dependencies"</code> section of <code class=" language-undefined">package.json</code>. It will be installed when you enter <code class=" language-undefined">npm install</code> and can be run wherever the project is deployed. You can remove the <code class=" language-undefined">build</code> folder from your repository since the files can be created on any platform when required.</p>
+<h2 id="step4createagulpconfigurationfile">Step 4: Create a Gulp Configuration File</h2>
+<p>Create a new <code class=" language-undefined">gulpfile.js</code> configuration file in the root of your project folder. Add some basic code to get started:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// Gulp.js configuration</span>
+<span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// development mode?</span>
+  devBuild <span class="token operator">=</span> <span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span>NODE_ENV <span class="token operator">!==</span> <span class="token string">'production'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+  <span class="token comment" spellcheck="true">// folders</span>
+  folder <span class="token operator">=</span> <span class="token punctuation">{</span>
+    src<span class="token punctuation">:</span> <span class="token string">'src/'</span><span class="token punctuation">,</span>
+    build<span class="token punctuation">:</span> <span class="token string">'build/'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">;</span>
+</code></pre>
+<p>This references the Gulp module, sets a <code class=" language-undefined">devBuild</code> variable to <code class=" language-undefined">true</code> when running in development (or non-production mode) and defines the source and build folder locations.</p>
+<p><em>ES6 note: ES5-compatible JavaScript code is provided in this tutorial. This will work for all versions of Gulp and Node.js with or without the <code class=" language-undefined">--harmony</code> flag. <a href="http://node.green/">Most ES6 features are supported in Node 6 and above</a> so feel free to use arrow functions, <code class=" language-undefined">let</code>, <code class=" language-undefined">const</code>, etc. if youâ€™re using a recent version.</em></p>
+<p><code class=" language-undefined">gulpfile.js</code> wonâ€™t do anything yet because you need to â€¦</p>
+<h2 id="step5creategulptasks">Step 5: Create Gulp Tasks</h2>
+<p>On its own, Gulp does nothing. You must:</p>
+<ol><li>install Gulp plugins, and</li>
+<li>write tasks which utilize those plugins to do something useful.</li>
+</ol><p>Itâ€™s possible to write your own plugins but, since almost 3,000 are available, itâ€™s unlikely youâ€™ll ever need to. You can search using Gulpâ€™s own directory at <a href="http://gulpjs.com/plugins/">gulpjs.com/plugins/</a>, on <a href="https://www.npmjs.com/">npmjs.com</a>, or search â€œgulp <em>something</em>â€ to harness the mighty power of Google.</p>
+<p>Gulp provides three primary task methods:</p>
+<ul><li><code class=" language-undefined">gulp.task</code> â€” defines a new task with a name, optional array of dependencies and a function.</li>
+<li><code class=" language-undefined">gulp.src</code> â€” sets the folder where source files are located.</li>
+<li><code class=" language-undefined">gulp.dest</code> â€” sets the destination folder where build files will be placed.</li>
+</ul><p>Any number of plugin calls are set with <code class=" language-undefined">pipe</code> between the <code class=" language-undefined">.src</code> and <code class=" language-undefined">.dest</code>.</p>
+<h3 id="imagetask">Image Task</h3>
+<p>This is best demonstrated with an example, so letâ€™s create a basic task which compresses images and copies them to the appropriate <code class=" language-undefined">build</code> folder. Since this process could take time, weâ€™ll only compress new and modified files. Two plugins can help us: <a href="https://www.npmjs.com/package/gulp-newer">gulp-newer</a> and <a href="https://www.npmjs.com/package/gulp-imagemin">gulp-imagemin</a>. Install them from the command-line:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp-newer gulp-imagemin --save-dev
+</code></pre>
+<p>We can now reference both modules the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// Gulp.js configuration</span>
+
+<span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  newer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-newer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  imagemin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-imagemin'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now define the image processing task itself as a function at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// image processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'images'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> out <span class="token operator">=</span> folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'images/'</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'images/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">imagemin</span><span class="token punctuation">(</span><span class="token punctuation">{</span> optimizationLevel<span class="token punctuation">:</span> <span class="token number">5</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>All tasks are syntactically similar. This code:</p>
+<ol><li>Creates a new task named <code class=" language-undefined">images</code>.</li>
+<li>Defines a function with a return value which â€¦</li>
+<li>Defines an <code class=" language-undefined">out</code> folder where build files will be located.</li>
+<li>Sets the Gulp <code class=" language-undefined">src</code> source folder. The <code class=" language-undefined">/**/*</code> ensures that images in sub-folders are also processed.</li>
+<li>Pipes all files to the <code class=" language-undefined">gulp-newer</code> module. Source files that are newer than corresponding destination files are passed through. Everything else is removed.</li>
+<li>The remaining new or changed files are piped through <code class=" language-undefined">gulp-imagemin</code> which sets an optional <code class=" language-undefined">optimizationLevel</code> argument.</li>
+<li>The compressed images are output to the Gulp <code class=" language-undefined">dest</code> folder set by <code class=" language-undefined">out</code>.</li>
+</ol><p>Save <code class=" language-undefined">gulpfile.js</code> and place a few images in your projectâ€™s <code class=" language-undefined">src/images</code> folder before running the task from the command line:</p>
+<pre class=" language-bash"><code class="bash  language-bash">gulp images
+</code></pre>
+<p>All images are compressed accordingly and youâ€™ll see output such as:</p>
+<pre class=" language-undefined"><code class=" language-undefined">Using file gulpfile.js
+Running 'imagemin'...
+Finished 'imagemin' in 5.71 ms
+gulp-imagemin: image1.png (saved 48.7 kB)
+gulp-imagemin: image2.jpg (saved 36.2 kB)
+gulp-imagemin: image3.svg (saved 12.8 kB)
+</code></pre>
+<p>Try running <code class=" language-undefined">gulp images</code> again and nothing should happen because no newer images exist.</p>
+<h3 id="htmltask">HTML Task</h3>
+<p>We can now create a similar task which copies files from the source HTML folder. We can safely minify our HTML code to remove unnecessary whitespace and attributes using the <a href="https://www.npmjs.com/package/gulp-htmlclean">gulp-htmlclean</a> plugin:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp-htmlclean --save-dev
+</code></pre>
+<p>This is then referenced at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token keyword">var</span>
+  <span class="token comment" spellcheck="true">// modules</span>
+  gulp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  newer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-newer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  imagemin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-imagemin'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  htmlclean <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-htmlclean'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now create an <code class=" language-undefined">html</code> task at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// HTML processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span>
+    out <span class="token operator">=</span> folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'html/'</span><span class="token punctuation">,</span>
+    page <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// minify production code</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    page <span class="token operator">=</span> page<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">htmlclean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> page<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>This reuses <code class=" language-undefined">gulp-newer</code> and introduces a couple of concepts:</p>
+<ol><li>The <code class=" language-undefined">[images]</code> argument states that our <code class=" language-undefined">images</code> task must be run before processing the HTML (the HTML is likely to reference images). Any number of dependent tasks can be listed in this array and all will complete before the task function runs.</li>
+<li>We only pipe the HTML through <code class=" language-undefined">gulp-htmlclean</code> if <code class=" language-undefined">NODE_ENV</code> is set to <code class=" language-undefined">production</code>. Therefore, the HTML remains uncompressed during development which may be useful for debugging.</li>
+</ol><p>Save <code class=" language-undefined">gulpfile.js</code> and run <code class=" language-undefined">gulp html</code> from the command line. Both the <code class=" language-undefined">html</code> and <code class=" language-undefined">images</code> tasks will run.</p>
+<h3 id="javascripttask">JavaScript Task</h3>
+<p>Too easy for you? Letâ€™s process all our JavaScript files by building a basic module bundler. It will:</p>
+<ol><li>Ensure dependencies are loaded first using the <a href="https://www.npmjs.com/package/gulp-deporder">gulp-deporder</a> plugin. This analyses comments at the top of each script to ensure correct ordering. For example, <code class=" language-undefined">// requires: defaults.js lib.js</code>.</li>
+<li>Concatenate all script files into a single <code class=" language-undefined">main.js</code> file using <a href="https://www.npmjs.com/package/gulp-concat">gulp-concat</a>.</li>
+<li>Remove all <code class=" language-undefined">console</code> and <code class=" language-undefined">debugging</code> statements with <a href="https://www.npmjs.com/package/gulp-strip-debug">gulp-strip-debug</a> and minimize code with <a href="https://www.npmjs.com/package/gulp-uglify">gulp-uglify</a>. This step will only occur when running in production mode.</li>
+</ol><p>Install the plugins:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp-deporder gulp-concat gulp-strip-debug gulp-uglify --save-dev
+</code></pre>
+<p>Reference them at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token keyword">var</span>
+  <span class="token operator">...</span>
+  concat <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-concat'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  deporder <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-deporder'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  stripdebug <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-strip-debug'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  uglify <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-uglify'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>Then add a new <code class=" language-undefined">js</code> task:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// JavaScript processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'js'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">var</span> jsbuild <span class="token operator">=</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'js/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">deporder</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">concat</span><span class="token punctuation">(</span><span class="token string">'main.js'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    jsbuild <span class="token operator">=</span> jsbuild
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">stripdebug</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">uglify</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> jsbuild<span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'js/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save then run <code class=" language-undefined">gulp js</code> to watch the magic happen!</p>
+<h3 id="csstask">CSS Task</h3>
+<p>Finally, letâ€™s create a CSS task which compiles Sass <code class=" language-undefined">.scss</code> files to a single <code class=" language-undefined">.css</code> file using <a href="https://www.npmjs.com/package/gulp-sass">gulp-sass</a>. This is a Gulp plugin for <a href="https://www.npmjs.com/package/node-sass">node-sass</a> which binds to the superfast <a href="http://sass-lang.com/libsass">LibSass C/C++ port of the Sass engine</a> <em>(you wonâ€™t need to install Ruby)</em>. Weâ€™ll presume your primary Sass file <code class=" language-undefined">scss/main.scss</code> is responsible for loading all partials.</p>
+<p>Our task will also utilize the fabulous <a href="http://postcss.org/">PostCSS</a> via the <a href="https://github.com/postcss/gulp-postcss">gulp-postcss</a> plugin. PostCSS requires its own set of plugins and weâ€™ll install these:</p>
+<ul><li><a href="https://www.npmjs.com/package/postcss-assets">postcss-assets</a> to manage assets. This allows us to use properties such as <code class=" language-undefined">background: resolve('image.png');</code> to resolve file paths or <code class=" language-undefined">background: inline('image.png');</code>  to inline data-encoded images.</li>
+<li><a href="https://www.npmjs.com/package/autoprefixer">autoprefixer</a> to automatically add vendor prefixes to CSS properties.</li>
+<li><a href="https://www.npmjs.com/package/css-mqpacker">css-mqpacker</a> to pack multiple references to the same CSS media query into a single rule.</li>
+<li><a href="https://www.npmjs.com/package/cssnano">cssnano</a> to minify the CSS code when running in production mode.</li>
+</ul><p>First, install all the modules:</p>
+<pre class=" language-bash"><code class="bash  language-bash"><span class="token function">npm</span> <span class="token function">install</span> gulp-sass gulp-postcss postcss-assets autoprefixer css-mqpacker cssnano --save-dev
+</code></pre>
+<p>Then reference them at the top of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token keyword">var</span>
+  <span class="token operator">...</span>
+  sass <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-sass'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  postcss <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-postcss'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  assets <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'postcss-assets'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  autoprefixer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'autoprefixer'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mqpacker <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'css-mqpacker'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  cssnano <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'cssnano'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+</code></pre>
+<p>We can now create a new <code class=" language-undefined">css</code> task at the end of <code class=" language-undefined">gulpfile.js</code>. Note the <code class=" language-undefined">images</code> task is set as a dependency because the <code class=" language-undefined">postcss-assets</code> plugin can reference images during the build process. In addition, most plugins can be passed arguments (refer to their documentation for more information):</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// CSS processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'css'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token keyword">var</span> postCssOpts <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token function">assets</span><span class="token punctuation">(</span><span class="token punctuation">{</span> loadPaths<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'images/'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token function">autoprefixer</span><span class="token punctuation">(</span><span class="token punctuation">{</span> browsers<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'last 2 versions'</span><span class="token punctuation">,</span> <span class="token string">'&gt; 2%'</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  mqpacker
+  <span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>devBuild<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    postCssOpts<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>cssnano<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'scss/main.scss'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">sass</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      outputStyle<span class="token punctuation">:</span> <span class="token string">'nested'</span><span class="token punctuation">,</span>
+      imagePath<span class="token punctuation">:</span> <span class="token string">'images/'</span><span class="token punctuation">,</span>
+      precision<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+      errLogToConsole<span class="token punctuation">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">postcss</span><span class="token punctuation">(</span>postCssOpts<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>build <span class="token operator">+</span> <span class="token string">'css/'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save the file and run the task from the command line:</p>
+<pre class=" language-bash"><code class="bash  language-bash">gulp css
+</code></pre>
+<h2 id="step6automatetasks">Step 6: Automate Tasks</h2>
+<p>Weâ€™ve been running one task at a time. We can run them all in one command by adding a new <code class=" language-undefined">run</code> task to <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// run all tasks</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token string">'css'</span><span class="token punctuation">,</span> <span class="token string">'js'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save and enter <code class=" language-undefined">gulp run</code> at the command line to execute all tasks. Note that I omitted the <code class=" language-undefined">images</code> task because itâ€™s already set as a dependency for the <code class=" language-undefined">html</code> and <code class=" language-undefined">css</code> tasks.</p>
+<p>Is this still too much hard work? Gulp offers another method â€” <code class=" language-undefined">gulp.watch</code> â€” which can monitor your source files and run an appropriate task whenever a file is changed. The method is passed a folder and a list of tasks to execute when a change occurs. Letâ€™s create a new <code class=" language-undefined">watch</code> task at the end of <code class=" language-undefined">gulpfile.js</code>:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// watch for changes</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'watch'</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment" spellcheck="true">// image changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'images/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// html changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'html'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// javascript changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'js/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'js'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment" spellcheck="true">// css changes</span>
+  gulp<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'scss/**/*'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'css'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Rather than running <code class=" language-undefined">gulp watch</code> immediately, letâ€™s add a default task:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token comment" spellcheck="true">// default task</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'default'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'run'</span><span class="token punctuation">,</span> <span class="token string">'watch'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Save <code class=" language-undefined">gulpfile.js</code> and enter <code class=" language-undefined">gulp</code> at the command line. Your images, HTML, CSS and JavaScript will all be processed, then Gulp will remain active watching for updates and re-running tasks as necessary. Hit <kbd>Ctrl/Cmd</kbd> + <kbd>C</kbd> to abort monitoring and return to the command line.</p>
+<h2 id="step7profit">Step 7: Profit!</h2>
+<p>Other plugins you may find useful:</p>
+<ul><li><a href="https://www.npmjs.com/package/gulp-load-plugins">gulp-load-plugins</a> Â± load all Gulp plugin modules without <code class=" language-undefined">require</code> declarations</li>
+<li><a href="https://www.npmjs.com/package/gulp-preprocess">gulp-preprocess</a> â€” a simple HTML and JavaScript <a href="https://github.com/jsoverson/preprocess">preprocessor</a></li>
+<li><a href="https://www.npmjs.com/package/gulp-less">gulp-less</a> â€” the <a href="http://lesscss.org/">Less CSS preprocessor</a> plugin</li>
+<li><a href="https://www.npmjs.com/package/gulp-stylus">gulp-stylus</a> â€” the <a href="http://stylus-lang.com/">Stylus CSS preprocessor</a> plugin</li>
+<li><a href="https://www.npmjs.com/package/gulp-sequence">gulp-sequence</a> â€” run a series of gulp tasks in a specific order</li>
+<li><a href="https://www.npmjs.com/package/gulp-plumber">gulp-plumber</a> â€” error handling which prevents Gulp stopping on failures</li>
+<li><a href="https://www.npmjs.com/package/gulp-size">gulp-size</a> â€” displays file sizes and savings</li>
+<li><a href="https://www.npmjs.com/package/gulp-nodemon">gulp-nodemon</a> â€” uses <a href="https://www.npmjs.com/package/nodemon">nodemon</a> to automatically restart Node.js applications when changes occur.</li>
+<li><a href="https://www.npmjs.com/package/gulp-util">gulp-util</a> â€” utility functions including logging and color coding.</li>
+</ul><p>One useful method in <code class=" language-undefined">gulp-util</code> is <code class=" language-undefined">.noop()</code> which passes data straight through without performing any action. This could be used for cleaner development/production processing code. For example:</p>
+<pre class=" language-javascript"><code class="javascript  language-javascript"><span class="token keyword">var</span> gutil <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'gulp-util'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// HTML processing</span>
+gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">'html'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'images'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">var</span> out <span class="token operator">=</span> folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span>folder<span class="token punctuation">.</span>src <span class="token operator">+</span> <span class="token string">'html/**/*'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><span class="token function">newer</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>devBuild <span class="token operator">?</span> gutil<span class="token punctuation">.</span><span class="token function">noop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token function">htmlclean</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>gulp<span class="token punctuation">.</span><span class="token function">dest</span><span class="token punctuation">(</span>out<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Gulp can also call other Node.js modules, and they donâ€™t necessarily need to be plugins. For example:</p>
+<ul><li><a href="https://www.npmjs.com/package/browser-sync">browser-sync</a> â€” automatically reload assets or refresh your browser when changes occur</li>
+<li><a href="https://www.npmjs.com/package/del">del</a> â€” delete files and folders (perhaps clean your <code class=" language-undefined">build</code> folder at the start of every run).</li>
+</ul><p>Invest a little time and Gulp could save many hours of development frustration. The advantages:</p>
+<ul><li><a href="https://npmjs.org/browse/keyword/gulpplugin/">plugins are plentiful</a></li>
+<li>configuration using pipes is readable and easy to follow</li>
+<li><code class=" language-undefined">gulpfile.js</code> can be adapted and reused in other projects</li>
+<li>your total page weight can be reduced to improve performance</li>
+<li>you can simplify your deployment.</li>
+</ul><p>Useful links:</p>
+<ul><li><a href="http://gulpjs.com/">Gulp home page</a></li>
+<li><a href="https://npmjs.org/browse/keyword/gulpplugin/">Gulp plugins</a></li>
+<li><a href="https://www.npmjs.com/">npm home page</a></li>
+</ul><p>Applying the processes above to a simple website reduced the total weight by more than 50%. You can test your own results using <a href="http://sitepoint.com/10-best-webpage-weight-analysis-tools/">page weight analysis tools</a> or a service such as <a href="http://newrelic.com/?r=phpm">New Relic</a>, which provides a range of sophisticated application performance monitoring tools.</p>
+<p>Gulp can revolutionize your workflow. I hope you found this tutorial useful and consider Gulp for your production process. Iâ€™d be glad to hear your thoughts in the comments below.</p>
+<p><em>This article was peer reviewed by <a href="https://www.sitepoint.com/author/gmainardi/">Giulio Mainardi</a> and <a href="https://www.sitepoint.com/author/tseverien/">Tim Severien</a>. Thanks to all of SitePointâ€™s peer reviewers for making SitePoint content the best it can be!</em></p>
+      <div class="Article_authorBio l-mv4 t-bg-white m-border l-pa3">
+        <div class="l-d-f l-pt3">
+          <a class="l-s5 l-pa0 l-mr3 l-round l-o-h" href="https://www.sitepoint.com/author/craig-buckler/">
+            <img src="https://secure.gravatar.com/avatar/439aeaff7de2bae365adc3eb4947b44d?s=96&amp;d=mm&amp;r=g" width="96" height="96" alt="" class="avatar avatar-96 wp-user-avatar wp-user-avatar-96 photo avatar-default">          </a>
+          <div class="f-lh-title">
+            <div class="f-c-grey-300">Meet the author</div>
+            <div class="f-large">
+              <a class="f-bold f-c-grey-500" href="https://www.sitepoint.com/author/craig-buckler/">
+                Craig Buckler              </a>
+              <a class="f-c-grey-500 l-mh1" target="_blank" href="https://twitter.com/craigbuckler"><i class="fab fa-twitter"></i></a><a class="f-c-grey-500 l-mh1" target="_blank" href="http://www.facebook.com/craigbuckler"><i class="fab fa-facebook-f"></i></a><a class="f-c-grey-500 l-mh1" target="_blank" href="http://www.linkedin.com/in/craigbuckler"><i class="fab fa-linkedin-in"></i></a><a class="f-c-grey-500 l-mh1" target="_blank" href="https://github.com/craigbuckler"><i class="fab fa-github"></i></a>            </div>
+          </div>
+        </div>
+        <div class="f-light f-lh-copy l-mt3">Craig is a freelance UK web consultant who built his first page for IE2.0 in 1995. Since that time he's been advocating standards, accessibility, and best-practice HTML5 techniques. He's created enterprise specifications, websites and online applications for companies and organisations including the UK Parliament, the European Parliament, the Department of Energy &amp; Climate Change, Microsoft, and more. He's written more than 1,000 articles for SitePoint and you can find him <a href="http://twitter.com/craigbuckler">@craigbuckler</a>.</div>
+      </div>
+
+      </div>
+    </div>
+        </div>
+            </div>
+            <div class="l-w-aside-i l-mt3 l-mh3 l-d-n l-d-f--3col l-fd-col l-fs0">
+      <div class="l-mb3">
+            <div class="l-as-fs l-mv0 l-pv1 l-ph3 f-light f-larger f-uppercase f-c-white t-bg-grey-500">Sponsors</div>
+    <div class="l-w-100 l-mv3 t-bg-white m-border"><div class="widget maestro maestro-content-type-bsa hide-for-mobile-SP" id="maestro-448"><div class="l-pa3" style="border-bottom: 1px solid #e5e5e5" id="maestro-448-bsa-182257">
+<a href="//srv.buysellads.com/ads/click/x/GTND42QWCAAIT23EFTBLYKQMCESIEK7NC6SDPZ3JCWBD553ECTSD5K7KC6BIV277C6SI6K3EHJNCLSIZ" class="l-d-f l-ai-sta" data-ga-on="click" data-ga-event-category="maestro" data-ga-event-label="maestro-448-bsa-182257" data-ga-event-action="click">
+<img class="l-s5" src="https://cdn4.buysellads.net/uu/1/42500/1546366652-1538019411-Monday-purple_logo_80x80.png">
+<div class="f-small l-d-f l-fd-col l-ml3 f-lh-title f-c-grey-700">
+<span class="f-bold">A new way to manage your work</span>
+<span>The revolutionary project management tool is here and itâ€™s visual. Start Your Free Trial Now.</span>
+</div>
+</a>
+</div><img src="https://ad.doubleclick.net/ddm/trackimp/N728909.1903882NATIVE.COM/B21110030.220866708;dc_trk_aid=419022014;dc_trk_cid=101175781;ord=[1547918651];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?" height="1" width="1" border="0" style="display: none;"><div class="l-pa3" style="border-bottom: 1px solid #e5e5e5" id="maestro-448-bsa-182928">
+<a href="//srv.buysellads.com/ads/click/x/GTND42QWCAAIT23EFTBLYKQMCESIEK7MCA7IVZ3JCWBD553ECKAIT23KC6BIV277C6SI6K3EHJNCLSIZ" class="l-d-f l-ai-sta" data-ga-on="click" data-ga-event-category="maestro" data-ga-event-label="maestro-448-bsa-182928" data-ga-event-action="click">
+<img class="l-s5" src="https://cdn4.buysellads.net/uu/1/41334/1547804322-slack_icon_80x80_transparent.png">
+<div class="f-small l-d-f l-fd-col l-ml3 f-lh-title f-c-grey-700">
+<span class="f-bold">Slack</span>
+<span>Bring your team together with Slack, the collaboration hub for work.</span>
+</div>
+</a>
+</div><img src="https://ad.doubleclick.net/ddm/trackimp/N32602.3091281BUYSELLADS/B21259774.226545665;dc_trk_aid=424684281;dc_trk_cid=104544889;ord=[1547918651];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=?" height="1" width="1" border="0" style="display: none;"><img src="https://slack.sp1.convertro.com/view/vt/v1/slack/0/cvo.gif?cvosrc=display.carbon.two%20cpc&amp;utm_source=carbon&amp;utm_medium=display&amp;utm_campaign=two%20cpc" height="1" width="1" border="0" style="display: none;"></div></div>
+            <div class="widget maestro maestro-content-type-html " id="maestro-728"><div class="proper-ad-unit">
+    <div id="proper-ad-sitepoint_side_2"><iframe id="proper-ad-sitepoint_side_2-iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="javascript:&quot;<html><head><script src='https://www.googletagservices.com/tag/js/gpt.js' async></script></head><body><div id='proper-ad-sitepoint_side_2'></div></body></html>&quot;" style="overflow: hidden; border: 0px; width: 1px; height: 1px; vertical-align: bottom;"></iframe> </div>
+</div></div>      </div>
+      <div class="ArticleBox u-premium-preview"></div>
+      <div class="ArticleAside_row"><div class="widget maestro maestro-content-type-html " id="maestro-730" style="min-width: 300px;"><div class="proper-ad-unit Sticky u-fixed" style="top: 115px;">
+
+    <div id="proper-ad-sitepoint_side_3"><iframe id="proper-ad-sitepoint_side_3-iframe" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="javascript:&quot;<html><head><script src='https://www.googletagservices.com/tag/js/gpt.js' async></script></head><body><div id='proper-ad-sitepoint_side_3'></div></body></html>&quot;" style="overflow: hidden; border: 0px; width: 1px; height: 1px; vertical-align: bottom;"></iframe> </div>
+
+</div></div>        <ads-weighted widget="21" data="{&quot;NL&quot;:[{&quot;id&quot;:&quot;584&quot;,&quot;weight&quot;:&quot;50&quot;,&quot;randMax&quot;:50},{&quot;id&quot;:&quot;585&quot;,&quot;weight&quot;:&quot;50&quot;,&quot;randMax&quot;:100}]}" fallback="" url="introduction-gulp-js" channelslug="javascript"></ads-weighted></div>
+      <div class="ArticleAside_row ArticleAside_newboxads"></div>
+    </div>
+          </div>
+
+      <div class="u-accordion-end"></div>
+      <div class="l-d-f l-jc-sb l-w-3col--3col l-mh-auto">
+        <div class="u-showseriesx l-w-100 l-w-2col-i--2col l-fg1 l-mh3--2col l-mh0--4col">
+
+          <div class="widget maestro maestro-content-type-html hide-for-tablet-SP hide-for-mobile-SP" id="maestro-649"><span data-sumome-listbuilder-embed-id="6cbb401075afaa88f82a6ddc686573be3368d07928cf833fe1a56254d6ff9849"></span></div>
+                    <div id="commentsSection" class="l-pa3 t-bg-white">
+                      </div>
+        </div>
+      </div>
+
+
+    <script>
+      OneSignal.push(function() {
+        OneSignal.sendTags({
+          javascript: 'javascript',
+        });
+      });
+    </script>
+      </div>
+    </div><script src="https://player.aniview.com/script/6.1/aniview.js" async=""></script>
+        <footer role="contentinfo">
+  <div class="l-w-100 l-d-f Footer-bg">
+    <div class="l-d-f l-fw-w l-mh-auto">
+      <div class="l-d-f l-fw-w l-mt4 l-w-100 l-pa3 l-w-3col--4col l-jc-sb l-jc-sa--4col">
+        <ul>
+          <li class="t-ls-n">
+            <div class="f-c-white f-large f-bold l-mb2">Stuff We Do</div>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/premium/">Premium</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/versioning/">Versioning</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/community/">Forums</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/html-css/css/">References</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="t-ls-n">
+            <div class="f-c-white f-large f-bold l-mb2">About</div>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/about-us/">Our Story</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/press/">Press Room</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="t-ls-n">
+            <div class="f-c-white f-large f-bold l-mb2">Contact</div>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/contact-us/">Contact Us</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="https://sitepoint.zendesk.com/hc/en-us">FAQ</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/write-for-us/">Write for Us</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/advertise/">Advertise</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li class="t-ls-n">
+            <div class="f-c-white f-large f-bold l-mb2">Legals</div>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/legals/">Terms of Use</a>
+          </li>
+          <li class="l-ml3 f-c-grey-300 l-mb2">
+            <a class="Footer-link f-small" href="/privacy-policy/">Privacy Policy</a>
+          </li>
+        </ul>
+      </div>
+      <div class="l-d-n l-d-b--4col l-as-cen Footer-hr">
+      </div>
+      <div class="l-mt4 l-pa3 l-w-1col--4col">
+        <ul class="t-ls-n l-d-f l-fw-w l-d-b--3col">
+          <li>
+            <div class="f-c-white f-large f-bold l-mb2 l-mr3">Connect</div>
+          </li>
+          <li class="f-center">
+            <a class="f-c-grey-300" href="https://www.facebook.com/sitepoint" rel="noopener" target="_blank">
+              <i class="fab fa-facebook-square l-i4"></i>
+            </a>
+            <a class="l-pl3 f-c-grey-300" href="http://twitter.com/sitepointdotcom" rel="noopener" target="_blank">
+              <i class="fab fa-twitter-square l-i4"></i>
+            </a>
+            <a class="l-pl3 f-c-grey-300" href="/versioning/">
+              <i class="fas fa-envelope-square l-i4"></i>
+            </a>
+            <a class="l-pl3 f-c-grey-300" href="https://www.sitepoint.com/feed/">
+              <i class="fas fa-rss-square l-i4"></i>
+            </a>
+            <a class="l-pl3 f-c-grey-300" href="https://plus.google.com/+sitepoint" rel="noopener" target="_blank">
+              <i class="fab fa-google-plus-square l-i4"></i>
+            </a>
+          </li>
+          <p class="f-c-grey-300 l-mh-auto l-ml3--2col l-ml0--3col l-mv3--4col f-small f-center">
+            Â© 2000 â€“ 2019 SitePoint Pty. Ltd.
+          </p>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script type="text/javascript">
+  adroll_adv_id = "DJI3I3WGJBGL7PDJEDAYHV";
+  adroll_pix_id = "4RKMV6N56FGA7ANPGL4FQW";
+  (function () {
+    var adblocked = false;
+    var onAdblock = function() {
+      if(adblocked) return;
+
+      adblocked = true;
+
+      gaEventQueue && gaEventQueue.track('CanSeeAds', 'adrollBlocked', {'nonInteraction': true});
+
+      Array.prototype.slice.call(document.getElementsByClassName('CantSeeAds'))
+        .forEach(function(el) {
+          el.className = el.className.replace('CantSeeAds', '');
+        });
+
+    };
+    var _onload = function(){
+      if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+      if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+      var scr = document.createElement("script");
+      var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+      scr.setAttribute('async', 'true');
+      scr.type = "text/javascript";
+      scr.src = host + "/j/roundtrip.js";
+      scr.onerror = onAdblock;
+      ((document.getElementsByTagName('head') || [null])[0] ||
+          document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+    };
+    if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+    else {window.attachEvent('onload', _onload)}
+  }());
+</script>
+    <sp-cookie-warning server-rendered="1"><div class="CookieWarning  l-w-100 l-d-f l-fw-w l-fw-n--2col l-pa3 l-gs-pv2 l-jc-cen"><p class="l-gs-mb2 l-gs-mb0--2col f-center f-left--2col f-minor l-as-cen">We use cookies to provide you the best possible experience of SitePoint. Want to know more? Read our <a href="/legals" class="f-c-grey-700 f-underline">Terms of Service</a> and <a href="/privacy-policy" class="f-c-grey-700 f-underline">Privacy Policy.</a> Have questions? Please contact <a href="mailto:support@sitepoint.com" class="f-c-grey-700 f-underline">support@sitepoint.com</a>, we're happy to help!</p><button class="Button l-mv-auto l-gs-ml2--2col u-outline u-white">Understood</button></div></sp-cookie-warning>
+
+
+<!-- START Parse.ly Include: Standard -->
+
+<div id="parsely-root" style="display: none">
+	<div id="parsely-cfg" data-parsely-site="sitepoint.com"></div>
+<script id="parsely-script" async="" data-cfasync="false" src="https://d1z2jf7jlzjs58.cloudfront.net/p.js"></script></div>
+<script data-cfasync="false">
+	(function (s, p, d) {
+		var h = d.location.protocol, i = p + "-" + s,
+			e = d.getElementById(i), r = d.getElementById(p + "-root"),
+			u = h === "https:" ? "d1z2jf7jlzjs58.cloudfront.net"
+				: "static." + p + ".com";
+		if (e) return;
+		e = d.createElement(s);
+		e.id = i;
+		e.async = true;
+		e.setAttribute('data-cfasync', 'false');
+		e.src = h + "//" + u + "/p.js";
+		r.appendChild(e);
+	})("script", "parsely", document);
+</script>
+
+<!-- END Parse.ly Include: Standard -->
+    <script type="text/javascript">
+    (function(googletag, SP_GPT_Slots) {
+      if(!SP_GPT_Slots.length) return;
+
+      var SP_GPT_First_Slot_Rendered = false;
+      googletag.cmd.push(function(){
+        googletag.pubads().addEventListener("slotRenderEnded", function(e){
+          if (!SP_GPT_First_Slot_Rendered) {
+            gaEventQueue.track("CanSeeAds", "dfpFirstRendered", {"nonInteraction": true});
+            SP_GPT_First_Slot_Rendered = true;
+          }
+        });
+      });
+
+    })(googletag, SP_GPT_Slots);
+    </script>
+        <ads-weighted widget="57" data="{&quot;fallback&quot;:[{&quot;id&quot;:&quot;758&quot;,&quot;weight&quot;:&quot;100&quot;,&quot;randMax&quot;:100},{&quot;id&quot;:&quot;758&quot;,&quot;weight&quot;:&quot;100&quot;,&quot;randMax&quot;:200},{&quot;id&quot;:&quot;758&quot;,&quot;weight&quot;:&quot;100&quot;,&quot;randMax&quot;:300}]}" fallback="746" url="introduction-gulp-js" channelslug="javascript"><div class="widget maestro maestro-content-type-html " id="maestro-758"><script id="spout-tag-7c887d1e-c4ea-4682-bad8-216a89ce74e5">
+  (function() {
+    var r = encodeURIComponent(top.document.referrer.substring(0,250)),
+        p = encodeURIComponent(top.document.location.href.substring(0,250)),
+        t = Date.now(),
+        u = '7c887d1e-c4ea-4682-bad8-216a89ce74e5',
+        e = document.createElement('script'),
+        s = sessionStorage.getItem('spoutable-' + u);
+    if (!s) {
+      var m = Math.random.bind(Math);
+      s = JSON.stringify({ sessionId: [ t, m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m(), m() ]});
+      sessionStorage.setItem('spoutable-' + u, s);
+    }
+    e.async = true;
+    e.src='//s.spoutable.com/s?u='+u+'&s='+encodeURIComponent(s)+'&t='+t+'&r='+r+'&p='+p;
+    document.head.appendChild(e);
+  })();
+</script></div></ads-weighted><script type="text/javascript">
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"https:\/\/www.sitepoint.com\/wp-content\/plugins\/wp-postratings","ajax_url":"https:\/\/www.sitepoint.com\/wp-admin\/admin-ajax.php","text_wait":"Please rate only 1 item at a time.","image":"thumbs","image_ext":"gif","max":"2","show_loading":"1","show_fading":"1","custom":"1"};
+var ratings_1_mouseover_image=new Image();ratings_1_mouseover_image.src="https://dab1nmslvvntp.cloudfront.net/wp-content/plugins/wp-postratings/images/thumbs/rating_1_over.gif";var ratings_2_mouseover_image=new Image();ratings_2_mouseover_image.src="https://dab1nmslvvntp.cloudfront.net/wp-content/plugins/wp-postratings/images/thumbs/rating_2_over.gif";;
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://dab1nmslvvntp.cloudfront.net/wp-content/plugins/wp-postratings/js/postratings-js.js?ver=1.85"></script>
+<script type="text/javascript" src="//www.sitepoint.com/wp-content/themes/sitepoint/assets/javascripts/scripts-foot-77d7df963c349e8aaeb6f2c765ce9a6e.js?ver=4.9.8"></script>
+<script type="text/javascript" src="/dist/js/compiled.c11cb2ae66afe39d65cc.js"></script>
+<script type="text/javascript" src="https://www.sitepoint.com/wp-includes/js/wp-embed.min.js?ver=4.9.8"></script>
+
+
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 68/121 objects using memcached
+Page Caching using memcached
+Content Delivery Network via Amazon Web Services: CloudFront: dab1nmslvvntp.cloudfront.net
+
+Served from: www.sitepoint.com @ 2019-01-19 09:24:11 by W3 Total Cache
+--><script type="text/javascript" id="">(function(f,c,d,e,a,b){a=c.createElement(d);b=c.getElementsByTagName(d)[0];a.async=1;a.src=e;a.dataset.sumoSiteId="64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300";b.parentNode.insertBefore(a,b)})(window,document,"script","//load.sumo.com/");</script><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/rcj-da10bd4908deb9e19dfde013ec3fe4ff.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="AVLoaderaniplayer_aniviewJS" src="about:blank" style="display: none;"></iframe><img src="https://pixel.quantserve.com/pixel/p-8p-p7hkcWNjJm.gif?labels=property.5ba431b0db86c4001708228b" style="display: none !important;"><img src="https://pixel.quantserve.com/pixel/p-8p-p7hkcWNjJm.gif?labels=property.5ba431b0db86c4001708228b" style="display: none !important;"><img src="https://pixel.quantserve.com/pixel/p-8p-p7hkcWNjJm.gif?labels=property.5ba431b0db86c4001708228b" style="display: none !important;"><img src="https://pixel.quantserve.com/pixel/p-8p-p7hkcWNjJm.gif?labels=property.5ba431b0db86c4001708228b" style="display: none !important;"><iframe scrolling="no" id="spout-unit" style="position: absolute; width: 1px; height: 1px; left: -9999px; top: -9999px;"></iframe><script async="" src="https://secure.quantserve.com/quant.js"></script><iframe id="spout-unit-iframe-7c887d1e-c4ea-4682-bad8-216a89ce74e5--LWbKM7wo7MCiF13hgaa" scrolling="no" style="position: absolute; top: -9999px; left: -9999px; width: 1px; height: 1px;"></iframe><iframe id="sumome-jquery-iframe" title="Sumo Hidden Content" style="display: none;"></iframe><a href="javascript:void(0);" title="Sumo" style="background-color: rgb(0, 115, 183); border-top-left-radius: 3px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 3px; -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 10px; position: fixed; z-index: 10000000000; padding: 0px; width: 44px; height: 40px; text-indent: -10000px; opacity: 1; display: none !important;"><span style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden;">Sumo</span><span style="display:block;width:40px;height:40px;background:white;margin-left:4px;-webkit-border-radius: 3px 0 0 3px;-moz-border-radius: 3px 0 0 3px;-ms-border-radius: 3px 0 0 3px;-o-border-radius: 3px 0 0 3px;border-radius: 3px 0 0 3px;background-repeat:no-repeat;background-position:8px 8px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDQ3MUVFMDFFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDQ3MUVFMDBFMjVDMTFFNjlFQjhBRjdGODU5MDJBMDUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxZDQ2MjI4YS03NWY2LTRkZTQtOGJjYy1hODc1NjRkMjYxYTUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MWQ0NjIyOGEtNzVmNi00ZGU0LThiY2MtYTg3NTY0ZDI2MWE1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+8JtvywAAAKhQTFRFzOPxSJvLA3W4Mo7FBna5w97u8vj7EHy8a67VhbzdsdTpVaLPh73d9/v9C3m6QZfJbq/WXKbR3u32JIfB3ez1KorDir/eBHW4+/3+rtPoZarUG4K/LIvDDnu7ocvkf7nbdrTY9fr8E328WKPQO5PITJ3MPpXJstXptdbq+Pv9cbHXaq3VU6HOkMLgnMnjDHq62uv1/P3+6/T53Oz1cLDX/f7+AHO3////ptOZ5QAAADh0Uk5T/////////////////////////////////////////////////////////////////////////wA7XBHKAAAAmUlEQVR42sSRRxLCMAxFRSq9907ovebr/jdDMWYGxmZL3sIqbyFbJv4B/VlkVlerKALTD3G46Mx3AOR1UZ/TsDxW6W0gfYRNVfTCFu2AWpAMgMItMW+zQJU2UjWI29D0+e5KWNPMk+A9Om+B/UgOJyCuwMJCrpuziYkIsglfRByZ/XM3eXnBFEu1kpMpjq9dxQYp/OAXTwEGAB7Rc1xVnPemAAAAAElFTkSuQmCC);"></span></a><iframe style="display: none;"></iframe><div style="position:fixed;top:0;left:0;overflow:hidden;"><label for="focus_retriever" style="position:absolute;left:-1000px;">Focus Retriever</label><input style="position:absolute;left:-1000px;" type="text" name="focus_retriever" value="" id="focus_retriever" readonly="true"></div><iframe src="https://onesignal.com/webPushAnalytics" style="display: none;"></iframe><img src="//sumo.com/api/event/?site_id=64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300&amp;app_id=156085c5-0017-4150-b225-a731ad248f38&amp;shortcut_id=&amp;visitor_id=830eeb5b2eb1435b25cdda0ee9289ccba8f15afdae55a17cec147acee45c109d&amp;event=popup&amp;href=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;cache=0.998833909173426" alt="" style="display: none;"><img src="//sumo.com/api/event/?site_id=64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300&amp;app_id=156085c5-0017-4150-b225-a731ad248f38.781457554eac4ce08a9ffd980dc6ac9ededa093b42d767184b7075da92ba392b&amp;shortcut_id=&amp;visitor_id=830eeb5b2eb1435b25cdda0ee9289ccba8f15afdae55a17cec147acee45c109d&amp;event=popup&amp;href=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;cache=0.45863449469996553" alt="" style="display: none;"><img src="//sumo.com/api/event/?site_id=64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300&amp;app_id=156085c5-0017-4150-b225-a731ad248f38.c3ea8f05073a9eca5969eb72a548431def137b3d738a0bd3956bd59b4e522c4f&amp;shortcut_id=&amp;visitor_id=830eeb5b2eb1435b25cdda0ee9289ccba8f15afdae55a17cec147acee45c109d&amp;event=popup&amp;href=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;cache=0.33267640132054965" alt="" style="display: none;"><img src="//sumo.com/api/event/?site_id=64b8e500e3524000ecfa2000d01e2100033e83009398f000ab804c005e0e4300&amp;app_id=156085c5-0017-4150-b225-a731ad248f38.781457554eac4ce08a9ffd980dc6ac9ededa093b42d767184b7075da92ba392b.c3ea8f05073a9eca5969eb72a548431def137b3d738a0bd3956bd59b4e522c4f&amp;shortcut_id=&amp;visitor_id=830eeb5b2eb1435b25cdda0ee9289ccba8f15afdae55a17cec147acee45c109d&amp;event=popup&amp;href=https%3A%2F%2Fwww.sitepoint.com%2Fintroduction-gulp-js%2F&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;cache=0.9792568013094577" alt="" style="display: none;"></body></html>

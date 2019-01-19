@@ -1,0 +1,17 @@
+{
+  "name": "gulp_test",
+  "version": "0.0.1",
+  "description": "just a text project ot understand how does the gupl works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kostix",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-uglify": "^3.0.1"
+  }
+}
