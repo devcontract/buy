@@ -1,7 +1,7 @@
-настройка vm 
+настройка vm
 установка ubuntu 14.04  updates installed during installation ticekd
 в ubuntu
- 
+
 настройка бд postgresql
 
 sudo apt-get update
@@ -15,17 +15,17 @@ psql
 Exit out of the PostgreSQL prompt by typing:
 \q
 
-создаем базу данных 
+создаем базу данных
 
 createdb  db_one   // or any other name
 
-psql -d db_one      //accessing db 
-
- 
-\conninfo               //checking database connection 
+psql -d db_one      //accessing db
 
 
-// installing ethereum 
+\conninfo               //checking database connection
+
+
+// installing ethereum
 
 sudo apt-get install software-properties-common
 sudo add-apt-repository -y ppa:ethereum/ethereum
@@ -77,13 +77,13 @@ dsn="postgres://stellar:pass1234@localhost/bifrost?sslmode=disable"
 
 // in the same directory save compiled or downloaded bifrost exec (make sure that chmod 777 bifrost so it is exec)
 
-./bifrost-server check-keys // to test 
+./bifrost-server check-keys // to test
 
-// mlaesure that ethereum node is running 
+// mlaesure that ethereum node is running
 
 ./bifrost-server serve //to start. bifrost server
 
-// 
+//
 
 mkdir -p $HOME/Desktop/bifrost/go
 mkdir -p $HOME/Desktop/bifrost/go/src
@@ -92,7 +92,7 @@ mkdir -p $HOME/Desktop/bifrost/go/pkg
 mkdir -p $HOME/Desktop/bifrost/go/bin
 
 
-nano ~/.bashrc 
+nano ~/.bashrc
 
 
 // save the following at the end of your file
@@ -109,6 +109,18 @@ sudo apt-get update
 sudo apt-get install ethereum
 
 
-// to run test node 
+// to run test node
 
 geth --testnet --rpc
+
+
+
+// git installation
+
+
+sudo apt-get update
+sudo apt-get install git
+
+//curl intsallation
+
+sudo apt-get install curl
