@@ -1,0 +1,28 @@
+// install babel packages in project directory
+
+npm install babel-register babel-preset-env --save-dev
+
+//////////////////////////////////////
+
+// create start.js in your root directory
+
+
+require('babel-register')({
+    presets: [ 'env' ]
+})
+
+// Import the rest of our application.
+module.exports = require('./src/index.js')
+
+
+//////////////////////////////////////
+
+// install packages
+
+$ node install 
+
+//////////////////////////////////////
+
+// run node JS
+
+$ node start.js
