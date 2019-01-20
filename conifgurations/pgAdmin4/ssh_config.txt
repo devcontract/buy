@@ -1,0 +1,9 @@
+// to use ssh connection in pgAdmin4
+// click on server with the right click  and go to properties
+
+//go to SSH Tunnel tab
+
+// add tunnel host ip address 
+// choose correct username
+// then you can choose to connect with password or connect
+// by using identify key (which has to be generated in advance)
