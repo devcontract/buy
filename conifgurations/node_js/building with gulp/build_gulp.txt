@@ -1,0 +1,22 @@
+// first go to your project root directory
+
+cd /path/to/your/project
+
+// make sure that all packages and dependencies are installed
+
+$ npm install
+
+///////////////////////////////////
+
+// lets install gulp locally
+
+$ npm install gulp --save-dev
+
+//now lets run gulp build to create bifrost.js nad bifrost.min.js file 
+
+
+
+
+
+
+$ gulp build
