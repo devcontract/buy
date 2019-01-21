@@ -1,0 +1,120 @@
+//connect to your psql server via ssh
+
+$ ssh hostname@192.168.1.11
+
+// change user name to postgres
+
+$ sudo -i -u postgres
+
+//now identify directory where psql is installed
+
+$ psql -U postgres -c 'SHOW config_file'
+
+// now move to psql directory
+
+$ cd /etc/postgresql/9.3/main/
+
+
+// generating keys
+
+$ openssl genrsa -des3 -out server.key 1024
+
+// Now, in order to work with this key further, it’s required remove
+//the pass phrase you’ve added previously. Execute the following command for this:
+
+$ openssl rsa -in server.key -out server.key
+
+// Set the appropriate permission and ownership rights for your private key file with the next commands:
+
+
+$ chmod 400 server.key
+$ chown postgres.postgres server.key
+
+// Now, you need to create server certificate based on your server.key file
+// You will be asked set of questions
+// MAKE SURE TO put CN as either ip of the server (192.168.1.11) or domain name if you are using domain name
+
+$ openssl req -new -key server.key -days 3650 -out server.crt -x509
+
+$ cp server.crt root.crt
+
+// now open pg_hba.conf located in the same direcotry
+
+$ nano pg_hba.conf
+// add the following after IPV4 local connection and save file ctrl+x
+
+TYPE  DATABASE    USER        CIDR-ADDRESS          METHOD
+# "local" is for Unix domain socket connections only
+local   all         all                               trust
+# IPv4 local connections:
+host    all         all         127.0.0.1/32          trust
+# IPv4 remote connections for authenticated users
+hostssl all         webadmin    0.0.0.0/0             md5 clientcert=1
+
+
+// now open postgresql.conf
+
+$ nano postgresql.conf
+
+//switch on ssl and define path to certificate as per below
+
+#authentication_timeout = 1min          # 1s-600s
+ssl = on                                # (change requires restart)
+ssl_ca_file = '/etc/postgresql/9.3/main/root.crt'
+#ssl_ciphers = 'DEFAULT:!LOW:!EXP:!MD5:@STRENGTH'       # allowed SSL ci$
+                                        # (change requires restart)
+#ssl_renegotiation_limit = 0            # amount of data between renegot$
+ssl_cert_file = '/etc/postgresql/9.3/main/server.crt'           # (chang$
+ssl_key_file =  '/etc/postgresql/9.3/main/server.key'           # (chang$
+
+//now we need to restart the server
+// as we are still using postgres username type
+
+$ exit
+
+// to get back to main username
+// now restart psql server
+
+$ sudo service postgresql restart
+
+//now we are going to set up CLient certificates
+// go back to psql direcotry
+
+$ cd /etc/postgresql/9.3/main/
+
+$ sudo openssl genrsa -des3 -out /tmp/postgresql.key 1024
+$ sudo openssl rsa -in /tmp/postgresql.key -out /tmp/postgresql.key
+
+//Next, create SSL certificate for your PostgreSQL database user
+// answer the question MAKE SURE that Common Name (/CN=)  = postgres (database user name)
+
+$ sudo openssl req -new -key /tmp/postgresql.key -out /tmp/postgresql.csr
+$ sudo openssl x509 -req -in /tmp/postgresql.csr -CA root.crt -CAkey server.key -out /tmp/postgresql.crt -CAcreateserial
+
+
+// now wee need to copy certificates to our client
+// you can use ftp or command line
+
+$ scp root.crt /tmp/postgresql.crt /tmp/postgresql.key hostname@clientIpAddress://Users/Downloads
+
+// make sure you delete files from /tmp directory after copying them to the client
+
+// now on the client side go to ~/.postgresql  if dir doesnt exist please create it
+
+$ sudo mkdir ~/.postgresql
+
+// copy all 3 files from /Downloads to this direcotry
+
+// now go to that direcotry
+
+$ cd ~/.postgresql
+
+
+//change permission
+
+$ chmod 0600  postgresql.key
+
+
+
+// now open PgAdmin4 and go to server properties and ssl tab
+// change SSL mode to verify full to use strict verification
