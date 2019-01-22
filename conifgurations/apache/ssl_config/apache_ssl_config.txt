@@ -1,0 +1,62 @@
+// First lets make sure that apache is installed
+
+$ sudo apt-get update
+$ sudo apt-get install apache2
+
+// now we need to activate SSL module
+
+$ sudo a2enmod ssl
+
+// now restart apache server
+
+$ sudo service apache2 restart
+
+// now create certificates and ssl directory
+
+$ sudo mkdir /etc/apache2/ssl
+
+// now we can generate certificates
+
+$ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out /etc/apache2/ssl/apache.crt
+
+//Let's go over exactly what this means.
+
+//openssl: This is the basic command line tool provided by OpenSSL to create and manage certificates, keys, signing requests, etc.
+//req: This specifies a subcommand for X.509 certificate signing request (CSR) management. X.509 is a public key infrastructure standard that SSL adheres to for its key and certificate managment. Since we are wanting to create a new X.509 certificate, this is what we want.
+//-x509: This option specifies that we want to make a self-signed certificate file instead of generating a certificate request.
+//-nodes: This option tells OpenSSL that we do not wish to secure our key file with a passphrase. Having a password protected key file would get in the way of Apache starting automatically as we would have to enter the password every time the service restarts.
+//-days 365: This specifies that the certificate we are creating will be valid for one year.
+//-newkey rsa:2048: This option will create the certificate request and a new private key at the same time. This is necessary since we didn't create a private key in advance. The rsa:2048 tells OpenSSL to generate an RSA key that is 2048 bits long.
+//-keyout: This parameter names the output file for the private key file that is being created.
+//-out: This option names the output file for the certificate that we are generating.
+
+
+// now we need to configure Apache to use SSL
+
+$ sudo nano /etc/apache2/sites-available/default-ssl.conf
+
+//now update the file as per below example and save (ctrl+x)
+
+<IfModule mod_ssl.c>
+    <VirtualHost _default_:443>
+        ServerAdmin admin@example.com
+        ServerName your_domain.com
+        ServerAlias www.your_domain.com
+        DocumentRoot /var/www/html
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+        SSLEngine on
+        SSLCertificateFile /etc/apache2/ssl/apache.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+
+      ....
+
+// now activate the SSL Virtual Host
+
+$ sudo a2ensite default-ssl.conf
+
+// restart apache
+
+// now test your setup with favorite browser
+
+https://server_domain_name_or_IP
