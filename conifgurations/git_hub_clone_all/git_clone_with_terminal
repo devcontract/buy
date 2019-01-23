@@ -1,0 +1,30 @@
+// if git is not yet installed please install
+
+$ apt-get update
+$ apt-get install git
+
+// create dir where to clone
+
+$ mkdir /path/to/your/dir
+
+$ cd /path/to/your/dir
+
+// to clone repo
+
+$ git clone https://github.com/devcontract/buy.git
+
+// to see all branches
+
+$ git branch -a
+
+// to change branch
+
+$ git checkout  _name_of_your_branch
+
+
+////////////////////////////////////////////////////
+
+// to clone just single branch follow steps to create directory and then
+// use cd command to go to this directory
+
+$ git clone https://github.com/path/to/your/branch
