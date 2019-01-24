@@ -21,7 +21,7 @@ $ git branch -a
 
 $ git checkout  _name_of_your_branch
 
-
+// dont forget to use $ get pull
 ////////////////////////////////////////////////////
 
 // to clone just single branch follow steps to create directory and then
