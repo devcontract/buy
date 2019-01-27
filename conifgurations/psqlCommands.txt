@@ -1,3 +1,12 @@
+///
+
+CREATE DATABASE yourdbname;
+CREATE USER youruser WITH ENCRYPTED PASSWORD 'yourpass';
+GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
+
+// to drop role
+
+DROP ROLE username;
 
 // Создат новую базу данных ////////////
 
