@@ -8,13 +8,6 @@ GRANT ALL PRIVILEGES ON DATABASE yourdbname TO youruser;
 
 DROP ROLE username;
 
-// Создат новую базу данных ////////////
-
-      (username)          (db name)
-sudo -u postgres createdb stellar
-
-////////////////////////////////////////
-
 //Удаление базы данных//////////////////
 
 sudo -u postgres psql
@@ -94,10 +87,7 @@ sudo -u postgres psql ;
 
 
 //смотрим содержание таблицы
-SELECT
- *
-FROM
- tablename;
+SELECT * FROM tablename;
 
 //////////////////////////////////////
 
