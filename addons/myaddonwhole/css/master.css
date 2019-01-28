@@ -30,12 +30,12 @@
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less)
+@media screen and (max-width: 300px) {
   .column {
     width: 100%;
   }
-}
+}*/
 /* Footer */
 .footer {
 
@@ -43,21 +43,4 @@
   background: #ddd;
   margin-top: 20px;
   height: auto;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .topnav a {
-    float: none;
-    width: 100%;
-
-  }
 }
