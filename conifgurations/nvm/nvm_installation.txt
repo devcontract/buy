@@ -1,0 +1,16 @@
+// nvm installation on ubuntu
+
+// Install a C++ Compiler
+
+$ sudo apt-get update
+
+//Install NVM (Node Version Manager)
+
+
+$ sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+
+//Close and reopen your terminal to start using nvm
+
+
+$ nvm --version
