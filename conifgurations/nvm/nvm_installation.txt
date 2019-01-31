@@ -14,3 +14,44 @@ $ sudo curl https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh 
 
 
 $ nvm --version
+
+// now to install needed node version enter:
+
+$ nvm install 8.9
+
+// to see all available versions
+
+$ nvm ls-remote
+
+// to see all installed versions
+
+$ nvm ls
+
+// to install latest NODE version
+
+$ nvm install node
+
+// to uninstall version
+
+$ nvm uninstall 0.11
+
+// to switch node versions
+
+$ nvm use 9.3
+
+// to switch to latest node version
+
+$ nvm use node
+
+//switch to latest LTS Node.js version:
+
+$ nvm use node --lts
+
+
+// to see current node veriosn
+
+$ nvm current
+
+
+
+// more commands here https://www.sitepoint.com/quick-tip-multiple-versions-node-nvm/
