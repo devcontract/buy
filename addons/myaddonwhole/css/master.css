@@ -4,6 +4,7 @@
   background-color: grey;
   text-align: center;
   padding:10px;
+
 }
 
 
@@ -32,6 +33,7 @@
   background-color: white;
   box-sizing: border-box;
   border: 1px solid black;
+  
 }
 /* Clear floats after the columns */
 .row:after {

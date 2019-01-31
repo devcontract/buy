@@ -3,8 +3,9 @@ div{
 }
 .header { grid-area: header; }
 .menu { grid-area: menu; }
-.main { grid-area: main; }
-.right { grid-area: right; }
+.main { grid-area: main;  }
+.right { grid-area: right; max-height: calc(100% - 50%);
+  overflow-y: auto;}
 .footer { grid-area: footer; }
 
 .grid-container {
