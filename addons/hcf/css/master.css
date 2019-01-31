@@ -17,7 +17,7 @@ body {
   z-index: 1;
   top: 100px;
   float:right;
-  background: #eee;
+  border: 1px solid black;
   padding: 8px 0;
 }
 .sidenav {
@@ -25,18 +25,18 @@ body {
   z-index: 1;
   top: 100px;
   left: 10px;
-  background: #eee;
+  border: 1px solid black;
   padding: 8px 0;
 }
 .sidenavr a {
-  padding: 6px 8px 6px 16px;
+  text-align: center;
   text-decoration: none;
   font-size: 25px;
   color: #2196F3;
   display: block;
 }
 .sidenav a {
-  padding: 6px 8px 6px 16px;
+  text-align: center;
   text-decoration: none;
   font-size: 25px;
   color: #2196F3;
