@@ -22,11 +22,12 @@ body {
 }
 .sidenav {
   width: 130px;
-  z-index: 1;
-  top: 100px;
+
+  top: 110px;
   left: 10px;
   border: 1px solid black;
   padding: 8px 0;
+  position: absolute;
 }
 .sidenavr a {
   text-align: center;
@@ -70,6 +71,7 @@ right:0;
 background-color:blue;
 position:fixed;
 width:100%;
+z-index: 1;
 }
 
 footer{
