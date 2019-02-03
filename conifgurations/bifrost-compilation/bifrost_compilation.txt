@@ -1,0 +1,99 @@
+// first of all check what go version is used in project
+// you can do it by checking yml or toml files
+// based on that we will install correct go version and set up workspace
+// we are using version go 1.11 as example
+
+$ sudo apt-get update
+$ sudo apt-get -y upgrade
+
+//move to tmp dir
+
+$ cd /tmp
+
+// download go 1.11 archive
+
+
+$ wget https://dl.google.com/go/go1.11.linux-amd64.tar.gz
+
+// extract archive
+
+$ sudo tar -xvf go1.11.linux-amd64.tar.gz
+
+//move extraction go to /usr/local
+
+$ sudo mv go /usr/local
+
+// now you can create symlink to run go
+
+$ ln -s /usr/local/go/bin/go /usr/bin/go
+
+// now we need to setup go environment
+
+$ sudo nano ~/.bashrc
+
+// now copy following to the end of file
+
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+// now restart your terminal or run command :
+
+$ source ~/.bashrc
+
+// install npm
+
+$ sudo apt-get npm
+
+
+// now create go folder structure
+
+$ sudo mkdir ~/go
+$ sudo mkdir ~/go/src
+$ sudo mkdir ~/go/pkg
+$ sudo mkdir ~/go/bin
+
+// now install dep
+
+$ sudo apt-get install go-dep
+
+
+// now go to your src folder
+
+$ cd ~/go/src
+
+// now install git if it has not been installed yet
+
+$ sudo apt-get install git
+
+// now clone go stellar repo from github
+
+$ git clone https://github.com/stellar/go
+
+
+// now install glide
+
+$ sudo apt-get install glide
+
+ // now install ssh and mercure
+
+$ sudo apt-get install ssh
+$ sudo apt-get install mercurial
+
+
+// now go to go/src/go folder
+
+$ cd ~/go/src/go
+
+$ dep ensure -v
+
+// now go to bifrost server
+
+$ cd ~/go/src/go/service/bifrost
+
+// now run go build
+
+$ go build
+
+// bifrost is compilated 
