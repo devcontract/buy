@@ -76,7 +76,7 @@ $ git clone https://github.com/stellar/go
 
 $ sudo apt-get install glide
 
- // now install ssh and mercure
+ // now install ssh and mercurial
 
 $ sudo apt-get install ssh
 $ sudo apt-get install mercurial
@@ -96,4 +96,4 @@ $ cd ~/go/src/go/service/bifrost
 
 $ go build
 
-// bifrost is compilated 
+// bifrost is compilated
