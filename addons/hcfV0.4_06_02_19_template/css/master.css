@@ -10,7 +10,8 @@ html, body {
 
   margin-right:300px;
   margin-left: 300px; /* Same width as the sidebar + left position in px */
-height: 800px;
+  height: 800px;
+  border: 1px solid black;
 
 }
 .content{
