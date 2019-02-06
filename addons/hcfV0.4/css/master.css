@@ -8,20 +8,34 @@ html, body {
 
 .main {
 
-  margin-right:150px;
-  margin-left: 150px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-right:300px;
+  margin-left: 300px; /* Same width as the sidebar + left position in px */
+
 
 }
 .content{
   text-align: center;
 }
 
-@media screen and (max-width: 450px) {
-  .sidenav {padding-top: 15px; width: auto;height: auto;}
-  .sidenav a {font-size: 18px;}
 
+span{
+  font-size: 15px;
 }
+@media screen and (max-width: 1150px) {
+.main{
+  margin-right:100px;
+  margin-left: 100px;
+}
+}
+@media screen and (max-width: 800px) {
+.main{
+  margin-right:50px;
+  margin-left: 50px;
+}
+}
+
+
+
 
 /*.head{
 text-align:center;
