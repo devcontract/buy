@@ -1,96 +1,26 @@
-body {
-  font-family: "Lato", sans-serif;
-  background-image: url("photographer.jpg"); /* The image used */
-  height: 500px; /* You must set a specified height */
- background-position: center; /* Center the image */
- background-repeat: no-repeat; /* Do not repeat the image */
- background-size: cover; /* Resize the background image to cover the entire container */
+
+html, body {
+  margin: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.nav {
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 100px;
-  overflow-x: hidden;
-  padding: 8px 0;
-  display:flex;
-  justify-content:space-between;
-}
-.sidenavr {
-  width: 130px;
-  z-index: 1;
-  top: 100px;
-  float:right;
-  background-color: #cff4ff;
-  padding: 8px 0;
-
-}
-
-.sidenavr a:hover{
-  transition: 0.5s;
-  color: white;
-}
-
-.sidenavr a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
-}
-
-.sidenav {
-  width: 130px;
-
-  top: 110px;
-  left: 10px;
-
-  padding: 8px 0;
-  position: absolute;
-    z-index: 2;
-    -webkit-transition: 1s; /* Safari */
-    transition: 1s;
-}
-
-.sidenav:hover{
-  background-color: #cff4ff;
-
-
-}
-.sidenav a:hover{
-  transition: 0.5s;
-  color: white;
-}
-
-
-.sidenav a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
-  display: block;
-
-}
-
 
 
 .main {
-  margin-top:80px;
-  margin-right:140px;
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
+
+  margin-right:150px;
+  margin-left: 150px; /* Same width as the sidebar + left position in px */
   font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+
 }
 
 @media screen and (max-width: 450px) {
   .sidenav {padding-top: 15px; width: auto;height: auto;}
   .sidenav a {font-size: 18px;}
-  .sidenavr {padding-top: 15px; width: auto;height: auto;}
-  .sidenavr a {font-size: 18px;}
+
 }
 
-.head{
+/*.head{
 text-align:center;
 top:0;
 right:0;
@@ -98,13 +28,61 @@ background-color:#cff4ff;
 position:fixed;
 width:100%;
 z-index: 3;
+}*/
+
+.head{
+  height: 300px;
+  background-color: #a6ebff;
+  text-align: center;
+
+}
+
+/* Style the navbar */
+#navbar {
+  width: 100%;
+  overflow: hidden;
+  background-color: #cff4ff;
+  height: 45px;
+}
+/* Navbar links */
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  transition: 0.2s ;
+  font-family:sans-serif;
+}
+#navbar a:hover {
+color: #7da6c7;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 50px;
+}
+.bannerWrapp{
+  width: 95%;
+  height: 300px;
+    border: 1px solid #cff4ff;
+}
+.banner{
+  width: 100%;
+  height: 100%;
+
+  background-color: #9dbdf2;
+
 }
 
 footer{
   text-align:center;
-
   right:0;
   background-color:#cff4ff;
-
   width:100%;
 }
