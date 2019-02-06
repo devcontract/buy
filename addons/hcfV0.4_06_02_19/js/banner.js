@@ -1,10 +1,12 @@
-window.addEventListener("scroll", function() {
-  var elementTarget = document.getElementById("banner");
+$(document).ready(function() {
+      $(window).scroll(function(event) {
+          let scroll = $(this).scrollTop();
+          let opacity = 0.200 + (scroll / 1000);
+  $('#opacity').text(opacity);
+          if (opacity > 0) {
+            
+              $('#banner').css('opacity', opacity);
 
-  if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-
-  $("#banner").fadeOut('slow',function(){});
-} else {
-
-}
-});
+          }
+      });
+  });
