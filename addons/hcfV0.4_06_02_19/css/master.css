@@ -76,7 +76,7 @@ z-index: 3;
 }
 
 #navbar a:hover {
-  color: #7da6c7;
+  color: #f6f6f6;
 }
 
 .sticky {
@@ -97,8 +97,8 @@ z-index: 3;
 .banner {
   width: 100%;
   height: 100%;
-  /*background-color: #f5f5f5;*/
-  background-color: yellow;
+  background-color: #f5f5f5;
+
 }
 
 footer {
