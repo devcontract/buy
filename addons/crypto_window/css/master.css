@@ -56,32 +56,24 @@ button:focus {
   width: 100%
 }
 
-.bar1 {
+.bar {
   height: 10px;
-  width: 20%;
-  background-image: linear-gradient(to right, #f9cea5 0%, #f9955c 100%);
+  width: 100%;
+  background-image: linear-gradient(to right, #f9cea5 0%, #ff5d00 100%);
 }
 
-.bar2 {
-  height: 10px;
-  width: 60%;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  background-image: linear-gradient(to right, #f9955c 0%, #f68545 100%);
-
-}
-
-.bar3 {
-  height: 10px;
-  width: 20%;
-  background-image: linear-gradient(to right, #f68545 0%, #ff5c00 100%);
-}
 
 
 .capButtonsDialog {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 10px;
+  margin: 0 25px 10px;
+}
+
+@media only screen and (max-width:490px){
+  .capButtonsDialog{
+    margin: 0 5px 10px;
+  }
 }
 
 .capButtons {
@@ -106,4 +98,22 @@ button:focus {
 .buyButton:active {
   font-size: 14px;
   background-image: linear-gradient(to right, #45caf4 0%, #504df4 100%);
+}
+
+.points{
+  position:relative;
+}
+
+.point{
+  position:absolute;
+  height:10px;
+  border:1px solid black;
+}
+.soft{
+left:20%;
+top:-20px;
+}
+.hard{
+  left:80%;
+  top:-20px;
 }
