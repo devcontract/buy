@@ -1,0 +1,258 @@
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container {
+  max-width: 545px;
+}
+
+.window {
+  marging: 0 auto;
+  padding: 20px;
+  border: 1px solid red;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color:black;
+  color:whitesmoke;
+  font-family:sans-serif;
+}
+
+.firstDialog {
+  display: inline-block;
+  border:1px solid black;
+  padding: 0 12px;
+  width: 50%;
+  min-width: 230px !important;
+}
+
+.raisedDialog {
+  margin: 10px;
+
+  display: inline-block;
+  width: 60%;
+}
+
+.progresDialog {
+  display: inline-block;
+ border:1px solid black;
+
+  width: 70%;
+}
+
+.progressCont {
+  display: flex;
+  margin: 10px 0;
+  border: 1px solid red;
+  width: 100%
+}
+
+.bar {
+    margin: 5px 5px;
+    border: 1px solid #333;
+
+    background: #d4d4d4;
+    overflow: hidden;
+
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    box-shadow: 1px 0px 10px #777;
+	-moz-box-shadow: 1px 0px 10px #777;
+	-webkit-box-shadow: 1px 0px 10px #777;
+}
+.bar > span {
+    display: block;
+    height: 10px;
+    width: 20%;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.gradient > span {
+    box-shadow:
+        0 5px 5px rgba(255,255,255,0.6) inset,
+        0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow:
+        0 5px 5px rgba(255,255,255,0.6) inset,
+        0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+    -webkit-box-shadow:
+        0 5px 4px rgba(255,255,255,0.6) inset,
+        0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr='#33ffffff',
+        endColorstr='#33000000',
+        GradientType=0 );
+}
+
+.gloss > span {
+    background-image: -moz-linear-gradient(top,
+        rgba(255,255,255,0.2) 0%,
+        rgba(255,255,255,0.1) 45%,
+        rgba(0,0,0,0.2) 55%,
+        rgba(0,0,0,0.1) 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop(0%,rgba(255,255,255,0.2)),
+        color-stop(45%,rgba(255,255,255,0.1)),
+        color-stop(55%,rgba(0,0,0,0.2)),
+        color-stop(100%,rgba(0,0,0,0.1)));
+    background-image: -webkit-linear-gradient(top,
+        rgba(255,255,255,0.5) 0%,
+        rgba(255,255,255,0.1) 45%,
+        rgba(0,0,0,0.2) 55%,
+        rgba(0,0,0,0.1) 100%);
+    background-image: -o-linear-gradient(top,
+        rgba(255,255,255,0.2) 0%,
+        rgba(255,255,255,0.1) 45%,
+        rgba(0,0,0,0.2) 55%,
+        rgba(0,0,0,0.1) 100%);
+    background-image: -ms-linear-gradient(top,
+        rgba(255,255,255,0.2) 0%,
+        rgba(255,255,255,0.1) 45%,
+        rgba(0,0,0,0.2) 55%,
+        rgba(0,0,0,0.1) 100%);
+    background-image: linear-gradient(to bottom,
+        rgba(255,255,255,0.2) 0%,
+        rgba(255,255,255,0.1) 45%,
+        rgba(0,0,0,0.2) 55%,
+        rgba(0,0,0,0.1) 100%);
+}
+
+.stripe > span {
+    background-size: 30px 30px;
+
+    background-image: -moz-linear-gradient(123deg,
+        rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.15) 45%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0) 48%,
+        rgba(255,255,255,0.15) 30%,
+        rgba(255,255,255,0.15) 75%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%);
+    background-image: -webkit-gradient(linear, left top, right bottom,
+        color-stop(0%,rgba(255,255,255,0.2)),
+        color-stop(25%,rgba(255,255,255,0.2)),
+        color-stop(25%,rgba(255,255,255,0)),
+        color-stop(50%,rgba(255,255,255,0)),
+        color-stop(50%,rgba(255,255,255,0.2)),
+        color-stop(75%,rgba(255,255,255,0.2)),
+        color-stop(75%,rgba(255,255,255,0)),
+        color-stop(100%,rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(123deg,
+        rgba(255,255,255,0.3) 0%,
+        rgba(255,255,255,0.3) 45%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0) 48%,
+        rgba(255,255,255,0.3) 30%,
+        rgba(255,255,255,0.3) 75%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%);
+    background-image: -o-linear-gradient(123deg,
+     rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.15) 45%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0) 48%,
+        rgba(255,255,255,0.15) 30%,
+        rgba(255,255,255,0.15) 75%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%);
+    background-image: -ms-linear-gradient(123deg,
+        rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.15) 45%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0) 48%,
+        rgba(255,255,255,0.15) 30%,
+        rgba(255,255,255,0.15) 75%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(123deg,
+        rgba(255,255,255,0.15) 0%,
+        rgba(255,255,255,0.15) 45%,
+        rgba(255,255,255,0) 35%,
+        rgba(255,255,255,0) 48%,
+        rgba(255,255,255,0.15) 30%,
+        rgba(255,255,255,0.15) 75%,
+        rgba(255,255,255,0) 75%,
+        rgba(255,255,255,0) 100%);
+}
+
+.color2 > span {
+	background-color: #0de8db;
+
+}
+
+
+
+.capButtonsDialog {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px 10px;
+}
+
+@media only screen and (max-width:490px){
+  .capButtonsDialog{
+    margin: 0 10px 10px;
+  }
+}
+@media only screen and (max-width:480px){
+  .buyButton{
+    font-size:9px;
+  }
+}
+
+.capButtons {
+  border: 1px solid black;
+
+}
+
+.buyButton {
+  width: 30%;
+  margin: 30px 0;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, #45caf4 0%, #2f2bf5 100%);
+  color: white;
+  transition: 0.2s;
+}
+
+.buyButton:hover {
+  font-size: 14.6px;
+}
+
+.buyButton:active {
+  font-size: 14px;
+  background-image: linear-gradient(to right, #45caf4 0%, #504df4 100%);
+}
+
+.points{
+  position:relative;
+}
+
+.point{
+  position:absolute;
+  height:12px;
+  border:0.5px solid #333;
+}
+.soft{
+left:20%;
+top:-17px;
+}
+.hard{
+  left:80%;
+  top:-17px;
+}

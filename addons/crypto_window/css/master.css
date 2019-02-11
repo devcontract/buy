@@ -58,7 +58,7 @@ button:focus {
 
 .bar {
   height: 10px;
-  width: 100%;
+  width: 20%;
   background-image: linear-gradient(to right, #f9cea5 0%, #ff5d00 100%);
 }
 
@@ -116,9 +116,9 @@ button:focus {
 }
 .soft{
 left:20%;
-top:-20px;
+top:-21px;
 }
 .hard{
   left:80%;
-  top:-20px;
+  top:-21px;
 }
