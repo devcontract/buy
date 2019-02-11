@@ -25,14 +25,14 @@ button:focus {
   text-align: center;
   border-radius: 10px;
   margin-top: 10px;
-  background-color:black;
+  background-color:#222;
   color:whitesmoke;
   font-family:sans-serif;
 }
 
 .firstDialog {
   display: inline-block;
-  border:1px solid black;
+
   padding: 0 12px;
   width: 50%;
   min-width: 230px !important;
@@ -47,7 +47,7 @@ button:focus {
 
 .progresDialog {
   display: inline-block;
- border:1px solid black;
+
 
   width: 70%;
 }
@@ -213,11 +213,6 @@ button:focus {
   .buyButton{
     font-size:9px;
   }
-}
-
-.capButtons {
-  border: 1px solid black;
-
 }
 
 .buyButton {
