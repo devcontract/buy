@@ -109,11 +109,10 @@ button:focus {
 }
 
 
-
 .capButtonsDialog {
   display: flex;
   justify-content: space-between;
-  margin: 0 30px 10px;
+  margin: 0 32px 10px;
 }
 
 @media only screen and (max-width:490px){
