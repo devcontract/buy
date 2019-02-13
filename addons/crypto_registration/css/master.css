@@ -1,0 +1,102 @@
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div{
+  border:1px solid red;
+}
+button:focus {
+  outline: 0;
+}
+
+.container {
+  max-width: 545px;
+}
+
+.window {
+  marging: 0 auto;
+  padding: 0 20px;
+  margin-top: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  text-align: center;
+
+  color:black;
+  font-family:sans-serif;
+}
+
+.names{
+
+  display:flex;
+  justify-content:space-between;
+  margin:0 0 20px;
+  padding:0 5px;
+
+}
+
+.nameDiv{
+  margin: 0 0 5px 0;
+  width:30%;
+}
+
+
+/*.dates{
+  display:flex;
+}*/
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+.submitButtonDialog{
+  display:inline-block;
+}
+
+.submitButton{
+  margin:10px;
+  height:auto;
+  padding: 2px 15px;
+
+}
+
+.address{
+
+  padding:0 5px;
+}
+
+label{
+  float:left;
+  padding:0px 5px;
+}
+.location{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.locDiv{
+  width:35%;
+  margin:0 15% 0 0;
+}
+
+.contacts{
+  display:flex;
+
+  margin-top:3%;
+  padding:0 5px;
+
+}
