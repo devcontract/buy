@@ -68,7 +68,7 @@ button:focus {
 }
 
 .submitButton{
-  margin:10px;
+  margin: 10px 0;
   height:auto;
   padding: 2px 15px;
 
