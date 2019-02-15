@@ -22,30 +22,33 @@ button:focus {
 .window {
   marging: 0 auto;
   padding: 0 20px;
-  margin: 20% 0;
+  margin: 10px 0;
   border: 1px solid red;
   border-radius: 10px;
   text-align: center;
-  background-color: #222;
+  background:#222;
   color:white;
   font-family:sans-serif;
 }
+
 legend{
   color:white;
 }
-.names{
 
+
+.inputDiv{
+  width:60%;
+
+  padding: 0 5px;
+  margin: 10px 0;
+}
+
+.personalData{
   display:flex;
   justify-content:space-between;
-  margin:0 0 20px;
-  padding:0 5px;
 
 }
 
-.nameDiv{
-  margin: 0 0 5px 0;
-  width:30%;
-}
 
 
 /*.dates{
@@ -101,12 +104,23 @@ label{
 
 }
 
-input[type="submit"]{
-    padding:5px 15px;
-    background:#ccc;
-    border:0 none;
-    cursor:pointer;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
 
+
+input[type="file"]{
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  background:#222;
+
+
+}
+input[type="file"]:focus{
+  outline: none;
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.or{
+  margin:40px 0;
 }

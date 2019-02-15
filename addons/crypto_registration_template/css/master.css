@@ -100,3 +100,28 @@ label{
   padding:0 5px;
 
 }
+
+.personalData{
+  display:flex;
+  justify-content:space-between;
+}
+
+.personalDiv{
+ width:60%;
+ padding: 0 5px;
+}
+
+input[type="file"]{
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  
+
+}
+input[type="file"]:focus{
+  outline: none;
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
