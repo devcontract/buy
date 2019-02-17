@@ -7,88 +7,141 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/master.css">
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <div class="container">
+
+  <div class="container all">
     <!-- timer block -->
     <div class="row">
-      <div class="block" style="height:auto;width:330px;">
-        <h2 class="text-center">Refund</h2>
-
-        <div class="" style="width:auto">
-
-          <ul class="nav nav-tabs" style="display:flex;justify-content:space-between;">
-            <li class="active"><a data-toggle="tab" href="#ether">Ether</a></li>
-            <li><a data-toggle="tab" href="#bitcoin">Bitcoin</a></li>
-            <li><a data-toggle="tab" href="#euro_usd">Euro and USD</a></li>
-
+          <ul class="nav" style="display:flex;justify-content:space-between;">
+            <li class="active"><a data-toggle="tab" href="#login" name="login" >Login</a></li>
+            <li><a data-toggle="tab" href="#register" name="register" >Register</a></li>
           </ul>
 
           <div class="tab-content">
-            <div id="ether" class="tab-pane fade in active container">
-              <h3 class=""style="">Ethereum Refund</h3>
-              <div class="" style="margin-top:10px;">
-                <p>
-                  <h5> Please enter address where to refund : </h5>
-                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px;" placeholder="address"></p>
-                </p>
+            <div id="login" class="tab-pane fade in active ">
+              <div class="window">
+
+                 <h3>Please enter your login details</h3>
+                <hr>
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                    <input type="text" name="email" class="form-control inputs" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    <input type="password" name="password" class="form-control inputs" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+                  <div class="loginButtonDialog">
+                    <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
+                    <button class="loginButton form-control" type="button" name="login">submit</button>
+                  </div>
+                  </fieldset>
+
+                </form>
+
+
               </div>
-
-
-
-
-
-
-            </div>
-            <div id="bitcoin" class="tab-pane fade container">
-              <h3>Bitcoin Refund</h3>
-
-              <div class="" style="margin-top:10px;">
-                <p>
-                  <h5> Please enter address where to refund : </h5>
-                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px;" placeholder="address"></p>
-                </p>
-              </div>
-
-
-
-
 
             </div>
 
-            <div id="euro_usd" class="tab-pane fade container" style="">
+            <div id="register" class="tab-pane fade ">
+              <div class="">
+                <div class="window">
+                  <h3>Registration Form template</h3>
+                  <form class="" action="index.html" method="post">
+                    <fieldset>
+                      <legend>Please complete all fields</legend>
+                      <div class="personalData">
+                        <div class="inputDiv">
+                          <label for="firstname"> <b>Firstname</b> </label>
+                          <input type="text" name="firstname" class="form-control nameInputs" placeholder=" " aria-label="First name" aria-describedby="basic-addon1">
 
-              <h3>Euro / USD Refund</h3>
+                        </div>
 
-              <div class="" style="margin-top:10px;">
-                <p>
-                  <h5> Please enter your account number: </h5>
-                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px" placeholder="account number"> </p>
-                </p>
+                        <div class="inputDiv">
+                          <label for="lastname"> <b>Lastname</b> </label>
+                          <input type="text" name="lastname" class="form-control nameInputs" placeholder=" " aria-label="Last Name" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+
+                      <div class="personalData">
+                        <div class="inputDiv">
+                          <label for="passportNumber"> <b>Passport number</b> </label>
+
+                          <input type="text" name="passportNumber" class="form-control nameInputs" placeholder=" " aria-label="passport number" aria-describedby="basic-addon1">
+
+                        </div>
+                        <div class="or">
+                          or
+                        </div>
+                        <div class="inputDiv" >
+                          <label for="idCard"> <b>ID card number</b> </label>
+                          <input type="text" name="idCard" class="form-control nameInputs" placeholder=" " aria-label="idcard" aria-describedby="basic-addon1">
+                        </div>
+
+
+                      </div>
+
+                      <div class="personalDiv">
+                        <div class="inputDiv">
+                          <label for="fileUpload"> <b>Upload copy of your ID</b> </label>
+                          <br>
+                          <input type="file" class="upload" name="fileUpload">
+                        </div>
+
+                        <div class="inputDiv">
+                          <label for="photoUpload"> <b>Upload your photo</b> </label>
+                          <br>
+                          <input type="file" class="upload" name="photoUpload">
+                        </div>
+                      </div>
+
+            <hr>
+
+                      <div class="address">
+                        <label for="street"> <b>Street</b> </label>
+                        <input type="text" name="street" class="form-control inputs" placeholder="" aria-label="street" aria-describedby="basic-addon1">
+                        <label for="streetSecondLine"> <b>Street Second Line</b> </label>
+                        <input type="text" name="streetSecondLine" class="form-control inputs" placeholder="  " aria-label="streetSecondLine" aria-describedby="basic-addon1">
+                        <div class="location">
+                          <div class="locDiv ">
+                            <label for="city"> <b>City</b> </label>
+                            <input type="text" name="city" class="form-control inputs " placeholder="" aria-label="city" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="locDiv locdiv2">
+                            <label for="state"> <b>State</b> </label>
+                            <input type="text" name="state" class="form-control inputs " placeholder="" aria-label="state" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="locDiv">
+                          <label for="postal"> <b>Postal</b> </label>
+                          <input type="text" name="postal" class="form-control inputs " placeholder="" aria-label="postal" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="contacts">
+                        <div class="locDiv">
+                          <label for="email"> <b>Email</b> </label>
+                          <input type="text" name="email" class="form-control inputs" placeholder="" aria-label="email" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="locDiv">
+                          <label for="phone"> <b>Phone</b> </label>
+                          <input type="text" name="phone" class="form-control inputs" placeholder=" " aria-label="phone" aria-describedby="basic-addon1">
+                        </div>
+
+                      </div>
+                      <div class="submitButtonDialog">
+                        <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
+                        <input class="submitButton form-control" type="submit" name="submit"></input>
+
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
-
-              <div class="" style="margin-top:10px;">
-                <p>
-                  <h5> Please enter your sort code: </h5>
-                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px" placeholder="sort code"> </p>
-                </p>
-              </div>
-
-
-
-
             </div>
-
           </div>
-
-        </div>
-        <div class="text-center" >
-          <button name="button" type="button" class="btn btn-lg myBtn coolText" style="width:auto;height:24px;line-height:1px;margin-bottom:10px" onclick="">Request Refund</button>
-    </div>
-
-      </div>
-      <!--end of block-->
+          <!--end of block-->
     </div>
   </div>
   </body>
