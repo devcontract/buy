@@ -10,39 +10,86 @@
 
 </head>
 <body>
-<div class="container">
-  <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-  <button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+  <div class="container">
+    <!-- timer block -->
+    <div class="row">
+      <div class="block" style="height:auto;width:330px;">
+        <h2 class="text-center">Refund</h2>
 
-  <div id="Home" class="tabcontent">
-    <h3>Home</h3>
-    <p>Home is where the heart is..</p>
+        <div class="" style="width:auto">
+
+          <ul class="nav nav-tabs" style="display:flex;justify-content:space-between;">
+            <li class="active"><a data-toggle="tab" href="#ether">Ether</a></li>
+            <li><a data-toggle="tab" href="#bitcoin">Bitcoin</a></li>
+            <li><a data-toggle="tab" href="#euro_usd">Euro and USD</a></li>
+
+          </ul>
+
+          <div class="tab-content">
+            <div id="ether" class="tab-pane fade in active container">
+              <h3 class=""style="">Ethereum Refund</h3>
+              <div class="" style="margin-top:10px;">
+                <p>
+                  <h5> Please enter address where to refund : </h5>
+                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px;" placeholder="address"></p>
+                </p>
+              </div>
+
+
+
+
+
+
+            </div>
+            <div id="bitcoin" class="tab-pane fade container">
+              <h3>Bitcoin Refund</h3>
+
+              <div class="" style="margin-top:10px;">
+                <p>
+                  <h5> Please enter address where to refund : </h5>
+                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px;" placeholder="address"></p>
+                </p>
+              </div>
+
+
+
+
+
+            </div>
+
+            <div id="euro_usd" class="tab-pane fade container" style="">
+
+              <h3>Euro / USD Refund</h3>
+
+              <div class="" style="margin-top:10px;">
+                <p>
+                  <h5> Please enter your account number: </h5>
+                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px" placeholder="account number"> </p>
+                </p>
+              </div>
+
+              <div class="" style="margin-top:10px;">
+                <p>
+                  <h5> Please enter your sort code: </h5>
+                  <p> <input type="text" name="" value="" size="35" class="form-control" style="width:300px" placeholder="sort code"> </p>
+                </p>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class="text-center" >
+          <button name="button" type="button" class="btn btn-lg myBtn coolText" style="width:auto;height:24px;line-height:1px;margin-bottom:10px" onclick="">Request Refund</button>
+    </div>
+
+      </div>
+      <!--end of block-->
+    </div>
   </div>
-
-  <div id="News" class="tabcontent">
-    <h3>News</h3>
-    <p>Some news this fine day!</p>
-  </div>  
-</div>
-
-  <script>
-  function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  </script>
-
   </body>
   </html>
