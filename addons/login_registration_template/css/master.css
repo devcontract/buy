@@ -1,0 +1,209 @@
+
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div{
+  border:1px solid red;
+}
+button:focus {
+  outline: 0;
+}
+
+.container {
+ width: 100%;
+ max-width:345px !important;
+ min-width:345px;
+}
+
+.window {
+  height:100%;
+  marging: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color:white;
+  color:black;
+  font-family:sans-serif;
+  border-radius:10px;
+}
+
+.firstDialog {
+
+  width: 50%;
+  min-width: 230px !important;
+
+}
+
+
+
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+.loginButtonDialog{
+  display:inline-block;
+  margin:0 10px 10px 0 ;
+}
+
+.loginButton{
+  margin:0px;
+  height:auto;
+  padding: 2px 15px;
+}
+
+.memeberText{
+  margin-top:10px;
+  font-size:small
+}
+
+
+legend{
+  color:white;
+}
+
+
+.inputDiv{
+  width:60%;
+
+  padding: 0 5px;
+  margin: 10px 0;
+}
+
+.personalData{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+
+
+/*.dates{
+  display:flex;
+}*/
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+.submitButtonDialog{
+  display:inline-block;
+}
+
+.submitButton{
+  margin: 10px 0;
+  height:auto;
+  padding: 2px 15px;
+
+}
+
+.address{
+
+  padding:0 5px;
+}
+
+label{
+  float:left;
+  padding:0px 5px;
+}
+.location{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.locDiv{
+  width:35%;
+  margin:0 15% 0 0;
+}
+
+.contacts{
+  display:flex;
+
+  margin-top:3%;
+  padding:0 5px;
+
+}
+
+
+
+input[type="file"]{
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  background:#222;
+
+
+}
+input[type="file"]:focus{
+  outline: none;
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.or{
+  margin:40px 0;
+}
+
+.personalDiv{
+  display:flex;
+}
+.upload{
+  width:100%;
+}
+
+.all{
+  margin-top:10%;
+  border:1px solid red;
+  background-color:white;
+  border-radius:10px;
+
+
+}
+li{
+
+  width:100%;
+  text-align:center;
+
+
+}
+a{
+  color:black;
+  font-size:14px;
+  border:1px solid red;
+}
+a[name="login"]{
+  border-top-left-radius:10px;
+
+}
+a[name="register"]{
+  border-top-right-radius:10px;
+}
+.all{
+  font-size:10px;
+}
+
+.form-control{
+  margin:10px 0px;
+}

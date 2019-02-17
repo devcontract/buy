@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+
+  <div class="container all">
+    <!-- timer block -->
+    <div class="row">
+          <ul class="nav" style="display:flex;justify-content:space-between;">
+            <li class="active"><a data-toggle="tab" href="#login" name="login" >Login</a></li>
+            <li><a data-toggle="tab" href="#register" name="register" >Register</a></li>
+          </ul>
+
+          <div class="tab-content">
+            <div id="login" class="tab-pane fade in active ">
+              <div class="window">
+
+                 <h3>Please enter your login details</h3>
+                <hr>
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                    <input type="text" name="email" class="form-control inputs" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    <input type="password" name="password" class="form-control inputs" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
+                  <div class="loginButtonDialog">
+                    <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
+                    <button class="loginButton form-control" type="button" name="login">submit</button>
+                  </div>
+                  </fieldset>
+
+                </form>
+
+
+              </div>
+
+            </div>
+
+            <div id="register" class="tab-pane fade ">
+              <div class="">
+                <div class="window">
+                  <h3>Registration Form template</h3>
+                  <form class="" action="index.html" method="post">
+                    <fieldset>
+                      <legend>Please complete all fields</legend>
+                      <div class="personalData">
+                        <div class="inputDiv">
+                          <label for="firstname"> <b>Firstname</b> </label>
+                          <input type="text" name="firstname" class="form-control nameInputs" placeholder=" " aria-label="First name" aria-describedby="basic-addon1">
+
+                        </div>
+
+                        <div class="inputDiv">
+                          <label for="lastname"> <b>Lastname</b> </label>
+                          <input type="text" name="lastname" class="form-control nameInputs" placeholder=" " aria-label="Last Name" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+
+                      <div class="personalData">
+                        <div class="inputDiv">
+                          <label for="passportNumber"> <b>Passport number</b> </label>
+
+                          <input type="text" name="passportNumber" class="form-control nameInputs" placeholder=" " aria-label="passport number" aria-describedby="basic-addon1">
+
+                        </div>
+                        <div class="or">
+                          or
+                        </div>
+                        <div class="inputDiv" >
+                          <label for="idCard"> <b>ID card number</b> </label>
+                          <input type="text" name="idCard" class="form-control nameInputs" placeholder=" " aria-label="idcard" aria-describedby="basic-addon1">
+                        </div>
+
+
+                      </div>
+
+                      <div class="personalDiv">
+                        <div class="inputDiv">
+                          <label for="fileUpload"> <b>Upload copy of your ID</b> </label>
+                          <br>
+                          <input type="file" class="upload" name="fileUpload">
+                        </div>
+
+                        <div class="inputDiv">
+                          <label for="photoUpload"> <b>Upload your photo</b> </label>
+                          <br>
+                          <input type="file" class="upload" name="photoUpload">
+                        </div>
+                      </div>
+
+            <hr>
+
+                      <div class="address">
+                        <label for="street"> <b>Street</b> </label>
+                        <input type="text" name="street" class="form-control inputs" placeholder="" aria-label="street" aria-describedby="basic-addon1">
+                        <label for="streetSecondLine"> <b>Street Second Line</b> </label>
+                        <input type="text" name="streetSecondLine" class="form-control inputs" placeholder="  " aria-label="streetSecondLine" aria-describedby="basic-addon1">
+                        <div class="location">
+                          <div class="locDiv ">
+                            <label for="city"> <b>City</b> </label>
+                            <input type="text" name="city" class="form-control inputs " placeholder="" aria-label="city" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="locDiv locdiv2">
+                            <label for="state"> <b>State</b> </label>
+                            <input type="text" name="state" class="form-control inputs " placeholder="" aria-label="state" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="locDiv">
+                          <label for="postal"> <b>Postal</b> </label>
+                          <input type="text" name="postal" class="form-control inputs " placeholder="" aria-label="postal" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="contacts">
+                        <div class="locDiv">
+                          <label for="email"> <b>Email</b> </label>
+                          <input type="text" name="email" class="form-control inputs" placeholder="" aria-label="email" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="locDiv">
+                          <label for="phone"> <b>Phone</b> </label>
+                          <input type="text" name="phone" class="form-control inputs" placeholder=" " aria-label="phone" aria-describedby="basic-addon1">
+                        </div>
+
+                      </div>
+                      <div class="submitButtonDialog">
+                        <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
+                        <input class="submitButton form-control" type="submit" name="submit"></input>
+
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--end of block-->
+    </div>
+  </div>
+  </body>
+  </html>
