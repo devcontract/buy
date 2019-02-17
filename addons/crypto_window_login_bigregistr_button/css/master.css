@@ -1,0 +1,73 @@
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container {
+  max-width: 245px;
+}
+
+.window {
+  marging: 0 auto;
+  padding: 0 20px;
+  margin-top: 10px;
+  border: 1px solid red;
+  border-radius: 10px;
+  text-align: center;
+  background-color:#222;
+  color:white;
+  font-family:sans-serif;
+}
+
+.firstDialog {
+
+  width: 50%;
+  min-width: 230px !important;
+
+
+}
+
+
+
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+.loginButtonDialog{
+
+
+  display:flex;
+  justify-content:space-between;
+}
+
+.loginButton{
+  height:auto;
+  width:45%;
+  padding: 0px 0px;
+  margin: 10px 0 15px; 0;
+}
+
+.memeberText{
+  border:1px solid black;
+  margin-top:10px;
+  font-size:small
+}
