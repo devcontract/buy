@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script scr="js/cap.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+  </head>
+  <body>
+
+
+  <!--$public_key = "6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip";
+    $private_key = "6LfFBZIUAAAAABqVWDsWEDFz5QcMf5KP7_6Yz7Um";-->
+
+
+
+    <form class="" method="post" onsubmit="return submitUserForm();">
+    <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip" data-callback="verifyCaptcha"></div>
+    <div id="g-recaptcha-error"></div>
+    <input type="submit" name="submit" value="submit">
+    </form>
+
+
+<script type="text/javascript">
+
+  function submitUserForm(){
+    var response = grecaptcha.getResponse();
+    console.log(response.length);
+    if(response.length == 0){
+      document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red" > this field is required </span>';
+      return false;
+    }
+    return true;
+  }
+
+  function verifyCaptcha(){
+    console.log('verified');
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+  }
+
+</script>
+
+  </body>
+</html>
