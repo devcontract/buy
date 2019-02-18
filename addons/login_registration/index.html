@@ -7,9 +7,10 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/master.css">
+  <script type="text/javascript" src="js/cap.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
 </head>
 <body>
 
@@ -27,13 +28,16 @@
 
                  <h3>Please enter your login details</h3>
                 <hr>
-                <form class="" action="index.html" method="post">
+                <form class="" action="index.html" method="post" onsubmit="return submitLoginForm();">
+
                   <fieldset>
                     <input type="text" name="email" class="form-control inputs" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
                     <input type="password" name="password" class="form-control inputs" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">
-                  <div class="loginButtonDialog">
-                    <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
-                    <button class="loginButton form-control" type="button" name="login">submit</button>
+                   <div class="loginButtonDialog">
+                    <div class="" id="RecaptchaField1"></div>
+
+                    <div id="g-recaptcha-error"></div>
+                    <input class="loginButton form-control" type="submit" name="login" value="Submit"></input>
                   </div>
                   </fieldset>
 
@@ -48,7 +52,7 @@
               <div class="">
                 <div class="window">
                   <h3>Registration Form template</h3>
-                  <form class="" action="index.html" method="post">
+                  <form class="" action="index.html" method="post" onsubmit="return submitRegForm();">
                     <fieldset>
                       <legend>Please complete all fields</legend>
                       <div class="personalData">
@@ -132,10 +136,12 @@
                       </div>
 
                       <div class="submitButtonDialog">
-                        <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
+
+                        <div id="RecaptchaField2"></div>
+                        <div id="g-recaptcha-error0"></div>
                         <input class="submitButton form-control" type="submit" name="submit"></input>
 
-                      </div>
+
                     </fieldset>
                   </form>
                 </div>
