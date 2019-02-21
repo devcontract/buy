@@ -1,0 +1,228 @@
+
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition:0.3s ease-in-out;
+}
+
+div{
+  border:1px solid red;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:white;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container {
+   border:1px solid grey;
+ width: 100%;
+ max-width:345px !important;
+ min-width:345px;
+}
+
+.window {
+
+  height:100%;
+  marging: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color:white;
+  color:black;
+  font-family:sans-serif;
+  border-radius:10px;
+}
+
+.firstDialog {
+
+  width: 50%;
+  min-width: 230px !important;
+
+}
+
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+
+
+.memeberText{
+  margin-top:10px;
+  font-size:small
+}
+
+
+legend{
+  color:white;
+}
+
+
+.inputDiv{
+  width:45%;
+  margin: 10px 0;
+}
+
+.personalData{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+
+
+/*.dates{
+  display:flex;
+}*/
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+.submitButtonDialog{
+  display:inline-block;
+}
+
+.submitButton{
+  margin: 10px 0;
+  height:auto;
+
+
+}
+
+
+label{
+  float:left;
+  padding:0px 2px;
+}
+.location{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.locDiv{
+  width:35%;
+  margin:0 15% 0 0;
+}
+
+.contacts{
+  display:flex;
+}
+
+
+
+input[type="file"]{
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border:none;
+  background:#222;
+
+
+}
+input[type="file"]:focus{
+  outline: none;
+   border-color: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.or{
+  margin:40px 0;
+}
+
+.personalDiv{
+  display:flex;
+}
+.upload{
+  width:100%;
+}
+
+.all{
+  margin-top:10%;
+  border:1px solid grey;
+  background-color:white;
+  border-radius:10px
+
+}
+li{
+
+  width:100%;
+  text-align:center;
+
+
+}
+a{
+  color:black;
+  font-size:14px;
+}
+a[name="ether"]{
+  border-top-left-radius:9px;
+
+}
+a[name="eurandusd"]{
+  border-top-right-radius:9px;
+}
+.all{
+  font-size:10px;
+}
+
+.form-control{
+  margin:10px 0px;
+}
+
+li a:hover,
+li a:focus,
+li a:active{
+  color:white;
+
+}
+
+ul.nav a:hover,
+ul.nav a:active {
+background-color: #2f2f2f !important;
+
+}
+ul.nav a:focus {
+  background-color: #222 !important;
+}
+
+.requestButtonDialog{
+  margin: 0 30%;
+
+}
+
+p{
+  text-align:left;
+  font-size:13px;
+}
+.expiryDialog{
+  display:flex;
+
+}
+
+.expiry{
+  width:30%;
+  margin:0 5px 0 0;
+}
+
+p[name="exprires"]{
+  margin:0px;
+}
+
+input[type="submit"]{
+  padding:0px;
+}
