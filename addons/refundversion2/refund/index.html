@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container all">
+    <!-- timer block -->
+    <div class="row">
+          <ul class="nav" style="display:flex;justify-content:space-between;">
+            <li class="active"><a data-toggle="tab" href="#ether" name="ether" >Ether</a></li>
+            <li><a data-toggle="tab" href="#bitcoin" name="bitcoin" >Bitcoin</a></li>
+            <li><a data-toggle="tab" href="#eurandusd" name="eurandusd" >&#128; and &#36;</a></li>
+          </ul>
+          <div class="tab-content">
+
+            <div id="ether" class="tab-pane fade in active ">
+              <div class="window">
+                 <h3>Ethereum Refund</h3>
+<hr>
+
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                       <p>Please enter address where to refund :</p>
+
+                    <input type="text" name="ether" class="form-control inputs" placeholder="address" aria-label="ether" aria-describedby="basic-addon1">
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundEther" value="Request Refund">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div><!--ether dialog -->
+            <div id="bitcoin" class="tab-pane fade in  ">
+              <div class="window">
+                 <h3>Bitcoin Refund</h3>
+<hr>
+
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                     <p>Please enter address where to refund :</p>
+                    <input type="text" name="address" class="form-control inputs" placeholder="address" aria-label="bitcoinAddress" aria-describedby="basic-addon1">
+
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundBitcoin" value="Request Refund">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div> <!--bitcoin dialog-->
+            <div id="eurandusd" class="tab-pane fade in  ">
+              <div class="window">
+                 <h3>Euro and USD Refund</h3>
+<hr>
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+
+                    <div class="form-group">
+                    <p>Card Type</p>
+                      <select name="cardtype" class="form-control" id="sel1">
+                        <option>Visa/Visa Electron</option>
+                        <option>MasterCard</option>
+                        <option>American Express</option>
+                      </select>
+                    </div>
+
+                    <p>Card Number</p>
+                    <input type="text" name="cardNumber" class="form-control inputs" placeholder="" aria-label="cardNumber" aria-describedby="basic-addon1">
+                    <p>Cardholder`s name</p>
+                    <input type="text" name="crdhldrsName" class="form-control inputs" placeholder="" aria-label="crdhldrsName" aria-describedby="basic-addon1">
+                    <p name="exprires">Expires</p>
+                    <div class="expiryDialog">
+
+                      <div class="form-group" class="expiry">
+
+                        <select name="expiryMonth" class="form-control inputs " placeholder="" aria-label="expiry" aria-describedby="basic-addon1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                      </div>
+
+
+                      <div class="form-group" class="expiry">
+
+                        <select name="year" name="expiryYear" class="form-control inputs " placeholder="" aria-label="expiry" aria-describedby="basic-addon1">
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                          <option>2029</option>
+                          <option>2030</option>
+                        </select>
+                      </div>
+
+
+                    </div>
+
+
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundUsd" value="Request Refund">
+
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div> <!--euro and usd dialog-->
+
+          </div>
+          <!--end of block-->
+    </div>
+  </div>
+  </body>
+  </html>

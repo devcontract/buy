@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/master.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container all">
+    <!-- timer block -->
+    <div class="row">
+          <ul class="nav" style="display:flex;justify-content:space-between;">
+            <li class="active"><a data-toggle="tab" href="#ether" name="ether" >Ether</a></li>
+            <li><a data-toggle="tab" href="#bitcoin" name="bitcoin" >Bitcoin</a></li>
+            <li><a data-toggle="tab" href="#eurandusd" name="eurandusd" >&#128; and &#36;</a></li>
+          </ul>
+          <div class="tab-content">
+            <div id="ether" class="tab-pane fade in active ">
+              <div class="window">
+                 <h3>Ethereum Refund</h3>
+<hr>
+
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                       <p>Please enter address where to refund :</p>
+                    <input type="text" name="ether" class="form-control inputs" placeholder="address" aria-label="ether" aria-describedby="basic-addon1">
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundEther" value="Request Refund">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div><!--ether dialog -->
+            <div id="bitcoin" class="tab-pane fade in  ">
+              <div class="window">
+                 <h3>Bitcoin Refund</h3>
+<hr>
+
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                     <p>Please enter address where to refund :</p>
+                    <input type="text" name="address" class="form-control inputs" placeholder="address" aria-label="bitcoinAddress" aria-describedby="basic-addon1">
+
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundBitcoin" value="Request Refund">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div> <!--bitcoin dialog-->
+            <div id="eurandusd" class="tab-pane fade in  ">
+              <div class="window">
+                 <h3>Euro and USD Refund</h3>
+<hr>
+                <form class="" action="index.html" method="post">
+                  <fieldset>
+                    <p>Please enter your account number:</p>
+                    <input type="text" name="accountNumber" class="form-control inputs" placeholder="account number" aria-label="accountNumber" aria-describedby="basic-addon1">
+                    <p>Please enter your sort code:</p>
+                    <input type="text" name="sortCode" class="form-control inputs" placeholder="sort code" aria-label="sortCode" aria-describedby="basic-addon1">
+                    <div class="requestButtonDialog center">
+
+                      <input class="form-control " type="submit" name="requestRefundUsd" value="Request Refund">
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div> <!--euro and usd dialog-->
+
+          </div>
+          <!--end of block-->
+    </div>
+  </div>
+  </body>
+  </html>
