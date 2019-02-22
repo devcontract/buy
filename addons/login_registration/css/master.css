@@ -212,3 +212,15 @@ background-color: #2f2f2f !important;
 ul.nav a:focus {
   background-color: #222 !important;
 }
+.terms{
+  color:white;
+  text-align:center;
+
+}
+.captcha{
+  margin:3px;
+}
+
+div.terms a {
+  font-size:10px
+}
