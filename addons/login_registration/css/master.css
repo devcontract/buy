@@ -74,8 +74,10 @@ button:focus {
 }
 
 
-legend{
+legend,
+h4{
   color:white;
+  font-size:22px;
 }
 
 
