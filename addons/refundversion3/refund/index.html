@@ -7,11 +7,11 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/master.css">
+  <script type="text/javascript" src="js/cap.js"></script>
+    <script type="text/javascript" src="js/master.js" async defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-
+  <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
 </head>
 
 <body>
@@ -30,16 +30,23 @@
             <h3>Ethereum Refund</h3>
             <hr>
 
-            <form class="" action="index.html" method="post">
+            <form class="" action="index.html" method="post" onsubmit="return submitForm()">
               <fieldset>
-                <p>Please enter address where to refund :</p>
+                <label for="ether">Please enter address where to refund :</label>
 
                 <input type="text" name="ether" class="form-control inputs" placeholder="address" aria-label="ether" aria-describedby="basic-addon1">
+
+  <hr>
                 <div class="requestButtonDialog center">
 
                   <input class="form-control " type="submit" name="requestRefundEther" value="Request Refund">
                 </div>
               </fieldset>
+              <div class="terms">
+                <input type="checkbox" name="terms" value="Conditions" required>
+                "I have read and agreed to the following"
+                <a class="termsAnchor" target="_blank" href="terms.html" rel="nofollow noopener">Terms and conditions</a>
+              </div>
             </form>
           </div>
         </div>
@@ -49,16 +56,21 @@
             <h3>Bitcoin Refund</h3>
             <hr>
 
-            <form class="" action="index.html" method="post">
+            <form class="" action="index.html" method="post" onsubmit="return submitForm()">
               <fieldset>
-                <p>Please enter address where to refund :</p>
+                <label for="address">Please enter address where to refund :</label>
                 <input type="text" name="address" class="form-control inputs" placeholder="address" aria-label="bitcoinAddress" aria-describedby="basic-addon1">
-
+<hr>
                 <div class="requestButtonDialog center">
 
-                  <input class="form-control " type="submit" name="requestRefundBitcoin" value="Request Refund">
+                  <input class="form-control " type="submit" name="requestRefundBitcoin" value="Request Refund" >
                 </div>
               </fieldset>
+              <div class="terms">
+                <input type="checkbox" name="terms" value="Conditions" required>
+                "I have read and agreed to the following"
+                <a class="termsAnchor" target="_blank" href="terms.html" rel="nofollow noopener">Terms and conditions</a>
+              </div>
             </form>
           </div>
         </div>
@@ -67,9 +79,10 @@
           <div id="eurandusd" class="tab-pane fade ">
             <div class="">
               <div class="window">
-                <form class="" action="index.html" method="post">
+                <form class="" action="index.html" method="post" onsubmit="return submitForm()">
                   <fieldset>
-                    <legend>Bank requisites</legend>
+                  <h3>Bank requisites</h3>
+                  <hr>
                     <div class="personalData">
                       <div class="inputDiv">
                         <label for="firstname"> <b>Firstname</b> </label>
@@ -146,24 +159,36 @@
 
 </div>
 
-                    <div class="submitButtonDialog">
-                      <div class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip"></div>
-                      <input class="submitButton form-control" type="submit" name="submit"></input>
+<hr>
+<div class="submitButtonDialog">
+<input class="submitButton form-control" type="submit" name="submit" >
+</div>
 
-                    </div>
                   </fieldset>
+                  <div class="terms">
+                    <input type="checkbox" name="terms" value="Conditions" required>
+                    "I have read and agreed to the following"
+                    <a class="termsAnchor" target="_blank" href="terms.html" rel="nofollow noopener">Terms and conditions</a>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
         <!--euro and usd dialog-->
 
+
       </div>
       <!--end of block-->
+
+      <div class="captcha">
+        <div class="captcha" id="RecaptchaField" data-theme="dark"></div>
+        <div id="g-recaptcha-error"></div>
+      </div>
     </div>
   </div>
 
-  <script type="text/javascript" src="js/master.js" async defer></script>
+
+
 </body>
 
 </html>
