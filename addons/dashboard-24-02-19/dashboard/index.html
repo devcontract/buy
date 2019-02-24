@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="js/cap.js"></script>
+    <script type="text/javascript" src="js/master.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+</head>
+
+<body>
+<div class="container all">
+    <!-- timer block -->
+    <div class="row">
+
+        <div class="window">
+
+
+            <div class="text-center">
+                <h4>Sale is <span id="saleStatus">going to be finished in :</span></h4>
+            </div>
+
+            <div class="ciferblate">
+                <div class="timerSquare shadowEffect" id="days">00</div>
+                <div class="tim">:</div>
+                <div id="hours" class="timerSquare shadowEffect">01</div>
+                <div class="tim">:</div>
+                <div id="minutes" class="timerSquare shadowEffect">34</div>
+                <div class="tim">:</div>
+                <div id="seconds" class="timerSquare shadowEffect">47</div>
+            </div>
+
+            <div class="timerLabels">
+                <div class="timerLabelWindow">Days</div>
+                <div class="timerLabelWindow">Hours</div>
+                <div class="timerLabelWindow">Minutes</div>
+                <div class="timerLabelWindow">Seconds</div>
+            </div>
+
+        </div>
+        <!--end of block-->
+    </div>
+
+</div>
+
+<div class="container all">
+    <!-- timer block -->
+    <div class="row">
+
+        <div class="window">
+
+
+            <div class="text-center">
+                <h4 class="text-center">ICO Status</h4>
+            </div>
+
+            <div id="stageBar" class="">
+
+                <ol style="" class="progress-bar-">
+                    <li class="progress-bar__steps not-current;" style="" >
+                        <span class="" id="sale-type-1" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Private Sale</span>
+                    </li>
+                    <li class="progress-bar__steps current">
+                        <span class="" id="sale-type-2">Pre-Sale</span>
+                    </li>
+
+                    <li class="progress-bar__steps not-current">
+                        <span class="" id="sale-type-3">Public Sale</span>
+                    </li>
+                </ol>
+                <div class="dateRanges">
+
+                    <div class="dates">
+
+                        <span>10-10-2018</span> - <span>12-10-2018</span>
+                    </div>
+                    <div class="dates" >
+                        <span>12-10-2018</span> -  <span>15-10-2018</span>
+                    </div>
+                    <div class="dates" >
+                         <span>16-10-2018</span> -  <span>31-12-2018</span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--end of responsiveStepBar-->
+
+            <div class="statusBarBlock">
+
+                <div class="dashboardLabels">
+                    <div> <span >Raised : </span>  <span id="raised">9923</span> <span class="currency">EUR</span> <span id="eth_convert_raised"></span></div>
+                    <div> <span >Token Sold: </span>  <span id="tokensold">43433434</span> <span class="tokenName">TES</span> </div>
+                </div>
+
+                <div class="progresDialog">
+
+                    <div class="bar gradient gloss color2 stripe">
+                        <span>60%</span>
+                    </div>
+
+                </div>
+
+                <div class="dashboardLabels">
+                    <div> <span >Soft Cap: </span>  <span id="softCap">98333376</span> <span class="currency">EUR</span> <span id="eth_convert_soft"></span></div>
+                    <div> <span >Hard Cap: </span>  <span id="hardCap">44444</span> <span class="currency">EUR</span> <span id="eth_convert_hard"></span></div>
+                </div>
+
+            </div>
+            <!--End of statusBarBlock-->
+            <hr>
+            <div class="infoTable">
+
+                <div class="balPer">
+                    <span class="balance">My Balance : <span id="balance">2313</span> <span class="tokenName">TES</span> </span>
+                    <span class="balance">Token per 1 <span class="currency">EUR</span> <span class="tokenName">TES</span> </span>
+                </div>
+                <div class="balPer">
+                    <a href="#" class="submitButton form-control" name="withdrawal">Withdraw Token</a>
+                    <a href="#" class="submitButton form-control" name="purchase">Purchase Token</a>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+    </div>
+    <!--end of block-->
+
+
+
+
+</body>
+
+</html>

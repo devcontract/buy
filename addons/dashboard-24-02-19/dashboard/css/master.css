@@ -1,0 +1,210 @@
+
+* {
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  transition:0.3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#383737;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.container {
+  border:1px solid grey;
+  width: 100%;
+  max-width:345px !important;
+  min-width:345px;
+}
+
+.window {
+
+  height:100%;
+  margin: 0 auto;
+  padding: 0 20px 10px;
+  text-align: left;
+  background-color:#222;
+  color:white;
+  font-family:sans-serif;
+  border-radius:10px;
+}
+
+
+
+/*.dates{
+  display:flex;
+}*/
+
+@media only screen and (max-width:490px){
+  .loginButton{
+    margin: 0 10px 10px;
+  }
+}
+
+
+.inputs{
+  margin: 10px 0;
+}
+
+
+label{
+  float:left;
+  padding:0 2px;
+}
+
+.all{
+  margin-top:10%;
+  border:1px solid grey;
+  background-color:#222;
+  border-radius:10px
+}
+.all:last-child{
+  margin-top:1%;
+}
+.ciferblate{
+  display:flex;
+  justify-content:space-between;
+
+}
+
+.timerSquare
+{
+  border:1px solid grey;
+  border-radius:50px;
+  background-color:#383737;
+  width:50px;
+  height:50px;
+  text-align:-webkit-center;
+  padding-top:5%;
+
+}
+
+.timerLabels{
+  display:flex;
+  justify-content:space-between;
+  padding-bottom:10px;
+}
+.timerLabelWindow{
+  width:50px;
+  text-align:center;
+}
+.tim{
+  margin-top:5%;
+}
+.dateRanges{
+  display:flex;
+  justify-content:space-between;
+  font-size:8px
+}
+
+.dates:first-child{
+  margin-left:5px;
+}
+
+.dates:last-child{
+  margin-right:5px;
+}
+.dashboardLabels{
+  margin: 0 2px;
+  display: flex;
+  justify-content: space-between;
+  font-size:10px;
+
+}
+
+.progress{
+  width:100%;
+  margin:5px 0;
+
+}
+.progresDialog {
+  display: inline-block;
+  margin-top:4px;
+
+
+  width: 70%;
+}
+
+.progressCont {
+  display: flex;
+  margin: 10px 0;
+  border: 1px solid red;
+  width: 100%
+}
+
+.bar {
+  text-align:center;
+  font-size:9px;
+  margin: 5px 0;
+  border: 1px solid #333;
+
+  background: #d4d4d4;
+  overflow: hidden;
+
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  box-shadow: 1px 0 10px #777;
+  -moz-box-shadow: 1px 0 10px #777;
+  -webkit-box-shadow: 1px 0 10px #777;
+}
+.bar > span {
+  display: block;
+  height: 12px;
+  width: 100%;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.gradient > span {
+  box-shadow:
+          0 5px 5px rgba(255,255,255,0.6) inset,
+          0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+  -moz-box-shadow:
+          0 5px 5px rgba(255,255,255,0.6) inset,
+          0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+  -webkit-box-shadow:
+          0 5px 4px rgba(255,255,255,0.6) inset,
+          0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+  filter: progid:DXImageTransform.Microsoft.gradient(
+          startColorstr='#33ffffff',
+          endColorstr='#33000000',
+          GradientType=0 );
+}
+
+
+
+
+
+.color2 > span {
+  background-image: linear-gradient(to right, #45caf4 0%, #504df4 100%);
+
+}
+.balPer{
+  display:flex;
+  font-size:10px;
+  justify-content:space-between
+}
+
+.submitButton{
+  width:auto;
+  margin-top:15px;
+}
+.balPer a{
+  text-decoration:none;
+  color:white;
+  background-color:#383737
+}
+
+.balPer a:hover{
+  background-image: linear-gradient(to top, #383737 , #222222);
+}
