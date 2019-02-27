@@ -2,15 +2,99 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8737ccf4-66d6-4cdb-9442-7ba4bf8ee4cc" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/master.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/terms.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/cap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/terms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/terms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/login_registration/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registration/terms.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/refundversion3/refund/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refundversion3/refund/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/css/master.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/cap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/master.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/css/master.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/js/cap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/js/master.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/master.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/terms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/login_register_toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/terms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/terms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_template/js/cap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund-template/js/master.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund/js/cap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund/js/master.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/js/cap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/js/master.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/ICO-24-02-19/dashboard_template/js/master.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/captchaPHP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/addons/captcha/captchaPHP/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/captcha_js/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/captcha/captcha_js/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/captcha_js/js/cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/captcha/captcha_js/js/cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_registration/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/crypto_registration/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/crypto_registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_registration_template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/crypto_registration_template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_registration_template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/crypto_registration_template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_bigregistr_button/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_bigregistr_button/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_bigregistr_button/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_bigregistr_button/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_template_bigregistr_button/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_template_bigregistr_button/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_login_template_bigregistr_button/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_login_template_bigregistr_button/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_v2_gloss_bar/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/window/crypto_window_v2_gloss_bar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard_template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard_template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.1/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.1/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.2/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.2/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.3/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.3/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.3/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.3/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.3/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19_template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19_template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19_template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19_template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfV0.4_06_02_19_template/js/banner.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfV0.4_06_02_19_template/js/banner.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.5_07_02_19_tamplate/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.5_07_02_19_tamplate/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.5_07_02_19_tamplate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.5_07_02_19_tamplate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.6_07_02_19_tamplate/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.6_07_02_19_tamplate/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.6_07_02_19_tamplate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.6_07_02_19_tamplate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.7_08_02_19_tamplate/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.7_08_02_19_tamplate/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.7_08_02_19_tamplate/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.7_08_02_19_tamplate/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.7_08_02_19_tamplate/js/googleChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.7_08_02_19_tamplate/js/googleChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hcfv0.7_08_02_19_tamplate/js/textScroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/justTamplates/hcfv0.7_08_02_19_tamplate/js/textScroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration/js/cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration/js/cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration/terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/terms.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/css/terms.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/js/cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/terms.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/js/terms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/terms.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/terms.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/login_registration_template/js/cap.js" beforeDir="false" afterPath="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/cap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion1/refund-template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion1/refund-template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion1/refund-template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion1/refund-template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion1/refund/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion1/refund/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion1/refund/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion1/refund/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion2/refund-template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion2/refund-template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion2/refund-template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion2/refund-template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion2/refund/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion2/refund/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion2/refund/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion2/refund/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion3/refund-template/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund-template/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion3/refund-template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund-template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion3/refund/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/refundversion3/refund/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/refund/refundversion3/refund/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/registration/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/registration/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/registration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/addons/Registrations/registration/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,21 +105,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="purchasehis.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ico/purchase_history/purchasehis.html">
+      <file leaf-file-name="master.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/master.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+            <state relative-caret-position="727">
+              <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="purchasetok.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ico/purchase_token/purchasetok.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="login_register_toggle.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/login_register_toggle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -46,6 +150,19 @@
       <find>margin-top</find>
       <find>from</find>
       <find>right</find>
+      <find>submit</find>
+      <find>enabl</find>
+      <find>modal</find>
+      <find>cap</find>
+      <find>captc</find>
+      <find>check</find>
+      <find>moda</find>
+      <find>clo</find>
+      <find>times</find>
+      <find>btn</find>
+      <find>wind</find>
+      <find>timer</find>
+      <find>cont</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,6 +209,29 @@
         <option value="$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/terms.css" />
         <option value="$PROJECT_DIR$/addons/dashboard/refund/index.html" />
         <option value="$PROJECT_DIR$/addons/dashboard/refund/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/index.html" />
+        <option value="$PROJECT_DIR$/addons/hcfv0.7_08_02_19_tamplate/index.html" />
+        <option value="$PROJECT_DIR$/addons/crypto_window/index.html" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/js/cap.js" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/index.html" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/js/terms.js" />
+        <option value="$PROJECT_DIR$/addons/login_registration_TERMS-25.02.19_correctCaptcha/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/login_registration_TERMS-25.02.19_correctCaptcha/css/terms.css" />
+        <option value="$PROJECT_DIR$/addons/login_registration_TERMS-25.02.19_correctCaptcha/index.html" />
+        <option value="$PROJECT_DIR$/addons/login_registration_TERMS-25.02.19_correctCaptcha/js/terms.js" />
+        <option value="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/cap.js" />
+        <option value="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/master.js" />
+        <option value="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/index.html" />
+        <option value="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard_template/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/index.html" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/master.css" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/index.html" />
+        <option value="$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/login_register_toggle.js" />
       </list>
     </option>
   </component>
@@ -107,15 +247,16 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="24" />
-    <option name="width" value="1050" />
-    <option name="height" value="852" />
+    <option name="y" value="416" />
+    <option name="width" value="1425" />
+    <option name="height" value="450" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -128,30 +269,30 @@
               <item name="Buy" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Buy" type="462c0819:PsiDirectoryNode" />
-              <item name="ico" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Buy" type="462c0819:PsiDirectoryNode" />
-              <item name="referral" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addons/captcha" />
+      <recent name="$PROJECT_DIR$/addons/dashboard-24-02-19" />
       <recent name="$PROJECT_DIR$/addons" />
+      <recent name="$PROJECT_DIR$/addons/login_registartion" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addons/login_registartion" />
+      <recent name="$PROJECT_DIR$/addons/refund" />
+      <recent name="$PROJECT_DIR$/addons/window" />
+      <recent name="$PROJECT_DIR$/addons/Registrations" />
+      <recent name="$PROJECT_DIR$/addons/captcha" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -177,17 +318,21 @@
       <option name="presentableId" value="Default" />
       <updated>1550954915766</updated>
       <workItem from="1550954916985" duration="11689000" />
-      <workItem from="1551015925806" duration="9149000" />
+      <workItem from="1551015925806" duration="13173000" />
+      <workItem from="1551049384689" duration="377000" />
+      <workItem from="1551123377747" duration="7541000" />
+      <workItem from="1551213740403" duration="8297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20838000" />
+    <option name="totallyTimeSpent" value="41077000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1050" height="852" extended-state="0" />
+    <frame x="0" y="416" width="1425" height="450" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.5295238" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.30347222" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.23264782" />
@@ -207,6 +352,27 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30347222" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.23264782" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -215,29 +381,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dashboard/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/refundversion3/refund/index.html">
+    <entry file="file://$PROJECT_DIR$/addons/refund/refundversion3/refund/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/js/cap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/js/master.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/js/cap.js" />
+    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/js/master.js" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/sectional.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -252,44 +404,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/index.html">
+    <entry file="file://$PROJECT_DIR$/addons/window/crypto_window_v2_gloss_bar/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="27" column="6" lean-forward="true" selection-start-line="27" selection-start-column="6" selection-end-line="41" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/crypto_window_v2_gloss_bar/css/master.css">
+    <entry file="file://$PROJECT_DIR$/addons/window/crypto_window_v2_gloss_bar/css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="108" column="1" lean-forward="true" selection-start-line="47" selection-end-line="108" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/css/responsive.css" />
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/js/cap.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/cap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration/terms.html">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration/terms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration/index.html">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
@@ -306,7 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/master.css">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/css/master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="769">
           <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
@@ -336,59 +476,199 @@
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/terms.html">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/terms.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="928">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/css/terms.css">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/css/terms.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/js/terms.js">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/js/terms.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/login_registration_TERMS-24.02.19/index.html">
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-24.02.19/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="470">
           <caret line="154" column="10" lean-forward="true" selection-start-line="154" selection-start-column="10" selection-end-line="154" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/css/master.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="209" column="1" selection-start-line="209" selection-start-column="1" selection-end-line="209" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="134" selection-start-line="134" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ico/purchase_token/purchasetok.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/css/master.css" />
+    <entry file="file://$PROJECT_DIR$/addons/dashboard/refund/index.html" />
     <entry file="file://$PROJECT_DIR$/ico/purchase_history/purchasehis.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/js/cap.js" />
+    <entry file="file://$PROJECT_DIR$/ico/purchase_token/purchasetok.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/index.html" />
+    <entry file="file://$PROJECT_DIR$/addons/ICO-24-02-19/dashboard/css/master.css" />
+    <entry file="file://$PROJECT_DIR$/addons/window/crypto_window/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/justTamplates/hcfv0.7_08_02_19_tamplate/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/js/cap.js" />
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/css/master.css" />
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/index.html" />
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS_correctCatpcha-25.02.19/js/terms.js" />
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/cap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="347" column="16" selection-start-line="347" selection-start-column="16" selection-end-line="347" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/terms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/terms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/js/cap.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboardv2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="41" column="44" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/cap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard_template/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard_template/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="217" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="41" column="56" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/dashboard-24-02-19/dashboard/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/captcha/captcha_js_scrollin/js/master.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/css/master.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/login_registartion/login_registration_TERMS-25.02.19_correctCaptcha/js/login_register_toggle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>

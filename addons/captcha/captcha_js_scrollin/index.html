@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script type="text/javascript" src="js/cap.js">  </script>
+    <script type="text/javascript" src="js/master.js">  </script>
+
+  </head>
+  <body>
+
+
+  <!--$public_key = "6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip";
+    $private_key = "6LfFBZIUAAAAABqVWDsWEDFz5QcMf5KP7_6Yz7Um";-->
+
+<div class="container">
+  <div class="centralDiv">
+    <form class="" method="post" onsubmit="return submitUserForm();">
+      <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfFBZIUAAAAAK6tBMFZL51aWitAL1pYFInu0lip" data-callback="verifyCaptcha"></div>
+      <div id="g-recaptcha-error"></div>
+      <input type="submit" name="submit" value="submit">
+    </form>
+  </div>
+
+  <div class="control">
+    <p id="X">Xoutput</p>
+    <label for="x_coordinates">x_coordinates</label>
+    <input id="x_coordinates" type="range" min="0" max="80" value="0" >
+    <label for="y_coordinates">y_coordinates</label>
+    <input id="y_coordinates" type="range" min="0" max="80" value="0" >
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+
+    var xcor = document.getElementById('x_coordinates');
+    var ycor = document.getElementById('y_coordinates');
+    var x_coordinates_label = document.getElementsByTagName('label');
+    var y_coordinates_label = document.getElementsByTagName('label');
+
+
+
+    document.getElementById('x_coordinates').addEventListener('input', function() {
+        document.getElementById('recaptcha').style.right = xcor.value + "%";
+    });
+    document.getElementById('y_coordinates').addEventListener('input', function() {
+        document.getElementById('recaptcha').style.top = ycor.value + "%";
+    });
+</script>
+
+  </body>
+</html>

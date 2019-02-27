@@ -96,8 +96,11 @@ label{
   padding-bottom:10px;
 }
 .timerLabelWindow{
-  width:50px;
+  width:56px;
   text-align:center;
+}
+.timerLabelWindow:last-child{
+  width:;
 }
 .tim{
   margin-top:5%;

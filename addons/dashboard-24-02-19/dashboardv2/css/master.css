@@ -20,7 +20,7 @@ button:focus {
 .container {
   border:1px solid grey;
   width: 100%;
-  max-width:345px !important;
+  max-width:545px !important;
   min-width:345px;
 }
 
@@ -78,12 +78,24 @@ label{
 {
   border:1px solid grey;
   border-radius:50px;
-  background-color:#383737;
+  background-image: linear-gradient(to bottom, #45caf4 0%, #504df4 100%);;
   width:50px;
   height:50px;
   text-align:-webkit-center;
   padding-top:5%;
+  margin: 0 5px;
 
+
+}
+
+@media only screen and (min-width:599px){
+  .timerSquare{
+    width:60px;
+    height:60px;
+    font-size:19px;
+    border:1px solid white;
+
+  }
 }
 
 .timerLabels{
@@ -91,12 +103,10 @@ label{
   justify-content:space-between;
   padding-bottom:10px;
 }
-
 .timerLabelWindow{
-  width:56px;
+  width:50px;
   text-align:center;
 }
-
 .tim{
   margin-top:5%;
 }

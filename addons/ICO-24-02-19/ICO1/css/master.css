@@ -68,56 +68,38 @@ label{
 .all:last-child{
   margin-top:1%;
 }
-.ciferblate{
+.investmentType{
   display:flex;
   justify-content:space-between;
 
 }
 
-.timerSquare
+.square
 {
-  border:1px solid grey;
+
   border-radius:50px;
   background-color:#383737;
   width:50px;
   height:50px;
   text-align:-webkit-center;
-  padding-top:5%;
+
+
+}
+.square:hover{
+  border:1px solid grey;
+}
+img:hover,
+img:active{
+  width:55px;
 
 }
 
-.timerLabels{
-  display:flex;
-  justify-content:space-between;
-  padding-bottom:10px;
-}
-
-.timerLabelWindow{
-  width:56px;
-  text-align:center;
-}
-
-.tim{
-  margin-top:5%;
-}
-.dateRanges{
-  display:flex;
-  justify-content:space-between;
-  font-size:8px
-}
-
-.dates:first-child{
-  margin-left:5px;
-}
-
-.dates:last-child{
-  margin-right:5px;
-}
-.dashboardLabels{
-  margin: 0 2px;
-  display: flex;
-  justify-content: space-between;
-  font-size:10px;
+img{
+  width: 50px; /* or any custom size */
+  height: 50px;
+  object-fit: contain;
+  filter:invert(100%);
+  padding-right:0px;
 
 }
 
