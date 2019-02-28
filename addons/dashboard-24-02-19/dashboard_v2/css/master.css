@@ -20,7 +20,7 @@ button:focus {
 .container {
   border:1px solid grey;
   width: 100%;
-  max-width:545px !important;
+  max-width:345px !important;
   min-width:345px;
 }
 
@@ -74,47 +74,72 @@ label{
 
 }
 
+.td{
+	box-shadow:
+		0 5px 5px rgba(255,255,255,0.6) inset,
+		0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+	-moz-box-shadow:
+		0 5px 5px rgba(255,255,255,0.6) inset,
+		0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+	-webkit-box-shadow:
+		0 5px 5px rgba(255,255,255,0.6) inset,
+		0 -5px 7px rgba(0, 0, 0, 0.4) inset;
+	filter: progid:DXImageTransform.Microsoft.gradient(
+		startColorstr='#33ffffff',
+		endColorstr='#33000000',
+		GradientType=0 );
+}
+
 .timerSquare
 {
-  border:1px solid grey;
+
   border-radius:50px;
-  background-image: linear-gradient(to bottom, #45caf4 0%, #504df4 100%);;
+  background-color:#383737;
   width:50px;
   height:50px;
   text-align:-webkit-center;
   padding-top:5%;
-  margin: 0 5px;
 
 
-}
 
-@media only screen and (min-width:599px){
-  .timerSquare{
-    width:60px;
-    height:60px;
-    font-size:19px;
-    border:1px solid white;
-
-  }
 }
 
 .timerLabels{
   display:flex;
   justify-content:space-between;
-  padding-bottom:10px;
+
 }
+
 .timerLabelWindow{
-  width:50px;
+  width:56px;
   text-align:center;
 }
+
+.timerLabelWindow:first-child{
+	padding: 0 7px 0 0;
+
+}
+
 .tim{
   margin-top:5%;
 }
 .dateRanges{
   display:flex;
   justify-content:space-between;
-  font-size:8px
+  font-size:8px;
+   font-family: "Courier New", Courier, monospace;
+   letter-spacing: -1.1px;
+   color: #000000;
+  font-weight: normal;
+  text-decoration: none;
+  font-variant: small-caps;
+  text-transform: none;
+  color: white;
+  margin-right:9px;
+  margin-left:3px;
+
 }
+
 
 .dates:first-child{
   margin-left:5px;
@@ -139,17 +164,10 @@ label{
 .progresDialog {
   display: inline-block;
   margin-top:4px;
-
-
-  width: 70%;
+  width: 100%;
 }
 
-.progressCont {
-  display: flex;
-  margin: 10px 0;
-  border: 1px solid red;
-  width: 100%
-}
+
 
 .bar {
   text-align:center;
@@ -170,7 +188,7 @@ label{
 .bar > span {
   display: block;
   height: 12px;
-  width: 100%;
+  width: 60%;
 
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -201,15 +219,24 @@ label{
   background-image: linear-gradient(to right, #45caf4 0%, #504df4 100%);
 
 }
+
+.infoTable{
+	padding: 0 3px;
+}
+
 .balPer{
   display:flex;
   font-size:10px;
   justify-content:space-between
+
 }
 
 .submitButton{
   width:auto;
   margin-top:15px;
+  height:22px;
+  padding:0 15px;
+
 }
 .balPer a{
   text-decoration:none;
@@ -219,4 +246,18 @@ label{
 
 .balPer a:hover{
   background-image: linear-gradient(to top, #383737 , #222222);
+}
+
+.textStyle{
+  font-family: "Courier New", Courier, monospace;
+
+letter-spacing: 0px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+
+font-variant: small-caps;
+text-transform: none;
+color: white;
 }

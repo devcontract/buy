@@ -96,8 +96,11 @@ label{
   padding-bottom:10px;
 }
 .timerLabelWindow{
-  width:50px;
+  width:56px;
   text-align:center;
+}
+.timerLabelWindow:last-child{
+  width:;
 }
 .tim{
   margin-top:5%;
@@ -133,15 +136,10 @@ label{
   margin-top:4px;
 
 
-  width: 70%;
+  width: 100%;
 }
 
-.progressCont {
-  display: flex;
-  margin: 10px 0;
-  border: 1px solid red;
-  width: 100%
-}
+
 
 .bar {
   text-align:center;
@@ -162,7 +160,7 @@ label{
 .bar > span {
   display: block;
   height: 12px;
-  width: 100%;
+  width: 60%;
 
   border-radius: 5px;
   -moz-border-radius: 5px;

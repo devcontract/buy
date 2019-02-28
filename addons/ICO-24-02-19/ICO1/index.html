@@ -30,8 +30,8 @@
             </div>
 
             <div class="investmentType"> <!--cifarblate css-->
-                <button id="invType1" class="square shadowEffect" ><img src="img/ether-logo.png" alt=""></button> <!--timesquare css-->
 
+                <button id="invType1" class="square shadowEffect" ><img src="img/ether-logo.png" alt=""></button> <!--timesquare css-->
                 <button id="invType2" class="square shadowEffect"><img src="img/bitcoin-logo.png" alt=""></button>
 
                 <button id="invType3" class="square shadowEffect"><img src="img/eur-logo.png" alt=""></button>
@@ -59,52 +59,54 @@
 
             <div class="purDet">
 
-                <p>Tokens Per 1 <span class="currancy">EUR</span> = </p> <span id="exchangeRate">0.11</span> <span class="tokenName">KKK</span>
-
+                <p>Tokens Per 1 <span class="currancy">EUR</span> =  <span id="exchangeRate">0.11</span> <span class="tokenName">KKK</span> </p>
+                <p>Sale Discount: <span class="saleDiscount"></span> </p>
             </div>
-
-            <div id="stageBar" class=""> <!--stageBar-->
-
+            <div class="stepProgress">
+                <!--end of responsiveStepBar-->
                 <ol style="" class="progress-bar-">
-                    <li class="progress-bar__steps not-current;" style="" >
-                        <span class="" id="sale-type-1" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Private Sale</span>
+                    <li class="progress-bar__steps not-current;" style="line-height:5px">
+                        <span class=""  id="stage-1pct">40%</span>
                     </li>
-                    <li class="progress-bar__steps current">
-                        <span class="" id="sale-type-2">Pre-Sale</span>
+                    <li class="progress-bar__steps not-current" style="line-height:5px">
+                        <span class=""  id="stage-2pct">35%</span>
                     </li>
-
-                    <li class="progress-bar__steps not-current">
-                        <span class="" id="sale-type-3">Public Sale</span>
+                    <li class="progress-bar__steps current" style="line-height:5px">
+                        <span class=""  id="stage-3pct">20%</span>
+                    </li>
+                    <li class="progress-bar__steps not-current" style="width:37%;line-height:5px">
+                        <span class=""  id="stage-4pct">0%</span>
                     </li>
                 </ol>
-
             </div>
+
+
+            <!--End of statusBarBlock-->
             <hr>
-            <!--end of responsiveStepBar-->
 
-            <div class="statusBarBlock">
+            <div class="amountDiscount">
 
-                <div class="dashboardLabels">
-                    <div> <span >Raised : </span>  <span id="raised">9923</span> <span class="currency">EUR</span> <span id="eth_convert_raised"></span></div>
-                    <div> <span >Token Sold: </span>  <span id="tokensold">43433434</span> <span class="tokenName">TES</span> </div>
-                </div>
+                <p>Amount Discount:</p>
 
                 <div class="progresDialog">
-
+                    <div class="amountBarLabels">Bonus</div>
                     <div class="bar gradient gloss color2 stripe">
                         <span>60%</span>
                     </div>
-
+                    <div class="amountBarLabels"><b>EUR</b></div>
                 </div>
 
-
             </div>
-            <!--End of statusBarBlock-->
-            <hr>
+
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-addon "></span>
+            </div>
+
             <div class="infoTable">
 
                 <div class="balPer">
-                    <a href="#" class="submitButton form-control" name="withdrawal">Withdraw Token</a>
+
                     <a href="#" class="submitButton form-control" name="purchase">Purchase Token</a>
                 </div>
 
