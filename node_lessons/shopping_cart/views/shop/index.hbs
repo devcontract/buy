@@ -1,0 +1,22 @@
+{{# each products}}
+    <div class="row">
+    {{# each this}}
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img class="" src="{{this.imagePath}}" alt="...">
+                <div class="caption">
+                    <h6>{{this.title}}</h6>
+                    <p class="descripton">{{this.description}}</p>
+
+                    <div class="clearfix">
+                        <div class="price pull-right">${{this.price}}</div>
+                        <a href="#" class="btn btn-success pull-left" role="button">Add to shopping Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+    </div>
+{{/each}}

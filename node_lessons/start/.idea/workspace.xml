@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86794898-7cbc-4541-a967-f32e2cffd085" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addons/dashboard-24-02-19/dashboard_v2/css/master.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addons/dashboard-24-02-19/dashboard_v2/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addons/dashboard-24-02-19/dashboard_v2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addons/dashboard-24-02-19/dashboard_v2/js/cap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addons/dashboard-24-02-19/dashboard_v2/js/master.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/coolText.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/coolText.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/indexbkp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/indexbkp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/discount/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/discount/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/Referral/Referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/Referral/Referral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/Referral/gwd_workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/Referral/gwd_workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/coolText.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/coolText.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/investment/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/investment/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/php/admin_log.bak.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/php/admin_log.bak.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/php/admin_log.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/php/admin_log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/php/user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/php/user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/coolText.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/coolText.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/referral/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/referral/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/refund/js/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/refund/js/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/coolText.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/coolText.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../admin/sale/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/admin/sale/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/apache/ssl_config/apache_ssl_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/apache/ssl_config/apache_ssl_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/atomsetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/atomsetup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/bifrost on ubuntu.rtf" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/bifrost on ubuntu.rtf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/bifrost-compilation/bifrost_compilation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/bifrost-compilation/bifrost_compilation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/bifrost_sdk/bifrost.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/bifrost_sdk/bifrost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/bifrost_sdk/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/bifrost_sdk/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/bifrost_sdk/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/bifrost_sdk/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/git_hub_clone_all/git_clone_with_terminal" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/git_hub_clone_all/git_clone_with_terminal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/build/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/build/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/src/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/src/js/javascript2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/src/js/javascript2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp/src/js/javascritp1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp/src/js/javascritp1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/gulp/gulp_config_test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/gulp/gulp_config_test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/history.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/history.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/installpkg" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/installpkg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/Private Network/Init_genesis_json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/Private Network/Init_genesis_json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/Private Network/createAccount" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/Private Network/createAccount" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/Private Network/instructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/Private Network/instructions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/Private Network/start_private_Network" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/Private Network/start_private_Network" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/Rinkeby/start_rinkeby_network" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/Rinkeby/start_rinkeby_network" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/l_n_s/desktop_folder_structure" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/l_n_s/desktop_folder_structure" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/node_js/building with gulp/build_gulp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/node_js/building with gulp/build_gulp.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/node_js/node_js_set_up.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/node_js/node_js_set_up.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/node_js/node_via_babel/instructions.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/node_js/node_via_babel/instructions.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/node_js/test_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/node_js/test_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/nvm/nvm_installation.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/nvm/nvm_installation.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/pgAdmin4/ssh_config.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/pgAdmin4/ssh_config.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/pgAdmin4/ssl/pgadmin_ssl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/pgAdmin4/ssl/pgadmin_ssl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/psqlCommands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/psqlCommands.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/psqlConfig on UBUNTU.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/psqlConfig on UBUNTU.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/script.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../conifgurations/ssh_keygen_and_setup" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/conifgurations/ssh_keygen_and_setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/vendor.bundle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/css/vendor.bundle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/bitcoin-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/bitcoin-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/ether-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/ether-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/ethereum.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/ethereum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/eur-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/eur-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/present.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/present.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/usd-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/usd-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/img/visa-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/img/visa-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/checker.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/checker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/fiatPrice_module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/fiatPrice_module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/navigationBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/navigationBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/progresbar_module.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/progresbar_module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dashboard/js/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/dashboard/js/timer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/js/js/getting_log_ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/js/js/getting_log_ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/js/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/js/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/js/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/js/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_history/purchasehis.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_history/purchasehis.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/investment.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/investment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/progressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/progressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/purchaseBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/purchaseBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/responsiveProgressBar0.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/responsiveProgressBar0.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/bitcoin-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/bitcoin-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/ether-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/ether-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/ethereum.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/ethereum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/eur-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/eur-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/usd-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/usd-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/img/visa-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/img/visa-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/js/check_input.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/js/check_input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/js/mininput.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/js/mininput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/js/purch.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/js/purch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ico/purchase_token/purchasetok.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/ico/purchase_token/purchasetok.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/coolText.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/coolText.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/img/2referral.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/img/2referral.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/img/referral.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/img/referral.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../referral/referral.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/referral/referral.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/js/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/js/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../refund/refund.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/refund/refund.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Init_genesis_json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Init_genesis_json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Instructions" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Instructions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Mining/Mining_start" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Mining/Mining_start" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Mining/Mining_stop" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Mining/Mining_stop" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Mining/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Mining/start.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Mining/stop.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Mining/stop.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/Note_test" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/Note_test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/create_account" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/create_account" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/genesis.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/genesis.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/private_Run_Wallet_on_this_ipc" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/private_Run_Wallet_on_this_ipc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/private_Run_Wallet_on_this_ipc_http" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/private_Run_Wallet_on_this_ipc_http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/remove_db" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/remove_db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/start_local_geth" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/start_local_geth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../scripts/stepBystep.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/scripts/stepBystep.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/general/settingsgen.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/general/settingsgen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/log_history/login_his.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/log_history/login_his.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/reset_pass/reset_pass.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/reset_pass/reset_pass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/security/security.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/security/security.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/js/settings.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/js/settings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/support/support.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/settings/support/support.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/buttons.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/buttons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/navBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/navBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/responsiveProgressBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/responsiveProgressBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/statusBarBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/statusBarBlock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/css/timer.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/css/timer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/img/wallet.png" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/img/wallet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/info.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/js/index_automat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/js/index_automat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/js/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/js/log.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/js/log_automat.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/js/log_automat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/withdraw.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/withdraw.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../withdraw/withdraw1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Project/withdraw/withdraw1.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="www" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/www">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/views/index.ejs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="415" />
+    <option name="width" value="1425" />
+    <option name="height" value="450" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="node_lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node_lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node_lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node_lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.10.1" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86794898-7cbc-4541-a967-f32e2cffd085" name="Default" comment="" />
+      <created>1551549158669</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1551549158669</updated>
+      <workItem from="1551549159840" duration="42000" />
+      <workItem from="1551549216665" duration="2608000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2650000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="415" width="1425" height="450" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5003509" side_tool="true" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964914" weight="0.32978722" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24982457" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="59" lean-forward="true" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/error.ejs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

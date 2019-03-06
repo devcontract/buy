@@ -1,0 +1,31 @@
+.thumbnail{
+    width: 200px;
+    border:1px solid grey;
+    border-radius:10px;
+    padding:10px;
+    margin:20px;
+}
+.thumbnail img{
+
+    max-width: 50px;
+    max-height:50px;
+
+}
+
+.descripton{
+    color:grey;
+}
+.price{
+    font-weight: bold;
+    font-size: 13px;
+
+}
+div.price{
+    float:right;
+    padding:9px;
+
+
+}
+a.btn{
+    font-size:10px;
+}
