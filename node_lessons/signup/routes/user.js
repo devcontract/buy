@@ -12,14 +12,16 @@ router.get('/profile', isLoggedIn , function (req, res, next) {
 });
 
 
-router.use('/', notLoggedIn, function(req, res, next){
-   next();
-});
-
 router.get('/logout', isLoggedIn ,function (req, res, next) {
     req.logout();
     res.redirect('/');
 });
+
+router.use('/', notLoggedIn, function(req, res, next){
+   next();
+});
+
+
 
 
 router.get('/signup', function (req, res, next ) {
