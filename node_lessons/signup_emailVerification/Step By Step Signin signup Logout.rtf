@@ -1,0 +1,1977 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fswiss\fcharset0 Helvetica-Bold;
+\f3\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;\red37\green91\blue141;\red25\green28\blue31;\red65\green141\blue196;
+\red200\green51\blue63;\red191\green100\blue38;\red32\green32\blue32;\red254\green187\blue91;\red153\green168\blue186;
+\red88\green118\blue71;\red109\green109\blue109;\red133\green96\blue154;\red225\green179\blue88;\red172\green172\blue172;
+\red149\green184\blue79;\red86\green132\blue173;\red191\green100\blue38;\red32\green32\blue32;\red133\green96\blue154;
+\red153\green168\blue186;\red254\green187\blue91;\red88\green118\blue71;\red86\green132\blue173;}
+{\*\expandedcolortbl;;\cssrgb\c18431\c43529\c62353;\cssrgb\c12941\c14510\c16078;\cssrgb\c30980\c62353\c81176;
+\cssrgb\c83137\c28627\c31373;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c88235\c70196\c34510;\csgenericrgb\c67451\c67451\c67451;
+\csgenericrgb\c58431\c72157\c30980;\csgenericrgb\c33725\c51765\c67843;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c52157\c37647\c60392;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c33725\c51765\c67843;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\
+\
+1 install bootstrapp \
+\
+\
+# views/layout.hbs \
+\
+\
+add the following \
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf2 \expnd0\expndtw0\kerning0
+<link\cf3  \cf4 rel=\cf5 "stylesheet"\cf3  \cf4 href=\cf5 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"\cf3  \cf4 integrity=\cf5 "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"\cf3  \cf4 crossorigin=\cf5 "anonymous"\cf2 >\cf3 \
+\
+\
+\
+\{\{body\}\}\
+\
+\cf2 <script \cf4 src=\cf5 "https://code.jquery.com/jquery-3.3.1.slim.min.js"\cf3  \cf4 integrity=\cf5 "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"\cf3  \cf4 crossorigin=\cf5 "anonymous"\cf2 ></script>\cf3 \
+\cf2 <script \cf4 src=\cf5 "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"\cf3  \cf4 integrity=\cf5 "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"\cf3  \cf4 crossorigin=\cf5 "anonymous"\cf2 ></script>\cf3 \
+\cf2 <script \cf4 src=\cf5 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"\cf3  \cf4 integrity=\cf5 "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"\cf3  \cf4 crossorigin=\cf5 "anonymous"\cf2 ></script>\cf3 \
+\
+\
+2. create dir and file :\
+\
+ views/user/user.hbs\
+\
+\
+3. install express-handlebars in working directory:\
+\
+ npm install --save express-handlebars\
+\
+\
+ now require package :\
+\
+app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+4. configure layoust\
+\
+app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf11 \cb7 \kerning1\expnd0\expndtw0 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+also create folder views/layouts and move in there layout.hbs\
+\
+\
+5. go to layout.hbs and add \{\{> signup\}\}\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf13 \cb7 \kerning1\expnd0\expndtw0 <body>\
+  \cf9 \{\{
+\f2\b \cf6 signup
+\f0\b0 \cf9 \}\}\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+6. now install mongoDB\
+\
+www.mongodb.org\
+\
+Select correct version \
+\
+and download \
+\
+unzip and go to the mongoDB folder \
+\
+# cd path/to/mongoDB\
+\
+and run mognodb\
+\
+# ./mongod \
+\
+\
+\
+\
+7. now instal mongoose mongoDB client\
+\
+npm install -\'97save mongoose\
+\
+8. now import mongoose and configure connection \
+\
+app.js\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 monoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+\'97/\'97/\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\cf9 \
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+9. now create mongoose models\
+\
+create dir and file \
+\
+ /models/signup.js\
+\
+\
+signup.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 Schema = \cf12 mongoose\cf9 .\cf12 Schema\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 schema = 
+\f2\b \cf6 new 
+\f0\b0 \cf9 Schema(\{\
+    \cf12 email\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 require\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\cf6 ,\
+    \cf12 password\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 require\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\
+\})\cf6 ;\
+\
+\cf9 module.\cf12 export \cf9 = \cf12 mongoose\cf9 .\cf8 model\cf9 (\cf10 'Signup'\cf6 , \cf9 schema)\cf6 ;\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+10. amend views/user/signup.hbs\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf13 \cb7 \kerning1\expnd0\expndtw0 <div \cf14 class=\cf15 "row"\cf13 >\
+    <div \cf14 class=\cf15 "col-md-4 col-md-offser-4"\cf13 >\
+        <h1>\cf9 Signup\cf13 </h1>\
+        \cf9 validation error\
+        \cf13 <form \cf14 action=\cf15 "/user/signup" \cf14 method=\cf15 "post"\cf13 >\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "email"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "text" \cf14 id=\cf15 "email" \cf14 name=\cf15 "email" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "password"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "password" \cf14 id=\cf15 "password" \cf14 name=\cf15 "password" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <button \cf14 type=\cf15 "submit"\cf13 ></button>\
+            <input \cf14 type=\cf15 "hidden" \cf14 name=\cf15 "_csrf" \cf14 value=\cf15 "\cf9 \{\{ 
+\f2\b \cf6 csrfToken 
+\f0\b0 \cf9 \}\}\cf15 "\cf13 >\
+        </form>\
+    </div>\
+</div>\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+11. create user mongose model dir and file\
+\
+/models/user.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 Schema = \cf12 mongoose\cf9 .\cf12 Schema\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 userSchema = 
+\f2\b \cf6 new 
+\f0\b0 \cf9 Schema(\{\
+\
+    \cf12 email\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 required\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\cf6 ,\
+    \cf12 password\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 required\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\
+\})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = \cf12 mongoose\cf9 .\cf8 model\cf9 (\cf10 'User'\cf6 , \cf9 userSchema)\cf6 ;\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+12. now install and configure csrf Token session validation\
+\
+npm install \'97save csurf\
+\
+update index.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 csrf \cf9 = \cf8 require\cf9 (\cf10 'csurf'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 csrfProtection = \cf8 csrf\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 /* GET home page. */\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 router.get(\cf10 '/'\cf6 , 
+\f2\b function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  res.\cf8 render\cf9 (\cf10 'index'\cf6 , \cf9 \{ \cf12 title\cf9 : \cf10 'Express' \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.get(\cf10 '/user/signin'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 err\cf6 , \cf9 next ) \{\
+    res.\cf8 render\cf9 (\cf10 'user/signin'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\} )\cf6 ;\
+\cf9 \})\cf6 ;\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+13. install expresss-session\
+\
+npm install \'97save express-session\
+\
+now update app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  \cf11 // set locals, only providing error in development\
+  \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+  \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+  \cf11 // render the error page\
+  \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+  \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+14. now update index.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 csrf \cf9 = \cf8 require\cf9 (\cf10 'csurf'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 csrfProtection = \cf8 csrf\cf9 ()\cf6 ;\
+\cf9 router.use(csrfProtection)\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 /* GET home page. */\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 router.get(\cf10 '/'\cf6 , 
+\f2\b function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  res.\cf8 render\cf9 (\cf10 'index'\cf6 , \cf9 \{ \cf12 title\cf9 : \cf10 'Express' \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.get(\cf10 '/user/signup'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next ) \{\
+    res.\cf8 render\cf9 (\cf10 'user/signup'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\} )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.post(\cf10 '/user/signup'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    res.\cf8 redirect\cf9 (\cf10 '/'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+15. now install bcrypt  and connect-flash and passport\
+\
+npm install bcrypt-nodejs \'97-save\
+\
+npm install --save connect-flash\
+\
+npm install --save  passport\
+\
+now update app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 =  \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 flash \cf9 = \cf8 require\cf9 (\cf10 'connect-flash'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 flash\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .initialize())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .session())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  \cf11 // set locals, only providing error in development\
+  \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+  \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+  \cf11 // render the error page\
+  \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+  \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+16. install passport strategy \
+\
+npm install \'97-save passport-local \
+\
+\
+17. create dir and file\
+\
+config/passport.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf9 passport = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 User \cf9 = \cf8 require\cf9 (\cf10 '../models/user'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 LocalStrategy = \cf8 require\cf9 (\cf10 'passport-local'\cf9 ).\cf8 Strategy\cf6 ;\
+\
+\
+\cf9 passport.serializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (user\cf6 , \cf9 done) \{\
+    done(
+\f2\b \cf6 null
+\f0\b0 ,\cf9 user.\cf12 id\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 passport.deserializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (id\cf6 , \cf9 done) \{\
+   \cf12 User\cf9 .findById(id\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+       done(err\cf6 , \cf9 user)\cf6 ;\
+   \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+ \cf9 passport.use(\cf10 'local.signup'\cf6 , 
+\f2\b new 
+\f0\b0 \cf9 LocalStrategy(\{\
+     \cf12 usernameField\cf9 : \cf10 'email'\cf6 ,\
+     \cf12 passwordField\cf9 : \cf10 'password'\cf6 ,\
+     \cf12 passReToCallback\cf9 : 
+\f2\b \cf6 true\
+ 
+\f0\b0 \cf9 \}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 email\cf6 , \cf9 password\cf6 , \cf9 done) \{\
+     \cf12 User\cf9 .findOun(\{\cf10 'email'\cf9 : email\}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+         
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 if 
+\f0\b0 \cf9 (user) \{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 \{\cf12 message\cf9 : \cf10 'Email is already in use'\cf9 \})\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 var 
+\f0\b0 \cf9 newUser = 
+\f2\b \cf6 new 
+\f0\b0 \cf12 User\cf9 ()\cf6 ;\
+         \cf9 newUser.\cf12 email \cf9 = email\cf6 ;\
+         \cf9 newUser.\cf12 password \cf9 = password\cf6 ;\
+     \cf9 \})\cf6 ;\
+ \cf9 \}))\cf6 ;\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+ \
+\
+18. now update user.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 vvar 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 Schema = \cf12 mongoose\cf9 .\cf12 Schema\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 bcrypt = \cf8 require\cf9 (\cf10 'bcrypt-nodejs'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 userSchema = 
+\f2\b \cf6 new 
+\f0\b0 \cf9 Schema(\{\
+\
+    \cf12 email\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 required\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\cf6 ,\
+    \cf12 password\cf9 : \{\cf12 type\cf9 : String\cf6 , \cf12 required\cf9 : 
+\f2\b \cf6 true
+\f0\b0 \cf9 \}\
+\})\cf6 ;\
+\
+\cf9 userSchema.\cf12 methods\cf9 .\cf8 encryptPassword \cf9 = 
+\f2\b \cf6 function
+\f0\b0 \cf9 (password)\{\
+    
+\f2\b \cf6 return 
+\f0\b0 \cf9 bcrypt.\cf8 hashSync\cf9 (password\cf6 , \cf9 bcrypt.\cf8 genSaltSync\cf9 (\cf16 5\cf9 )\cf6 , 
+\f2\b null
+\f0\b0 \cf9 )\cf6 ;\
+\cf9 \}\cf6 ;\
+\
+\
+\cf9 userSchema.\cf12 methods\cf9 .\cf8 validPassword \cf9 = 
+\f2\b \cf6 function
+\f0\b0 \cf9 (password)\{\
+    
+\f2\b \cf6 return 
+\f0\b0 \cf9 bcrypt.\cf8 compareSync\cf9 (password\cf6 , 
+\f2\b this
+\f0\b0 \cf9 .\cf12 password\cf9 )\cf6 ;\
+\cf9 \}\
+module.\cf12 exports \cf9 = \cf12 mongoose\cf9 .\cf8 model\cf9 (\cf10 'User'\cf6 , \cf9 userSchema)\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+19. and update passport.js\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf9 passport = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 User \cf9 = \cf8 require\cf9 (\cf10 '../models/user'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 LocalStrategy = \cf8 require\cf9 (\cf10 'passport-local'\cf9 ).\cf8 Strategy\cf6 ;\
+\
+\
+\cf9 passport.serializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (user\cf6 , \cf9 done) \{\
+    done(
+\f2\b \cf6 null
+\f0\b0 ,\cf9 user.\cf12 id\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 passport.deserializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (id\cf6 , \cf9 done) \{\
+   \cf12 User\cf9 .findById(id\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+       done(err\cf6 , \cf9 user)\cf6 ;\
+   \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+ \cf9 passport.use(\cf10 'local.signup'\cf6 , 
+\f2\b new 
+\f0\b0 \cf9 LocalStrategy(\{\
+     \cf12 usernameField\cf9 : \cf10 'email'\cf6 ,\
+     \cf12 passwordField\cf9 : \cf10 'password'\cf6 ,\
+     \cf12 passReqToCallback\cf9 : 
+\f2\b \cf6 true\
+ 
+\f0\b0 \cf9 \}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 email\cf6 , \cf9 password\cf6 , \cf9 done) \{\
+     \cf12 User\cf9 .findOne(\{\cf10 'email'\cf9 : email\}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+         
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 if 
+\f0\b0 \cf9 (user) \{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 \{\cf12 message\cf9 : \cf10 'Email is already in use'\cf9 \})\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 var 
+\f0\b0 \cf9 newUser = 
+\f2\b \cf6 new 
+\f0\b0 \cf12 User\cf9 ()\cf6 ;\
+         \cf9 newUser.\cf12 email \cf9 = email\cf6 ;\
+         \cf9 newUser.\cf12 password \cf9 = newUser.encryptPassword(password)\cf6 ;\
+         \cf9 newUser.save(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (err\cf6 , \cf9 result) \{\
+             
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+                 
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+             \cf9 \}\
+\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , \cf9 newUser)\cf6 ;\
+\
+         \cf9 \})\cf6 ;\
+     \cf9 \})\cf6 ;\
+ \cf9 \}))\cf6 ;\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+20. update index.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 csrf \cf9 = \cf8 require\cf9 (\cf10 'csurf'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 csrfProtection = \cf8 csrf\cf9 ()\cf6 ;\
+\cf9 router.use(csrfProtection)\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 /* GET home page. */\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 router.get(\cf10 '/'\cf6 , 
+\f2\b function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  res.\cf8 render\cf9 (\cf10 'index'\cf6 , \cf9 \{ \cf12 title\cf9 : \cf10 'Express' \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.get(\cf10 '/user/signup'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next ) \{\
+    res.\cf8 render\cf9 (\cf10 'user/signup'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\} )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.post(\cf10 '/user/signup'\cf6 , \cf12 passport\cf9 .authenticate(\cf10 'local.signup'\cf6 , \cf9 \{\
+    \cf12 successRedirect\cf9 : \cf10 '/profile'\cf6 ,\
+    \cf12 failureRediratect\cf9 : \cf10 '/user/profile'\cf6 ,\
+    \cf12 failureFlash\cf9 : 
+\f2\b \cf6 true\
+
+\f0\b0 \cf9 \}))\cf6 ;\
+\
+\cf9 router.get(\cf10 '/profile'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    res.\cf8 render\cf9 (\cf10 'user/profile'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+update app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 =  \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 flash \cf9 = \cf8 require\cf9 (\cf10 'connect-flash'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 require\cf9 (\cf10 './config/passport'\cf9 )\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 flash\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .initialize())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .session())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  \cf11 // set locals, only providing error in development\
+  \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+  \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+  \cf11 // render the error page\
+  \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+  \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+21. update index.js\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf9 \cb7 \kerning1\expnd0\expndtw0 \
+
+\f2\b \cf6 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 csrf \cf9 = \cf8 require\cf9 (\cf10 'csurf'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 csrfProtection = \cf8 csrf\cf9 ()\cf6 ;\
+\cf9 router.use(csrfProtection)\cf6 ;\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf11 /* GET home page. */\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf9 router.get(\cf10 '/'\cf6 , 
+\f2\b function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  res.\cf8 render\cf9 (\cf10 'index'\cf6 , \cf9 \{ \cf12 title\cf9 : \cf10 'Express' \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.get(\cf10 '/user/signup'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next ) \{\
+    
+\f2\b \cf6 var 
+\f0\b0 \cf9 messages = req.\cf12 flash\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+    \cf9 res.\cf8 render\cf9 (\cf10 'user/signup'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\cf6 , \cf12 messages\cf9 : messages\cf6 , \cf12 hasErrors\cf9 : messages.\cf12 length \cf9 > \cf16 0\cf9 \} )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.post(\cf10 '/user/signup'\cf6 , \cf12 passport\cf9 .authenticate(\cf10 'local.signup'\cf6 , \cf9 \{\
+    \cf12 successRedirect\cf9 : \cf10 '/user/profile'\cf6 ,\
+    \cf12 failureRedirect\cf9 : \cf10 '/user/signup'\cf6 ,\
+    \cf12 failureFlash\cf9 : 
+\f2\b \cf6 true\
+
+\f0\b0 \cf9 \}))\cf6 ;\
+\
+\cf9 router.get(\cf10 '/user/profile'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    res.\cf8 render\cf9 (\cf10 'user/profile'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+22. update index.hbs\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf13 \cb7 \kerning1\expnd0\expndtw0 <div \cf14 class=\cf15 "row"\cf13 >\
+    <div \cf14 class=\cf15 "col-md-4 col-md-offser-4"\cf13 >\
+        <h1>\cf9 Signup\cf13 </h1>\
+        \cf9 \{\{#
+\f2\b \cf6 if hasErros
+\f0\b0 \cf9 \}\}\
+         \cf13 <div \cf14 class=\cf15 "alert alert-danger"\cf13 >\
+             \cf9 \{\{# 
+\f2\b \cf6 each messages 
+\f0\b0 \cf9 \}\}\
+                 \cf13 <p>\cf9 \{\{
+\f2\b \cf6 this
+\f0\b0 \cf9 \}\}\cf13 </p>\
+         </div>\
+        \cf9 \{\{/
+\f2\b \cf6 if
+\f0\b0 \cf9 \}\}\
+        \cf13 <form \cf14 action=\cf15 "/user/signup" \cf14 method=\cf15 "post"\cf13 >\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "email"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "text" \cf14 id=\cf15 "email" \cf14 name=\cf15 "email" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "password"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "password" \cf14 id=\cf15 "password" \cf14 name=\cf15 "password" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <button \cf14 type=\cf15 "submit"\cf13 ></button>\
+            <input \cf14 type=\cf15 "hidden" \cf14 name=\cf15 "_csrf" \cf14 value=\cf15 "\cf9 \{\{ 
+\f2\b \cf6 csrfToken 
+\f0\b0 \cf9 \}\}\cf15 "\cf13 >\
+        </form>\
+    </div>\
+</div>\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+23. update signup.hbs\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf13 \cb7 \kerning1\expnd0\expndtw0 <div \cf14 class=\cf15 "row"\cf13 >\
+    <div \cf14 class=\cf15 "col-md-4 col-md-offser-4"\cf13 >\
+        <h1>\cf9 Signup\cf13 </h1>\
+        \cf9 \{\{#
+\f2\b \cf6 if hasErrors
+\f0\b0 \cf9 \}\}\
+         \cf13 <div \cf14 class=\cf15 "alert alert-danger"\cf13 >\
+             \cf9 \{\{# 
+\f2\b \cf6 each messages 
+\f0\b0 \cf9 \}\}\
+                 \cf13 <p>\cf9 \{\{
+\f2\b \cf6 this
+\f0\b0 \cf9 \}\}\cf13 </p>\
+             \cf9 \{\{/
+\f2\b \cf6 each
+\f0\b0 \cf9 \}\}\
+         \cf13 </div>\
+        \cf9 \{\{/
+\f2\b \cf6 if
+\f0\b0 \cf9 \}\}\
+        \cf13 <form \cf14 action=\cf15 "/user/signup" \cf14 method=\cf15 "post"\cf13 >\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "email"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "text" \cf14 id=\cf15 "email" \cf14 name=\cf15 "email" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "password"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "password" \cf14 id=\cf15 "password" \cf14 name=\cf15 "password" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <button \cf14 type=\cf15 "submit"\cf13 ></button>\
+            <input \cf14 type=\cf15 "hidden" \cf14 name=\cf15 "_csrf" \cf14 value=\cf15 "\cf9 \{\{ 
+\f2\b \cf6 csrfToken 
+\f0\b0 \cf9 \}\}\cf15 "\cf13 >\
+        </form>\
+    </div>\
+</div>\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+24. add validation\
+\
+npm install \'97-save express-validator\
+\
+and update app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 =  \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 flash \cf9 = \cf8 require\cf9 (\cf10 'connect-flash'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 validator = \cf8 require\cf9 (\cf10 'express-validator'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 require\cf9 (\cf10 './config/passport'\cf9 )\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (validator())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 flash\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .initialize())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .session())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  \cf11 // set locals, only providing error in development\
+  \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+  \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+  \cf11 // render the error page\
+  \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+  \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+25. update passport.js\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf9 passport = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 User \cf9 = \cf8 require\cf9 (\cf10 '../models/user'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 LocalStrategy = \cf8 require\cf9 (\cf10 'passport-local'\cf9 ).\cf8 Strategy\cf6 ;\
+\
+\
+\cf9 passport.serializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (user\cf6 , \cf9 done) \{\
+    done(
+\f2\b \cf6 null
+\f0\b0 ,\cf9 user.\cf12 id\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 passport.deserializeUser(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (id\cf6 , \cf9 done) \{\
+   \cf12 User\cf9 .findById(id\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+       done(err\cf6 , \cf9 user)\cf6 ;\
+   \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+ \cf9 passport.use(\cf10 'local.signup'\cf6 , 
+\f2\b new 
+\f0\b0 \cf9 LocalStrategy(\{\
+     \cf12 usernameField\cf9 : \cf10 'email'\cf6 ,\
+     \cf12 passwordField\cf9 : \cf10 'password'\cf6 ,\
+     \cf12 passReqToCallback\cf9 : 
+\f2\b \cf6 true\
+ 
+\f0\b0 \cf9 \}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 email\cf6 , \cf9 password\cf6 , \cf9 done) \{\
+     req.
+\f3\i \cf8 checkBody
+\f0\i0 \cf9 (\cf10 'email'\cf6 , \cf10 'Invalid email'\cf9 ).\cf8 notEmpty\cf9 ().\cf8 isEmail\cf9 ()\cf6 ;\
+     \cf9 req.
+\f3\i \cf8 checkBody
+\f0\i0 \cf9 (\cf10 'password'\cf6 , \cf10 'Invalid password'\cf9 ).\cf8 notEmpty\cf9 ().\cf8 isLength\cf9 (\{\cf12 min\cf9 :\cf16 4\cf9 \})\cf6 ;\
+     
+\f2\b var 
+\f0\b0 \cf9 errors = req.\cf8 validationErrors\cf9 ()\cf6 ;\
+     
+\f2\b if 
+\f0\b0 \cf9 (errors) \{\
+         
+\f2\b \cf6 var 
+\f0\b0 \cf9 messages = []\cf6 ;\
+         \cf9 errors.\cf8 forEach\cf9 (
+\f2\b \cf6 function 
+\f0\b0 \cf9 (error) \{\
+             messages.\cf8 push\cf9 (error.msg)\cf6 ;\
+         \cf9 \})\cf6 ;\
+         
+\f2\b return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 req.\cf12 flash\cf9 (\cf10 'error'\cf6 , \cf9 messages))\cf6 ;\
+     \cf9 \}\
+     \cf12 User\cf9 .findOne(\{\cf10 'email'\cf9 : email\}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+         
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 if 
+\f0\b0 \cf9 (user) \{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 \{\cf12 message\cf9 : \cf10 'Email is already in use'\cf9 \})\cf6 ;\
+\
+         \cf9 \}\
+\
+         
+\f2\b \cf6 var 
+\f0\b0 \cf9 newUser = 
+\f2\b \cf6 new 
+\f0\b0 \cf12 User\cf9 ()\cf6 ;\
+         \cf9 newUser.\cf12 email \cf9 = email\cf6 ;\
+         \cf9 newUser.\cf12 password \cf9 = newUser.encryptPassword(password)\cf6 ;\
+         \cf9 newUser.save(
+\f2\b \cf6 function 
+\f0\b0 \cf9 (err\cf6 , \cf9 result) \{\
+             
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+                 
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+             \cf9 \}\
+\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , \cf9 newUser)\cf6 ;\
+\
+         \cf9 \})\cf6 ;\
+     \cf9 \})\cf6 ;\
+ \cf9 \}))\cf6 ;\
+\
+ \cf9 passport.use(\cf10 'local.signin'\cf6 , 
+\f2\b new 
+\f0\b0 \cf9 LocalStrategy(\{\
+     \cf12 usernameField\cf9 : \cf10 'email'\cf6 ,\
+     \cf12 passwordField\cf9 : \cf10 'password'\cf6 ,\
+     \cf12 passReqToCallback\cf9 : 
+\f2\b \cf6 true\
+ 
+\f0\b0 \cf9 \}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 email\cf6 , \cf9 password\cf6 , \cf9 done) \{\
+     req.
+\f3\i \cf8 checkBody
+\f0\i0 \cf9 (\cf10 'email'\cf6 , \cf10 'Invalid email'\cf9 ).\cf8 notEmpty\cf9 ().\cf8 isEmail\cf9 ()\cf6 ;\
+     \cf9 req.
+\f3\i \cf8 checkBody
+\f0\i0 \cf9 (\cf10 'password'\cf6 , \cf10 'Invalid password'\cf9 ).\cf8 notEmpty\cf9 ()\cf6 ;\
+     
+\f2\b var 
+\f0\b0 \cf9 errors = req.\cf8 validationErrors\cf9 ()\cf6 ;\
+     
+\f2\b if 
+\f0\b0 \cf9 (errors) \{\
+         
+\f2\b \cf6 var 
+\f0\b0 \cf9 messages = []\cf6 ;\
+         \cf9 errors.\cf8 forEach\cf9 (
+\f2\b \cf6 function 
+\f0\b0 \cf9 (error) \{\
+             messages.\cf8 push\cf9 (error.msg)\cf6 ;\
+         \cf9 \})\cf6 ;\
+         
+\f2\b return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 req.\cf12 flash\cf9 (\cf10 'error'\cf6 , \cf9 messages))\cf6 ;\
+     \cf9 \}\
+\
+     \cf12 User\cf9 .findOne(\{\cf10 'email'\cf9 : email\}\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (err\cf6 , \cf9 user) \{\
+         
+\f2\b \cf6 if
+\f0\b0 \cf9 (err)\{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(err)\cf6 ;\
+         \cf9 \}\
+         
+\f2\b \cf6 if 
+\f0\b0 \cf9 (!user) \{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 \{\cf12 message\cf9 : \cf10 'No User found'\cf9 \})\cf6 ;\
+\
+         \cf9 \}\
+         \
+         
+\f2\b \cf6 if 
+\f0\b0 \cf9 (!user.\cf8 validPassword\cf9 (password))\{\
+             
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , 
+\f2\b false
+\f0\b0 , \cf9 \{\cf12 message\cf9 : \cf10 'Wrong Password'\cf9 \})\cf6 ;\
+\
+         \cf9 \}\
+\
+         
+\f2\b \cf6 return 
+\f0\b0 \cf9 done(
+\f2\b \cf6 null
+\f0\b0 , \cf9 user)\cf6 ;\
+     \cf9 \})\cf6 ;\
+ \cf9 \}))\cf6 ;\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+26. update signin.hbs\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+\cf13 <div \cf14 class=\cf15 "row"\cf13 >\
+    <div \cf14 class=\cf15 "col-md-4 col-md-offser-4"\cf13 >\
+        <h1>\cf9 Sign in\cf13 </h1>\
+        \cf9 \{\{#
+\f2\b \cf6 if hasErrors
+\f0\b0 \cf9 \}\}\
+            \cf13 <div \cf14 class=\cf15 "alert alert-danger"\cf13 >\
+                \cf9 \{\{# 
+\f2\b \cf6 each messages 
+\f0\b0 \cf9 \}\}\
+                    \cf13 <p>\cf9 \{\{
+\f2\b \cf6 this
+\f0\b0 \cf9 \}\}\cf13 </p>\
+                \cf9 \{\{/
+\f2\b \cf6 each
+\f0\b0 \cf9 \}\}\
+            \cf13 </div>\
+        \cf9 \{\{/
+\f2\b \cf6 if
+\f0\b0 \cf9 \}\}\
+        \cf13 <form \cf14 action=\cf15 "/user/signin" \cf14 method=\cf15 "post"\cf13 >\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "email"\cf13 >\cf9 Email\cf13 </label>\
+                <input \cf14 type=\cf15 "text" \cf14 id=\cf15 "email" \cf14 name=\cf15 "email" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <div \cf14 class=\cf15 "form-group"\cf13 >\
+                <label \cf14 for=\cf15 "password"\cf13 >\cf9 Password\cf13 </label>\
+                <input \cf14 type=\cf15 "password" \cf14 id=\cf15 "password" \cf14 name=\cf15 "password" \cf14 class=\cf15 "form-control"\cf13 >\
+            </div>\
+            <button \cf14 type=\cf15 "submit"\cf13 >\cf9 Sign in\cf13 </button>\
+            <input \cf14 type=\cf15 "hidden" \cf14 name=\cf15 "_csrf" \cf14 value=\cf15 "\cf9 \{\{ 
+\f2\b \cf6 csrfToken 
+\f0\b0 \cf9 \}\}\cf15 "\cf13 >\
+        </form>\
+    </div>\
+</div>\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+27. Route grouping and protection\
+\
+create file\
+\
+/rotes/user.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 csrf \cf9 = \cf8 require\cf9 (\cf10 'csurf'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 = \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf9 csrfProtection = \cf8 csrf\cf9 ()\cf6 ;\
+\cf9 router.use(csrfProtection)\cf6 ;\
+\
+\cf9 router.get(\cf10 '/signup'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next ) \{\
+    
+\f2\b \cf6 var 
+\f0\b0 \cf9 messages = req.\cf12 flash\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+    \cf9 res.\cf8 render\cf9 (\cf10 'user/signup'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\cf6 , \cf12 messages\cf9 : messages\cf6 , \cf12 hasErrors\cf9 : messages.\cf12 length \cf9 > \cf16 0 \cf9 \} )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.post(\cf10 '/signup'\cf6 , \cf12 passport\cf9 .authenticate(\cf10 'local.signup'\cf6 , \cf9 \{\
+    \cf12 successRedirect\cf9 : \cf10 '/user/profile'\cf6 ,\
+    \cf12 failureRedirect\cf9 : \cf10 '/user/signup'\cf6 ,\
+    \cf12 failureFlash\cf9 : 
+\f2\b \cf6 true\
+
+\f0\b0 \cf9 \}))\cf6 ;\
+\
+\cf9 router.get(\cf10 '/profile'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    res.\cf8 render\cf9 (\cf10 'user/profile'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.get(\cf10 '/signin'\cf6 , 
+\f2\b function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    
+\f2\b \cf6 var 
+\f0\b0 \cf9 messages = req.\cf12 flash\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+    \cf9 res.\cf8 render\cf9 (\cf10 'user/signin'\cf6 , \cf9 \{\cf12 csrfToken\cf9 : req.\cf12 csrfToken\cf9 ()\cf6 , \cf12 messages\cf9 : messages\cf6 , \cf12 hasErrors\cf9 : messages.\cf12 length \cf9 > \cf16 0 \cf9 \} )\cf6 ;\
+\
+\cf9 \})\cf6 ;\
+\
+\cf9 router.post(\cf10 '/signin'\cf6 , \cf12 passport\cf9 .authenticate(\cf10 'local.signin'\cf6 ,\cf9 \{\
+    \cf12 successRedirect\cf9 : \cf10 '/user/profile'\cf6 ,\
+    \cf12 failureRedirect\cf9 : \cf10 '/user/signin'\cf6 ,\
+    \cf12 failureFlash\cf9 : 
+\f2\b \cf6 true\
+
+\f0\b0 \cf9  \}))\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+update index.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 router = \cf12 express\cf9 .\cf8 Router\cf9 ()\cf6 ;\
+\
+\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 /* GET home page. */\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 router.get(\cf10 '/'\cf6 , 
+\f2\b function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  res.\cf8 render\cf9 (\cf10 'index'\cf6 , \cf9 \{ \cf12 title\cf9 : \cf10 'Express' \cf9 \})\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\
+\
+\
+\
+\cf9 module.\cf12 exports \cf9 = router\cf6 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+28. update app.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 =  \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 flash \cf9 = \cf8 require\cf9 (\cf10 'connect-flash'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 validator = \cf8 require\cf9 (\cf10 'express-validator'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 userRouter = \cf8 require\cf9 (\cf10 './routes/user'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 require\cf9 (\cf10 './config/passport'\cf9 )\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (validator())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 flash\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .initialize())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .session())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/user'\cf6 , \cf9 userRouter)\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+  \cf11 // set locals, only providing error in development\
+  \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+  \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+  \cf11 // render the error page\
+  \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+  \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+\
+29. update /routes/user.js\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf17 \cb18 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf19 express \cf20 = \cf21 require\cf20 (\cf22 'express'\cf20 )\cf17 ;\
+
+\f2\b var 
+\f0\b0 \cf20 router = \cf19 express\cf20 .\cf21 Router\cf20 ()\cf17 ;\
+
+\f2\b var 
+\f0\b0 \cf21 csrf \cf20 = \cf21 require\cf20 (\cf22 'csurf'\cf20 )\cf17 ;\
+
+\f2\b var 
+\f0\b0 \cf19 passport \cf20 = \cf21 require\cf20 (\cf22 'passport'\cf20 )\cf17 ;\
+\
+\
+
+\f2\b var 
+\f0\b0 \cf20 csrfProtection = \cf21 csrf\cf20 ()\cf17 ;\
+\cf20 router.use(csrfProtection)\cf17 ;\
+\
+\cf20 router.get(\cf22 '/profile'\cf17 , \cf21 isLoggedIn \cf17 , 
+\f2\b function 
+\f0\b0 \cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next) \{\
+    res.\cf21 render\cf20 (\cf22 'user/profile'\cf20 )\cf17 ;\
+\cf20 \})\cf17 ;\
+\
+\
+\cf20 router.get(\cf22 '/logout'\cf17 , \cf21 isLoggedIn \cf17 ,
+\f2\b function 
+\f0\b0 \cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next) \{\
+    req.\cf21 logout\cf20 ()\cf17 ;\
+    \cf20 res.\cf21 redirect\cf20 (\cf22 '/'\cf20 )\cf17 ;\
+\cf20 \})\cf17 ;\
+\
+\cf20 router.use(\cf22 '/'\cf17 , \cf21 notLoggedIn\cf17 , 
+\f2\b function
+\f0\b0 \cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next)\{\
+   next()\cf17 ;\
+\cf20 \})\cf17 ;\
+\
+\
+\
+\
+\cf20 router.get(\cf22 '/signup'\cf17 , 
+\f2\b function 
+\f0\b0 \cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next ) \{\
+    
+\f2\b \cf17 var 
+\f0\b0 \cf20 messages = req.\cf19 flash\cf20 (\cf22 'error'\cf20 )\cf17 ;\
+    \cf20 res.\cf21 render\cf20 (\cf22 'user/signup'\cf17 , \cf20 \{\cf19 csrfToken\cf20 : req.\cf19 csrfToken\cf20 ()\cf17 , \cf19 messages\cf20 : messages\cf17 , \cf19 hasErrors\cf20 : messages.\cf19 length \cf20 > \cf23 \cb18 0 \cf20 \cb18 \} )\cf17 ;\
+\cf20 \})\cf17 ;\
+\
+\cf20 router.post(\cf22 '/signup'\cf17 , \cf19 passport\cf20 .authenticate(\cf22 'local.signup'\cf17 , \cf20 \{\
+    \cf19 successRedirect\cf20 : \cf22 '/user/profile'\cf17 ,\
+    \cf19 failureRedirect\cf20 : \cf22 '/user/signup'\cf17 ,\
+    \cf19 failureFlash\cf20 : 
+\f2\b \cf17 true\
+
+\f0\b0 \cf20 \}))\cf17 ;\
+\
+\cf20 router.get(\cf22 '/signin'\cf17 , 
+\f2\b function 
+\f0\b0 \cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next) \{\
+    
+\f2\b \cf17 var 
+\f0\b0 \cf20 messages = req.\cf19 flash\cf20 (\cf22 'error'\cf20 )\cf17 ;\
+    \cf20 res.\cf21 render\cf20 (\cf22 'user/signin'\cf17 , \cf20 \{\cf19 csrfToken\cf20 : req.\cf19 csrfToken\cf20 ()\cf17 , \cf19 messages\cf20 : messages\cf17 , \cf19 hasErrors\cf20 : messages.\cf19 length \cf20 > \cf23 \cb18 0 \cf20 \cb18 \} )\cf17 ;\
+\
+\cf20 \})\cf17 ;\
+\
+\cf20 router.post(\cf22 '/signin'\cf17 , \cf19 passport\cf20 .authenticate(\cf22 'local.signin'\cf17 ,\cf20 \{\
+    \cf19 successRedirect\cf20 : \cf22 '/user/profile'\cf17 ,\
+    \cf19 failureRedirect\cf20 : \cf22 '/user/signin'\cf17 ,\
+    \cf19 failureFlash\cf20 : 
+\f2\b \cf17 true\
+
+\f0\b0 \cf20 \}))\cf17 ;\
+\
+\
+\
+\
+\
+\
+\cf20 module.\cf19 exports \cf20 = router\cf17 ;\
+\
+
+\f2\b function 
+\f0\b0 \cf21 isLoggedIn\cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next) \{\
+    
+\f2\b \cf17 if 
+\f0\b0 \cf20 (req.\cf21 isAuthenticated\cf20 ())\{\
+        
+\f2\b \cf17 return 
+\f0\b0 \cf20 next()\cf17 ;\
+    \cf20 \}\
+    res.\cf21 redirect\cf20 (\cf22 '/'\cf20 )\cf17 ;\
+\cf20 \}\cf17 ;\
+
+\f2\b function 
+\f0\b0 \cf21 notLoggedIn\cf20 (req\cf17 , \cf20 res\cf17 , \cf20 next) \{\
+    
+\f2\b \cf17 if 
+\f0\b0 \cf20 (!req.\cf21 isAuthenticated\cf20 ())\{\
+        
+\f2\b \cf17 return 
+\f0\b0 \cf20 next()\cf17 ;\
+    \cf20 \}\
+    res.\cf21 redirect\cf20 (\cf22 '/'\cf20 )\cf17 ;\
+\cf20 \}\cf17 ;\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+30.update app.js\
+\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f2\b\fs24 \cf6 \cb7 \kerning1\expnd0\expndtw0 var 
+\f0\b0 \cf8 createError \cf9 = \cf8 require\cf9 (\cf10 'http-errors'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 express \cf9 = \cf8 require\cf9 (\cf10 'express'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 path = \cf8 require\cf9 (\cf10 'path'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 cookieParser \cf9 = \cf8 require\cf9 (\cf10 'cookie-parser'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 logger \cf9 = \cf8 require\cf9 (\cf10 'morgan'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 expressHbs \cf9 = \cf8 require\cf9 (\cf10 'express-handlebars'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 mongoose \cf9 = \cf8 require\cf9 (\cf10 'mongoose'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf8 session \cf9 = \cf8 require\cf9 (\cf10 'express-session'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 passport \cf9 =  \cf8 require\cf9 (\cf10 'passport'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf12 flash \cf9 = \cf8 require\cf9 (\cf10 'connect-flash'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 validator = \cf8 require\cf9 (\cf10 'express-validator'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 indexRouter = \cf8 require\cf9 (\cf10 './routes/index'\cf9 )\cf6 ;\
+
+\f2\b var 
+\f0\b0 \cf9 userRouter = \cf8 require\cf9 (\cf10 './routes/user'\cf9 )\cf6 ;\
+\
+
+\f2\b var 
+\f0\b0 \cf9 app = \cf12 express\cf9 ()\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf12 mongoose\cf9 .\cf8 connect\cf9 (\cf10 'mongodb://localhost:27017/signup'\cf6 , \cf9 \{ \cf12 useNewUrlParser\cf9 : 
+\f2\b \cf6 true 
+\f0\b0 \cf9 \})\cf6 ;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 require\cf9 (\cf10 './config/passport'\cf9 )\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // view engine setup\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 engine\cf9 (\cf10 '.hbs'\cf6 , \cf8 expressHbs\cf9 (\{\cf12 defaultLayout\cf9 : \cf10 'layout'\cf6 , \cf12 extname\cf9 : \cf10 '.hbs'\cf9 \}))\cf6 ;\
+\cf9 app.\cf8 set\cf9 (\cf10 'view engine'\cf6 , \cf10 '.hbs'\cf9 )\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf8 logger\cf9 (\cf10 'dev'\cf9 ))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 json\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 urlencoded\cf9 (\{ \cf12 extended\cf9 : 
+\f2\b \cf6 false 
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (validator())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 cookieParser\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf8 session\cf9 (\{\cf12 secret\cf9 : \cf10 "mysecret"\cf6 , \cf12 resave\cf9 : 
+\f2\b \cf6 false
+\f0\b0 , \cf12 saveUninitialized\cf9 : 
+\f2\b \cf6 false
+\f0\b0 \cf9 \}))\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 flash\cf9 ())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .initialize())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 passport\cf9 .session())\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf12 express\cf9 .\cf12 static\cf9 (path.\cf8 join\cf9 (__dirname\cf6 , \cf10 'public'\cf9 )))\cf6 ;\
+\
+\
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function 
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    res.\cf12 locals\cf9 .\cf12 login \cf9 = req.\cf8 isAuthenticated\cf9 ()\cf6 ;\
+    \cf9 next()\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 app.\cf8 use\cf9 (\cf10 '/user'\cf6 , \cf9 userRouter)\cf6 ;\
+\cf9 app.\cf8 use\cf9 (\cf10 '/'\cf6 , \cf9 indexRouter)\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // catch 404 and forward to error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    next(\cf8 createError\cf9 (\cf16 404\cf9 ))\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf11 // error handler\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf9 app.\cf8 use\cf9 (
+\f2\b \cf6 function
+\f0\b0 \cf9 (err\cf6 , \cf9 req\cf6 , \cf9 res\cf6 , \cf9 next) \{\
+    \cf11 // set locals, only providing error in development\
+    \cf9 res.\cf12 locals\cf9 .\cf12 message \cf9 = err.\cf12 message\cf6 ;\
+    \cf9 res.\cf12 locals\cf9 .\cf12 error \cf9 = req.\cf12 app\cf9 .\cf8 get\cf9 (\cf10 'env'\cf9 ) === \cf10 'development' \cf9 ? err : \{\}\cf6 ;\
+\
+    \cf11 // render the error page\
+    \cf9 res.\cf8 status\cf9 (err.\cf12 status \cf9 || \cf16 500\cf9 )\cf6 ;\
+    \cf9 res.\cf8 render\cf9 (\cf10 'error'\cf9 )\cf6 ;\
+\cf9 \})\cf6 ;\
+\
+\cf9 module.\cf12 exports \cf9 = app\cf6 ;\
+\
+\
+\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+31. update layout.hbs\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf13 \cb7 \kerning1\expnd0\expndtw0 <!DOCTYPE \cf14 html\cf13 >\
+<html>\
+  <head>\
+    <title>\cf9 \{\{
+\f2\b \cf6 title
+\f0\b0 \cf9 \}\}\cf13 </title>\
+      <link \cf14 rel=\cf15 "stylesheet" \cf14 href=\cf15 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" \cf14 integrity=\cf15 "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" \cf14 crossorigin=\cf15 "anonymous"\cf13 >\
+      <link \cf14 rel=\cf15 'stylesheet' \cf14 href=\cf15 '/stylesheets/style.css' \cf13 />\
+  </head>\
+  <body>\
+    \cf9 \{\{\{
+\f2\b \cf6 body
+\f0\b0 \cf9 \}\}\}\
+\
+    \{\{#
+\f2\b \cf6 if login 
+\f0\b0 \cf9 \}\}\
+        \cf13 <li><a \cf14 href=\cf15 "/user/profile"\cf13 >\cf9 User Account\cf13 </a></li>\
+        <li \cf14 role=\cf15 "separator" \cf14 class=\cf15 "devider"\cf13 ></li>\
+        <li><a \cf14 href=\cf15 "/user/logout"\cf13 >\cf9 Logout\cf13 </a></li>\
+    \cf9 \{\{ 
+\f2\b \cf6 else 
+\f0\b0 \cf9 \}\}\
+        \cf13 <li><a \cf14 href=\cf15 "/user/signup"\cf13 >\cf9 Sign up\cf13 </a></li>\
+        <li><a \cf14 href=\cf15 "/user/signin"\cf13 >\cf9 Sign in\cf13 </a></li>\
+\
+    \cf9 \{\{/
+\f2\b \cf6 if
+\f0\b0 \cf9 \}\}\
+    \cf13 <script \cf14 src=\cf15 "https://code.jquery.com/jquery-3.3.1.slim.min.js" \cf14 integrity=\cf15 "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" \cf14 crossorigin=\cf15 "anonymous"\cf13 ></script>\
+    <script \cf14 src=\cf15 "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" \cf14 integrity=\cf15 "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" \cf14 crossorigin=\cf15 "anonymous"\cf13 ></script>\
+    <script \cf14 src=\cf15 "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" \cf14 integrity=\cf15 "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" \cf14 crossorigin=\cf15 "anonymous"\cf13 ></script>\
+  </body>\
+</html>\
+\
+\pard\pardeftab720\sl320\partightenfactor0
+
+\f1\fs28 \cf3 \cb1 \expnd0\expndtw0\kerning0
+\
+\
+\
+}
