@@ -5,11 +5,41 @@ var passport = require('passport');
 var User = require('../models/user');
 var flash = require('connect-flash');
 
+
+router.get('/verify', function (req, res, done ) {
+
+    var secretToken = req.query.secretToken;
+    console.log(secretToken);
+    User.findOne({'secretToken': secretToken}, function(err, user){
+        if(err){
+           // console.log('error');
+            return done(err);
+        }
+        if (!user) {
+          //  console.log('token not ok');
+            return  res.redirect('/user/signin');
+        }
+        //console.log(user.secretToken);
+        if (user.secretToken == secretToken){
+            user.active = true;
+            user.expireAt = null;
+            console.log('token ok');
+            user.save(function (err, result) {
+                if(err){
+                    return done(err);
+                }
+                return  res.redirect('/user/signin');
+
+            });
+
+        }
+
+    });
+
+});
+
 var csrfProtection = csrf();
 router.use(csrfProtection);
-
-
-
 
 
 router.get('/profile', isLoggedIn , function (req, res, next) {
@@ -27,54 +57,9 @@ router.use('/', notLoggedIn, function(req, res, next){
 });
 
 
-
-
- router.post('/verify', function (req, res, done ) {
-
-   var secretToken = req.body.secretToken.trim();
-
-    console.log(secretToken);
-
-    User.findOne({'secretToken': secretToken}, function(err, user){
-
-
-        if(err){
-
-            console.log('error');
-
-            return done(err);
-
-        }
-        if (!user) {
-            console.log('token not ok');
-          return  res.redirect('/user/verify');
-
-        }
-
-        //console.log(user.secretToken);
-
-        if (user.secretToken == secretToken){
-            user.secretToken = ' ';
-            user.active = true;
-            user.createdAt = Date.now ;
-            console.log('token ok');
-            user.save(function (err, result) {
-                if(err){
-                    return done(err);
-                }
-              return  res.redirect('/user/signin');
-
-            });
-
-        }
-
-    });
-
-});
-
 router.get('/verify', function (req, res, next ) {
     var messages = req.flash('error');
-    res.render('user/verify', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0 } );
+
 });
 
 
@@ -110,10 +95,6 @@ router.post('/signin', passport.authenticate('local.signin',{
 }));
 
 
-
-
-
-
 module.exports = router;
 
 function isLoggedIn(req, res, next) {
@@ -122,6 +103,7 @@ function isLoggedIn(req, res, next) {
     }
     res.redirect('/');
 };
+
 function notLoggedIn(req, res, next) {
     if (!req.isAuthenticated()){
         return next();

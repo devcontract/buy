@@ -2,9 +2,15 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 var bcrypt = require('bcrypt-nodejs');
 
+
 var userSchema = new Schema({
 
-    createdAt: { type: Date, required: true, default: Date.now, expires: 20 },
+    expireAt : { type: Date, required: false, default: ()=>{
+            var expiry = new Date();
+            expiry = new Date(expiry.setMinutes(expiry.getMinutes() + 2));
+            return expiry;
+        } },
+    createdAt: { type: Date, required: true, default: Date.now },
     email: {type: String, required: true},
     password: {type: String, required: true},
     secretToken: {type: String, required: true},

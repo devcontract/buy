@@ -55,7 +55,10 @@ passport.deserializeUser(function (id, done) {
                  return done(err);
              }
 
-             var html = 'Hi there,<br>,please verify yor email to acivate your account  <br> Token: <b>'+ newUser.secretToken +'</b> <br> PLease click the following link: <a href="http://localhost:3000/user/verify">http://localhost:3000/user/verify</a>';
+            var html = '<div style="width: 100%; height:30px; background-color:#222;"></div><hr> ' +
+                '<p style="text-align: center"> <div style="text-align: center; font-size: 18px ; padding: 5px; margin: 0 0 0 0; width: auto; height: auto; border-radius:3px;">Please verify your email to signin </div> </p>' +
+                '<p style="text-align:center;"> <a href="http://127.0.0.1:3000/user/verify/?secretToken='+ newUser.secretToken +'" style="text-decoration:none;color: whitesmoke;font-size: 18px ; padding: 5px; margin: 10% 0 10% 0; width: auto; height: auto;background-color:dodgerblue;border-radius:3px;">Verify Email</a> ' +
+                '</p> <hr> </> <div style="width: 100%; height:30px; background-color:#222;"></div>';
 
              // send email
              mailer.sendEmail( 'noiselessspeach@gmail.com', newUser.email , 'Activate Your Account!', html);
@@ -103,7 +106,6 @@ passport.deserializeUser(function (id, done) {
              return done(null, false, {message: 'Wrong Password'});
 
          }
-
 
          return done(null, user);
 
