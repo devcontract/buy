@@ -61,7 +61,7 @@ passport.deserializeUser(function (id, done) {
                 '</p> <hr> </> <div style="width: 100%; height:30px; background-color:#222;"></div>';
 
              // send email
-             mailer.sendEmail( 'noiselessspeach@gmail.com', newUser.email , 'Activate Your Account!', html);
+             mailer.sendEmail( 'noreply@email.com', newUser.email , 'Activate Your Account!', html);
 
 
              return done(null, newUser);
