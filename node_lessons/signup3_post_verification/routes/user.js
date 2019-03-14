@@ -9,7 +9,7 @@ var flash = require('connect-flash');
 router.get('/verify', function (req, res, done ) {
 
     var secretToken = req.query.secretToken;
-    console.log(secretToken);
+   // console.log(secretToken);
     User.findOne({'secretToken': secretToken}, function(err, user){
         if(err){
            // console.log('error');
@@ -23,7 +23,7 @@ router.get('/verify', function (req, res, done ) {
         if (user.secretToken == secretToken){
             user.active = true;
             user.expireAt = null;
-            console.log('token ok');
+          //  console.log('token ok');
             user.save(function (err, result) {
                 if(err){
                     return done(err);
