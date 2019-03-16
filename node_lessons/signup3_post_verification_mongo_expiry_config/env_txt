@@ -1,0 +1,4 @@
+MAIL_SERVICE = gmail
+EMAIL_USER_NAME = email addres where you are sending email
+EMAIL_PASSWORD = email account password
+DB_PATH = mongodb://localhost:DB_PORT/DB_NAME
