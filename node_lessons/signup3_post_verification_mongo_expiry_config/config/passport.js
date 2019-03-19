@@ -13,7 +13,7 @@ passport.deserializeUser(function (id, done) {
 
    User.findById(id, function (err, user) {
 
-       if (user.active == false){
+       if (user.active === false){
            return done(null, false, {message: 'Please  Activate'});
        }
 

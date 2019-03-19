@@ -1,0 +1,52 @@
+<div class="container">
+
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="/todoList" method="post">
+                    <p> <input type="text" name="title" id="title" class="form-control" required placeholder="Title" ></p>
+                    <p> <input type="text" name="description" id="description" class="form-control" required placeholder="Description"></p>
+                    <input type="submit" value="Add Todo" class="btn btn-block btn-success">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        {{#each todo}}
+        <div class="col-sm-6 col-md-6">
+            <div class="thumbnail rounded">
+<div class="{{this.status}}">
+
+</div>
+
+                <p id="title">{{this.title}}</p>
+
+                <hr>
+                <p id="description">{{this.description}}</p>
+
+                <button type="submit" class="btn btn-sm  btn-success" id="done">
+                    &check;
+                </button>
+
+                <button type="submit" class="btn btn-sm  btn-warning" id="notdone">
+                    &plus;
+                </button>
+                <button type="submit" class="btn btn-sm btn-danger" id="remove">
+                    &times;
+                </button>
+
+            </div>
+
+
+
+        </div>
+                {{/each}}
+    </div>
+</div>
+
+
+
+
+

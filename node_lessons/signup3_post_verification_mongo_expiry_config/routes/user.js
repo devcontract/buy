@@ -20,7 +20,7 @@ router.get('/verify', function (req, res, done ) {
             return  res.redirect('/user/signin');
         }
         //console.log(user.secretToken);
-        if (user.secretToken == secretToken){
+        if (user.secretToken === secretToken){
             user.active = true;
             user.expireAt = null;
           //  console.log('token ok');
