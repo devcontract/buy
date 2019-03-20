@@ -28,20 +28,17 @@ mkdir ~/Documents/server/db
 cd Downloads
 mv mongodb-osx-x86_64-3.0.7.tgz ~/Documents/server/db
 cd ~/Documents/server/db/bin
-
 ```
 To start Mongodb server run following commands:
 
 ```
 ./mongod
-
 ```
 
 By default Mongodb is listening port 27017 
 
 ```
 ...waiting for connections on port 27017
-
 ```
 
 
@@ -50,41 +47,31 @@ After download is finished run pkg file and follow installation process to insta
 Once installation is complete you are able to run Node js with following command :
 
 ```
-
 node  
-
 ```
 
 Now we need to download repo from github https://github.com/devcontract/buy.git lets say we want to have it in ~/Documents/server/repo :
 
 ```
-
 mkdir ~/Documents/server/repo
 cd ~/Documents/server/repo/
 svn export https://github.com/devcontract/buy.git/branches/login_access_point/node_lessons/signup3_post_verification_mongo_expiry_config/ 
-
 cd signup3_post_verification_mongo_expiry_config/
-
 ```
-
 Now install all dependencies with node packet manager:
 
 ```
-
 npm install
-
 ```
 
 You will need to create .env file in folder with the following content :
 
 ```
-
 MAIL_SERVICE = gmail
 EMAIL_USER_NAME = gmail@gmail.com
 EMAIL_PASSWORD = email password
 DB_PATH = mongodb://localhost:27017/signup
 RECORD_EXPIRY_TIME = 2
-
 ```
 
 ## Running the tests
@@ -100,11 +87,9 @@ Config :
 
 ```
 Name: bin/www
-
 ....
 
 JavaScript file: bin/www
-
 ```
 
 The rest of configuration can be left as they are. Save configuration by clicking 'OK' button.
@@ -114,9 +99,7 @@ Now press run button (green triangle)
 You should be able to access your server:
 
 ```
-
 http://127.0.0.1:3000/user/signup
-
 ```
 
 ## Authors
