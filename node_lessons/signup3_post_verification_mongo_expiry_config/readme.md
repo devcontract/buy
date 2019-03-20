@@ -60,7 +60,10 @@ Now we need to download repo from github https://github.com/devcontract/buy.git 
 ```
 
 mkdir ~/Documents/server/repo
-cd ~/Documents/server/repo/buy-login_access_point/node_lessons/signup3_post_verification_mongo_expiry_config
+cd ~/Documents/server/repo/
+svn export https://github.com/devcontract/buy.git/branches/login_access_point/node_lessons/signup3_post_verification_mongo_expiry_config/ 
+
+cd signup3_post_verification_mongo_expiry_config/
 
 ```
 
