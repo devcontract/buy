@@ -51,7 +51,7 @@ Once installation is complete you are able to run Node js with following command
 
 ```
 
-node  file.js
+node  
 
 ```
 
@@ -67,6 +67,7 @@ cd ~/Documents/server/repo/buy-login_access_point/node_lessons/signup3_post_veri
 Now install all dependencies with node packet manager:
 
 ```
+
 npm install
 
 ```
@@ -76,8 +77,9 @@ You will need to create .env file in folder with the following content :
 ```
 
 MAIL_SERVICE = gmail
-EMAIL_USER_NAME = email@gmail.com
+EMAIL_USER_NAME = gmail@gmail.com
 EMAIL_PASSWORD = email password
+DB_PATH = mongodb://localhost:27017/signup
 RECORD_EXPIRY_TIME = 2
 
 ```
