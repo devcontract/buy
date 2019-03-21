@@ -38,19 +38,24 @@ To start Mongodb server run following commands:
 mongod
 ```
 
+
 By default Mongodb is listening port 27017 
 
 ```
 ...waiting for connections on port 27017
 ```
 
-
-Now lets install Node JS. Go to Node JS website https://nodejs.org/en/ and download correct version.
-After download is finished run pkg file and follow installation process to install Node js.
-Once installation is complete you are able to run Node js with following command :
+To stop mongoDB server press :
 
 ```
-node  
+ctrl+c
+```
+
+
+Now lets install Node JS.Use this command in terminal:
+
+```
+brew install node
 ```
 
 Now we need to download repo from github https://github.com/devcontract/buy.git lets say we want to have it in ~/Documents/server/repo :
