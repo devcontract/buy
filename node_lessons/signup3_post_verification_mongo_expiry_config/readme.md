@@ -61,11 +61,19 @@ brew install node
 Now we need to download repo from github https://github.com/devcontract/buy.git lets say we want to have it in ~/Documents/server/repo :
 
 ```
-mkdir ~/Documents/server/repo
-cd ~/Documents/server/repo/
+mkdir ~/Documents/server/
+cd ~/Documents/server/
 svn export https://github.com/devcontract/buy.git/branches/login_access_point/node_lessons/signup3_post_verification_mongo_expiry_config/ 
 cd signup3_post_verification_mongo_expiry_config/
 ```
+
+Install node packet manager if it is not installed :
+
+```
+brew install npm
+
+```
+
 Now install all dependencies with node packet manager:
 
 ```
