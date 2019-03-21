@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": ">=11.10.1",
+    "npm": "~6.9.0"
+  },
   "name": "signup",
   "version": "0.0.0",
   "private": true,
@@ -24,6 +28,5 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "randomstring": "^1.1.5"
-  },
-  "devDependencies": {}
+  }
 }

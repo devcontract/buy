@@ -55,10 +55,10 @@ passport.deserializeUser(function (id, done) {
                  return done(err);
              }
 
-            var html = '<div style="width: 100%; height:30px; background-color:#222;"></div><hr> ' +
+            var html = '<body style="background-color:orange"><div style="width: 50%; margin: 0 auto;background-color:orange;margin-top:15%"><hr> ' +
                 '<p style="text-align: center"> <div style="text-align: center; font-size: 18px ; padding: 5px; margin: 0 0 0 0; width: auto; height: auto; border-radius:3px;">Please verify your email to signin </div> </p>' +
-                '<p style="text-align:center;"> <a href="http://127.0.0.1:3000/user/verify/?secretToken='+ newUser.secretToken +'" style="text-decoration:none;color: whitesmoke;font-size: 18px ; padding: 5px; margin: 10% 0 10% 0; width: auto; height: auto;background-color:dodgerblue;border-radius:3px;">Verify Email</a> ' +
-                '</p> <hr> </> <div style="width: 100%; height:30px; background-color:#222;"></div>';
+                '<p style="text-align:center;"> <a href="http://127.0.0.1:3000/user/verify/?secretToken='+ newUser.secretToken +'" style="text-decoration:none;color: whitesmoke;font-size: 18px ; padding: 5px; margin: 10% 0 10% 0; width: auto; height: auto;background-color:dodgerblue;border-radius:3px;">Verify Email</a><hr> ' +
+                '</body>';
 
              // send email
              mailer.sendEmail( 'noreply@email.com', newUser.email , 'Activate Your Account!', html);
