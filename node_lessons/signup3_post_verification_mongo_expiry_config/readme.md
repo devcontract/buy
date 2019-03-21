@@ -16,23 +16,26 @@ As this project involves usage of Mongodb database as well as node js server set
 
 ### Installing
 
-Let`s get started with Mongodb installation .
-Go to the MongoDB website’s download section https://www.mongodb.org/downloads#production
-and download the correct version of MongoDB.
-After downloading Mongo move the gzipped tar file (the file with the extension .tgz that you downloaded) to the folder where you want Mongo installed. 
-In this case, we’ll say that we want Mongo to live in Projcet folder, and so the commands might look something like this:
+Let`s get started with Mongodb installation with Homebrew.
 
 ```
-mkdir ~/Documents/server/
-mkdir ~/Documents/server/db
-cd Downloads
-mv mongodb-osx-x86_64-3.0.7.tgz ~/Documents/server/db
-cd ~/Documents/server/db/bin
+brew update 
+
+brew install mongodb
+
+mkdir -p /data/db
 ```
+
+Make sure that the /data/db directory has the right permissions by running
+
+```
+sudo chown -R `id -un` /data/db
+```
+
 To start Mongodb server run following commands:
 
 ```
-./mongod
+mongod
 ```
 
 By default Mongodb is listening port 27017 
