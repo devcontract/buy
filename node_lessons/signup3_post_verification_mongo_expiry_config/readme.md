@@ -92,25 +92,10 @@ RECORD_EXPIRY_TIME = 2
 
 ## Running the tests
 
-We are going to use phpStorm for our test run so make sure it is pre-downloaded and install on your computer.
-
-Open phpStorm and in ther open project folder downloaded from github .
-
-Now edit configuretion by clicking in the top right corner and add new configuration by clicking + symbol
-And selecting nodejs option :
-
-Config :
 
 ```
-Name: bin/www
-....
-
-JavaScript file: bin/www
+npm start
 ```
-
-The rest of configuration can be left as they are. Save configuration by clicking 'OK' button.
-
-Now press run button (green triangle)
 
 You should be able to access your server:
 
