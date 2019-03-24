@@ -45,6 +45,12 @@ By default Mongodb is listening port 27017
 ...waiting for connections on port 27017
 ```
 
+To make check port and make usre monogo db isl istening that port run commad :
+
+```
+sudo lsof -iTCP -sTCP:LISTEN | grep mongo
+
+```
 To stop mongoDB server press :
 
 ```
