@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="526ad8d4-8a80-4a0f-ab29-c69ba3e17491" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/bin/www" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/config/passport.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/misc/mailer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/public/stylesheets/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/routes/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/temp_page/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/error.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/layout.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/partials/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/partials/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/partials/rightMenu.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/user/profile.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/user/signin.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/user/signup.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_lessons/signup5/views/user/verify.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/public/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/public/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/views/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/views/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/views/partials/header.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_lessons/signup4/views/user/signin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/node_lessons/signup4/views/user/signin.ejs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="www" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/node_lessons/signup5/bin/www">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_lessons/signup5/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/node_lessons/signup5/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="31" />
+    <option name="width" value="1294" />
+    <option name="height" value="833" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="signup5" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters.JSLint" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/node_lessons" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="526ad8d4-8a80-4a0f-ab29-c69ba3e17491" name="Default" comment="" />
+      <created>1553555603260</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553555603260</updated>
+      <workItem from="1553555604585" duration="33000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="31" width="1294" height="833" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/node_lessons/signup5/bin/www">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

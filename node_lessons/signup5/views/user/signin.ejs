@@ -2,6 +2,16 @@
     <div class="col-md-4 col-md-offset-4">
         <h1 class="text-center">Sign in</h1>
 
+
+        <% if (isSuccess) {%>
+
+        <div class="alert alert-success text-center">
+            <% success.forEach(function(message){ %>
+
+            <p><%= message %></p>
+            <% });%>
+        </div>
+        <% }%>
         <% if (hasErrors) {%>
 
             <div class="alert alert-danger text-center">

@@ -8,7 +8,7 @@ var flash = require('connect-flash');
 
 router.get('/remove', function(req, res, done) {
 
-  return console.log("looking for something to remove");
+    return console.log("looking for something to remove");
 
 });
 
@@ -22,19 +22,25 @@ router.get('/verify', function (req, res, done ) {
             return done(err);
         }
         if (!user) {
-          //  console.log('token not ok');
-            return  res.redirect('/user/signin');
+
+            console.log('token not ok');
+            req.flash('error', 'No user found , please register');
+            return  res.redirect('/user/signup');
+
         }
-        //console.log(user.secretToken);
+        console.log(user.secretToken);
         if (user.secretToken === secretToken){
-            user.active = true;
-            user.expireAt = null;
-          //  console.log('token ok');
-            user.save(function (err, result) {
-                if(err){
-                    return done(err);
-                }
-                return  res.redirect('/user/signin');
+
+
+        user.active = true;
+        user.expireAt = null;
+           console.log('token ok');
+           user.save(function (err, result) {
+               if(err){
+                   return done(err);}
+               req.flash('success', 'Activated! You may now login');
+
+               return  res.redirect('/user/signin');
 
             });
 
@@ -47,7 +53,6 @@ router.get('/verify', function (req, res, done ) {
 var csrfProtection = csrf();
 
 router.use(csrfProtection);
-
 
 router.get('/profile', isLoggedIn , function (req, res, next) {
     res.render('user/profile');
@@ -64,10 +69,7 @@ router.use('/', notLoggedIn, function(req, res, next){
 });
 
 
-router.get('/verify', function (req, res, next ) {
-    var messages = req.flash('error');
 
-});
 
 
 router.post('/signup', passport.authenticate('local.signup', {
@@ -91,7 +93,8 @@ router.post('/signup', passport.authenticate('local.signup', {
 
 router.get('/signin', function (req, res, next) {
     var messages = req.flash('error');
-    res.render('user/signin', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0 } );
+    var success = req.flash('success');
+    res.render('user/signin', {csrfToken: req.csrfToken(), success: success, isSuccess: success.length > 0 , messages: messages, hasErrors: messages.length > 0 } );
 
 });
 
