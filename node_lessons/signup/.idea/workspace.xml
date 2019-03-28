@@ -91,6 +91,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="11.10.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -129,11 +130,12 @@
       <workItem from="1551817976473" duration="21219000" />
       <workItem from="1551993861892" duration="713000" />
       <workItem from="1552074693690" duration="982000" />
+      <workItem from="1553806792843" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23559000" />
+    <option name="totallyTimeSpent" value="23601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

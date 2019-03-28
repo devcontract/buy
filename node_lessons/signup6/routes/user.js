@@ -23,15 +23,13 @@ router.get('/verify', function (req, res, done ) {
         }
         if (!user) {
 
-            console.log('token not ok');
+           // console.log('token not ok');
             req.flash('error', 'No user found , please register');
             return  res.redirect('/user/signup');
 
         }
         console.log(user.secretToken);
         if (user.secretToken === secretToken){
-
-
         user.active = true;
         user.expireAt = null;
            console.log('token ok');
@@ -70,9 +68,6 @@ router.use('/', notLoggedIn, function(req, res, next){
 });
 
 
-
-
-
 router.post('/signup', passport.authenticate('local.signup', {
     successRedirect: '/user/signin',
     failureRedirect: '/user/signup',
@@ -82,8 +77,8 @@ router.post('/signup', passport.authenticate('local.signup', {
 
 router.get('/signup', function (req, res, next ) {
     var messages = req.flash('error');
-    var menu = 0;
-    res.render('user/signup', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0 , menu:menu > 0} );
+    var menu = false;
+    res.render('user/signup', {csrfToken: req.csrfToken(), messages: messages, hasErrors: messages.length > 0 , menu:menu} );
 });
 
 

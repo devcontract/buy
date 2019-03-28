@@ -10,13 +10,31 @@ a {
   font-size:13px;
 }
 
+.navbar{
+  margin-bottom:0;
+}
+
+/*Layout*/
+
+h1{
+  color:#9d9d9d;
+}
+
 footer {
   margin-top: 110px;
   bottom: 0;
-  width: 100%;
+  width: 100%;}
 
+
+.footer-copyright{
+  color:#9d9d9d;
+  letter-spacing:1px;
+  word-spacing:3px;
 }
 
+/*Layout*/
+
+/*Menu*/
 
 .menuRow:first-child{
   left:0;
@@ -24,33 +42,12 @@ footer {
 }
 
 .menuRow {
-  position: fixed;
-  right: 0;
-  top: 87px;
-  width: 8em;
-  margin: 0 0 20px;
-  margin-top: -2.5em;
 
-}
-h1{
-  color:#9d9d9d;
-  letter-spacing:1px;
-  word-spacing:3px;
-  font-size:50px;
-  margin: 40px;
-}
-label{
-  color:#9d9d9d;
-  letter-spacing:1px;
-  word-spacing:3px;
-}
-.content{
-  text-align:center;
-  padding: 0 130px;
-  letter-spacing:1px;
-  word-spacing:3px;
-  line-height:20px;
-  color:#9d9d9d
+  margin-top:50px
+  width: 8em;
+
+
+
 }
 
 a.list-group-item{
@@ -86,6 +83,7 @@ a.list-group-item-action:focus{
   margin: 0px !important;
   border:none;
   width:140px;
+  position:fixed;
 }
 .list-group{
   margin:5px;
@@ -93,8 +91,35 @@ a.list-group-item-action:focus{
 }
 
 
-.footer-copyright{
+/*Menu*/
+
+/*Sign page*/
+
+label{
   color:#9d9d9d;
   letter-spacing:1px;
   word-spacing:3px;
 }
+
+/*Sign page*/
+
+
+/*Page Content*/
+.content{
+  text-align:center;
+  padding: 0 130px;
+  letter-spacing:1px;
+  word-spacing:3px;
+  line-height:20px;
+  color:#9d9d9d
+}
+/*Page Content*/
+
+
+/*Profile page*/
+
+.profileTitle{
+  text-align:center;
+}
+
+/*Profile page*/
