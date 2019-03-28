@@ -30,7 +30,7 @@ footer {
 
 .content{
   text-align:center;
-  padding:60px;
+  padding:130px;
   letter-spacing:1px;
   word-spacing:3px;
   line-height:20px;
@@ -42,7 +42,8 @@ a.list-group-item{
   border:none;
 }
 
-a.list-group-item-action:hover{
+a.list-group-item-action:hover,
+a.list-group-item-action:focus{
 
   color:white;
 
