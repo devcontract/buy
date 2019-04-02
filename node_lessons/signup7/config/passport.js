@@ -1,7 +1,6 @@
 var passport = require('passport');
 var User = require('../models/user');
 var LocalStrategy = require('passport-local').Strategy;
-var randomstring = require('randomstring');
 var mailer = require('../misc/mailer');
 
 
@@ -13,7 +12,7 @@ passport.serializeUser(function (user, done) {
 passport.deserializeUser(function (id, done) {
 
    User.findById(id, function (err, user) {
-       
+
        done(err, user);
    });
 });
@@ -58,8 +57,6 @@ passport.deserializeUser(function (id, done) {
 
              // send email
              mailer.sendEmail( 'noreply@email.com', newUser.email , 'Activate Your Account!', html);
-
-
              return done(null, newUser);
 
          });
@@ -91,9 +88,7 @@ passport.deserializeUser(function (id, done) {
          if (!user) {
              return done(null, false);
          }
-         if (user.active == false){
-             return done(null, false);
-         }
+
          if (!user.validPassword(password)) {
              return done(null, false);
          }
