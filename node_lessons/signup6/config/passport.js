@@ -6,6 +6,7 @@ var mailer = require('../misc/mailer');
 
 
 passport.serializeUser(function (user, done) {
+
     done(null,user.id);
 });
 

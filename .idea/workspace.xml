@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="526ad8d4-8a80-4a0f-ab29-c69ba3e17491" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="526ad8d4-8a80-4a0f-ab29-c69ba3e17491" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +22,11 @@
       </file>
       <file leaf-file-name="www" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/node_lessons/signup6/bin/www">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -99,6 +101,27 @@
               <item name="Buy" type="462c0819:PsiDirectoryNode" />
               <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="signup6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="signup6" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Buy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buy" type="462c0819:PsiDirectoryNode" />
+              <item name="node_lessons" type="462c0819:PsiDirectoryNode" />
+              <item name="signup6" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -145,16 +168,18 @@
       <workItem from="1553733561216" duration="139000" />
       <workItem from="1553806481901" duration="5000" />
       <workItem from="1553806600395" duration="1000" />
+      <workItem from="1553810219441" duration="346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1127000" />
+    <option name="totallyTimeSpent" value="1473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="31" width="1294" height="833" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26996806" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27396166" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -215,6 +240,16 @@
     <entry file="file://$PROJECT_DIR$/node_lessons/signup5/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_lessons/signup6/bin/www">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_lessons/signup5/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
           <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
@@ -230,7 +265,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_lessons/signup6/bin/www">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="41" column="3" lean-forward="true" selection-start-line="41" selection-start-column="3" selection-end-line="41" selection-end-column="3" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
