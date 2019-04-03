@@ -6,7 +6,7 @@ var LocalStrategy = require('passport-local').Strategy;
 
 // Configure the local strategy for use by Passport.
 
-passport.serializeUser(function(user, done) {
+passport.serializeUser(function(user, done) {     //
     done(null, user);
 });
 
