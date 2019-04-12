@@ -82,12 +82,6 @@ router.get('/signup', function (req, res, next ) {
 });
 
 
-router.post('/signup', passport.authenticate('local.signup', {
-    successRedirect: '/user/signin',
-    failureRedirect: '/user/signup',
-    failureFlash: true
-}));
-
 router.get('/signin', function (req, res, next) {
     var messages = req.flash('error');
     var success = req.flash('success');
@@ -101,8 +95,6 @@ router.post('/signin', passport.authenticate('local.signin',{
     failureRedirect: '/user/signin',
     failureFlash: true
 }));
-
-
 
 module.exports = router;
 

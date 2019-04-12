@@ -14,6 +14,8 @@ passport.deserializeUser(function(user, done) {
     done(null, user);
 });
 
+// creating new local strategy for signup
+
 passport.use('local.signup', new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password',
@@ -41,6 +43,8 @@ passport.use('local.signup', new LocalStrategy({
         });
 
     }));
+
+// new local strategu for signin
 
 passport.use('local.signin', new LocalStrategy({
     usernameField:'email',
